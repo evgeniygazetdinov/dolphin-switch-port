@@ -1,55 +1,71 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/OGLCompilersDLL/InitializeDll.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/OGLCompilersDLL/InitializeDll.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/GlslangToSpv.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/SPIRV/GlslangToSpv.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/InReadableOrder.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/SPIRV/InReadableOrder.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/Logger.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/SPIRV/Logger.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/SPVRemapper.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SPVRemapper.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/SpvBuilder.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvBuilder.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/SpvPostProcess.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvPostProcess.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/SpvTools.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvTools.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/disassemble.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/SPIRV/disassemble.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/doc.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/SPIRV/doc.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/StandAlone/ResourceLimits.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/StandAlone/ResourceLimits.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/GenericCodeGen/CodeGen.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/CodeGen.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/GenericCodeGen/Link.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/Link.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/Constant.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Constant.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/InfoSink.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/InfoSink.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/Initialize.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Initialize.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/IntermTraverse.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/IntermTraverse.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/Intermediate.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Intermediate.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/ParseContextBase.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseContextBase.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/ParseHelper.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseHelper.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/PoolAlloc.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/PoolAlloc.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/RemoveTree.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/RemoveTree.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/Scan.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Scan.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/ShaderLang.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ShaderLang.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/SpirvIntrinsics.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SpirvIntrinsics.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/SymbolTable.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SymbolTable.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/Versions.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Versions.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/attribute.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/attribute.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/glslang_tab.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/glslang_tab.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/intermOut.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/intermOut.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/iomapper.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/iomapper.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/limits.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/limits.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/linkValidate.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/linkValidate.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/parseConst.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/parseConst.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/Pp.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/preprocessor/PpAtom.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpAtom.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/preprocessor/PpContext.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpContext.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/preprocessor/PpScanner.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpScanner.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/preprocessor/PpTokens.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpTokens.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/propagateNoContraction.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/propagateNoContraction.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/reflection.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/reflection.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/OSDependent/Unix/ossource.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/CMakeFiles/glslang.dir/glslang/OSDependent/Unix/ossource.cpp.obj"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "AUTOUPDATE=1"
+  "DATA_DIR=\"/opt/devkitpro/portlibs/switch/share/dolphin-emu/\""
+  "USE_ANALYTICS=1"
+  "_ARCH_64=1"
+  "_DEFAULT_SOURCE"
+  "_FILE_OFFSET_BITS=64"
+  "_LARGEFILE_SOURCE"
+  "_M_ARM_64=1"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/OGLCompilersDLL/InitializeDll.cpp" "Externals/glslang/CMakeFiles/glslang.dir/OGLCompilersDLL/InitializeDll.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/OGLCompilersDLL/InitializeDll.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/GlslangToSpv.cpp" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/GlslangToSpv.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/GlslangToSpv.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/InReadableOrder.cpp" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/InReadableOrder.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/InReadableOrder.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/Logger.cpp" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/Logger.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/Logger.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/SPVRemapper.cpp" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SPVRemapper.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SPVRemapper.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/SpvBuilder.cpp" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvBuilder.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvBuilder.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/SpvPostProcess.cpp" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvPostProcess.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvPostProcess.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/SpvTools.cpp" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvTools.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvTools.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/disassemble.cpp" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/disassemble.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/disassemble.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/doc.cpp" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/doc.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/SPIRV/doc.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/StandAlone/ResourceLimits.cpp" "Externals/glslang/CMakeFiles/glslang.dir/StandAlone/ResourceLimits.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/StandAlone/ResourceLimits.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/GenericCodeGen/CodeGen.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/CodeGen.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/CodeGen.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/GenericCodeGen/Link.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/Link.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/Link.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/Constant.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Constant.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Constant.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/InfoSink.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/InfoSink.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/InfoSink.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/Initialize.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Initialize.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Initialize.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/IntermTraverse.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/IntermTraverse.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/IntermTraverse.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/Intermediate.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Intermediate.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Intermediate.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/ParseContextBase.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseContextBase.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseContextBase.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/ParseHelper.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseHelper.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseHelper.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/PoolAlloc.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/PoolAlloc.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/PoolAlloc.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/RemoveTree.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/RemoveTree.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/RemoveTree.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/Scan.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Scan.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Scan.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/ShaderLang.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ShaderLang.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ShaderLang.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/SpirvIntrinsics.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SpirvIntrinsics.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SpirvIntrinsics.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/SymbolTable.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SymbolTable.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SymbolTable.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/Versions.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Versions.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Versions.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/attribute.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/attribute.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/attribute.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/glslang_tab.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/glslang_tab.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/glslang_tab.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/intermOut.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/intermOut.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/intermOut.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/iomapper.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/iomapper.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/iomapper.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/limits.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/limits.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/limits.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/linkValidate.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/linkValidate.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/linkValidate.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/parseConst.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/parseConst.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/parseConst.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/preprocessor/Pp.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/Pp.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/Pp.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/preprocessor/PpAtom.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpAtom.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpAtom.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/preprocessor/PpContext.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpContext.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpContext.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/preprocessor/PpScanner.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpScanner.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpScanner.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/preprocessor/PpTokens.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpTokens.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpTokens.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/propagateNoContraction.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/propagateNoContraction.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/propagateNoContraction.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/MachineIndependent/reflection.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/reflection.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/reflection.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/OSDependent/Unix/ossource.cpp" "Externals/glslang/CMakeFiles/glslang.dir/glslang/OSDependent/Unix/ossource.cpp.obj" "gcc" "Externals/glslang/CMakeFiles/glslang.dir/glslang/OSDependent/Unix/ossource.cpp.obj.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "Source/Core"
+  "Externals/glslang"
+  "/opt/devkitpro/libnx/include"
   )
 
 # Targets to which this target links.

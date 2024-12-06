@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/unittests_stubhost.dir/StubHost.cpp.obj"
-  "CMakeFiles/unittests_stubhost.dir/StubHost.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

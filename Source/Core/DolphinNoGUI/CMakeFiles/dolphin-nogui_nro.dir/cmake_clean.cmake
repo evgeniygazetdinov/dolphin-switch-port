@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dolphin-nogui_nro"
-  "dolphin-emu-nogui.nro"
+  "dolphin-emu.nro"
   "dolphin-nogui.nacp"
 )
 

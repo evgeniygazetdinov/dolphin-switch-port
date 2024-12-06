@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "../../../Binaries/Tests/FixedSizeQueueTest.elf"
   "../../../Binaries/Tests/FixedSizeQueueTest.pdb"
   "CMakeFiles/FixedSizeQueueTest.dir/FixedSizeQueueTest.cpp.obj"
-  "CMakeFiles/FixedSizeQueueTest.dir/FixedSizeQueueTest.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.
