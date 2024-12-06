@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include "Common/FileUtil.h"
-
+#include <filesystem> // C++17
 #include <algorithm>
 #include <chrono>
 #include <cstddef>
@@ -988,6 +988,11 @@ bool ReadFileToString(const std::string& filename, std::string& str)
 
   str.resize(file.GetSize());
   return file.ReadArray(str.data(), str.size());
+}
+
+std::string GetExtension(const std::string& path)
+{
+  return std::filesystem::path(path).extension().string();
 }
 
 }  // namespace File

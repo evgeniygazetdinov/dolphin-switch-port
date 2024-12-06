@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj.d"
   "CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj"
   "CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj.d"
+  "CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj"
+  "CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj.d"
   "CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj"
   "CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj.d"
 )

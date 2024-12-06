@@ -41,17 +41,15 @@ bool SwitchUI::Initialize() {
 
 void SwitchUI::LoadGameList() {
     std::string game_dir = File::GetUserPath(D_GCUSER_IDX);
-    File::FSTEntry entry;
     
-    if (File::ScanDirectoryTree(game_dir, entry)) {
-        for (const auto& child : entry.children) {
-            if (child.isDirectory)
-                continue;
-                
-            std::string ext = File::GetExtension(child.virtualName);
-            if (ext == ".gcm" || ext == ".iso" || ext == ".wbfs" || ext == ".ciso" || ext == ".gcz") {
-                m_game_list.push_back(child.virtualName);
-            }
+    auto entry = File::ScanDirectoryTree(game_dir, true);
+    for (const auto& child : entry.children) {
+        if (child.isDirectory)
+            continue;
+            
+        std::string ext = File::GetExtension(child.virtualName);
+        if (ext == ".gcm" || ext == ".iso" || ext == ".wbfs" || ext == ".ciso" || ext == ".gcz") {
+            m_game_list.push_back(child.virtualName);
         }
     }
 }

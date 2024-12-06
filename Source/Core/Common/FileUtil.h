@@ -235,6 +235,10 @@ std::string GetBundleDirectory();
 std::string GetExePath();
 std::string GetExeDirectory();
 
+// Returns the file extension from a path (including the dot)
+// e.g. "/path/to/file.txt" -> ".txt"
+std::string GetExtension(const std::string& path);
+
 bool WriteStringToFile(const std::string& filename, std::string_view str);
 bool ReadFileToString(const std::string& filename, std::string& str);
 

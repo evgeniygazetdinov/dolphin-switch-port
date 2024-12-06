@@ -281,6 +281,30 @@ PlatformHeadless.cpp.s:
 	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.s
 .PHONY : PlatformHeadless.cpp.s
 
+SwitchHost.obj: SwitchHost.cpp.obj
+.PHONY : SwitchHost.obj
+
+# target to build an object file
+SwitchHost.cpp.obj:
+	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj
+.PHONY : SwitchHost.cpp.obj
+
+SwitchHost.i: SwitchHost.cpp.i
+.PHONY : SwitchHost.i
+
+# target to preprocess a source file
+SwitchHost.cpp.i:
+	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.i
+.PHONY : SwitchHost.cpp.i
+
+SwitchHost.s: SwitchHost.cpp.s
+.PHONY : SwitchHost.s
+
+# target to generate assembly for a file
+SwitchHost.cpp.s:
+	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.s
+.PHONY : SwitchHost.cpp.s
+
 SwitchUI.obj: SwitchUI.cpp.obj
 .PHONY : SwitchUI.obj
 
@@ -330,6 +354,9 @@ help:
 	@echo "... PlatformHeadless.obj"
 	@echo "... PlatformHeadless.i"
 	@echo "... PlatformHeadless.s"
+	@echo "... SwitchHost.obj"
+	@echo "... SwitchHost.i"
+	@echo "... SwitchHost.s"
 	@echo "... SwitchUI.obj"
 	@echo "... SwitchUI.i"
 	@echo "... SwitchUI.s"

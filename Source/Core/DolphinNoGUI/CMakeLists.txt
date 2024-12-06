@@ -5,6 +5,7 @@ add_executable(dolphin-nogui
   Main.cpp
   SwitchUI.cpp
   SwitchUI.h
+  SwitchHost.cpp
 )
 
 if(ENABLE_X11 AND X11_FOUND)

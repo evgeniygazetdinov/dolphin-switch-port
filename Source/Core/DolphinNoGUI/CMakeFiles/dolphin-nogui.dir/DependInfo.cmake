@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/Main.cpp" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj" "gcc" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj.d"
   "/home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/Platform.cpp" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj" "gcc" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj.d"
   "/home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/PlatformHeadless.cpp" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj" "gcc" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj.d"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/SwitchHost.cpp" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj" "gcc" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj.d"
   "/home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/SwitchUI.cpp" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj" "gcc" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj.d"
   )
 

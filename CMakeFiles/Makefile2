@@ -1045,12 +1045,12 @@ Externals/fmt/CMakeFiles/fmt.dir/clean:
 Externals/imgui/CMakeFiles/imgui.dir/all: Externals/fmt/CMakeFiles/fmt.dir/all
 	$(MAKE) $(MAKESILENT) -f Externals/imgui/CMakeFiles/imgui.dir/build.make Externals/imgui/CMakeFiles/imgui.dir/depend
 	$(MAKE) $(MAKESILENT) -f Externals/imgui/CMakeFiles/imgui.dir/build.make Externals/imgui/CMakeFiles/imgui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=54 "Built target imgui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num= "Built target imgui"
 .PHONY : Externals/imgui/CMakeFiles/imgui.dir/all
 
 # Build rule for subdir invocation for target.
 Externals/imgui/CMakeFiles/imgui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/imgui/CMakeFiles/imgui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
 .PHONY : Externals/imgui/CMakeFiles/imgui.dir/rule
@@ -1077,7 +1077,7 @@ Externals/implot/CMakeFiles/implot.dir/all: Externals/imgui/CMakeFiles/imgui.dir
 
 # Build rule for subdir invocation for target.
 Externals/implot/CMakeFiles/implot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/implot/CMakeFiles/implot.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
 .PHONY : Externals/implot/CMakeFiles/implot.dir/rule
@@ -1647,12 +1647,12 @@ Externals/mbedtls/library/CMakeFiles/lib.dir/clean:
 Externals/libiconv-1.14/CMakeFiles/iconv.dir/all:
 	$(MAKE) $(MAKESILENT) -f Externals/libiconv-1.14/CMakeFiles/iconv.dir/build.make Externals/libiconv-1.14/CMakeFiles/iconv.dir/depend
 	$(MAKE) $(MAKESILENT) -f Externals/libiconv-1.14/CMakeFiles/iconv.dir/build.make Externals/libiconv-1.14/CMakeFiles/iconv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num= "Built target iconv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=54 "Built target iconv"
 .PHONY : Externals/libiconv-1.14/CMakeFiles/iconv.dir/all
 
 # Build rule for subdir invocation for target.
 Externals/libiconv-1.14/CMakeFiles/iconv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/libiconv-1.14/CMakeFiles/iconv.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
 .PHONY : Externals/libiconv-1.14/CMakeFiles/iconv.dir/rule
@@ -1725,12 +1725,12 @@ Externals/rcheevos/CMakeFiles/rcheevos.dir/clean:
 Externals/gtest/googlemock/CMakeFiles/gmock.dir/all: Externals/gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f Externals/gtest/googlemock/CMakeFiles/gmock.dir/build.make Externals/gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f Externals/gtest/googlemock/CMakeFiles/gmock.dir/build.make Externals/gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num= "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=53 "Built target gmock"
 .PHONY : Externals/gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 Externals/gtest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/gtest/googlemock/CMakeFiles/gmock.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
 .PHONY : Externals/gtest/googlemock/CMakeFiles/gmock.dir/rule
@@ -1752,7 +1752,7 @@ Externals/gtest/googlemock/CMakeFiles/gmock_main.dir/all: Externals/gtest/google
 Externals/gtest/googlemock/CMakeFiles/gmock_main.dir/all: Externals/gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f Externals/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make Externals/gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f Externals/gtest/googlemock/CMakeFiles/gmock_main.dir/build.make Externals/gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=53 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num= "Built target gmock_main"
 .PHONY : Externals/gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1849,7 +1849,7 @@ Source/Core/AudioCommon/CMakeFiles/audiocommon.dir/all: Source/Core/Common/CMake
 
 # Build rule for subdir invocation for target.
 Source/Core/AudioCommon/CMakeFiles/audiocommon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Source/Core/AudioCommon/CMakeFiles/audiocommon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
 .PHONY : Source/Core/AudioCommon/CMakeFiles/audiocommon.dir/rule
@@ -1884,7 +1884,7 @@ Source/Core/Common/CMakeFiles/common.dir/all: Externals/FatFs/CMakeFiles/FatFs.d
 
 # Build rule for subdir invocation for target.
 Source/Core/Common/CMakeFiles/common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 21
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 22
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Source/Core/Common/CMakeFiles/common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
 .PHONY : Source/Core/Common/CMakeFiles/common.dir/rule
@@ -1972,7 +1972,7 @@ Source/Core/InputCommon/CMakeFiles/inputcommon.dir/all: Source/Core/Common/CMake
 
 # Build rule for subdir invocation for target.
 Source/Core/InputCommon/CMakeFiles/inputcommon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Source/Core/InputCommon/CMakeFiles/inputcommon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
 .PHONY : Source/Core/InputCommon/CMakeFiles/inputcommon.dir/rule
@@ -2010,7 +2010,7 @@ Source/Core/UICommon/CMakeFiles/uicommon.dir/all: Source/Core/Common/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 Source/Core/UICommon/CMakeFiles/uicommon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Source/Core/UICommon/CMakeFiles/uicommon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
 .PHONY : Source/Core/UICommon/CMakeFiles/uicommon.dir/rule
