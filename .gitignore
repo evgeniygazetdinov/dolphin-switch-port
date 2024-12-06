@@ -22,6 +22,8 @@ Source/Core/Common/scmrev.h
 *.tlog
 *.VC.opendb
 *.VC.db
+*.a
+*.s
 .vs*/
 /Source/enc_temp_folder/
 # Ignore build info file created by QtCreator
