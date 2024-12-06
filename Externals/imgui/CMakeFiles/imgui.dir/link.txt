@@ -1,2 +1,0 @@
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libimgui.a  CMakeFiles/imgui.dir/imgui.cpp.obj CMakeFiles/imgui.dir/imgui_draw.cpp.obj CMakeFiles/imgui.dir/imgui_tables.cpp.obj CMakeFiles/imgui.dir/imgui_widgets.cpp.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib libimgui.a

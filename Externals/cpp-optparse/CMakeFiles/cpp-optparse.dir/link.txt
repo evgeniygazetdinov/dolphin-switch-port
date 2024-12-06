@@ -1,2 +1,0 @@
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libcpp-optparse.a  CMakeFiles/cpp-optparse.dir/OptionParser.cpp.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib libcpp-optparse.a

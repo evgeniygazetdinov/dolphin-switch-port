@@ -1,2 +1,0 @@
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc liblzo2.a  CMakeFiles/lzo2.dir/minilzo.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib liblzo2.a
