@@ -41,3 +41,7 @@ CMakeLists.txt.user
 /.idea/
 # Ignore Visual Studio Code's working dir
 /.vscode/
+CMakeFiles/*
+Source/Core/DolphinNoGui/CMakeFiles/*
+Source/Core/DolphinNoGUI/**/.nro
+Source/Core/DolphinNoGUI/*/.nacp

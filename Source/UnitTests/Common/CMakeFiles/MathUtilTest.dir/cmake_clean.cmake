@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "../../../Binaries/Tests/MathUtilTest.elf"
   "../../../Binaries/Tests/MathUtilTest.pdb"
   "CMakeFiles/MathUtilTest.dir/MathUtilTest.cpp.obj"
-  "CMakeFiles/MathUtilTest.dir/MathUtilTest.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

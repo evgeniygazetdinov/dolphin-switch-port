@@ -5,6 +5,7 @@ add_executable(dolphin-nogui
   Main.cpp
   SwitchUI.cpp
   SwitchUI.h
+  SwitchHost.cpp
 )
 
 if(ENABLE_X11 AND X11_FOUND)
@@ -19,7 +20,7 @@ if(${CMAKE_SYSTEM_NAME} STREQUAL "Linux")
   target_sources(dolphin-nogui PRIVATE PlatformFBDev.cpp)
 endif()
 
-set_target_properties(dolphin-nogui PROPERTIES OUTPUT_NAME dolphin-emu-nogui)
+set_target_properties(dolphin-nogui PROPERTIES OUTPUT_NAME dolphin-emu)
 
 target_link_libraries(dolphin-nogui
 PRIVATE

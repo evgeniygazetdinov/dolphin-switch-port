@@ -1,5 +1,5 @@
 # Hashes of file build rules.
 1a33ef531399b4fa242e45c6a137477e Externals/mbedtls/library/CMakeFiles/lib
 ef252369524574e9994b4f17dc38a266 Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui_nro
-68f39ab170b4f5359f7c6dd9297c3b0f Source/Core/DolphinNoGUI/dolphin-emu-nogui.nro
-c7ada3f8a02c0236b2a18f02e86b9f52 Source/Core/DolphinNoGUI/dolphin-nogui.nacp
+aff0e853dd1c750342cc4f338f762fe7 Source/Core/DolphinNoGUI/dolphin-emu.nro
+54df33a2920aa7d97f6a9cd0d5c44bb5 Source/Core/DolphinNoGUI/dolphin-nogui.nacp

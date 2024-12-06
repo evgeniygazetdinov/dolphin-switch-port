@@ -324,6 +324,22 @@ Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj: \
  /home/ev/ClangProjects/dolphin-switch/Source/Core/Core/HW/Wiimote.h \
  /home/ev/ClangProjects/dolphin-switch/Source/Core/Core/Host.h \
  /home/ev/ClangProjects/dolphin-switch/Source/Core/Core/State.h \
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/UICommon/UICommon.h \
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/VideoCommon/VideoConfig.h \
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/VideoCommon/GraphicsModSystem/Config/GraphicsModGroup.h \
+ /home/ev/ClangProjects/dolphin-switch/Externals/picojson/picojson.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/iostream \
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/VideoCommon/VideoCommon.h \
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/Common/BitUtils.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/climits \
+ /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/limits.h \
+ /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/syslimits.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/limits.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/syslimits.h \
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/VideoCommon/BPMemory.h \
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/Common/BitField.h \
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/Common/EnumFormatter.h \
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/Core/System.h \
  /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/SwitchUI.h \
  /opt/devkitpro/portlibs/switch/include/SDL2/SDL.h \
  /opt/devkitpro/portlibs/switch/include/SDL2/SDL_main.h \
@@ -558,4 +574,5 @@ Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj: \
  /opt/devkitpro/libnx/include/switch/crypto/sha1.h \
  /opt/devkitpro/libnx/include/switch/crypto/hmac.h \
  /opt/devkitpro/libnx/include/switch/crypto/crc.h \
- /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/arm_acle.h
+ /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/arm_acle.h \
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/Common/WindowSystemInfo.h
