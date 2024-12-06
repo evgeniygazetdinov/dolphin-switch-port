@@ -1,0 +1,2 @@
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libFatFs.a CMakeFiles/FatFs.dir/ff.c.obj CMakeFiles/FatFs.dir/ffunicode.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib libFatFs.a

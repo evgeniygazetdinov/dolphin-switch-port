@@ -1,0 +1,29 @@
+Externals/rcheevos/CMakeFiles/rcheevos.dir/rcheevos/src/rcheevos/operand.c.obj: \
+ /home/ev/ClangProjects/dolphin-switch/Externals/rcheevos/rcheevos/src/rcheevos/operand.c \
+ /home/ev/ClangProjects/dolphin-switch/Externals/rcheevos/rcheevos/src/rcheevos/rc_internal.h \
+ /home/ev/ClangProjects/dolphin-switch/Externals/rcheevos/rcheevos/include/rc_runtime_types.h \
+ /home/ev/ClangProjects/dolphin-switch/Externals/rcheevos/rcheevos/include/rc_error.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdlib.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/ieeefp.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/newlib.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/_newlib_version.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/config.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/features.h \
+ /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stddef.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/reent.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/cdefs.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/_default_types.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_types.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/_types.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/lock.h \
+ /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stdint.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdint.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_intsup.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_stdint.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/stdlib.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/alloca.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/ctype.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_locale.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/math.h

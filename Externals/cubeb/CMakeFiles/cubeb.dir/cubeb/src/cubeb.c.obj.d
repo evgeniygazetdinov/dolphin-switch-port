@@ -1,0 +1,36 @@
+Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj: \
+ /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb.c \
+ /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/include/cubeb/cubeb.h \
+ /home/ev/ClangProjects/dolphin-switch/exports/cubeb_export.h \
+ /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stdint.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdint.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/_default_types.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/features.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/_newlib_version.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_intsup.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_stdint.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdlib.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/ieeefp.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/newlib.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/config.h \
+ /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stddef.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/reent.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/cdefs.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_types.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/_types.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/lock.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/stdlib.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/alloca.h \
+ /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb-internal.h \
+ /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_assert.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdio.h \
+ /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stdarg.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/stdio.h \
+ /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_log.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/string.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_locale.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/strings.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/string.h \
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/assert.h
