@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/dolphin-nogui.dir/Platform.o CMakeFiles/dolphin-nogui.dir/PlatformHeadless.o CMakeFiles/dolphin-nogui.dir/Main.o CMakeFiles/dolphin-nogui.dir/SwitchUI.o CMakeFiles/dolphin-nogui.dir/SwitchHost.o CMakeFiles/dolphin-nogui.dir/PlatformFBDev.o -o dolphin-emu-nogui  -lcore -luicommon -lcpp-optparse -lSDL2::SDL2 -lSDL2::SDL2main 

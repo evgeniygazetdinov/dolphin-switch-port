@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   ".git/HEAD"
-  ".git/refs/heads/master"
   "CMake/CCache.cmake"
   "CMake/CheckAndAddFlag.cmake"
   "CMake/CheckLib.cmake"

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/traversal_server.dir/TraversalServer.cpp.o -o traversal_server  libcommon.a -lenet -lfmt::fmt -lminizip-ng -lFatFs -lIconv::Iconv -ldl -lrt 

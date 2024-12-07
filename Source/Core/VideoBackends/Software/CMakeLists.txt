@@ -1,39 +1,4 @@
-add_library(videosoftware
-  Clipper.cpp
-  Clipper.h
-  CopyRegion.h
-  EfbCopy.cpp
-  EfbCopy.h
-  EfbInterface.cpp
-  EfbInterface.h
-  NativeVertexFormat.h
-  Rasterizer.cpp
-  Rasterizer.h
-  SetupUnit.cpp
-  SetupUnit.h
-  SWmain.cpp
-  SWBoundingBox.cpp
-  SWBoundingBox.h
-  SWGfx.cpp
-  SWGfx.h
-  SWOGLWindow.cpp
-  SWOGLWindow.h
-  SWRenderer.cpp
-  SWRenderer.h
-  SWTexture.cpp
-  SWTexture.h
-  SWVertexLoader.cpp
-  SWVertexLoader.h
-  Tev.cpp
-  Tev.h
-  TextureEncoder.cpp
-  TextureEncoder.h
-  TextureSampler.cpp
-  TextureSampler.h
-  TransformUnit.cpp
-  TransformUnit.h
-  Vec3.h
-  VideoBackend.h
+add_library(switch.h
 )
 
 target_link_libraries(videosoftware
@@ -44,5 +9,5 @@ PUBLIC
 
 if(MSVC)
   # Add precompiled header
-  target_link_libraries(videosoftware PRIVATE use_pch)
+  target_link_libraries( PRIVATE use_pch)
 endif()
