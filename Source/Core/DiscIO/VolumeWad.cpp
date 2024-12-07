@@ -24,6 +24,7 @@
 #include "Core/IOS/IOSC.h"
 #include "DiscIO/Blob.h"
 #include "DiscIO/Enums.h"
+#include "DiscIO/FileBlob.h"
 #include "DiscIO/Volume.h"
 #include "DiscIO/WiiSaveBanner.h"
 
@@ -340,16 +341,46 @@ const BlobReader& VolumeWAD::GetBlobReader() const
 
 std::array<u8, 20> VolumeWAD::GetSyncHash() const
 {
-  // We can skip hashing the contents since the TMD contains hashes of the contents.
-  // We specifically don't hash the ticket, since its console ID can differ without any problems.
-
   auto context = Common::SHA1::CreateContext();
 
+  // Hash TMD and opening banner since they contain most of the unique data
   AddTMDToSyncHash(context.get(), PARTITION_NONE);
-
   ReadAndAddToSyncHash(context.get(), m_opening_bnr_offset, m_opening_bnr_size, PARTITION_NONE);
 
   return context->Finish();
+}
+
+std::string VolumeWAD::GetPath() const
+{
+  const auto* file_blob = dynamic_cast<const FileBlob*>(&GetBlobReader());
+  if (file_blob)
+    return file_blob->GetFilename();
+  return "";
+}
+
+void VolumeWAD::AddTMDToSyncHash(Common::SHA1::Context* context, const Partition& partition) const
+{
+  const auto tmd = GetTMD(partition);
+  if (!tmd.IsValid())
+    return;
+
+  const std::vector<u8> tmd_bytes = tmd.GetBytes();
+  context->Update(tmd_bytes.data(), tmd_bytes.size());
+}
+
+void VolumeWAD::ReadAndAddToSyncHash(Common::SHA1::Context* context, u64 offset, u64 length,
+                                    const Partition& partition) const
+{
+  std::vector<u8> buffer(0x400000);  // 4MB
+  while (length > 0)
+  {
+    const size_t read_size = static_cast<size_t>(std::min<u64>(length, buffer.size()));
+    if (!Read(offset, read_size, buffer.data(), partition))
+      return;
+    context->Update(buffer.data(), read_size);
+    offset += read_size;
+    length -= read_size;
+  }
 }
 
 }  // namespace DiscIO

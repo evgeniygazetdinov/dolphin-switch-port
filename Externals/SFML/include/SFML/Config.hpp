@@ -46,6 +46,11 @@
         #define NOMINMAX
     #endif
 
+#elif defined(__SWITCH__)
+
+    // Nintendo Switch
+    #define SFML_SYSTEM_SWITCH
+
 #elif defined(__APPLE__) && defined(__MACH__)
 
     // Apple platform, see which one it is
@@ -98,12 +103,7 @@
 
     #endif
 
-	#elif defined(__SWITCH__)
-
-		// Nintendo Switch
-		#define SFML_SYSTEM_SWITCH
-
-	#else
+#else
 
     // Unsupported system
     #error This operating system is not supported by SFML library

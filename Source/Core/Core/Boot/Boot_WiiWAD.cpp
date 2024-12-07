@@ -32,12 +32,19 @@ bool CBoot::BootNANDTitle(Core::System& system, const u64 title_id)
   return es->LaunchTitle(title_id);
 }
 
-bool CBoot::Boot_WiiWAD(Core::System& system, const DiscIO::VolumeWAD& wad)
+bool CBoot::Boot_WiiWAD(Core::System& system, const std::string& filename)
 {
-  if (!WiiUtils::InstallWAD(*IOS::HLE::GetIOS(), wad, WiiUtils::InstallType::Temporary))
-  {
-    PanicAlertFmtT("Cannot boot this WAD because it could not be installed to the NAND.");
+  auto wad = DiscIO::CreateVolumeWADFromFilename(filename);
+  if (!wad)
     return false;
-  }
-  return BootNANDTitle(system, wad.GetTMD().GetTitleId());
+
+  // Install contents to NAND
+  if (!WiiUtils::InstallWAD(filename))
+    return false;
+
+  const auto title_id = wad->GetTitleID();
+  if (!title_id.has_value())
+    return false;
+
+  return BootNANDTitle(system, title_id.value());
 }

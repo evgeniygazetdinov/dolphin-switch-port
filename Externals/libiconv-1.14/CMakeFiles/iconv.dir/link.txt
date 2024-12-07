@@ -1,2 +1,2 @@
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libiconv.a  CMakeFiles/iconv.dir/lib/iconv.c.obj CMakeFiles/iconv.dir/lib/relocatable.c.obj CMakeFiles/iconv.dir/libcharset/lib/localcharset.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib libiconv.a
+/usr/bin/ar qc libiconv.a CMakeFiles/iconv.dir/lib/iconv.c.obj CMakeFiles/iconv.dir/lib/relocatable.c.obj CMakeFiles/iconv.dir/libcharset/lib/localcharset.c.obj
+/usr/bin/ranlib libiconv.a

@@ -1,2 +1,2 @@
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libxxhash.a  CMakeFiles/xxhash.dir/xxhash.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib libxxhash.a
+/usr/bin/ar qc libxxhash.a CMakeFiles/xxhash.dir/xxhash.c.obj
+/usr/bin/ranlib libxxhash.a

@@ -1,2 +1,2 @@
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libFreeSurround.a  CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib libFreeSurround.a
+/usr/bin/ar qc libFreeSurround.a CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj
+/usr/bin/ranlib libFreeSurround.a

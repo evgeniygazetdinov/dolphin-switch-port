@@ -143,13 +143,8 @@ public:
   // Size on disc (compressed size)
   virtual u64 GetRawSize() const = 0;
   virtual const BlobReader& GetBlobReader() const = 0;
-
-  // This hash is intended to be (but is not guaranteed to be):
-  // 1. Identical for discs with no differences that affect netplay/TAS sync
-  // 2. Different for discs with differences that affect netplay/TAS sync
-  // 3. Much faster than hashing the entire disc
-  // The way the hash is calculated may change with updates to Dolphin.
   virtual std::array<u8, 20> GetSyncHash() const = 0;
+  virtual std::string GetPath() const { return ""; }
 
 protected:
   template <u32 N>

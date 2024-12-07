@@ -1,5 +1,5 @@
-libdir=/opt/devkitpro/portlibs/switch/lib
-includedir=/opt/devkitpro/portlibs/switch/include
+libdir=/usr/local/lib
+includedir=/usr/local/include
 
 Name: gtest_main
 Description: GoogleTest (with main() function)

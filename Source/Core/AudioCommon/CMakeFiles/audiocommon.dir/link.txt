@@ -1,2 +1,2 @@
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libaudiocommon.a  CMakeFiles/audiocommon.dir/AudioCommon.cpp.obj CMakeFiles/audiocommon.dir/AudioStretcher.cpp.obj CMakeFiles/audiocommon.dir/CubebStream.cpp.obj CMakeFiles/audiocommon.dir/CubebUtils.cpp.obj CMakeFiles/audiocommon.dir/Mixer.cpp.obj CMakeFiles/audiocommon.dir/SurroundDecoder.cpp.obj CMakeFiles/audiocommon.dir/NullSoundStream.cpp.obj CMakeFiles/audiocommon.dir/WaveFile.cpp.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib libaudiocommon.a
+/usr/bin/ar qc libaudiocommon.a CMakeFiles/audiocommon.dir/AudioCommon.cpp.obj CMakeFiles/audiocommon.dir/AudioStretcher.cpp.obj CMakeFiles/audiocommon.dir/CubebStream.cpp.obj CMakeFiles/audiocommon.dir/CubebUtils.cpp.obj CMakeFiles/audiocommon.dir/Mixer.cpp.obj CMakeFiles/audiocommon.dir/SurroundDecoder.cpp.obj CMakeFiles/audiocommon.dir/NullSoundStream.cpp.obj CMakeFiles/audiocommon.dir/WaveFile.cpp.obj
+/usr/bin/ranlib libaudiocommon.a

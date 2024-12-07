@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "../../../Binaries/Tests/SwapTest.elf"
   "../../../Binaries/Tests/SwapTest.pdb"
   "CMakeFiles/SwapTest.dir/SwapTest.cpp.obj"
+  "CMakeFiles/SwapTest.dir/SwapTest.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "../../../Binaries/Tests/BusyLoopTest.elf"
   "../../../Binaries/Tests/BusyLoopTest.pdb"
   "CMakeFiles/BusyLoopTest.dir/BusyLoopTest.cpp.obj"
+  "CMakeFiles/BusyLoopTest.dir/BusyLoopTest.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

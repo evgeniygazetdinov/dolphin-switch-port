@@ -1,2 +1,2 @@
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libvideonull.a  CMakeFiles/videonull.dir/NullBackend.cpp.obj CMakeFiles/videonull.dir/NullGfx.cpp.obj CMakeFiles/videonull.dir/NullTexture.cpp.obj CMakeFiles/videonull.dir/NullVertexManager.cpp.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib libvideonull.a
+/usr/bin/ar qc libvideonull.a CMakeFiles/videonull.dir/NullBackend.cpp.obj CMakeFiles/videonull.dir/NullGfx.cpp.obj CMakeFiles/videonull.dir/NullTexture.cpp.obj CMakeFiles/videonull.dir/NullVertexManager.cpp.obj
+/usr/bin/ranlib libvideonull.a

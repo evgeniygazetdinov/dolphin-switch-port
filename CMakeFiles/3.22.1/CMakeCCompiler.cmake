@@ -21,11 +21,11 @@ set(CMAKE_C_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar")
-set(CMAKE_C_COMPILER_AR "/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar")
-set(CMAKE_RANLIB "/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib")
-set(CMAKE_C_COMPILER_RANLIB "/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib")
-set(CMAKE_LINKER "/opt/devkitpro/devkitA64/bin/aarch64-none-elf-ld")
+set(CMAKE_AR "/usr/bin/ar")
+set(CMAKE_C_COMPILER_AR "/usr/bin/gcc-ar-11")
+set(CMAKE_RANLIB "/usr/bin/ranlib")
+set(CMAKE_C_COMPILER_RANLIB "/usr/bin/gcc-ranlib-11")
+set(CMAKE_LINKER "/usr/bin/ld")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCC 1)
 set(CMAKE_C_COMPILER_LOADED 1)
@@ -68,5 +68,5 @@ endif()
 
 set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include;/opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include-fixed;/opt/devkitpro/devkitA64/aarch64-none-elf/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "nx;m;gcc;c;sysbase")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/opt/devkitpro/libnx/lib;/opt/devkitpro/portlibs/switch/lib;/opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/pic;/opt/devkitpro/devkitA64/aarch64-none-elf/lib/pic;/opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0;/opt/devkitpro/devkitA64/lib/gcc;/opt/devkitpro/devkitA64/aarch64-none-elf/lib")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/opt/devkitpro/libnx/lib;/opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0;/opt/devkitpro/devkitA64/lib/gcc;/opt/devkitpro/devkitA64/aarch64-none-elf/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

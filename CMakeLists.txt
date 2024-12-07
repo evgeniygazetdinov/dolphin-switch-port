@@ -526,6 +526,8 @@ if(NINTENDO_SWITCH)
   set(ENABLE_QT 0)
   set(ENABLE_VULKAN 0)
   set(USE_DISCORD_PRESENCE 0)
+  find_package(libnx REQUIRED)
+  add_definitions(-D__SWITCH__)
   find_package(SDL2 REQUIRED)
   # We are cross compiling, search only the toolchain for libraries and includes
   SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
@@ -634,7 +636,9 @@ if(OPROFILING)
 endif()
 
 if(ENABLE_EVDEV)
-  find_package(LIBUDEV REQUIRED)
+  if(NOT NINTENDO_SWITCH)
+    find_package(LIBUDEV REQUIRED)
+  endif()
   find_package(LIBEVDEV REQUIRED)
   if(LIBUDEV_FOUND AND LIBEVDEV_FOUND)
     message(STATUS "libevdev/libudev found, enabling evdev controller backend")
@@ -1092,3 +1096,8 @@ list(APPEND CPACK_SOURCE_IGNORE_FILES "${CMAKE_BINARY_DIR}")
 # CPack must be included after the CPACK_* variables are set in order for those
 # variables to take effect.
 Include(CPack)
+
+if(CMAKE_SYSTEM_NAME STREQUAL "NintendoSwitch")
+    add_definitions(-D__SWITCH__)
+    message(STATUS "Building for Nintendo Switch")
+endif()

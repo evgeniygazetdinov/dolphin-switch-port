@@ -40,6 +40,26 @@ if(USE_DISCORD_PRESENCE)
   target_compile_definitions(dolphin-nogui PRIVATE -DUSE_DISCORD_PRESENCE)
 endif()
 
+if(NINTENDO_SWITCH)
+  target_include_directories(dolphin-nogui PRIVATE ${LIBNX_INCLUDE_DIR})
+  target_link_libraries(dolphin-nogui
+  PRIVATE
+    ${LIBNX_LIBRARY}
+  )
+  target_link_options(dolphin-nogui
+  PRIVATE
+    -specs=${DEVKITPRO}/libnx/switch.specs
+    -L${DEVKITPRO}/libnx/lib
+    -z text
+    -fPIE
+    -pie
+  )
+  target_compile_options(dolphin-nogui
+  PRIVATE
+    -fPIE
+  )
+endif()
+
 set(CPACK_PACKAGE_EXECUTABLES ${CPACK_PACKAGE_EXECUTABLES} dolphin-nogui)
 install(TARGETS dolphin-nogui RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 

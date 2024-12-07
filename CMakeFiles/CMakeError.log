@@ -1,31 +1,283 @@
 Performing C SOURCE FILE Test FLAG_C_VISIBILITY_INLINES_HIDDEN failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_32b08/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_32b08.dir/build.make CMakeFiles/cmTC_32b08.dir/build
-gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_32b08.dir/src.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -DFLAG_C_VISIBILITY_INLINES_HIDDEN -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__  -O3 -DNDEBUG -fPIE   -Werror -fvisibility-inlines-hidden -o CMakeFiles/cmTC_32b08.dir/src.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/src.c
+Run Build Command(s):/usr/bin/gmake cmTC_222e1/fast && gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+/usr/bin/gmake -f CMakeFiles/cmTC_222e1.dir/build.make CMakeFiles/cmTC_222e1.dir/build
+gmake[2]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_222e1.dir/src.c.o
+/usr/bin/cc   -DFLAG_C_VISIBILITY_INLINES_HIDDEN   -Werror -fvisibility-inlines-hidden -o CMakeFiles/cmTC_222e1.dir/src.c.o   -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/src.c
 cc1: error: command-line option '-fvisibility-inlines-hidden' is valid for C++/ObjC++ but not for C [-Werror]
 cc1: all warnings being treated as errors
-gmake[1]: *** [CMakeFiles/cmTC_32b08.dir/build.make:78: CMakeFiles/cmTC_32b08.dir/src.c.obj] Error 1
+gmake[2]: *** [CMakeFiles/cmTC_222e1.dir/build.make:66: CMakeFiles/cmTC_222e1.dir/src.c.o] Error 1
+gmake[2]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:121: cmTC_222e1/fast] Error 2
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_32b08/fast] Error 2
 
 
 Source file was:
 int main(void) { return 0; }
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5832f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5832f.dir/build.make CMakeFiles/cmTC_5832f.dir/build
+gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5832f.dir/CMakeCCompilerABI.c.obj
+/usr/bin/cc  -isystem /opt/devkitpro/libnx/include -O3 -DNDEBUG -fPIE   -v -o CMakeFiles/cmTC_5832f.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+COLLECT_GCC_OPTIONS='-isystem' '/opt/devkitpro/libnx/include' '-O3' '-D' 'NDEBUG' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_5832f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5832f.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D NDEBUG -isystem /opt/devkitpro/libnx/include /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_5832f.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -O3 -version -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccmqMiFL.s
+GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/devkitpro/libnx/include
+ /usr/lib/gcc/x86_64-linux-gnu/11/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
+COLLECT_GCC_OPTIONS='-isystem' '/opt/devkitpro/libnx/include' '-O3' '-D' 'NDEBUG' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_5832f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5832f.dir/'
+ as -v --64 -o CMakeFiles/cmTC_5832f.dir/CMakeCCompilerABI.c.obj /tmp/ccmqMiFL.s
+GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-isystem' '/opt/devkitpro/libnx/include' '-O3' '-D' 'NDEBUG' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_5832f.dir/CMakeCCompilerABI.c.obj' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_5832f.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_5832f.elf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5832f.dir/link.txt --verbose=1
+/usr/bin/cc -O3 -DNDEBUG  -v CMakeFiles/cmTC_5832f.dir/CMakeCCompilerABI.c.obj -o cmTC_5832f.elf  -lnx -lm 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-O3' '-D' 'NDEBUG' '-v' '-o' 'cmTC_5832f.elf' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_5832f.elf.'
+ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyukZ8S.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_5832f.elf /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_5832f.dir/CMakeCCompilerABI.c.obj -lnx -lm -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+/usr/bin/ld: cannot find -lnx: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_5832f.dir/build.make:99: cmTC_5832f.elf] Error 1
+gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_5832f/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_05cb1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_05cb1.dir/build.make CMakeFiles/cmTC_05cb1.dir/build
+gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_05cb1.dir/testCCompiler.c.obj
+/usr/bin/cc  -isystem /opt/devkitpro/libnx/include -O3 -DNDEBUG -fPIE -o CMakeFiles/cmTC_05cb1.dir/testCCompiler.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_05cb1.elf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_05cb1.dir/link.txt --verbose=1
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/cmTC_05cb1.dir/testCCompiler.c.obj -o cmTC_05cb1.elf  -lnx -lm 
+/usr/bin/ld: cannot find -lnx: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_05cb1.dir/build.make:99: cmTC_05cb1.elf] Error 1
+gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_05cb1/fast] Error 2
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_46836/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_46836.dir/build.make CMakeFiles/cmTC_46836.dir/build
+gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_46836.dir/CMakeCCompilerABI.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -O3 -DNDEBUG -fPIE   -v -o CMakeFiles/cmTC_46836.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc
+Target: aarch64-none-elf
+Configured with: ../../gcc-14.2.0/configure --enable-languages=c,c++,objc,lto --with-gnu-as --with-gnu-ld --with-gcc --with-march=armv8 --enable-cxx-flags=-ffunction-sections --disable-libstdcxx-verbose --enable-poison-system-directories --enable-multilib --enable-threads --disable-win32-registry --disable-nls --disable-debug --disable-libmudflap --disable-libssp --disable-libgomp --disable-libstdcxx-pch --enable-libstdcxx-time --enable-libstdcxx-filesystem-ts --target=aarch64-none-elf --with-newlib=yes --with-headers=../../newlib-4.4.0.20231231/newlib/libc/include --prefix=/home/davem/projects/devkitpro/tool-packages/devkitA64/src/build/x86_64-linux-gnu/devkitA64 --enable-lto --disable-tm-clone-registry --disable-__cxa_atexit --with-bugurl=https://github.com/devkitPro/buildscripts/issues --with-pkgversion='devkitA64 release 27' --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --with-gmp= --with-mpfr= --with-mpc= --with-isl= --with-zstd= --with-gmp=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-mpfr=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-mpc=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-isl=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-zstd=/opt/devkitpro/crosstools/x86_64-linux-gnu
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 14.2.0 (devkitA64 release 27) 
+COLLECT_GCC_OPTIONS='-isystem' '/opt/devkitpro/libnx/include' '-O3' '-D' 'NDEBUG' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_46836.dir/CMakeCCompilerABI.c.obj' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_46836.dir/'
+ /opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/cc1 -quiet -v -imultilib pic -iprefix /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/ -D NDEBUG -isystem /opt/devkitpro/libnx/include /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_46836.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -O3 -version -fPIE -o /tmp/cckckjDs.s
+GNU C17 (devkitA64 release 27) version 14.2.0 (aarch64-none-elf)
+	compiled by GNU C version 10.2.1 20210110, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/sys-include"
+ignoring duplicate directory "/opt/devkitpro/devkitA64/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.0/include"
+ignoring duplicate directory "/opt/devkitpro/devkitA64/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.0/include-fixed"
+ignoring nonexistent directory "/opt/devkitpro/devkitA64/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/sys-include"
+ignoring duplicate directory "/opt/devkitpro/devkitA64/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/devkitpro/libnx/include
+ /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/include
+ /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/include-fixed
+ /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/include
+End of search list.
+Compiler executable checksum: 440149c145057efe8a715401a7e19303
+COLLECT_GCC_OPTIONS='-isystem' '/opt/devkitpro/libnx/include' '-O3' '-D' 'NDEBUG' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_46836.dir/CMakeCCompilerABI.c.obj' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_46836.dir/'
+ /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_46836.dir/CMakeCCompilerABI.c.obj /tmp/cckckjDs.s
+GNU assembler version 2.43.1 (aarch64-none-elf) using BFD version (GNU Binutils) 2.43.1
+COMPILER_PATH=/opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/:/opt/devkitpro/devkitA64/bin/../libexec/gcc/:/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/
+LIBRARY_PATH=/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/pic/:/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/lib/pic/:/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/:/opt/devkitpro/devkitA64/bin/../lib/gcc/:/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/lib/
+COLLECT_GCC_OPTIONS='-isystem' '/opt/devkitpro/libnx/include' '-O3' '-D' 'NDEBUG' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_46836.dir/CMakeCCompilerABI.c.obj' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_46836.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_46836.elf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46836.dir/link.txt --verbose=1
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -O3 -DNDEBUG  -v CMakeFiles/cmTC_46836.dir/CMakeCCompilerABI.c.obj -o cmTC_46836.elf  -lnx -lm 
+Using built-in specs.
+COLLECT_GCC=/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc
+COLLECT_LTO_WRAPPER=/opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/lto-wrapper
+Target: aarch64-none-elf
+Configured with: ../../gcc-14.2.0/configure --enable-languages=c,c++,objc,lto --with-gnu-as --with-gnu-ld --with-gcc --with-march=armv8 --enable-cxx-flags=-ffunction-sections --disable-libstdcxx-verbose --enable-poison-system-directories --enable-multilib --enable-threads --disable-win32-registry --disable-nls --disable-debug --disable-libmudflap --disable-libssp --disable-libgomp --disable-libstdcxx-pch --enable-libstdcxx-time --enable-libstdcxx-filesystem-ts --target=aarch64-none-elf --with-newlib=yes --with-headers=../../newlib-4.4.0.20231231/newlib/libc/include --prefix=/home/davem/projects/devkitpro/tool-packages/devkitA64/src/build/x86_64-linux-gnu/devkitA64 --enable-lto --disable-tm-clone-registry --disable-__cxa_atexit --with-bugurl=https://github.com/devkitPro/buildscripts/issues --with-pkgversion='devkitA64 release 27' --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --with-gmp= --with-mpfr= --with-mpc= --with-isl= --with-zstd= --with-gmp=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-mpfr=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-mpc=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-isl=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-zstd=/opt/devkitpro/crosstools/x86_64-linux-gnu
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 14.2.0 (devkitA64 release 27) 
+COMPILER_PATH=/opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/:/opt/devkitpro/devkitA64/bin/../libexec/gcc/:/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/
+LIBRARY_PATH=/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/:/opt/devkitpro/devkitA64/bin/../lib/gcc/:/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/lib/
+COLLECT_GCC_OPTIONS='-O3' '-D' 'NDEBUG' '-v' '-o' 'cmTC_46836.elf' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_46836.elf.'
+ /opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/collect2 -plugin /opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/liblto_plugin.so -plugin-opt=/opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCyi4gr.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lsysbase -EL -X -maarch64elf -o cmTC_46836.elf /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/crti.o /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/crtbegin.o /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/lib/crt0.o -L/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0 -L/opt/devkitpro/devkitA64/bin/../lib/gcc -L/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/lib CMakeFiles/cmTC_46836.dir/CMakeCCompilerABI.c.obj -lnx -lm --start-group -lgcc -lc -lsysbase --end-group /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/crtend.o /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/crtn.o
+/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/ld: cannot find -lnx: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_46836.dir/build.make:99: cmTC_46836.elf] Error 1
+gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_46836/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f15dd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f15dd.dir/build.make CMakeFiles/cmTC_f15dd.dir/build
+gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f15dd.dir/testCCompiler.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -O3 -DNDEBUG -fPIE -o CMakeFiles/cmTC_f15dd.dir/testCCompiler.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_f15dd.elf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f15dd.dir/link.txt --verbose=1
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -O3 -DNDEBUG CMakeFiles/cmTC_f15dd.dir/testCCompiler.c.obj -o cmTC_f15dd.elf  -lnx -lm 
+/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/ld: cannot find -lnx: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_f15dd.dir/build.make:99: cmTC_f15dd.elf] Error 1
+gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_f15dd/fast] Error 2
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b5c96/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b5c96.dir/build.make CMakeFiles/cmTC_b5c96.dir/build
+gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b5c96.dir/CMakeCCompilerABI.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -O3 -DNDEBUG -fPIE   -v -o CMakeFiles/cmTC_b5c96.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc
+Target: aarch64-none-elf
+Configured with: ../../gcc-14.2.0/configure --enable-languages=c,c++,objc,lto --with-gnu-as --with-gnu-ld --with-gcc --with-march=armv8 --enable-cxx-flags=-ffunction-sections --disable-libstdcxx-verbose --enable-poison-system-directories --enable-multilib --enable-threads --disable-win32-registry --disable-nls --disable-debug --disable-libmudflap --disable-libssp --disable-libgomp --disable-libstdcxx-pch --enable-libstdcxx-time --enable-libstdcxx-filesystem-ts --target=aarch64-none-elf --with-newlib=yes --with-headers=../../newlib-4.4.0.20231231/newlib/libc/include --prefix=/home/davem/projects/devkitpro/tool-packages/devkitA64/src/build/x86_64-linux-gnu/devkitA64 --enable-lto --disable-tm-clone-registry --disable-__cxa_atexit --with-bugurl=https://github.com/devkitPro/buildscripts/issues --with-pkgversion='devkitA64 release 27' --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --with-gmp= --with-mpfr= --with-mpc= --with-isl= --with-zstd= --with-gmp=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-mpfr=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-mpc=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-isl=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-zstd=/opt/devkitpro/crosstools/x86_64-linux-gnu
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 14.2.0 (devkitA64 release 27) 
+COLLECT_GCC_OPTIONS='-isystem' '/opt/devkitpro/libnx/include' '-O3' '-D' 'NDEBUG' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_b5c96.dir/CMakeCCompilerABI.c.obj' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_b5c96.dir/'
+ /opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/cc1 -quiet -v -imultilib pic -iprefix /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/ -D NDEBUG -isystem /opt/devkitpro/libnx/include /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b5c96.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mlittle-endian -mabi=lp64 -O3 -version -fPIE -o /tmp/ccfucZEu.s
+GNU C17 (devkitA64 release 27) version 14.2.0 (aarch64-none-elf)
+	compiled by GNU C version 10.2.1 20210110, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/sys-include"
+ignoring duplicate directory "/opt/devkitpro/devkitA64/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.0/include"
+ignoring duplicate directory "/opt/devkitpro/devkitA64/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.0/include-fixed"
+ignoring nonexistent directory "/opt/devkitpro/devkitA64/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/sys-include"
+ignoring duplicate directory "/opt/devkitpro/devkitA64/bin/../lib/gcc/../../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/devkitpro/libnx/include
+ /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/include
+ /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/include-fixed
+ /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/include
+End of search list.
+Compiler executable checksum: 440149c145057efe8a715401a7e19303
+COLLECT_GCC_OPTIONS='-isystem' '/opt/devkitpro/libnx/include' '-O3' '-D' 'NDEBUG' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_b5c96.dir/CMakeCCompilerABI.c.obj' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_b5c96.dir/'
+ /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_b5c96.dir/CMakeCCompilerABI.c.obj /tmp/ccfucZEu.s
+GNU assembler version 2.43.1 (aarch64-none-elf) using BFD version (GNU Binutils) 2.43.1
+COMPILER_PATH=/opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/:/opt/devkitpro/devkitA64/bin/../libexec/gcc/:/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/
+LIBRARY_PATH=/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/pic/:/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/lib/pic/:/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/:/opt/devkitpro/devkitA64/bin/../lib/gcc/:/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/lib/
+COLLECT_GCC_OPTIONS='-isystem' '/opt/devkitpro/libnx/include' '-O3' '-D' 'NDEBUG' '-fPIE' '-v' '-o' 'CMakeFiles/cmTC_b5c96.dir/CMakeCCompilerABI.c.obj' '-c' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'CMakeFiles/cmTC_b5c96.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_b5c96.elf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5c96.dir/link.txt --verbose=1
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -O3 -DNDEBUG  -v CMakeFiles/cmTC_b5c96.dir/CMakeCCompilerABI.c.obj -o cmTC_b5c96.elf  -lnx -lm 
+Using built-in specs.
+COLLECT_GCC=/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc
+COLLECT_LTO_WRAPPER=/opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/lto-wrapper
+Target: aarch64-none-elf
+Configured with: ../../gcc-14.2.0/configure --enable-languages=c,c++,objc,lto --with-gnu-as --with-gnu-ld --with-gcc --with-march=armv8 --enable-cxx-flags=-ffunction-sections --disable-libstdcxx-verbose --enable-poison-system-directories --enable-multilib --enable-threads --disable-win32-registry --disable-nls --disable-debug --disable-libmudflap --disable-libssp --disable-libgomp --disable-libstdcxx-pch --enable-libstdcxx-time --enable-libstdcxx-filesystem-ts --target=aarch64-none-elf --with-newlib=yes --with-headers=../../newlib-4.4.0.20231231/newlib/libc/include --prefix=/home/davem/projects/devkitpro/tool-packages/devkitA64/src/build/x86_64-linux-gnu/devkitA64 --enable-lto --disable-tm-clone-registry --disable-__cxa_atexit --with-bugurl=https://github.com/devkitPro/buildscripts/issues --with-pkgversion='devkitA64 release 27' --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --with-gmp= --with-mpfr= --with-mpc= --with-isl= --with-zstd= --with-gmp=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-mpfr=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-mpc=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-isl=/opt/devkitpro/crosstools/x86_64-linux-gnu --with-zstd=/opt/devkitpro/crosstools/x86_64-linux-gnu
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 14.2.0 (devkitA64 release 27) 
+COMPILER_PATH=/opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/:/opt/devkitpro/devkitA64/bin/../libexec/gcc/:/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/
+LIBRARY_PATH=/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/:/opt/devkitpro/devkitA64/bin/../lib/gcc/:/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/lib/
+COLLECT_GCC_OPTIONS='-O3' '-D' 'NDEBUG' '-v' '-o' 'cmTC_b5c96.elf' '-mlittle-endian' '-mabi=lp64' '-dumpdir' 'cmTC_b5c96.elf.'
+ /opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/collect2 -plugin /opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/liblto_plugin.so -plugin-opt=/opt/devkitpro/devkitA64/bin/../libexec/gcc/aarch64-none-elf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccQPt9gM.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lsysbase -EL -X -maarch64elf -o cmTC_b5c96.elf /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/crti.o /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/crtbegin.o /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/lib/crt0.o -L/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0 -L/opt/devkitpro/devkitA64/bin/../lib/gcc -L/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/lib CMakeFiles/cmTC_b5c96.dir/CMakeCCompilerABI.c.obj -lnx -lm --start-group -lgcc -lc -lsysbase --end-group /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/crtend.o /opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/crtn.o
+/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/ld: cannot find -lnx: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_b5c96.dir/build.make:99: cmTC_b5c96.elf] Error 1
+gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_b5c96/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_22b0c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_22b0c.dir/build.make CMakeFiles/cmTC_22b0c.dir/build
+gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_22b0c.dir/testCCompiler.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -O3 -DNDEBUG -fPIE -o CMakeFiles/cmTC_22b0c.dir/testCCompiler.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_22b0c.elf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22b0c.dir/link.txt --verbose=1
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -O3 -DNDEBUG CMakeFiles/cmTC_22b0c.dir/testCCompiler.c.obj -o cmTC_22b0c.elf  -lnx -lm 
+/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/ld: cannot find -lnx: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_22b0c.dir/build.make:99: cmTC_22b0c.elf] Error 1
+gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_22b0c/fast] Error 2
+
+
+
 Performing C SOURCE FILE Test FLAG_C_CXX11 failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_87a19/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_87a19.dir/build.make CMakeFiles/cmTC_87a19.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b8c01/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b8c01.dir/build.make CMakeFiles/cmTC_b8c01.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_87a19.dir/src.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -DFLAG_C_CXX11 -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__  -O3 -DNDEBUG -fPIE   -Werror -std=c++11 -o CMakeFiles/cmTC_87a19.dir/src.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/src.c
+Building C object CMakeFiles/cmTC_b8c01.dir/src.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -DFLAG_C_CXX11 -isystem /opt/devkitpro/libnx/include -O3 -DNDEBUG -fPIE   -Werror -std=c++11 -o CMakeFiles/cmTC_b8c01.dir/src.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/src.c
 cc1: error: command-line option '-std=c++11' is valid for C++/ObjC++ but not for C [-Werror]
 cc1: all warnings being treated as errors
-gmake[1]: *** [CMakeFiles/cmTC_87a19.dir/build.make:78: CMakeFiles/cmTC_87a19.dir/src.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_b8c01.dir/build.make:78: CMakeFiles/cmTC_b8c01.dir/src.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_87a19/fast] Error 2
+gmake: *** [Makefile:127: cmTC_b8c01/fast] Error 2
 
 
 Source file was:
@@ -33,57 +285,57 @@ int main(void) { return 0; }
 Determining if the function gethostbyname_r exists failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_75c21/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_75c21.dir/build.make CMakeFiles/cmTC_75c21.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b2bf5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b2bf5.dir/build.make CMakeFiles/cmTC_b2bf5.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_75c21.dir/CheckFunctionExists.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -DCHECK_FUNCTION_EXISTS=gethostbyname_r -O3 -DNDEBUG -fPIE -o CMakeFiles/cmTC_75c21.dir/CheckFunctionExists.c.obj -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
-Linking C executable cmTC_75c21.elf
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_75c21.dir/link.txt --verbose=1
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -DCHECK_FUNCTION_EXISTS=gethostbyname_r -O3 -DNDEBUG -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -L/opt/devkitpro/libnx/lib -L/opt/devkitpro/portlibs/switch/lib -fPIE -specs=/opt/devkitpro/libnx/switch.specs  CMakeFiles/cmTC_75c21.dir/CheckFunctionExists.c.obj -o cmTC_75c21.elf  -lnx -lm 
-/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/ld: CMakeFiles/cmTC_75c21.dir/CheckFunctionExists.c.obj: in function `main':
-CheckFunctionExists.c:(.text.startup.main+0x14): undefined reference to `gethostbyname_r'
+Building C object CMakeFiles/cmTC_b2bf5.dir/CheckFunctionExists.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -DCHECK_FUNCTION_EXISTS=gethostbyname_r -O3 -DNDEBUG -fPIE -o CMakeFiles/cmTC_b2bf5.dir/CheckFunctionExists.c.obj -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b2bf5.elf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2bf5.dir/link.txt --verbose=1
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -DCHECK_FUNCTION_EXISTS=gethostbyname_r -O3 -DNDEBUG -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -L/opt/devkitpro/libnx/lib -L/opt/devkitpro/portlibs/switch/lib -fPIE -specs=/opt/devkitpro/libnx/switch.specs  CMakeFiles/cmTC_b2bf5.dir/CheckFunctionExists.c.obj -o cmTC_b2bf5.elf  -lnx -lm 
+/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/ld: CMakeFiles/cmTC_b2bf5.dir/CheckFunctionExists.c.obj: in function `main':
+CheckFunctionExists.c:(.text.startup+0x14): undefined reference to `gethostbyname_r'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_75c21.dir/build.make:99: cmTC_75c21.elf] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_b2bf5.dir/build.make:99: cmTC_b2bf5.elf] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_75c21/fast] Error 2
+gmake: *** [Makefile:127: cmTC_b2bf5/fast] Error 2
 
 
 
 Determining if the function gethostbyaddr_r exists failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e5232/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e5232.dir/build.make CMakeFiles/cmTC_e5232.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5013e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5013e.dir/build.make CMakeFiles/cmTC_5013e.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e5232.dir/CheckFunctionExists.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -DCHECK_FUNCTION_EXISTS=gethostbyaddr_r -O3 -DNDEBUG -fPIE -o CMakeFiles/cmTC_e5232.dir/CheckFunctionExists.c.obj -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
-Linking C executable cmTC_e5232.elf
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5232.dir/link.txt --verbose=1
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -DCHECK_FUNCTION_EXISTS=gethostbyaddr_r -O3 -DNDEBUG -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -L/opt/devkitpro/libnx/lib -L/opt/devkitpro/portlibs/switch/lib -fPIE -specs=/opt/devkitpro/libnx/switch.specs  CMakeFiles/cmTC_e5232.dir/CheckFunctionExists.c.obj -o cmTC_e5232.elf  -lnx -lm 
-/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/ld: CMakeFiles/cmTC_e5232.dir/CheckFunctionExists.c.obj: in function `main':
-CheckFunctionExists.c:(.text.startup.main+0x14): undefined reference to `gethostbyaddr_r'
+Building C object CMakeFiles/cmTC_5013e.dir/CheckFunctionExists.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -DCHECK_FUNCTION_EXISTS=gethostbyaddr_r -O3 -DNDEBUG -fPIE -o CMakeFiles/cmTC_5013e.dir/CheckFunctionExists.c.obj -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_5013e.elf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5013e.dir/link.txt --verbose=1
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -DCHECK_FUNCTION_EXISTS=gethostbyaddr_r -O3 -DNDEBUG -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -L/opt/devkitpro/libnx/lib -L/opt/devkitpro/portlibs/switch/lib -fPIE -specs=/opt/devkitpro/libnx/switch.specs  CMakeFiles/cmTC_5013e.dir/CheckFunctionExists.c.obj -o cmTC_5013e.elf  -lnx -lm 
+/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/ld: CMakeFiles/cmTC_5013e.dir/CheckFunctionExists.c.obj: in function `main':
+CheckFunctionExists.c:(.text.startup+0x14): undefined reference to `gethostbyaddr_r'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_e5232.dir/build.make:99: cmTC_e5232.elf] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_5013e.dir/build.make:99: cmTC_5013e.elf] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_e5232/fast] Error 2
+gmake: *** [Makefile:127: cmTC_5013e/fast] Error 2
 
 
 
 Determining size of off64_t failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e5ae5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e5ae5.dir/build.make CMakeFiles/cmTC_e5ae5.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5cb61/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5cb61.dir/build.make CMakeFiles/cmTC_5cb61.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_e5ae5.dir/OFF64_T.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1 -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__  -O3 -DNDEBUG -fPIE -o CMakeFiles/cmTC_e5ae5.dir/OFF64_T.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckTypeSize/OFF64_T.c
+Building C object CMakeFiles/cmTC_5cb61.dir/OFF64_T.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1 -isystem /opt/devkitpro/libnx/include -O3 -DNDEBUG -fPIE -o CMakeFiles/cmTC_5cb61.dir/OFF64_T.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckTypeSize/OFF64_T.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckTypeSize/OFF64_T.c:27:22: error: 'off64_t' undeclared here (not in a function); did you mean '_off64_t'?
    27 | #define SIZE (sizeof(off64_t))
       |                      ^~~~~~~
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckTypeSize/OFF64_T.c:29:12: note: in expansion of macro 'SIZE'
    29 |   ('0' + ((SIZE / 10000)%10)),
       |            ^~~~
-gmake[1]: *** [CMakeFiles/cmTC_e5ae5.dir/build.make:78: CMakeFiles/cmTC_e5ae5.dir/OFF64_T.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_5cb61.dir/build.make:78: CMakeFiles/cmTC_5cb61.dir/OFF64_T.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_e5ae5/fast] Error 2
+gmake: *** [Makefile:127: cmTC_5cb61/fast] Error 2
 
 
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckTypeSize/OFF64_T.c:
@@ -142,74 +394,74 @@ int main(int argc, char *argv[])
 Determining if the include file sys/auxv.h exists failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_550c4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_550c4.dir/build.make CMakeFiles/cmTC_550c4.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_edf25/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_edf25.dir/build.make CMakeFiles/cmTC_edf25.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_550c4.dir/CheckIncludeFile.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__  -O3 -DNDEBUG -fPIE -std=c11 -o CMakeFiles/cmTC_550c4.dir/CheckIncludeFile.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_edf25.dir/CheckIncludeFile.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -O3 -DNDEBUG -fPIE -std=c11 -o CMakeFiles/cmTC_edf25.dir/CheckIncludeFile.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/auxv.h: No such file or directory
     1 | #include <sys/auxv.h>
       |          ^~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_550c4.dir/build.make:78: CMakeFiles/cmTC_550c4.dir/CheckIncludeFile.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_edf25.dir/build.make:78: CMakeFiles/cmTC_edf25.dir/CheckIncludeFile.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_550c4/fast] Error 2
+gmake: *** [Makefile:127: cmTC_edf25/fast] Error 2
 
 
 
 Determining if the include file sys/sdt.h exists failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5c395/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5c395.dir/build.make CMakeFiles/cmTC_5c395.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_47464/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_47464.dir/build.make CMakeFiles/cmTC_47464.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5c395.dir/CheckIncludeFile.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__  -O3 -DNDEBUG -fPIE -std=c11 -o CMakeFiles/cmTC_5c395.dir/CheckIncludeFile.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Building C object CMakeFiles/cmTC_47464.dir/CheckIncludeFile.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -O3 -DNDEBUG -fPIE -std=c11 -o CMakeFiles/cmTC_47464.dir/CheckIncludeFile.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/CheckIncludeFile.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/sdt.h: No such file or directory
     1 | #include <sys/sdt.h>
       |          ^~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_5c395.dir/build.make:78: CMakeFiles/cmTC_5c395.dir/CheckIncludeFile.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_47464.dir/build.make:78: CMakeFiles/cmTC_47464.dir/CheckIncludeFile.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_5c395/fast] Error 2
+gmake: *** [Makefile:127: cmTC_47464/fast] Error 2
 
 
 
 Determining if the function posix_memalign exists failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_aa580/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_aa580.dir/build.make CMakeFiles/cmTC_aa580.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_65cd9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_65cd9.dir/build.make CMakeFiles/cmTC_65cd9.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_aa580.dir/CheckFunctionExists.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -DCHECK_FUNCTION_EXISTS=posix_memalign -O3 -DNDEBUG -fPIE   -D _POSIX_C_SOURCE=200112L -o CMakeFiles/cmTC_aa580.dir/CheckFunctionExists.c.obj -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Building C object CMakeFiles/cmTC_65cd9.dir/CheckFunctionExists.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -DCHECK_FUNCTION_EXISTS=posix_memalign -O3 -DNDEBUG -fPIE   -D _POSIX_C_SOURCE=200112L -o CMakeFiles/cmTC_65cd9.dir/CheckFunctionExists.c.obj -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
 <command-line>: warning: conflicting types for built-in function 'posix_memalign'; expected 'int(void **, long unsigned int,  long unsigned int)' [-Wbuiltin-declaration-mismatch]
 /usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro 'CHECK_FUNCTION_EXISTS'
     7 |   CHECK_FUNCTION_EXISTS(void);
       |   ^~~~~~~~~~~~~~~~~~~~~
-Linking C executable cmTC_aa580.elf
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa580.dir/link.txt --verbose=1
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -DCHECK_FUNCTION_EXISTS=posix_memalign -O3 -DNDEBUG -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -L/opt/devkitpro/libnx/lib -L/opt/devkitpro/portlibs/switch/lib -fPIE -specs=/opt/devkitpro/libnx/switch.specs  CMakeFiles/cmTC_aa580.dir/CheckFunctionExists.c.obj -o cmTC_aa580.elf  -lnx -lm 
-/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/ld: CMakeFiles/cmTC_aa580.dir/CheckFunctionExists.c.obj: in function `main':
-CheckFunctionExists.c:(.text.startup.main+0x14): undefined reference to `posix_memalign'
+Linking C executable cmTC_65cd9.elf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65cd9.dir/link.txt --verbose=1
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -DCHECK_FUNCTION_EXISTS=posix_memalign -O3 -DNDEBUG -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -L/opt/devkitpro/libnx/lib -L/opt/devkitpro/portlibs/switch/lib -fPIE -specs=/opt/devkitpro/libnx/switch.specs  CMakeFiles/cmTC_65cd9.dir/CheckFunctionExists.c.obj -o cmTC_65cd9.elf  -lnx -lm 
+/opt/devkitpro/devkitA64/bin/../lib/gcc/aarch64-none-elf/14.2.0/../../../../aarch64-none-elf/bin/ld: CMakeFiles/cmTC_65cd9.dir/CheckFunctionExists.c.obj: in function `main':
+CheckFunctionExists.c:(.text.startup+0x14): undefined reference to `posix_memalign'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_aa580.dir/build.make:99: cmTC_aa580.elf] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_65cd9.dir/build.make:99: cmTC_65cd9.elf] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_aa580/fast] Error 2
+gmake: *** [Makefile:127: cmTC_65cd9/fast] Error 2
 
 
 
 Determining if files pulse/pulseaudio.h exist failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_48882/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_48882.dir/build.make CMakeFiles/cmTC_48882.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c16ab/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c16ab.dir/build.make CMakeFiles/cmTC_c16ab.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_48882.dir/USE_PULSE.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_48882.dir/USE_PULSE.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_PULSE.c
+Building C object CMakeFiles/cmTC_c16ab.dir/USE_PULSE.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_c16ab.dir/USE_PULSE.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_PULSE.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_PULSE.c:2:10: fatal error: pulse/pulseaudio.h: No such file or directory
     2 | #include <pulse/pulseaudio.h>
       |          ^~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_48882.dir/build.make:78: CMakeFiles/cmTC_48882.dir/USE_PULSE.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_c16ab.dir/build.make:78: CMakeFiles/cmTC_c16ab.dir/USE_PULSE.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_48882/fast] Error 2
+gmake: *** [Makefile:127: cmTC_c16ab/fast] Error 2
 
 
 Source:
@@ -222,17 +474,17 @@ int main(void){return 0;}
 Determining if files alsa/asoundlib.h exist failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ad39e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ad39e.dir/build.make CMakeFiles/cmTC_ad39e.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cf625/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cf625.dir/build.make CMakeFiles/cmTC_cf625.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_ad39e.dir/USE_ALSA.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_ad39e.dir/USE_ALSA.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_ALSA.c
+Building C object CMakeFiles/cmTC_cf625.dir/USE_ALSA.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_cf625.dir/USE_ALSA.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_ALSA.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_ALSA.c:2:10: fatal error: alsa/asoundlib.h: No such file or directory
     2 | #include <alsa/asoundlib.h>
       |          ^~~~~~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_ad39e.dir/build.make:78: CMakeFiles/cmTC_ad39e.dir/USE_ALSA.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_cf625.dir/build.make:78: CMakeFiles/cmTC_cf625.dir/USE_ALSA.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_ad39e/fast] Error 2
+gmake: *** [Makefile:127: cmTC_cf625/fast] Error 2
 
 
 Source:
@@ -245,17 +497,17 @@ int main(void){return 0;}
 Determining if files jack/jack.h exist failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f9374/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f9374.dir/build.make CMakeFiles/cmTC_f9374.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_19656/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_19656.dir/build.make CMakeFiles/cmTC_19656.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f9374.dir/USE_JACK.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_f9374.dir/USE_JACK.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_JACK.c
+Building C object CMakeFiles/cmTC_19656.dir/USE_JACK.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_19656.dir/USE_JACK.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_JACK.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_JACK.c:2:10: fatal error: jack/jack.h: No such file or directory
     2 | #include <jack/jack.h>
       |          ^~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_f9374.dir/build.make:78: CMakeFiles/cmTC_f9374.dir/USE_JACK.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_19656.dir/build.make:78: CMakeFiles/cmTC_19656.dir/USE_JACK.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_f9374/fast] Error 2
+gmake: *** [Makefile:127: cmTC_19656/fast] Error 2
 
 
 Source:
@@ -268,17 +520,17 @@ int main(void){return 0;}
 Determining if files sndio.h exist failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7c394/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7c394.dir/build.make CMakeFiles/cmTC_7c394.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0f5fb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0f5fb.dir/build.make CMakeFiles/cmTC_0f5fb.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7c394.dir/USE_SNDIO.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_7c394.dir/USE_SNDIO.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_SNDIO.c
+Building C object CMakeFiles/cmTC_0f5fb.dir/USE_SNDIO.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_0f5fb.dir/USE_SNDIO.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_SNDIO.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_SNDIO.c:2:10: fatal error: sndio.h: No such file or directory
     2 | #include <sndio.h>
       |          ^~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_7c394.dir/build.make:78: CMakeFiles/cmTC_7c394.dir/USE_SNDIO.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_0f5fb.dir/build.make:78: CMakeFiles/cmTC_0f5fb.dir/USE_SNDIO.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_7c394/fast] Error 2
+gmake: *** [Makefile:127: cmTC_0f5fb/fast] Error 2
 
 
 Source:
@@ -291,17 +543,17 @@ int main(void){return 0;}
 Determining if files AudioUnit/AudioUnit.h exist failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0283d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0283d.dir/build.make CMakeFiles/cmTC_0283d.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7b176/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7b176.dir/build.make CMakeFiles/cmTC_7b176.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0283d.dir/USE_AUDIOUNIT.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_0283d.dir/USE_AUDIOUNIT.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_AUDIOUNIT.c
+Building C object CMakeFiles/cmTC_7b176.dir/USE_AUDIOUNIT.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_7b176.dir/USE_AUDIOUNIT.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_AUDIOUNIT.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_AUDIOUNIT.c:2:10: fatal error: AudioUnit/AudioUnit.h: No such file or directory
     2 | #include <AudioUnit/AudioUnit.h>
       |          ^~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_0283d.dir/build.make:78: CMakeFiles/cmTC_0283d.dir/USE_AUDIOUNIT.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_7b176.dir/build.make:78: CMakeFiles/cmTC_7b176.dir/USE_AUDIOUNIT.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_0283d/fast] Error 2
+gmake: *** [Makefile:127: cmTC_7b176/fast] Error 2
 
 
 Source:
@@ -314,17 +566,17 @@ int main(void){return 0;}
 Determining if files audioclient.h exist failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_bad9f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_bad9f.dir/build.make CMakeFiles/cmTC_bad9f.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_13c54/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_13c54.dir/build.make CMakeFiles/cmTC_13c54.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bad9f.dir/USE_WASAPI.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_bad9f.dir/USE_WASAPI.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_WASAPI.c
+Building C object CMakeFiles/cmTC_13c54.dir/USE_WASAPI.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_13c54.dir/USE_WASAPI.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_WASAPI.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_WASAPI.c:2:10: fatal error: audioclient.h: No such file or directory
     2 | #include <audioclient.h>
       |          ^~~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_bad9f.dir/build.make:78: CMakeFiles/cmTC_bad9f.dir/USE_WASAPI.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_13c54.dir/build.make:78: CMakeFiles/cmTC_13c54.dir/USE_WASAPI.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_bad9f/fast] Error 2
+gmake: *** [Makefile:127: cmTC_13c54/fast] Error 2
 
 
 Source:
@@ -337,17 +589,17 @@ int main(void){return 0;}
 Determining if files windows.h;mmsystem.h exist failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fee19/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fee19.dir/build.make CMakeFiles/cmTC_fee19.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_465dc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_465dc.dir/build.make CMakeFiles/cmTC_465dc.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_fee19.dir/USE_WINMM.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_fee19.dir/USE_WINMM.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_WINMM.c
+Building C object CMakeFiles/cmTC_465dc.dir/USE_WINMM.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_465dc.dir/USE_WINMM.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_WINMM.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_WINMM.c:2:10: fatal error: windows.h: No such file or directory
     2 | #include <windows.h>
       |          ^~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_fee19.dir/build.make:78: CMakeFiles/cmTC_fee19.dir/USE_WINMM.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_465dc.dir/build.make:78: CMakeFiles/cmTC_465dc.dir/USE_WINMM.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_fee19/fast] Error 2
+gmake: *** [Makefile:127: cmTC_465dc/fast] Error 2
 
 
 Source:
@@ -361,17 +613,17 @@ int main(void){return 0;}
 Determining if files SLES/OpenSLES.h exist failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_03e9c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_03e9c.dir/build.make CMakeFiles/cmTC_03e9c.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b1930/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b1930.dir/build.make CMakeFiles/cmTC_b1930.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_03e9c.dir/USE_OPENSL.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_03e9c.dir/USE_OPENSL.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_OPENSL.c
+Building C object CMakeFiles/cmTC_b1930.dir/USE_OPENSL.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_b1930.dir/USE_OPENSL.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_OPENSL.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_OPENSL.c:2:10: fatal error: SLES/OpenSLES.h: No such file or directory
     2 | #include <SLES/OpenSLES.h>
       |          ^~~~~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_03e9c.dir/build.make:78: CMakeFiles/cmTC_03e9c.dir/USE_OPENSL.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_b1930.dir/build.make:78: CMakeFiles/cmTC_b1930.dir/USE_OPENSL.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_03e9c/fast] Error 2
+gmake: *** [Makefile:127: cmTC_b1930/fast] Error 2
 
 
 Source:
@@ -384,17 +636,17 @@ int main(void){return 0;}
 Determining if files sys/soundcard.h exist failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f1128/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f1128.dir/build.make CMakeFiles/cmTC_f1128.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7df1f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7df1f.dir/build.make CMakeFiles/cmTC_7df1f.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f1128.dir/HAVE_SYS_SOUNDCARD_H.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_f1128.dir/HAVE_SYS_SOUNDCARD_H.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SOUNDCARD_H.c
+Building C object CMakeFiles/cmTC_7df1f.dir/HAVE_SYS_SOUNDCARD_H.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_7df1f.dir/HAVE_SYS_SOUNDCARD_H.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SOUNDCARD_H.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SOUNDCARD_H.c:2:10: fatal error: sys/soundcard.h: No such file or directory
     2 | #include <sys/soundcard.h>
       |          ^~~~~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_f1128.dir/build.make:78: CMakeFiles/cmTC_f1128.dir/HAVE_SYS_SOUNDCARD_H.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_7df1f.dir/build.make:78: CMakeFiles/cmTC_7df1f.dir/HAVE_SYS_SOUNDCARD_H.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_f1128/fast] Error 2
+gmake: *** [Makefile:127: cmTC_7df1f/fast] Error 2
 
 
 Source:
@@ -407,17 +659,17 @@ int main(void){return 0;}
 Determining if files android/log.h exist failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2fcd9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2fcd9.dir/build.make CMakeFiles/cmTC_2fcd9.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f5694/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f5694.dir/build.make CMakeFiles/cmTC_f5694.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2fcd9.dir/USE_AUDIOTRACK.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_2fcd9.dir/USE_AUDIOTRACK.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_AUDIOTRACK.c
+Building C object CMakeFiles/cmTC_f5694.dir/USE_AUDIOTRACK.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_f5694.dir/USE_AUDIOTRACK.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_AUDIOTRACK.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_AUDIOTRACK.c:2:10: fatal error: android/log.h: No such file or directory
     2 | #include <android/log.h>
       |          ^~~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_2fcd9.dir/build.make:78: CMakeFiles/cmTC_2fcd9.dir/USE_AUDIOTRACK.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_f5694.dir/build.make:78: CMakeFiles/cmTC_f5694.dir/USE_AUDIOTRACK.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_2fcd9/fast] Error 2
+gmake: *** [Makefile:127: cmTC_f5694/fast] Error 2
 
 
 Source:
@@ -430,17 +682,17 @@ int main(void){return 0;}
 Determining if files sys/audioio.h exist failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8170c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8170c.dir/build.make CMakeFiles/cmTC_8170c.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1542b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1542b.dir/build.make CMakeFiles/cmTC_1542b.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8170c.dir/USE_SUN.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_8170c.dir/USE_SUN.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_SUN.c
+Building C object CMakeFiles/cmTC_1542b.dir/USE_SUN.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_1542b.dir/USE_SUN.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_SUN.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_SUN.c:2:10: fatal error: sys/audioio.h: No such file or directory
     2 | #include <sys/audioio.h>
       |          ^~~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_8170c.dir/build.make:78: CMakeFiles/cmTC_8170c.dir/USE_SUN.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_1542b.dir/build.make:78: CMakeFiles/cmTC_1542b.dir/USE_SUN.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_8170c/fast] Error 2
+gmake: *** [Makefile:127: cmTC_1542b/fast] Error 2
 
 
 Source:
@@ -453,17 +705,17 @@ int main(void){return 0;}
 Determining if files kai.h exist failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_62ffa/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_62ffa.dir/build.make CMakeFiles/cmTC_62ffa.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5e2ad/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5e2ad.dir/build.make CMakeFiles/cmTC_5e2ad.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_62ffa.dir/USE_KAI.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_62ffa.dir/USE_KAI.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_KAI.c
+Building C object CMakeFiles/cmTC_5e2ad.dir/USE_KAI.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc  -isystem /opt/devkitpro/libnx/include -Wall -Wextra -Wno-unused-parameter  -O3 -DNDEBUG -fPIE -std=gnu99 -o CMakeFiles/cmTC_5e2ad.dir/USE_KAI.c.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_KAI.c
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CheckIncludeFiles/USE_KAI.c:2:10: fatal error: kai.h: No such file or directory
     2 | #include <kai.h>
       |          ^~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_62ffa.dir/build.make:78: CMakeFiles/cmTC_62ffa.dir/USE_KAI.c.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_5e2ad.dir/build.make:78: CMakeFiles/cmTC_5e2ad.dir/USE_KAI.c.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_62ffa/fast] Error 2
+gmake: *** [Makefile:127: cmTC_5e2ad/fast] Error 2
 
 
 Source:
@@ -476,17 +728,17 @@ int main(void){return 0;}
 Performing C++ SOURCE FILE Test MBEDTLS_VERSION_OK failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_53882/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_53882.dir/build.make CMakeFiles/cmTC_53882.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f6008/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f6008.dir/build.make CMakeFiles/cmTC_f6008.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_53882.dir/src.cxx.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ -DMBEDTLS_VERSION_OK -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__  -O3 -DNDEBUG -fPIE -o CMakeFiles/cmTC_53882.dir/src.cxx.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_f6008.dir/src.cxx.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ -DMBEDTLS_VERSION_OK -isystem /opt/devkitpro/libnx/include -O3 -DNDEBUG -fPIE -o CMakeFiles/cmTC_f6008.dir/src.cxx.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/src.cxx
 /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/src.cxx:2:18: fatal error: mbedtls/version.h: No such file or directory
     2 |         #include <mbedtls/version.h>
       |                  ^~~~~~~~~~~~~~~~~~~
 compilation terminated.
-gmake[1]: *** [CMakeFiles/cmTC_53882.dir/build.make:78: CMakeFiles/cmTC_53882.dir/src.cxx.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_f6008.dir/build.make:78: CMakeFiles/cmTC_f6008.dir/src.cxx.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_53882/fast] Error 2
+gmake: *** [Makefile:127: cmTC_f6008/fast] Error 2
 
 
 Source file was:
@@ -499,15 +751,15 @@ Source file was:
 Performing C++ SOURCE FILE Test FLAG_CXX_MISSING_VARIABLE_DECLARATIONS failed with the following output:
 Change Dir: /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b6a93/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b6a93.dir/build.make CMakeFiles/cmTC_b6a93.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c2b9a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c2b9a.dir/build.make CMakeFiles/cmTC_c2b9a.dir/build
 gmake[1]: Entering directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_b6a93.dir/src.cxx.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ -DFLAG_CXX_MISSING_VARIABLE_DECLARATIONS -isystem /opt/devkitpro/libnx/include -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__  -O3 -DNDEBUG -fPIE   -Werror -Wmissing-variable-declarations -std=c++20 -o CMakeFiles/cmTC_b6a93.dir/src.cxx.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_c2b9a.dir/src.cxx.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ -DFLAG_CXX_MISSING_VARIABLE_DECLARATIONS -isystem /opt/devkitpro/libnx/include -O3 -DNDEBUG -fPIE   -Werror -Wmissing-variable-declarations -std=c++20 -o CMakeFiles/cmTC_c2b9a.dir/src.cxx.obj -c /home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp/src.cxx
 cc1plus: error: command-line option '-Wmissing-variable-declarations' is valid for C/ObjC but not for C++ [-Werror]
 cc1plus: all warnings being treated as errors
-gmake[1]: *** [CMakeFiles/cmTC_b6a93.dir/build.make:78: CMakeFiles/cmTC_b6a93.dir/src.cxx.obj] Error 1
+gmake[1]: *** [CMakeFiles/cmTC_c2b9a.dir/build.make:78: CMakeFiles/cmTC_c2b9a.dir/src.cxx.obj] Error 1
 gmake[1]: Leaving directory '/home/ev/ClangProjects/dolphin-switch/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:127: cmTC_b6a93/fast] Error 2
+gmake: *** [Makefile:127: cmTC_c2b9a/fast] Error 2
 
 
 Source file was:

@@ -179,7 +179,7 @@ private:
 
   static void UpdateDebugger_MapLoaded();
 
-  static bool Boot_WiiWAD(Core::System& system, const DiscIO::VolumeWAD& wad);
+  static bool Boot_WiiWAD(Core::System& system, const std::string& filename);
   static bool BootNANDTitle(Core::System& system, u64 title_id);
 
   static void SetupMSR(PowerPC::PowerPCState& ppc_state);

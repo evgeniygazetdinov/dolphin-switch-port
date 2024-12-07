@@ -23,6 +23,8 @@ enum class Language;
 enum class Region;
 enum class Platform;
 
+std::unique_ptr<BlobReader> CreateBlobReader(const std::string& filename);
+
 class VolumeWAD : public Volume
 {
 public:
@@ -68,8 +70,8 @@ public:
   DataSizeType GetDataSizeType() const override;
   u64 GetRawSize() const override;
   const BlobReader& GetBlobReader() const override;
-
   std::array<u8, 20> GetSyncHash() const override;
+  std::string GetPath() const override;
 
 private:
   std::unique_ptr<BlobReader> m_reader;
@@ -87,6 +89,18 @@ private:
   u32 m_tmd_size = 0;
   u32 m_data_size = 0;
   u32 m_opening_bnr_size = 0;
+
+  void AddTMDToSyncHash(Common::SHA1::Context* context, const Partition& partition) const;
+  void ReadAndAddToSyncHash(Common::SHA1::Context* context, u64 offset, u64 length,
+                           const Partition& partition) const;
 };
+
+inline std::unique_ptr<VolumeWAD> CreateVolumeWADFromFilename(const std::string& filename)
+{
+  auto reader = CreateBlobReader(filename);
+  if (!reader)
+    return nullptr;
+  return std::make_unique<VolumeWAD>(std::move(reader));
+}
 
 }  // namespace DiscIO

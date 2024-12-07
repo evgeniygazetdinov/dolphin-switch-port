@@ -576,7 +576,7 @@ bool CBoot::BootUp(Core::System& system, const Core::CPUThreadGuard& guard,
     bool operator()(const DiscIO::VolumeWAD& wad) const
     {
       SetDefaultDisc();
-      if (!Boot_WiiWAD(system, wad))
+      if (!Boot_WiiWAD(system, wad.GetPath()))
         return false;
 
       SConfig::OnNewTitleLoad(guard);

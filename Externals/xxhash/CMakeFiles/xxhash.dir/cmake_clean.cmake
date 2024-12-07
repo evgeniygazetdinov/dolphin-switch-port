@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/xxhash.dir/xxhash.c.obj"
+  "CMakeFiles/xxhash.dir/xxhash.c.obj.d"
   "libxxhash.a"
   "libxxhash.pdb"
 )
