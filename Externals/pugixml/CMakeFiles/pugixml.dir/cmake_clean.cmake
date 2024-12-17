@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pugixml.dir/pugixml.cpp.obj"
+  "CMakeFiles/pugixml.dir/pugixml.cpp.obj.d"
   "libpugixml.a"
   "libpugixml.pdb"
 )

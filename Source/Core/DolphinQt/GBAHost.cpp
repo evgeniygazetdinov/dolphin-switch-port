@@ -43,7 +43,7 @@ void GBAHost::FrameEnded(const std::vector<u32>& video_buffer)
   });
 }
 
-std::unique_ptr<GBAHostInterface> Host_CreateGBAHost(std::weak_ptr<HW::GBA::Core> core)
-{
-  return std::make_unique<GBAHost>(core);
-}
+// std::unique_ptr<GBAHostInterface> Host_CreateGBAHost(std::weak_ptr<HW::GBA::Core> core)
+// {
+//   return std::make_unique<GBAHost>(core);
+// }

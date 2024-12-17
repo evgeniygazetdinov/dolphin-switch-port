@@ -8,6 +8,8 @@
 
 #include "Common/Flag.h"
 #include "Common/WindowSystemInfo.h"
+#include "../Externals/cpp-optparse/OptionParser.h" // Путь может отличаться в зависимости от вашей структуры каталогов
+#include "../Common/WindowSystemInfo.h"
 
 class Platform
 {
@@ -22,13 +24,14 @@ public:
   virtual void SetTitle(const std::string& title);
   virtual void MainLoop() = 0;
 
-  virtual WindowSystemInfo GetWindowSystemInfo() const = 0;
+      virtual WindowSystemInfo GetWindowSystemInfo() const = 0; // Чисто виртуальный метод
+
 
   // Requests a graceful shutdown, from SIGINT/SIGTERM.
   void RequestShutdown();
 
   // Request an immediate shutdown.
-  void Stop();
+  virtual void Stop();
 
   static std::unique_ptr<Platform> CreateHeadlessPlatform();
 #ifdef HAVE_X11
@@ -53,3 +56,18 @@ protected:
   bool m_window_focus = true;  // Should be made atomic if actually implemented
   bool m_window_fullscreen = false;
 };
+
+
+// Объявляем SwitchPlatform здесь
+class SwitchPlatform {
+public:
+    
+    bool Init();
+
+    void MainLoop() ;
+    void Stop();
+        WindowSystemInfo GetWindowSystemInfo() const; // Убедитесь, что здесь есть const
+
+};
+
+std::unique_ptr<SwitchPlatform> GetSwitchPlatform(const optparse::Values& options);

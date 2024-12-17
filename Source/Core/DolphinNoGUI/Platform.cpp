@@ -7,6 +7,11 @@
 #include "Core/IOS/STM/STM.h"
 #include "Core/State.h"
 #include "Core/System.h"
+#include "../Common/WindowSystemInfo.h"
+
+#include "DolphinNoGUI/Platform.h"
+#include "Core/Host.h"
+#include <OptionParser.h>
 
 Platform::~Platform() = default;
 
@@ -39,6 +44,13 @@ void Platform::UpdateRunningFlag()
   }
 }
 
+
+
+// std::unique_ptr<Platform> GetPlatform(const optparse::Values& options)
+// {
+//     return std::make_unique<Platform>();
+// }
+
 void Platform::Stop()
 {
   m_running.Clear();
@@ -47,4 +59,30 @@ void Platform::Stop()
 void Platform::RequestShutdown()
 {
   m_shutdown_requested.Set();
+}
+
+
+
+// Реализация методов SwitchPlatform
+bool SwitchPlatform::Init() {
+    // Инициализация для Switch
+    return true;
+}
+
+void SwitchPlatform::MainLoop() {
+    // Реализация главного цикла для Switch
+}
+
+void SwitchPlatform::Stop() {
+    // Остановка для Switch
+}
+WindowSystemInfo SwitchPlatform::GetWindowSystemInfo() const {
+    WindowSystemInfo info;
+    return info;
+}
+
+
+std::unique_ptr<SwitchPlatform> GetSwitchPlatform(const optparse::Values& options)
+{
+  return std::make_unique<SwitchPlatform>();
 }

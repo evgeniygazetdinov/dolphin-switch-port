@@ -1,194 +1,180 @@
-#include "Common/CommonTypes.h"
-#include "Common/FileUtil.h"
-#include "Common/Logging/LogManager.h"
-#include "Core/Boot/Boot.h"
-#include "Core/ConfigManager.h"
-#include "Core/Core.h"
-#include "Core/HW/Wiimote.h"
-#include "Core/Host.h"
-#include "Core/State.h"
-#include "UICommon/UICommon.h"
-#include "VideoCommon/VideoConfig.h"
-#include "Core/System.h"
-#include "SwitchUI.h"
+// Copyright 2008 Dolphin Emulator Project
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-#include <switch.h>
+#include "DolphinNoGUI/Platform.h"
+
+#include <OptionParser.h>
+#include <cstddef>
 #include <cstdio>
-#include <thread>
-#include <sys/stat.h>
-#include "Common/WindowSystemInfo.h"
+#include <cstring>
+#include <signal.h>
+#include <string>
+#include <vector>
 
-void log_to_file(const char* message) {
-    FILE* log_file = fopen("sdmc:/switch/dolphin-emu/dolphin-launcher.log", "a");
-    if (log_file) {
-        time_t now = time(NULL);
-        char timestamp[26];
-        ctime_r(&now, timestamp);
-        timestamp[24] = '\0'; // Убираем перенос строки
-        fprintf(log_file, "[%s] %s\n", timestamp, message);
-        fclose(log_file);
-    }
-}
+#ifndef _WIN32
+#include <unistd.h>
+#else
+#include <Windows.h>
+#endif
 
-// Функция для проверки прав доступа к файлу
-void checkFilePermissions(const char* path) {
-    struct stat st;
-    char log_buf[512];
+#ifdef __SWITCH__
+#include <arpa/inet.h>
+#include <switch.h>
+#include <sys/socket.h>
+#include "Common/Logging/LogManager.h"
+#endif
+
+#include "Common/ScopeGuard.h"
+#include "Common/StringUtil.h"
+#include "Core/Boot/Boot.h"
+#include "Core/BootManager.h"
+#include "Core/Core.h"
+#include "Core/DolphinAnalytics.h"
+#include "Core/Host.h"
+
+#include "UICommon/CommandLineParse.h"
+#ifdef USE_DISCORD_PRESENCE
+#include "UICommon/DiscordPresence.h"
+#endif
+#include "UICommon/UICommon.h"
+
+#include "InputCommon/GCAdapter.h"
+
+#include "VideoCommon/VideoBackendBase.h"
+
+
+#include "DolphinNoGUI/Platform.h"
+
+
+// Глобальные переменные
+static std::unique_ptr<Platform> s_platform;
+
+// Объявления функций
+// static std::unique_ptr<Platform> GetPlatform(const optparse::Values& options);e
+static void signal_handler(int);
+
+int main(int argc, char* argv[])
+{
+#ifdef __SWITCH__
+    consoleDebugInit(debugDevice_SVC);
+    socketInitializeDefault();
+    inet_pton(AF_INET, "192.168.0.38", &__nxlink_host);
+    nxlinkStdio();
+
+    // Путь к ROM'у
+    const char* rom_path = "sdmc:/switch/dolphin-emu/roms/test.dol";
     
-    if (stat(path, &st) == 0) {
-        snprintf(log_buf, sizeof(log_buf), 
-                "File: %s\nSize: %lld bytes\nPermissions: %o\nUser ID: %d\nGroup ID: %d",
-                path, (long long)st.st_size, st.st_mode & 0777, st.st_uid, st.st_gid);
-        printf("%s\n", log_buf);
-        log_to_file(log_buf);
-        
-        // Проверяем основные права
-        if (st.st_mode & S_IRUSR) log_to_file("File is readable");
-        if (st.st_mode & S_IWUSR) log_to_file("File is writable");
-        if (st.st_mode & S_IXUSR) log_to_file("File is executable");
-    } else {
-        snprintf(log_buf, sizeof(log_buf), "Cannot get file stats for: %s", path);
-        printf("%s\n", log_buf);
-        log_to_file(log_buf);
+    // Проверяем существование файла
+    FILE* f = fopen(rom_path, "rb");
+    if (!f) {
+        printf("Error: ROM not found at: %s\n", rom_path);
+        return 1;
     }
-}
+    fclose(f);
 
-// Функция для логирования в файл
-
-
-// Function to check if file exists
-bool fileExists(const char* path) {
-    FILE* file = fopen(path, "r");
-    if (file) {
-        fclose(file);
-        return true;
-    }
-    return false;
-}
-
-const int KEY_X = 4;
-const int KEY_Y = 28;
-const int KEY_A = 5;
-const int KEY_B = 27;
-const int KEY_PLUS = 1024;
-const int KEY_MINUS = 2048;
-
-// Function to execute a command on Switch with arguments
-bool executeCommand(const char* command, const char* args) {
-    char full_command[PATH_MAX * 2];  // Достаточно места для команды и аргументов
+    char* arguments[] = {"dolphin-emu", "--exec", (char*)rom_path};
+    argv = arguments;
+    argc = sizeof(arguments) / sizeof(arguments[0]);
     
-    // Проверяем существование исполняемого файла
-    if (!fileExists(command)) {
-        printf("Error: Executable not found at path: %s\n", command);
-        log_to_file("Error: Executable not found at path");
-        return false;
+    printf("Starting Dolphin with ROM: %s\n", rom_path);
+#endif
+
+    auto parser = CommandLineParse::CreateParser(CommandLineParse::ParserOptions::OmitGUIOptions);
+    optparse::Values& options = CommandLineParse::ParseArguments(parser.get(), argc, argv);
+    std::vector<std::string> args = parser->args();
+
+    std::optional<std::string> save_state_path;
+    if (options.is_set("save_state"))
+    {
+        save_state_path = static_cast<const char*>(options.get("save_state"));
     }
 
-    // Формируем полную команду с аргументами
-    if (args) {
-        snprintf(full_command, sizeof(full_command), "%s %s", command, args);
-    } else {
-        snprintf(full_command, sizeof(full_command), "%s", command);
+    std::unique_ptr<BootParameters> boot;
+    bool game_specified = false;
+
+    if (options.is_set("exec"))
+    {
+        const std::string exec_str = static_cast<const char*>(options.get("exec"));
+        boot = BootParameters::GenerateFromFile(
+            exec_str, BootSessionData(save_state_path, DeleteSavestateAfterBoot::No));
+        game_specified = true;
     }
-
-    printf("Attempting to execute: %s\n", full_command);
-    log_to_file(full_command);
-
-    // Даем время консоли обновиться и логам записаться
-    consoleUpdate(NULL);
-    svcSleepThread(2000000000ULL); // Ждем 2 секунды перед запуском
-
-    // Корректно завершаем текущие сервисы
-    romfsExit();
-    consoleExit(NULL);
-    
-    // На Switch используем envSetNextLoad
-    // Аргументы нужно передавать как argv, разделяя их пробелами
-    char argv[PATH_MAX];
-    if (args) {
-        snprintf(argv, sizeof(argv), "-e \"sdmc:/switch/dolphin-emu/roms/DeadSpace.iso\"");
-    } else {
-        argv[0] = '\0';
-    }
-    
-    Result rc = envSetNextLoad(command, argv);
-    
-    // После этой точки программа может быть уже не выполнена
-    return true; // Этот return может не выполниться
-}
-
-bool mainLoop() {
-    printf("\n\n-------- Main Menu --------\n");
-    printf("Press B to run dolpin emulator\n");
-    printf("Press - to exit\n");
-    log_to_file("Main menu started");
-
-    padConfigureInput(1, HidNpadStyleSet_NpadStandard);
-    PadState pad;
-    padInitializeDefault(&pad);
-    bool needToRun = false;
-    char* args;
-    char* dolphin_cmd;
-    while (appletMainLoop()) {
-        // Сканируем ввод
-        
-        padUpdate(&pad);
-        u64 kDown = padGetButtonsDown(&pad);
-        if (kDown & KEY_MINUS) {
-            printf("Exiting...\n");
-            log_to_file("Exiting...");
-            return false;
+    else if (options.is_set("nand_title"))
+    {
+        const std::string hex_string = static_cast<const char*>(options.get("nand_title"));
+        if (hex_string.length() != 16)
+        {
+            fprintf(stderr, "Invalid title ID\n");
+            parser->print_help();
+            return 1;
         }
+        const u64 title_id = std::stoull(hex_string, nullptr, 16);
+        boot = std::make_unique<BootParameters>(BootParameters::NANDTitle{title_id});
+    }
+    else if (args.size())
+    {
+        boot = BootParameters::GenerateFromFile(
+            args.front(), BootSessionData(save_state_path, DeleteSavestateAfterBoot::No));
+        args.erase(args.begin());
+        game_specified = true;
+    }
+    else
+    {
+        parser->print_help();
+        return 0;
+    }
 
-        if (kDown & KEY_B) {
-            printf("\nStarting Dolphin launch process...\n");
-            log_to_file("Starting Dolphin launch process...");
-            
-            // Проверяем пути с префиксом sdmc:
-            dolphin_cmd = "sdmc:/switch/dolphin-emu.nro";
-            const char* rom_path = "sdmc:/switch/dolphin-emu/roms/DeadSpace.iso";
-            
-            char log_buf[256];
-            snprintf(log_buf, sizeof(log_buf), "Checking paths - Dolphin: %s, ROM: %s", dolphin_cmd, rom_path);
-            log_to_file(log_buf);
-            
-            printf("Checking paths:\n");
-            printf("Dolphin executable: %s - %s\n", dolphin_cmd, fileExists(dolphin_cmd) ? "EXISTS" : "NOT FOUND");
-            printf("ROM file: %s - %s\n", rom_path, fileExists(rom_path) ? "EXISTS" : "NOT FOUND");
-            
-            args = "-d -e sdmc:/switch/dolphin-emu/roms/DeadSpace.iso";
-            snprintf(log_buf, sizeof(log_buf), "Executing command: %s with args: %s", dolphin_cmd, args);
-            log_to_file(log_buf);
-            
-            printf("\nChecking file permissions:\n");
-            checkFilePermissions(dolphin_cmd);
-            
-            printf("\nSetting up command execution with: %s\n", dolphin_cmd);
-            needToRun = true;
-        }
-        if (needToRun){
-            // Записываем последнее сообщение в лог
-            const char* success_msg = "Attempting to launch Dolphin...";
-            printf("%s\n", success_msg);
-            log_to_file(success_msg);
-            
-            // Запускаем команду - после этого наша программа может быть уже не выполнена
-            executeCommand(dolphin_cmd, args);
-        }
-                consoleUpdate(NULL);
-        svcSleepThread(100000000ULL);
-    }        
+    std::string user_directory;
+    if (options.is_set("user"))
+        user_directory = static_cast<const char*>(options.get("user"));
 
-    return true;
-}
+    s_platform = GetSwitchPlatform(options);
+    if (!s_platform || !s_platform->Init())
+    {
+        fprintf(stderr, "No platform found, or failed to initialize.\n");
+        return 1;
+    }
 
+    const WindowSystemInfo wsi = s_platform->GetWindowSystemInfo();
 
-int main(int argc, char* argv[]) {
-    // Инициализация консоли
+    UICommon::SetUserDirectory(user_directory);
+    UICommon::Init();
+    UICommon::InitControllers(wsi);
 
-    consoleInit(NULL);
-    log_to_file("Program started");
-    mainLoop();
-    consoleExit(NULL);
+#ifdef __SWITCH__
+    auto* const log_manager = Common::Log::LogManager::GetInstance();
+    log_manager->SetLogLevel(Common::Log::LogLevel::LDEBUG);
+#endif
+
+    Common::ScopeGuard ui_common_guard([] {
+        UICommon::ShutdownControllers();
+        UICommon::Shutdown();
+    });
+
+    if (save_state_path && !game_specified)
+    {
+        fprintf(stderr, "A save state cannot be loaded without specifying a game to launch.\n");
+        return 1;
+    }
+
+    Core::AddOnStateChangedCallback([](Core::State state) {
+        if (state == Core::State::Uninitialized)
+            s_platform->Stop();
+    });
+
+    DolphinAnalytics::Instance().ReportDolphinStart("nogui");
+
+    if (!BootManager::BootCore(std::move(boot), wsi))
+    {
+        fprintf(stderr, "Could not boot the specified file\n");
+        return 1;
+    }
+
+    s_platform->MainLoop();
+    Core::Stop();
+
+    Core::Shutdown();
+    s_platform.reset();
+
     return 0;
 }

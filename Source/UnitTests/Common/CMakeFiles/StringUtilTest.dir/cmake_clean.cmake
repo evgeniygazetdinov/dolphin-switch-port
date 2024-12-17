@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "../../../Binaries/Tests/StringUtilTest.elf"
   "../../../Binaries/Tests/StringUtilTest.pdb"
   "CMakeFiles/StringUtilTest.dir/StringUtilTest.cpp.obj"
+  "CMakeFiles/StringUtilTest.dir/StringUtilTest.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

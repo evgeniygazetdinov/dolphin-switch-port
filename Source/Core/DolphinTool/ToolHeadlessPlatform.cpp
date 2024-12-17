@@ -29,10 +29,10 @@ void Host_RefreshDSPDebuggerWindow()
 {
 }
 
-bool Host_UIBlocksControllerState()
-{
-  return false;
-}
+// bool Host_UIBlocksControllerState()
+// {
+//   return false;
+// }
 
 void Host_Message(HostMessageID id)
 {
@@ -42,9 +42,9 @@ void Host_UpdateTitle(const std::string& title)
 {
 }
 
-void Host_UpdateDiscordClientID(const std::string& client_id)
-{
-}
+// void Host_UpdateDiscordClientID(const std::string& client_id)
+// {
+// }
 
 bool Host_UpdateDiscordPresenceRaw(const std::string& details, const std::string& state,
                                    const std::string& large_image_key,
@@ -92,8 +92,8 @@ void Host_TitleChanged()
 {
 }
 
-std::unique_ptr<GBAHostInterface> Host_CreateGBAHost(std::weak_ptr<HW::GBA::Core> core)
-{
-  return nullptr;
-}
+// std::unique_ptr<GBAHostInterface> Host_CreateGBAHost(std::weak_ptr<HW::GBA::Core> core)
+// {
+//   return nullptr;
+// }
 // End stubs to satisfy Core dependencies

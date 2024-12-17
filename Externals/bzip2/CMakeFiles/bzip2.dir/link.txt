@@ -1,2 +1,2 @@
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libbzip2.a  CMakeFiles/bzip2.dir/blocksort.c.obj CMakeFiles/bzip2.dir/huffman.c.obj CMakeFiles/bzip2.dir/crctable.c.obj CMakeFiles/bzip2.dir/randtable.c.obj CMakeFiles/bzip2.dir/compress.c.obj CMakeFiles/bzip2.dir/decompress.c.obj CMakeFiles/bzip2.dir/bzlib.c.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libbzip2.a CMakeFiles/bzip2.dir/blocksort.c.obj CMakeFiles/bzip2.dir/huffman.c.obj CMakeFiles/bzip2.dir/crctable.c.obj CMakeFiles/bzip2.dir/randtable.c.obj CMakeFiles/bzip2.dir/compress.c.obj CMakeFiles/bzip2.dir/decompress.c.obj CMakeFiles/bzip2.dir/bzlib.c.obj
 /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib libbzip2.a

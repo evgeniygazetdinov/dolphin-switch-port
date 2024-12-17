@@ -25,9 +25,9 @@ void Host_Message(HostMessageID)
 void Host_UpdateTitle(const std::string&)
 {
 }
-void Host_UpdateDiscordClientID(const std::string& client_id)
-{
-}
+// void Host_UpdateDiscordClientID(const std::string& client_id)
+// {
+// }
 bool Host_UpdateDiscordPresenceRaw(const std::string& details, const std::string& state,
                                    const std::string& large_image_key,
                                    const std::string& large_image_text,
@@ -47,10 +47,10 @@ void Host_UpdateMainFrame()
 void Host_RequestRenderWindowSize(int, int)
 {
 }
-bool Host_UIBlocksControllerState()
-{
-  return false;
-}
+// bool Host_UIBlocksControllerState()
+// {
+//   return false;
+// }
 bool Host_RendererHasFocus()
 {
   return false;
@@ -69,7 +69,7 @@ void Host_YieldToUI()
 void Host_TitleChanged()
 {
 }
-std::unique_ptr<GBAHostInterface> Host_CreateGBAHost(std::weak_ptr<HW::GBA::Core> core)
-{
-  return nullptr;
-}
+// std::unique_ptr<GBAHostInterface> Host_CreateGBAHost(std::weak_ptr<HW::GBA::Core> core)
+// {
+//   return nullptr;
+// }
