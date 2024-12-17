@@ -76,7 +76,7 @@ Source/Core/DolphinNoGUI/dolphin-emu.nro: Source/Core/DolphinNoGUI/dolphin-nogui
 
 Source/Core/DolphinNoGUI/dolphin-nogui.nacp:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating dolphin-nogui.nacp"
-	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/tools/bin/nacptool --create dolphin-nogui "Dolphin authors" 5.0.1461f98566208ffcf1f236ac079f73b42cc05d67 /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/dolphin-nogui.nacp
+	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/tools/bin/nacptool --create dolphin-nogui "Dolphin authors" 5.0.317d994d372ff6668ecaacf7023389de8773eb8e /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/dolphin-nogui.nacp
 
 dolphin-nogui_nro: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui_nro
 dolphin-nogui_nro: Source/Core/DolphinNoGUI/dolphin-emu.nro
