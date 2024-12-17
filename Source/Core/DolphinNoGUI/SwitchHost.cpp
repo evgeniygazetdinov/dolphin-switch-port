@@ -11,10 +11,10 @@ std::vector<std::string> Host_GetPreferredLocales()
     return {"en"}; // Default to English for now
 }
 
-bool Host_UIBlocksControllerState()
-{
-    return false; // We don't block controller input
-}
+// bool Host_UIBlocksControllerState()
+// {
+//     return false; // We don't block controller input
+// }
 
 bool Host_RendererHasFocus()
 {
@@ -76,10 +76,10 @@ void Host_TitleChanged()
     // Nothing to do here
 }
 
-void Host_UpdateDiscordClientID(const std::string& client_id)
-{
-    // No Discord integration on Switch
-}
+// void Host_UpdateDiscordClientID(const std::string& client_id)
+// {
+//     // No Discord integration on Switch
+// }
 
 bool Host_UpdateDiscordPresenceRaw(const std::string& details, const std::string& state,
                                  const std::string& large_image_key,
@@ -94,7 +94,7 @@ bool Host_UpdateDiscordPresenceRaw(const std::string& details, const std::string
     return false; // No Discord integration on Switch
 }
 
-std::unique_ptr<GBAHostInterface> Host_CreateGBAHost(std::weak_ptr<HW::GBA::Core> core)
-{
-    return nullptr; // No GBA support for now
-}
+// std::unique_ptr<GBAHostInterface> Host_CreateGBAHost(std::weak_ptr<HW::GBA::Core> core)
+// {
+//     return nullptr; // No GBA support for now
+// }

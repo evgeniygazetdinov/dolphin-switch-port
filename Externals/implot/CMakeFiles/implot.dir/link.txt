@@ -1,2 +1,2 @@
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libimplot.a  CMakeFiles/implot.dir/implot/implot.cpp.obj CMakeFiles/implot.dir/implot/implot_items.cpp.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libimplot.a CMakeFiles/implot.dir/implot/implot.cpp.obj CMakeFiles/implot.dir/implot/implot_items.cpp.obj
 /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib libimplot.a

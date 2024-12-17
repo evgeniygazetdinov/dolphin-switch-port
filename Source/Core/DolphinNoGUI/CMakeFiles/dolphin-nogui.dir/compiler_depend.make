@@ -577,7 +577,25 @@ Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj: Source/Core/
   /opt/devkitpro/libnx/include/switch/crypto/hmac.h \
   /opt/devkitpro/libnx/include/switch/crypto/crc.h \
   /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/arm_acle.h \
-  Source/Core/Common/WindowSystemInfo.h
+  Source/Core/Common/WindowSystemInfo.h \
+  Source/Core/DolphinNoGUI/Platform.h \
+  Externals/cpp-optparse/OptionParser.h \
+  /opt/devkitpro/libnx/include/arpa/inet.h \
+  /opt/devkitpro/libnx/include/netinet/in.h \
+  /opt/devkitpro/libnx/include/sys/_sockaddr_storage.h \
+  /opt/devkitpro/libnx/include/sys/socket.h \
+  /opt/devkitpro/libnx/include/sys/_iovec.h \
+  Source/Core/Common/ScopeGuard.h \
+  Source/Core/Core/BootManager.h \
+  Source/Core/Core/DolphinAnalytics.h \
+  Source/Core/Common/Analytics.h \
+  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/shared_mutex \
+  Source/Core/Common/Event.h \
+  Source/Core/Common/HttpRequest.h \
+  Source/Core/UICommon/CommandLineParse.h \
+  Source/Core/InputCommon/GCAdapter.h \
+  Source/Core/VideoCommon/VideoBackendBase.h \
+  Source/Core/VideoCommon/PerfQueryBase.h
 
 Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj: Source/Core/DolphinNoGUI/Platform.cpp \
   Source/Core/DolphinNoGUI/Platform.h \
@@ -1936,8 +1954,6 @@ Source/Core/Core/HW/GCPad.h:
 
 Source/Core/Common/Config/Layer.h:
 
-/opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/shared_mutex:
-
 Source/Core/Common/Config/ConfigInfo.h:
 
 Source/Core/Common/Config/Config.h:
@@ -1946,9 +1962,25 @@ Source/Core/Core/IOS/STM/STM.h:
 
 Source/Core/Core/HW/ProcessorInterface.h:
 
-Source/Core/DolphinNoGUI/Platform.h:
-
 Source/Core/DolphinNoGUI/Platform.cpp:
+
+Source/Core/Common/HttpRequest.h:
+
+/opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/shared_mutex:
+
+Source/Core/Common/Analytics.h:
+
+/opt/devkitpro/libnx/include/sys/_iovec.h:
+
+/opt/devkitpro/libnx/include/sys/_sockaddr_storage.h:
+
+/opt/devkitpro/libnx/include/netinet/in.h:
+
+/opt/devkitpro/libnx/include/arpa/inet.h:
+
+Externals/cpp-optparse/OptionParser.h:
+
+Source/Core/DolphinNoGUI/Platform.h:
 
 Source/Core/Common/WindowSystemInfo.h:
 
@@ -2038,6 +2070,8 @@ Source/Core/Core/HW/Wiimote.h:
 
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/span:
 
+Source/Core/Common/Event.h:
+
 Externals/fmt/include/fmt/core.h:
 
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/optional:
@@ -2051,6 +2085,8 @@ Externals/fmt/include/fmt/core.h:
 /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stdint.h:
 
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/functional_hash.h:
+
+Source/Core/Common/ScopeGuard.h:
 
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/locale_conv.h:
 
@@ -2137,6 +2173,8 @@ Source/Core/Common/BitField.h:
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdio.h:
 
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/std_function.h:
+
+Source/Core/VideoCommon/PerfQueryBase.h:
 
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/streambuf_iterator.h:
 
@@ -2244,6 +2282,8 @@ Source/Core/Common/Inline.h:
 
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/codecvt:
 
+Source/Core/Core/BootManager.h:
+
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/climits:
 
 /opt/devkitpro/libnx/include/switch/services/wlaninf.h:
@@ -2349,6 +2389,8 @@ Source/Core/Common/CommonFuncs.h:
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/aarch64-none-elf/pic/bits/ctype_inline.h:
 
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/this_thread_sleep.h:
+
+Source/Core/InputCommon/GCAdapter.h:
 
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/chrono.h:
 
@@ -2532,6 +2574,8 @@ Source/Core/Common/EnumMap.h:
 
 /opt/devkitpro/libnx/include/switch/applets/error.h:
 
+Source/Core/Core/DolphinAnalytics.h:
+
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/functexcept.h:
 
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/iterator:
@@ -2655,6 +2699,8 @@ Source/Core/Core/IOS/IOSC.h:
 Source/Core/Common/Crypto/ec.h:
 
 Source/Core/DiscIO/Enums.h:
+
+/opt/devkitpro/libnx/include/sys/socket.h:
 
 /opt/devkitpro/libnx/include/switch/services/capsu.h:
 
@@ -2872,6 +2918,8 @@ Source/Core/Common/FileUtil.h:
 
 /opt/devkitpro/libnx/include/switch/services/capsa.h:
 
+Source/Core/VideoCommon/VideoBackendBase.h:
+
 /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/unicode.h:
 
 /opt/devkitpro/portlibs/switch/include/SDL2/SDL_keycode.h:
@@ -2965,6 +3013,8 @@ Source/Core/Core/IOS/Device.h:
 /opt/devkitpro/libnx/include/switch/kernel/rwlock.h:
 
 /opt/devkitpro/libnx/include/switch/kernel/random.h:
+
+Source/Core/UICommon/CommandLineParse.h:
 
 /opt/devkitpro/libnx/include/switch/sf/hipc.h:
 

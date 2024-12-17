@@ -579,6 +579,24 @@ Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj
  /opt/devkitpro/libnx/include/switch/crypto/crc.h
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/arm_acle.h
  /home/ev/ClangProjects/dolphin-switch/Source/Core/Common/WindowSystemInfo.h
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/Platform.h
+ /home/ev/ClangProjects/dolphin-switch/Externals/cpp-optparse/OptionParser.h
+ /opt/devkitpro/libnx/include/arpa/inet.h
+ /opt/devkitpro/libnx/include/netinet/in.h
+ /opt/devkitpro/libnx/include/sys/_sockaddr_storage.h
+ /opt/devkitpro/libnx/include/sys/socket.h
+ /opt/devkitpro/libnx/include/sys/_iovec.h
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/Common/ScopeGuard.h
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/Core/BootManager.h
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/Core/DolphinAnalytics.h
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/Common/Analytics.h
+ /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/shared_mutex
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/Common/Event.h
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/Common/HttpRequest.h
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/UICommon/CommandLineParse.h
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/InputCommon/GCAdapter.h
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/VideoCommon/VideoBackendBase.h
+ /home/ev/ClangProjects/dolphin-switch/Source/Core/VideoCommon/PerfQueryBase.h
 
 Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj
  /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/Platform.cpp

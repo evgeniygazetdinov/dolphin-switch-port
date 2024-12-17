@@ -1,43 +1,22 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/Http.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/Http.cpp.obj"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/IPAddress.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/IPAddress.cpp.obj"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/Packet.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/Packet.cpp.obj"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/Socket.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/Socket.cpp.obj"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/SocketSelector.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/SocketSelector.cpp.obj"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/TcpListener.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/TcpListener.cpp.obj"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/TcpSocket.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/TcpSocket.cpp.obj"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/UdpSocket.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/UdpSocket.cpp.obj"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/Unix/SocketImpl.cpp" "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/Unix/SocketImpl.cpp.obj"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "AUTOUPDATE=1"
-  "DATA_DIR=\"/opt/devkitpro/portlibs/switch/share/dolphin-emu/\""
-  "SFML_STATIC"
-  "USE_ANALYTICS=1"
-  "_ARCH_64=1"
-  "_DEFAULT_SOURCE"
-  "_FILE_OFFSET_BITS=64"
-  "_LARGEFILE_SOURCE"
-  "_M_ARM_64=1"
   )
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "Externals/SFML/src"
-  "Externals/SFML/include"
-  "Source/Core"
-  "Externals/enet/include"
-  "External/minizip"
-  "Externals/soundtouch"
-  "/opt/devkitpro/libnx/include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/Http.cpp" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/Http.cpp.obj" "gcc" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/Http.cpp.obj.d"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/IPAddress.cpp" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/IPAddress.cpp.obj" "gcc" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/IPAddress.cpp.obj.d"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/Packet.cpp" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/Packet.cpp.obj" "gcc" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/Packet.cpp.obj.d"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/Socket.cpp" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/Socket.cpp.obj" "gcc" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/Socket.cpp.obj.d"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/SocketSelector.cpp" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/SocketSelector.cpp.obj" "gcc" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/SocketSelector.cpp.obj.d"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/TcpListener.cpp" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/TcpListener.cpp.obj" "gcc" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/TcpListener.cpp.obj.d"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/TcpSocket.cpp" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/TcpSocket.cpp.obj" "gcc" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/TcpSocket.cpp.obj.d"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/UdpSocket.cpp" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/UdpSocket.cpp.obj" "gcc" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/UdpSocket.cpp.obj.d"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/SFML/src/SFML/Network/Unix/SocketImpl.cpp" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/Unix/SocketImpl.cpp.obj" "gcc" "Externals/SFML/CMakeFiles/sfml-network.dir/src/SFML/Network/Unix/SocketImpl.cpp.obj.d"
   )
 
 # Targets to which this target links.
