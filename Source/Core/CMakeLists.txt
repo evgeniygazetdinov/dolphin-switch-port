@@ -30,3 +30,15 @@ endif()
 if (WIN32 AND ENABLE_AUTOUPDATE)
   add_subdirectory(WinUpdater)
 endif()
+
+if (ANDROID)
+  add_subdirectory(Android/jni)
+endif()
+
+if(CMAKE_SYSTEM_NAME STREQUAL "Switch")
+  add_subdirectory(DolphinNoGUI)
+endif()
+
+if (ENABLE_TESTS)
+  add_subdirectory(UnitTests)
+endif()

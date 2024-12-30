@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ev/ClangProjects/dolphin-switch/Source/Core/Common/Version.cpp
+Common/Version.h
+/home/ev/ClangProjects/dolphin-switch/Source/Core/Common/Common/Version.h
+string
+-
+Common/scmrev.h
+/home/ev/ClangProjects/dolphin-switch/Source/Core/Common/Common/scmrev.h
+
+Source/Core/Common/Version.h
+string
+-
+
+Source/Core/Common/scmrev.h
+

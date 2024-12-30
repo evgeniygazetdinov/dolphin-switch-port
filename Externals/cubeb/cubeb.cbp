@@ -5,7 +5,7 @@
 		<Option title="cubeb"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Externals\;CMake Files\Externals\fmt\;CMake Files\Externals\fmt\support\;CMake Files\Externals\fmt\support\cmake\;CMake Files\Externals\bzip2\;CMake Files\Externals\cubeb\;CMake Files\Externals\cubeb\cubeb\;CMake Files\Externals\cubeb\cubeb\cmake\;CMake Files\Externals\cubeb\cubeb\cmake\sanitizers-cmake\;CMake Files\Externals\cubeb\cubeb\cmake\sanitizers-cmake\cmake\;CMake Files\Externals\cpp-optparse\;CMake Files\Externals\imgui\;CMake Files\Externals\implot\;CMake Files\Externals\glslang\;CMake Files\Externals\pugixml\;CMake Files\Externals\enet\;CMake Files\Externals\xxhash\;CMake Files\Externals\liblzma\;CMake Files\Externals\zstd\;CMake Files\Externals\zlib-ng\;CMake Files\Externals\zlib-ng\zlib-ng\;CMake Files\Externals\zlib-ng\zlib-ng\cmake\;CMake Files\Externals\minizip\;CMake Files\Externals\LZO\;CMake Files\Externals\libspng\;CMake Files\Externals\FreeSurround\;CMake Files\Externals\soundtouch\;CMake Files\Externals\SFML\;CMake Files\Externals\mbedtls\;CMake Files\Externals\mbedtls\include\;CMake Files\Externals\mbedtls\3rdparty\;CMake Files\Externals\mbedtls\library\;CMake Files\Externals\libiconv-1.14\;CMake Files\Externals\expr\;CMake Files\Externals\rangeset\;CMake Files\Externals\FatFs\;CMake Files\Externals\rcheevos\;CMake Files\Externals\gtest\;CMake Files\Externals\gtest\googlemock\;CMake Files\Externals\gtest\googlemock\cmake\;CMake Files\Externals\gtest\googletest\;CMake Files\Externals\gtest\googletest\cmake\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\opt\;CMake Files\..\..\..\..\opt\devkitpro\;CMake Files\..\..\..\..\opt\devkitpro\cmake\;CMake Files\..\..\..\..\opt\devkitpro\cmake\Platform\;CMake Files\..\..\..\..\opt\devkitpro\portlibs\;CMake Files\..\..\..\..\opt\devkitpro\portlibs\switch\;CMake Files\..\..\..\..\opt\devkitpro\portlibs\switch\lib\;CMake Files\..\..\..\..\opt\devkitpro\portlibs\switch\lib\cmake\;CMake Files\..\..\..\..\opt\devkitpro\portlibs\switch\lib\cmake\SDL2\;CMake Files\..\..\..\..\opt\devkitpro\portlibs\switch\lib\cmake\OpenGL\;CMake Files\CMake\;CMake Files\Source\;CMake Files\Source\Core\;CMake Files\Source\Core\Common\;CMake Files\Source\Core\AudioCommon\;CMake Files\Source\Core\Core\;CMake Files\Source\Core\DiscIO\;CMake Files\Source\Core\InputCommon\;CMake Files\Source\Core\UICommon\;CMake Files\Source\Core\VideoCommon\;CMake Files\Source\Core\VideoBackends\;CMake Files\Source\Core\VideoBackends\OGL\;CMake Files\Source\Core\VideoBackends\Null\;CMake Files\Source\Core\VideoBackends\Software\;CMake Files\Source\Core\DolphinNoGUI\;CMake Files\Source\UnitTests\;CMake Files\Source\UnitTests\Common\;CMake Files\Source\UnitTests\Core\;CMake Files\Source\UnitTests\VideoCommon\;CMake Files\.git\;CMake Files\.git\refs\;CMake Files\.git\refs\heads\;CMake Files\.git\refs\heads\feature\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Externals\;CMake Files\Externals\fmt\;CMake Files\Externals\fmt\support\;CMake Files\Externals\fmt\support\cmake\;CMake Files\Externals\bzip2\;CMake Files\Externals\cubeb\;CMake Files\Externals\cubeb\cubeb\;CMake Files\Externals\cubeb\cubeb\cmake\;CMake Files\Externals\cubeb\cubeb\cmake\sanitizers-cmake\;CMake Files\Externals\cubeb\cubeb\cmake\sanitizers-cmake\cmake\;CMake Files\Externals\cpp-optparse\;CMake Files\Externals\imgui\;CMake Files\Externals\implot\;CMake Files\Externals\glslang\;CMake Files\Externals\pugixml\;CMake Files\Externals\enet\;CMake Files\Externals\xxhash\;CMake Files\Externals\liblzma\;CMake Files\Externals\zstd\;CMake Files\Externals\zlib-ng\;CMake Files\Externals\zlib-ng\zlib-ng\;CMake Files\Externals\zlib-ng\zlib-ng\cmake\;CMake Files\Externals\minizip\;CMake Files\Externals\LZO\;CMake Files\Externals\libspng\;CMake Files\Externals\FreeSurround\;CMake Files\Externals\soundtouch\;CMake Files\Externals\SFML\;CMake Files\Externals\mbedtls\;CMake Files\Externals\mbedtls\include\;CMake Files\Externals\mbedtls\3rdparty\;CMake Files\Externals\mbedtls\library\;CMake Files\Externals\libiconv-1.14\;CMake Files\Externals\expr\;CMake Files\Externals\rangeset\;CMake Files\Externals\FatFs\;CMake Files\Externals\rcheevos\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\opt\;CMake Files\..\..\..\..\opt\devkitpro\;CMake Files\..\..\..\..\opt\devkitpro\cmake\;CMake Files\..\..\..\..\opt\devkitpro\cmake\Platform\;CMake Files\..\..\..\..\opt\devkitpro\portlibs\;CMake Files\..\..\..\..\opt\devkitpro\portlibs\switch\;CMake Files\..\..\..\..\opt\devkitpro\portlibs\switch\lib\;CMake Files\..\..\..\..\opt\devkitpro\portlibs\switch\lib\cmake\;CMake Files\..\..\..\..\opt\devkitpro\portlibs\switch\lib\cmake\SDL2\;CMake Files\..\..\..\..\opt\devkitpro\portlibs\switch\lib\cmake\OpenGL\;CMake Files\CMake\;CMake Files\Source\;CMake Files\Source\Core\;CMake Files\Source\Core\Common\;CMake Files\Source\Core\AudioCommon\;CMake Files\Source\Core\Core\;CMake Files\Source\Core\DiscIO\;CMake Files\Source\Core\InputCommon\;CMake Files\Source\Core\UICommon\;CMake Files\Source\Core\VideoCommon\;CMake Files\Source\Core\VideoBackends\;CMake Files\Source\Core\VideoBackends\OGL\;CMake Files\Source\Core\VideoBackends\Null\;CMake Files\Source\Core\VideoBackends\Software\;CMake Files\Source\Core\DolphinNoGUI\;CMake Files\.git\;CMake Files\.git\refs\;CMake Files\.git\refs\heads\;CMake Files\.git\refs\heads\platform\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/ev/ClangProjects/dolphin-switch/Externals/cubeb"/>
@@ -30,8 +30,6 @@
 					<Add option="-D_DEFAULT_SOURCE"/>
 					<Add option="-D_FILE_OFFSET_BITS=64"/>
 					<Add option="-D_LARGEFILE_SOURCE"/>
-					<Add option="-DUSE_ANALYTICS=1"/>
-					<Add option="-DAUTOUPDATE=1"/>
 					<Add option="-DOUTSIDE_SPEEX"/>
 					<Add option="-DFLOATING_POINT"/>
 					<Add option="-DEXPORT="/>
@@ -65,8 +63,6 @@
 					<Add option="-D_DEFAULT_SOURCE"/>
 					<Add option="-D_FILE_OFFSET_BITS=64"/>
 					<Add option="-D_LARGEFILE_SOURCE"/>
-					<Add option="-DUSE_ANALYTICS=1"/>
-					<Add option="-DAUTOUPDATE=1"/>
 					<Add option="-DOUTSIDE_SPEEX"/>
 					<Add option="-DFLOATING_POINT"/>
 					<Add option="-DEXPORT="/>
@@ -104,8 +100,6 @@
 					<Add option="-D_DEFAULT_SOURCE"/>
 					<Add option="-D_FILE_OFFSET_BITS=64"/>
 					<Add option="-D_LARGEFILE_SOURCE"/>
-					<Add option="-DUSE_ANALYTICS=1"/>
-					<Add option="-DAUTOUPDATE=1"/>
 					<Add directory="/home/ev/ClangProjects/dolphin-switch/Source/Core"/>
 					<Add directory="/home/ev/ClangProjects/dolphin-switch/Externals/enet/include"/>
 					<Add directory="/home/ev/ClangProjects/dolphin-switch/External/minizip"/>
@@ -136,8 +130,6 @@
 					<Add option="-D_DEFAULT_SOURCE"/>
 					<Add option="-D_FILE_OFFSET_BITS=64"/>
 					<Add option="-D_LARGEFILE_SOURCE"/>
-					<Add option="-DUSE_ANALYTICS=1"/>
-					<Add option="-DAUTOUPDATE=1"/>
 					<Add directory="/home/ev/ClangProjects/dolphin-switch/Source/Core"/>
 					<Add directory="/home/ev/ClangProjects/dolphin-switch/Externals/enet/include"/>
 					<Add directory="/home/ev/ClangProjects/dolphin-switch/External/minizip"/>
@@ -341,33 +333,6 @@
 		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Externals/rcheevos/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Externals\rcheevos\"/>
 		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Externals/gtest/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Externals\gtest\"/>
-		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Externals/gtest/googlemock/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Externals\gtest\googlemock\"/>
-		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Externals/gtest/googlemock/cmake/gmock.pc.in">
-			<Option virtualFolder="CMake Files\Externals\gtest\googlemock\cmake\"/>
-		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Externals/gtest/googlemock/cmake/gmock_main.pc.in">
-			<Option virtualFolder="CMake Files\Externals\gtest\googlemock\cmake\"/>
-		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Externals/gtest/googletest/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Externals\gtest\googletest\"/>
-		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Externals/gtest/googletest/cmake/Config.cmake.in">
-			<Option virtualFolder="CMake Files\Externals\gtest\googletest\cmake\"/>
-		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Externals/gtest/googletest/cmake/gtest.pc.in">
-			<Option virtualFolder="CMake Files\Externals\gtest\googletest\cmake\"/>
-		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Externals/gtest/googletest/cmake/gtest_main.pc.in">
-			<Option virtualFolder="CMake Files\Externals\gtest\googletest\cmake\"/>
-		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Externals/gtest/googletest/cmake/internal_utils.cmake">
-			<Option virtualFolder="CMake Files\Externals\gtest\googletest\cmake\"/>
-		</Unit>
 		<Unit filename="/home/ev/ClangProjects/dolphin-switch/../../../../opt/devkitpro/cmake/Switch.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\opt\devkitpro\cmake\"/>
 		</Unit>
@@ -509,23 +474,11 @@
 		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Source\Core\DolphinNoGUI\"/>
 		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Source/UnitTests/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Source\UnitTests\"/>
-		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Source/UnitTests/Common/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Source\UnitTests\Common\"/>
-		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Source/UnitTests/Core/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Source\UnitTests\Core\"/>
-		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/Source/UnitTests/VideoCommon/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\Source\UnitTests\VideoCommon\"/>
-		</Unit>
 		<Unit filename="/home/ev/ClangProjects/dolphin-switch/.git/HEAD">
 			<Option virtualFolder="CMake Files\.git\"/>
 		</Unit>
-		<Unit filename="/home/ev/ClangProjects/dolphin-switch/.git/refs/heads/feature/gui_with_nx_native">
-			<Option virtualFolder="CMake Files\.git\refs\heads\feature\"/>
+		<Unit filename="/home/ev/ClangProjects/dolphin-switch/.git/refs/heads/platform/compile_ok">
+			<Option virtualFolder="CMake Files\.git\refs\heads\platform\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

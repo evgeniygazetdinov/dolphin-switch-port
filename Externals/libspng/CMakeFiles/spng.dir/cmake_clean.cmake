@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/spng.dir/libspng/spng/spng.c.obj"
-  "CMakeFiles/spng.dir/libspng/spng/spng.c.obj.d"
   "libspng.a"
   "libspng.pdb"
 )

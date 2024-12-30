@@ -1,26 +1,61 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLBoundingBox.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLBoundingBox.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLConfig.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLConfig.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLGfx.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLGfx.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLMain.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLMain.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLNativeVertexFormat.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLNativeVertexFormat.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLPerfQuery.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLPerfQuery.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLPipeline.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLPipeline.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLShader.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLShader.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLStreamBuffer.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLStreamBuffer.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLTexture.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLTexture.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLVertexManager.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLVertexManager.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/ProgramShaderCache.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/ProgramShaderCache.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/SamplerCache.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/SamplerCache.cpp.obj"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "DATA_DIR=\"/opt/devkitpro/portlibs/switch/share/dolphin-emu/\""
+  "SFML_STATIC"
+  "_ARCH_64=1"
+  "_DEFAULT_SOURCE"
+  "_FILE_OFFSET_BITS=64"
+  "_LARGEFILE_SOURCE"
+  "_M_ARM_64=1"
+  "__STDC_CONSTANT_MACROS"
+  "__STDC_LIMIT_MACROS"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLBoundingBox.cpp" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLBoundingBox.cpp.obj" "gcc" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLBoundingBox.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLConfig.cpp" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLConfig.cpp.obj" "gcc" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLConfig.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLGfx.cpp" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLGfx.cpp.obj" "gcc" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLGfx.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLMain.cpp" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLMain.cpp.obj" "gcc" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLMain.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLNativeVertexFormat.cpp" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLNativeVertexFormat.cpp.obj" "gcc" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLNativeVertexFormat.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLPerfQuery.cpp" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLPerfQuery.cpp.obj" "gcc" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLPerfQuery.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLPipeline.cpp" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLPipeline.cpp.obj" "gcc" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLPipeline.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLShader.cpp" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLShader.cpp.obj" "gcc" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLShader.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLStreamBuffer.cpp" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLStreamBuffer.cpp.obj" "gcc" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLStreamBuffer.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLTexture.cpp" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLTexture.cpp.obj" "gcc" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLTexture.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/OGLVertexManager.cpp" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLVertexManager.cpp.obj" "gcc" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/OGLVertexManager.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/ProgramShaderCache.cpp" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/ProgramShaderCache.cpp.obj" "gcc" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/ProgramShaderCache.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/SamplerCache.cpp" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/SamplerCache.cpp.obj" "gcc" "Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/SamplerCache.cpp.obj.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "Externals/SFML/include"
+  "Source/Core"
+  "Externals/enet/include"
+  "External/minizip"
+  "Externals/soundtouch"
+  "Externals/mbedtls/include"
+  "Externals/picojson"
+  "Externals/fmt/include"
+  "Externals/minizip/."
+  "Externals/zlib-ng/zlib-ng"
+  "Externals/cubeb/cubeb/include"
+  "exports"
+  "Externals/bzip2"
+  "Externals/liblzma/api"
+  "Externals/zstd/lib"
+  "Externals/expr/include"
+  "Externals/pugixml/."
+  "Externals/glslang/glslang/Public"
+  "Source/Core/VideoCommon/SYSTEM"
+  "Externals/rangeset/include"
+  "/opt/devkitpro/libnx/include"
   )
 
 # Targets to which this target links.
