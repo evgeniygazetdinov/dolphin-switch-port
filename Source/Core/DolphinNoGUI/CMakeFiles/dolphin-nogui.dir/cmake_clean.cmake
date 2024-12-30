@@ -1,16 +1,10 @@
 file(REMOVE_RECURSE
   "../../../Binaries/dolphin-emu.elf"
   "../../../Binaries/dolphin-emu.pdb"
-  "CMakeFiles/dolphin-nogui.dir/Main.cpp.obj"
-  "CMakeFiles/dolphin-nogui.dir/Main.cpp.obj.d"
+  "CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj"
+  "CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj.d"
   "CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj"
   "CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj.d"
-  "CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj"
-  "CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj.d"
-  "CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj"
-  "CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj.d"
-  "CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj"
-  "CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj.d"
 )
 
 # Per-language clean rules from dependency scanning.

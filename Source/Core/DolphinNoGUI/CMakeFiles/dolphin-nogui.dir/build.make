@@ -69,10 +69,24 @@ include Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/progress.make
 # Include the compile flags for this target's objects.
 include Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/flags.make
 
+Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/flags.make
+Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj: Source/Core/DolphinNoGUI/MainNoGUI.cpp
+Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj"
+	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj -MF CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj.d -o CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/MainNoGUI.cpp
+
+Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.i"
+	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/MainNoGUI.cpp > CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.i
+
+Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.s"
+	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/MainNoGUI.cpp -o CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.s
+
 Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/flags.make
 Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj: Source/Core/DolphinNoGUI/Platform.cpp
 Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj"
 	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj -MF CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj.d -o CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/Platform.cpp
 
 Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.i: cmake_force
@@ -83,84 +97,19 @@ Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.s: cmake_forc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dolphin-nogui.dir/Platform.cpp.s"
 	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/Platform.cpp -o CMakeFiles/dolphin-nogui.dir/Platform.cpp.s
 
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/flags.make
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj: Source/Core/DolphinNoGUI/PlatformHeadless.cpp
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj -MF CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj.d -o CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/PlatformHeadless.cpp
-
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/PlatformHeadless.cpp > CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.i
-
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/PlatformHeadless.cpp -o CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.s
-
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/flags.make
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj: Source/Core/DolphinNoGUI/Main.cpp
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj -MF CMakeFiles/dolphin-nogui.dir/Main.cpp.obj.d -o CMakeFiles/dolphin-nogui.dir/Main.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/Main.cpp
-
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dolphin-nogui.dir/Main.cpp.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/Main.cpp > CMakeFiles/dolphin-nogui.dir/Main.cpp.i
-
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dolphin-nogui.dir/Main.cpp.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/Main.cpp -o CMakeFiles/dolphin-nogui.dir/Main.cpp.s
-
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/flags.make
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj: Source/Core/DolphinNoGUI/SwitchUI.cpp
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj -MF CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj.d -o CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/SwitchUI.cpp
-
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/SwitchUI.cpp > CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.i
-
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/SwitchUI.cpp -o CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.s
-
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/flags.make
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj: Source/Core/DolphinNoGUI/SwitchHost.cpp
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj -MF CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj.d -o CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/SwitchHost.cpp
-
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/SwitchHost.cpp > CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.i
-
-Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/SwitchHost.cpp -o CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.s
-
 # Object files for target dolphin-nogui
 dolphin__nogui_OBJECTS = \
-"CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj" \
-"CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj" \
-"CMakeFiles/dolphin-nogui.dir/Main.cpp.obj" \
-"CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj" \
-"CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj"
+"CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj" \
+"CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj"
 
 # External object files for target dolphin-nogui
 dolphin__nogui_EXTERNAL_OBJECTS =
 
+Binaries/dolphin-emu.elf: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj
 Binaries/dolphin-emu.elf: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj
-Binaries/dolphin-emu.elf: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj
-Binaries/dolphin-emu.elf: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj
-Binaries/dolphin-emu.elf: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj
-Binaries/dolphin-emu.elf: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj
 Binaries/dolphin-emu.elf: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make
 Binaries/dolphin-emu.elf: Source/Core/Core/libcore.a
 Binaries/dolphin-emu.elf: Source/Core/UICommon/libuicommon.a
-Binaries/dolphin-emu.elf: Externals/cpp-optparse/libcpp-optparse.a
-Binaries/dolphin-emu.elf: /opt/devkitpro/portlibs/switch/lib/libSDL2.a
-Binaries/dolphin-emu.elf: /opt/devkitpro/portlibs/switch/lib/libSDL2main.a
 Binaries/dolphin-emu.elf: Source/Core/DiscIO/libdiscio.a
 Binaries/dolphin-emu.elf: Source/Core/VideoBackends/Null/libvideonull.a
 Binaries/dolphin-emu.elf: Source/Core/VideoBackends/OGL/libvideoogl.a
@@ -199,10 +148,11 @@ Binaries/dolphin-emu.elf: Externals/libiconv-1.14/libiconv.a
 Binaries/dolphin-emu.elf: Externals/libspng/libspng.a
 Binaries/dolphin-emu.elf: Externals/pugixml/libpugixml.a
 Binaries/dolphin-emu.elf: Externals/fmt/libfmt.a
+Binaries/dolphin-emu.elf: Externals/cpp-optparse/libcpp-optparse.a
 Binaries/dolphin-emu.elf: Externals/minizip/libminizip.a
 Binaries/dolphin-emu.elf: Externals/zlib-ng/zlib-ng/libz.a
 Binaries/dolphin-emu.elf: Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable ../../../Binaries/dolphin-emu.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../../../Binaries/dolphin-emu.elf"
 	cd /home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dolphin-nogui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

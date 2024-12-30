@@ -8,18 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/Main.cpp" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj" "gcc" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj.d"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/MainNoGUI.cpp" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj" "gcc" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj.d"
   "/home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/Platform.cpp" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj" "gcc" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/PlatformHeadless.cpp" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj" "gcc" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/SwitchHost.cpp" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj" "gcc" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DolphinNoGUI/SwitchUI.cpp" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj" "gcc" "Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/ev/ClangProjects/dolphin-switch/Source/Core/Core/CMakeFiles/core.dir/DependInfo.cmake"
   "/home/ev/ClangProjects/dolphin-switch/Source/Core/UICommon/CMakeFiles/uicommon.dir/DependInfo.cmake"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/cpp-optparse/CMakeFiles/cpp-optparse.dir/DependInfo.cmake"
   "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/DependInfo.cmake"
   "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Null/CMakeFiles/videonull.dir/DependInfo.cmake"
   "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/OGL/CMakeFiles/videoogl.dir/DependInfo.cmake"
@@ -51,6 +47,7 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/ev/ClangProjects/dolphin-switch/Externals/libspng/CMakeFiles/spng.dir/DependInfo.cmake"
   "/home/ev/ClangProjects/dolphin-switch/Externals/pugixml/CMakeFiles/pugixml.dir/DependInfo.cmake"
   "/home/ev/ClangProjects/dolphin-switch/Externals/fmt/CMakeFiles/fmt.dir/DependInfo.cmake"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/cpp-optparse/CMakeFiles/cpp-optparse.dir/DependInfo.cmake"
   "/home/ev/ClangProjects/dolphin-switch/Externals/minizip/CMakeFiles/minizip.dir/DependInfo.cmake"
   "/home/ev/ClangProjects/dolphin-switch/Externals/zlib-ng/zlib-ng/CMakeFiles/zlib.dir/DependInfo.cmake"
   )

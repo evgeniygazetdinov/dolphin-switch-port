@@ -36,9 +36,6 @@ BIN_INSTALL_DIR:PATH=/opt/devkitpro/portlibs/switch/bin
 //Build defines
 BUILD_DEFINES:STRING=
 
-//Builds the googlemock subproject
-BUILD_GMOCK:BOOL=ON
-
 //Build rust backends
 BUILD_RUST_LIBS:BOOL=OFF
 
@@ -329,8 +326,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 //Path to a program.
 CMAKE_STRIP:FILEPATH=/opt/devkitpro/devkitA64/bin/aarch64-none-elf-strip
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=/opt/devkitpro/cmake/Switch.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=/opt/devkitpro/cmake/Switch.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -365,18 +362,6 @@ CUBEB_INCLUDE_DIR:PATH=CUBEB_INCLUDE_DIR-NOTFOUND
 //Path to a library.
 CUBEB_LIBRARY:FILEPATH=CUBEB_LIBRARY-NOTFOUND
 
-//The directory containing a CMake configuration file for CURL.
-CURL_DIR:PATH=CURL_DIR-NOTFOUND
-
-//Path to a file.
-CURL_INCLUDE_DIR:PATH=CURL_INCLUDE_DIR-NOTFOUND
-
-//Path to a library.
-CURL_LIBRARY_DEBUG:FILEPATH=CURL_LIBRARY_DEBUG-NOTFOUND
-
-//Path to a library.
-CURL_LIBRARY_RELEASE:FILEPATH=CURL_LIBRARY_RELEASE-NOTFOUND
-
 //Name of the distributor.
 DISTRIBUTOR:STRING=None
 
@@ -402,10 +387,13 @@ DSPTOOL:BOOL=OFF
 ENABLE_ALSA:BOOL=ON
 
 //Enables opt-in Analytics collection
-ENABLE_ANALYTICS:BOOL=ON
+ENABLE_ANALYTICS:BOOL=OFF
 
 //Enables support for automatic updates
-ENABLE_AUTOUPDATE:BOOL=ON
+ENABLE_AUTOUPDATE:BOOL=OFF
+
+//No help, variable specified on the command line.
+ENABLE_CLI_TOOL:UNINITIALIZED=OFF
 
 //Enables generic build that should run on any little-endian host
 ENABLE_GENERIC:BOOL=OFF
@@ -414,7 +402,7 @@ ENABLE_GENERIC:BOOL=OFF
 ENABLE_GPROF:BOOL=OFF
 
 //Enables running Dolphin as a headless variant
-ENABLE_HEADLESS:BOOL=OFF
+ENABLE_HEADLESS:BOOL=ON
 
 //Enables LLVM support, for disassembly
 ENABLE_LLVM:BOOL=ON
@@ -432,7 +420,7 @@ ENABLE_PROGRAMS:BOOL=OFF
 ENABLE_PULSEAUDIO:BOOL=ON
 
 //Enable Qt (Default)
-ENABLE_QT:BOOL=ON
+ENABLE_QT:BOOL=OFF
 
 //Enables SDL as a generic controller backend
 ENABLE_SDL:BOOL=OFF
@@ -441,10 +429,10 @@ ENABLE_SDL:BOOL=OFF
 ENABLE_TESTING:BOOL=OFF
 
 //Enables building the unit tests
-ENABLE_TESTS:BOOL=ON
+ENABLE_TESTS:BOOL=OFF
 
 //Enables vulkan video backend
-ENABLE_VULKAN:BOOL=ON
+ENABLE_VULKAN:BOOL=OFF
 
 //Build mbed TLS with zlib library.
 ENABLE_ZLIB_SUPPORT:BOOL=OFF
@@ -561,10 +549,6 @@ Git_DIR:PATH=Git_DIR-NOTFOUND
 
 //Installation directory for headers
 INC_INSTALL_DIR:PATH=/opt/devkitpro/portlibs/switch/include
-
-//Enable installation of googletest. (Projects embedding googletest
-// may want to turn this OFF.)
-INSTALL_GTEST:BOOL=ON
 
 //Install mbed TLS headers.
 INSTALL_MBEDTLS_HEADERS:BOOL=ON
@@ -694,9 +678,6 @@ PulseAudio_LIBRARIES:FILEPATH=PulseAudio_LIBRARIES-NOTFOUND
 //The directory containing a CMake configuration file for Python3.
 Python3_DIR:PATH=Python3_DIR-NOTFOUND
 
-//The directory containing a CMake configuration file for Python.
-Python_DIR:PATH=Python_DIR-NOTFOUND
-
 //Enable AddressSanitizer for sanitized targets.
 SANITIZE_ADDRESS:BOOL=OFF
 
@@ -761,7 +742,7 @@ UBSan_DIR:PATH=UBSan_DIR-NOTFOUND
 UNSAFE_BUILD:BOOL=OFF
 
 //Enables Discord Rich Presence, show the current game on Discord
-USE_DISCORD_PRESENCE:BOOL=ON
+USE_DISCORD_PRESENCE:BOOL=OFF
 
 //Enables GBA controllers emulation using libmgba
 USE_MGBA:BOOL=ON
@@ -901,61 +882,6 @@ enet_SOURCE_DIR:STATIC=/home/ev/ClangProjects/dolphin-switch/Externals/enet
 
 //The directory containing a CMake configuration file for fmt.
 fmt_DIR:PATH=fmt_DIR-NOTFOUND
-
-//Value Computed by CMake
-gmock_BINARY_DIR:STATIC=/home/ev/ClangProjects/dolphin-switch/Externals/gtest/googlemock
-
-//Value Computed by CMake
-gmock_IS_TOP_LEVEL:STATIC=OFF
-
-//Dependencies for the target
-gmock_LIB_DEPENDS:STATIC=general;gtest;
-
-//Value Computed by CMake
-gmock_SOURCE_DIR:STATIC=/home/ev/ClangProjects/dolphin-switch/Externals/gtest/googlemock
-
-//Build all of Google Mock's own tests.
-gmock_build_tests:BOOL=OFF
-
-//Dependencies for the target
-gmock_main_LIB_DEPENDS:STATIC=general;gmock;
-
-//Value Computed by CMake
-googletest-distribution_BINARY_DIR:STATIC=/home/ev/ClangProjects/dolphin-switch/Externals/gtest
-
-//Value Computed by CMake
-googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-googletest-distribution_SOURCE_DIR:STATIC=/home/ev/ClangProjects/dolphin-switch/Externals/gtest
-
-//Value Computed by CMake
-gtest_BINARY_DIR:STATIC=/home/ev/ClangProjects/dolphin-switch/Externals/gtest/googletest
-
-//Value Computed by CMake
-gtest_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=/home/ev/ClangProjects/dolphin-switch/Externals/gtest/googletest
-
-//Build gtest's sample programs.
-gtest_build_samples:BOOL=OFF
-
-//Build all of gtest's own tests.
-gtest_build_tests:BOOL=OFF
-
-//Disable uses of pthreads in gtest.
-gtest_disable_pthreads:BOOL=OFF
-
-//Use shared (DLL) run-time lib even when Google Test is built
-// as static lib.
-gtest_force_shared_crt:BOOL=ON
-
-//Build gtest with internal symbols hidden in shared libraries.
-gtest_hide_internal_symbols:BOOL=OFF
-
-//Dependencies for the target
-gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Value Computed by CMake
 lzma_BINARY_DIR:STATIC=/home/ev/ClangProjects/dolphin-switch/Externals/liblzma
@@ -1120,8 +1046,6 @@ CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
-//Path to cache edit program executable.
-CMAKE_EDIT_COMMAND:INTERNAL=/home/ev/Documents/clion-2020.1/bin/cmake/linux/bin/ccmake
 //Executable file format
 CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
@@ -1204,7 +1128,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=51
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=44
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1271,14 +1195,6 @@ CPACK_BINARY_ZIP-ADVANCED:INTERNAL=1
 CUBEB_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUBEB_LIBRARY
 CUBEB_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CURL_DIR
-CURL_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CURL_INCLUDE_DIR
-CURL_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CURL_LIBRARY_DEBUG
-CURL_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CURL_LIBRARY_RELEASE
-CURL_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
 C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS:INTERNAL=1
 FFmpeg_PKGCONFIG_avcodec_CFLAGS:INTERNAL=
@@ -1487,8 +1403,6 @@ FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.34.1()]
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/opt/devkitpro/portlibs/switch/lib/libEGL.a][/opt/devkitpro/portlibs/switch/lib/libglapi.a][/opt/devkitpro/portlibs/switch/lib/libdrm_nouveau.a][/opt/devkitpro/portlibs/switch/include][v()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/opt/devkitpro/portlibs/switch/bin/aarch64-none-elf-pkg-config][v0.29.2()]
-//Details about finding Python
-FIND_PACKAGE_MESSAGE_DETAILS_Python:INTERNAL=[/usr/bin/python3.10][cfound components: Interpreter ][v3.10.12()]
 //Details about finding Python3
 FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3.10][cfound components: Interpreter ][v3.10.12()]
 //Details about finding Threads
@@ -1729,31 +1643,6 @@ NEON_HAS_LD4:INTERNAL=1
 OFF64_T:INTERNAL=
 //STRINGS property for variable: OpenGL_GL_PREFERENCE
 OpenGL_GL_PREFERENCE-STRINGS:INTERNAL=GLVND;LEGACY
-PC_CURL_CFLAGS:INTERNAL=
-PC_CURL_CFLAGS_I:INTERNAL=
-PC_CURL_CFLAGS_OTHER:INTERNAL=
-PC_CURL_FOUND:INTERNAL=
-PC_CURL_INCLUDEDIR:INTERNAL=
-PC_CURL_LIBDIR:INTERNAL=
-PC_CURL_LIBS:INTERNAL=
-PC_CURL_LIBS_L:INTERNAL=
-PC_CURL_LIBS_OTHER:INTERNAL=
-PC_CURL_LIBS_PATHS:INTERNAL=
-PC_CURL_MODULE_NAME:INTERNAL=
-PC_CURL_PREFIX:INTERNAL=
-PC_CURL_STATIC_CFLAGS:INTERNAL=
-PC_CURL_STATIC_CFLAGS_I:INTERNAL=
-PC_CURL_STATIC_CFLAGS_OTHER:INTERNAL=
-PC_CURL_STATIC_LIBDIR:INTERNAL=
-PC_CURL_STATIC_LIBS:INTERNAL=
-PC_CURL_STATIC_LIBS_L:INTERNAL=
-PC_CURL_STATIC_LIBS_OTHER:INTERNAL=
-PC_CURL_STATIC_LIBS_PATHS:INTERNAL=
-PC_CURL_VERSION:INTERNAL=
-PC_CURL_libcurl_INCLUDEDIR:INTERNAL=
-PC_CURL_libcurl_LIBDIR:INTERNAL=
-PC_CURL_libcurl_PREFIX:INTERNAL=
-PC_CURL_libcurl_VERSION:INTERNAL=
 PC_SYSTEMD_CFLAGS:INTERNAL=
 PC_SYSTEMD_CFLAGS_I:INTERNAL=
 PC_SYSTEMD_CFLAGS_OTHER:INTERNAL=
@@ -1896,11 +1785,6 @@ _Python3_EXECUTABLE:INTERNAL=/usr/bin/python3.10
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;12;64;;;/usr/lib/python3.10;/usr/lib/python3.10;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=61380851b1f49cd20124cec6c9ca8095
-//Path to a program.
-_Python_EXECUTABLE:INTERNAL=/usr/bin/python3.10
-//Python Properties
-_Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;10;12;64;;;/usr/lib/python3.10;/usr/lib/python3.10;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages
-_Python_INTERPRETER_SIGNATURE:INTERNAL=b91b4035ecb3bb3f5760d35922531bcd
 __pkg_config_checked_FFmpeg_PKGCONFIG_avcodec:INTERNAL=1
 __pkg_config_checked_FFmpeg_PKGCONFIG_avdevice:INTERNAL=1
 __pkg_config_checked_FFmpeg_PKGCONFIG_avfilter:INTERNAL=1
@@ -1911,26 +1795,11 @@ __pkg_config_checked_FFmpeg_PKGCONFIG_swresample:INTERNAL=1
 __pkg_config_checked_FFmpeg_PKGCONFIG_swscale:INTERNAL=1
 __pkg_config_checked_LZO:INTERNAL=1
 __pkg_config_checked_MINIZIP:INTERNAL=1
-__pkg_config_checked_PC_CURL:INTERNAL=1
 __pkg_config_checked_PC_SYSTEMD:INTERNAL=1
 __pkg_config_checked_PulseAudio_PKG:INTERNAL=1
 __pkg_config_checked_ZSTD:INTERNAL=1
 __pkg_config_checked_pc_spng:INTERNAL=1
 __pkg_config_checked_speexdsp:INTERNAL=1
-cmake_package_name:INTERNAL=GTest
-generated_dir:INTERNAL=/home/ev/ClangProjects/dolphin-switch/Externals/gtest/googletest/generated
-//ADVANCED property for variable: gmock_build_tests
-gmock_build_tests-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: gtest_build_samples
-gtest_build_samples-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: gtest_build_tests
-gtest_build_tests-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: gtest_disable_pthreads
-gtest_disable_pthreads-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: gtest_force_shared_crt
-gtest_force_shared_crt-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: gtest_hide_internal_symbols
-gtest_hide_internal_symbols-ADVANCED:INTERNAL=1
 //Test has_std_0x_flag
 has_std_0x_flag:INTERNAL=1
 //Test has_std_11_flag
@@ -1989,5 +1858,4 @@ speexdsp_speexdsp_INCLUDEDIR:INTERNAL=
 speexdsp_speexdsp_LIBDIR:INTERNAL=
 speexdsp_speexdsp_PREFIX:INTERNAL=
 speexdsp_speexdsp_VERSION:INTERNAL=
-targets_export_name:INTERNAL=GTestTargets
 

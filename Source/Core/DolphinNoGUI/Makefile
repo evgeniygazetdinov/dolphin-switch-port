@@ -87,8 +87,8 @@ package_source/fast: package_source
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/home/ev/Documents/clion-2020.1/bin/cmake/linux/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -209,29 +209,29 @@ dolphin-nogui_nro/fast:
 	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui_nro.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui_nro.dir/build
 .PHONY : dolphin-nogui_nro/fast
 
-Main.obj: Main.cpp.obj
-.PHONY : Main.obj
+MainNoGUI.obj: MainNoGUI.cpp.obj
+.PHONY : MainNoGUI.obj
 
 # target to build an object file
-Main.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.obj
-.PHONY : Main.cpp.obj
+MainNoGUI.cpp.obj:
+	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.obj
+.PHONY : MainNoGUI.cpp.obj
 
-Main.i: Main.cpp.i
-.PHONY : Main.i
+MainNoGUI.i: MainNoGUI.cpp.i
+.PHONY : MainNoGUI.i
 
 # target to preprocess a source file
-Main.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.i
-.PHONY : Main.cpp.i
+MainNoGUI.cpp.i:
+	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.i
+.PHONY : MainNoGUI.cpp.i
 
-Main.s: Main.cpp.s
-.PHONY : Main.s
+MainNoGUI.s: MainNoGUI.cpp.s
+.PHONY : MainNoGUI.s
 
 # target to generate assembly for a file
-Main.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Main.cpp.s
-.PHONY : Main.cpp.s
+MainNoGUI.cpp.s:
+	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/MainNoGUI.cpp.s
+.PHONY : MainNoGUI.cpp.s
 
 Platform.obj: Platform.cpp.obj
 .PHONY : Platform.obj
@@ -257,78 +257,6 @@ Platform.cpp.s:
 	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/Platform.cpp.s
 .PHONY : Platform.cpp.s
 
-PlatformHeadless.obj: PlatformHeadless.cpp.obj
-.PHONY : PlatformHeadless.obj
-
-# target to build an object file
-PlatformHeadless.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.obj
-.PHONY : PlatformHeadless.cpp.obj
-
-PlatformHeadless.i: PlatformHeadless.cpp.i
-.PHONY : PlatformHeadless.i
-
-# target to preprocess a source file
-PlatformHeadless.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.i
-.PHONY : PlatformHeadless.cpp.i
-
-PlatformHeadless.s: PlatformHeadless.cpp.s
-.PHONY : PlatformHeadless.s
-
-# target to generate assembly for a file
-PlatformHeadless.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/PlatformHeadless.cpp.s
-.PHONY : PlatformHeadless.cpp.s
-
-SwitchHost.obj: SwitchHost.cpp.obj
-.PHONY : SwitchHost.obj
-
-# target to build an object file
-SwitchHost.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.obj
-.PHONY : SwitchHost.cpp.obj
-
-SwitchHost.i: SwitchHost.cpp.i
-.PHONY : SwitchHost.i
-
-# target to preprocess a source file
-SwitchHost.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.i
-.PHONY : SwitchHost.cpp.i
-
-SwitchHost.s: SwitchHost.cpp.s
-.PHONY : SwitchHost.s
-
-# target to generate assembly for a file
-SwitchHost.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchHost.cpp.s
-.PHONY : SwitchHost.cpp.s
-
-SwitchUI.obj: SwitchUI.cpp.obj
-.PHONY : SwitchUI.obj
-
-# target to build an object file
-SwitchUI.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.obj
-.PHONY : SwitchUI.cpp.obj
-
-SwitchUI.i: SwitchUI.cpp.i
-.PHONY : SwitchUI.i
-
-# target to preprocess a source file
-SwitchUI.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.i
-.PHONY : SwitchUI.cpp.i
-
-SwitchUI.s: SwitchUI.cpp.s
-.PHONY : SwitchUI.s
-
-# target to generate assembly for a file
-SwitchUI.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/build.make Source/Core/DolphinNoGUI/CMakeFiles/dolphin-nogui.dir/SwitchUI.cpp.s
-.PHONY : SwitchUI.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -345,21 +273,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... dolphin-nogui_nro"
 	@echo "... dolphin-nogui"
-	@echo "... Main.obj"
-	@echo "... Main.i"
-	@echo "... Main.s"
+	@echo "... MainNoGUI.obj"
+	@echo "... MainNoGUI.i"
+	@echo "... MainNoGUI.s"
 	@echo "... Platform.obj"
 	@echo "... Platform.i"
 	@echo "... Platform.s"
-	@echo "... PlatformHeadless.obj"
-	@echo "... PlatformHeadless.i"
-	@echo "... PlatformHeadless.s"
-	@echo "... SwitchHost.obj"
-	@echo "... SwitchHost.i"
-	@echo "... SwitchHost.s"
-	@echo "... SwitchUI.obj"
-	@echo "... SwitchUI.i"
-	@echo "... SwitchUI.s"
 .PHONY : help
 
 
