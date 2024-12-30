@@ -5,51 +5,68 @@
 
 #include <memory>
 #include <string>
-
-#include "Common/Flag.h"
 #include "Common/WindowSystemInfo.h"
 
-class Platform
-{
+#ifdef __SWITCH__
+#include <switch.h>
+#endif
+
+// Базовый класс Platform
+class Platform {
 public:
-  virtual ~Platform();
+    Platform() = default;
+    virtual ~Platform() = default;
+    
+    virtual bool Init() = 0;
+    virtual void MainLoop() = 0;
+    virtual void Stop() = 0;
+    
+    virtual WindowSystemInfo GetWindowSystemInfo() const { 
+        return WindowSystemInfo(); 
+    }
 
-  bool IsRunning() const { return m_running.IsSet(); }
-  bool IsWindowFocused() const { return m_window_focus; }
-  bool IsWindowFullscreen() const { return m_window_fullscreen; }
+    virtual bool IsWindowFullscreen() const { 
+        return true; // Для Switch всегда true
+    }
 
-  virtual bool Init();
-  virtual void SetTitle(const std::string& title);
-  virtual void MainLoop() = 0;
+    virtual bool IsWindowFocused() const {
+        return true; // Для Switch всегда true, так как это единственное активное приложение
+    }
 
-  virtual WindowSystemInfo GetWindowSystemInfo() const = 0;
+    virtual void SetTitle(const std::string& title) {
+        // На Switch заголовок окна не используется, поэтому оставляем пустым
+    }
 
-  // Requests a graceful shutdown, from SIGINT/SIGTERM.
-  void RequestShutdown();
+    virtual void RequestShutdown() {
+        Stop();  // По умолчанию просто вызываем Stop
+    }
 
-  // Request an immediate shutdown.
-  void Stop();
+    static std::unique_ptr<Platform> CreateHeadlessPlatform();
+};
 
-  static std::unique_ptr<Platform> CreateHeadlessPlatform();
-#ifdef HAVE_X11
-  static std::unique_ptr<Platform> CreateX11Platform();
+// Реализация для Switch
+class SwitchPlatform : public Platform {
+public:
+    SwitchPlatform();
+    ~SwitchPlatform() override;
+    
+    bool Init() override;
+    void MainLoop() override;
+    void Stop() override;
+
+private:
+#ifdef __SWITCH__
+    PadState pad;
 #endif
+};
 
-#ifdef __linux__
-  static std::unique_ptr<Platform> CreateFBDevPlatform();
-#endif
-
-#ifdef _WIN32
-  static std::unique_ptr<Platform> CreateWin32Platform();
-#endif
-
-protected:
-  void UpdateRunningFlag();
-
-  Common::Flag m_running{true};
-  Common::Flag m_shutdown_requested{false};
-  Common::Flag m_tried_graceful_shutdown{false};
-
-  bool m_window_focus = true;  // Should be made atomic if actually implemented
-  bool m_window_fullscreen = false;
+// Тестовая реализация
+class TestPlatform : public Platform {
+public:
+    TestPlatform() = default;
+    ~TestPlatform() override = default;
+    
+    bool Init() override;
+    void MainLoop() override;
+    void Stop() override;
 };

@@ -1,0 +1,2 @@
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libsfml-system.a CMakeFiles/sfml-system.dir/src/SFML/System/Err.cpp.obj CMakeFiles/sfml-system.dir/src/SFML/System/String.cpp.obj CMakeFiles/sfml-system.dir/src/SFML/System/Time.cpp.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib libsfml-system.a

@@ -2,49 +2,71 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include "DolphinNoGUI/Platform.h"
-#include "Core/HW/ProcessorInterface.h"
-#include "Core/IOS/IOS.h"
-#include "Core/IOS/STM/STM.h"
-#include "Core/State.h"
-#include "Core/System.h"
+#include "Core/Host.h"
+#include <cstdio>
 
-Platform::~Platform() = default;
-
-bool Platform::Init()
-{
-  return true;
+// Реализация SwitchPlatform
+SwitchPlatform::SwitchPlatform() {
+#ifdef __SWITCH__
+    padConfigureInput(1, HidNpadStyleSet_NpadStandard);
+    padInitializeDefault(&pad);
+#endif
 }
 
-void Platform::SetTitle(const std::string& title)
-{
+SwitchPlatform::~SwitchPlatform() {
 }
 
-void Platform::UpdateRunningFlag()
-{
-  if (m_shutdown_requested.TestAndClear())
-  {
-    const auto ios = IOS::HLE::GetIOS();
-    const auto stm = ios ? ios->GetDeviceByName("/dev/stm/eventhook") : nullptr;
-    if (!m_tried_graceful_shutdown.IsSet() && stm &&
-        std::static_pointer_cast<IOS::HLE::STMEventHookDevice>(stm)->HasHookInstalled())
-    {
-      auto& system = Core::System::GetInstance();
-      system.GetProcessorInterface().PowerButton_Tap();
-      m_tried_graceful_shutdown.Set();
+bool SwitchPlatform::Init() {
+#ifdef __SWITCH__
+    consoleInit(NULL);
+    return true;
+#else
+    return false;
+#endif
+}
+
+void SwitchPlatform::MainLoop() {
+#ifdef __SWITCH__
+    while (appletMainLoop()) {
+        padUpdate(&pad);
+        u64 kDown = padGetButtonsDown(&pad);
+        
+        if (kDown & HidNpadButton_Plus)
+            break;
+            
+        consoleUpdate(NULL);
     }
-    else
-    {
-      m_running.Clear();
+#endif
+}
+
+void SwitchPlatform::Stop() {
+#ifdef __SWITCH__
+    consoleExit(NULL);
+#endif
+}
+
+// Реализация TestPlatform
+bool TestPlatform::Init() {
+    printf("Test Platform Initialized\n");
+    return true;
+}
+
+void TestPlatform::MainLoop() {
+    printf("Test Platform Main Loop\n");
+    for(int i = 0; i < 10; i++) {
+        printf("Test iteration %d\n", i);
     }
-  }
 }
 
-void Platform::Stop()
-{
-  m_running.Clear();
+void TestPlatform::Stop() {
+    printf("Test Platform Stopped\n");
 }
 
-void Platform::RequestShutdown()
-{
-  m_shutdown_requested.Set();
+// Фабричный метод
+std::unique_ptr<Platform> Platform::CreateHeadlessPlatform() {
+#ifdef __SWITCH__
+    return std::make_unique<SwitchPlatform>();
+#else
+    return std::make_unique<TestPlatform>();
+#endif
 }

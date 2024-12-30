@@ -1,13 +1,7 @@
 add_executable(dolphin-nogui
+  MainNoGUI.cpp  # Изменено с Main.cpp на MainNoGui.cpp
   Platform.cpp
-  Platform.h
-  PlatformHeadless.cpp
-  Main.cpp
-  SwitchUI.cpp
-  SwitchUI.h
-  SwitchHost.cpp
 )
-
 if(ENABLE_X11 AND X11_FOUND)
   target_sources(dolphin-nogui PRIVATE PlatformX11.cpp)
 endif()
@@ -23,12 +17,10 @@ endif()
 set_target_properties(dolphin-nogui PROPERTIES OUTPUT_NAME dolphin-emu)
 
 target_link_libraries(dolphin-nogui
-PRIVATE
+  PRIVATE
   core
   uicommon
-  cpp-optparse
-  SDL2::SDL2
-  SDL2::SDL2main
+  # другие необходимые библиотеки
 )
 
 if(MSVC)
