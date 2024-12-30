@@ -195,8 +195,10 @@ int main(int argc, char* argv[])
     // Инициализация для Switch
     consoleDebugInit(debugDevice_SVC);
     socketInitializeDefault();
-    inet_pton(AF_INET, "192.168.0.38", &__nxlink_host);
+    inet_pton(AF_INET, "192.168.1.38", &__nxlink_host);
     nxlinkStdio();
+
+    printf("Dolphin-Switch starting...\n");
 
     // Задаем путь к ROM'у
     const char* rom_path = "sdmc:/switch/dolphin/roms/bd2.iso";
@@ -208,40 +210,41 @@ int main(int argc, char* argv[])
         consoleUpdate(NULL);
         return 1;
     }
+    printf("ROM file found\n");
     fclose(f);
     
     // Создаем новые аргументы
     char* new_argv[] = {
-        "dolphin-emu",  // argv[0] - имя программы
-        "--exec",       // argv[1] - флаг для запуска ROM'а
-        (char*)rom_path // argv[2] - путь к ROM'у
+        "dolphin-emu",
+        "-e",
+        (char*)rom_path
     };
     
     // Обновляем argc и argv
     argc = sizeof(new_argv) / sizeof(new_argv[0]);
     argv = new_argv;
     
-    printf("Starting Dolphin with ROM: %s\n", rom_path);
-    consoleUpdate(NULL);
-
-    // Даем пользователю время прочитать сообщения
-    svcSleepThread(1000000000ULL); // 1 секунда
+    printf("Starting with ROM: %s\n", rom_path);
 #endif
 
+    printf("Creating command line parser...\n");
     auto parser = CommandLineParse::CreateParser(CommandLineParse::ParserOptions::OmitGUIOptions);
+    printf("Parsing arguments...\n");
     optparse::Values& options = CommandLineParse::ParseArguments(parser.get(), argc, argv);
     std::vector<std::string> args = parser->args();
 
     std::unique_ptr<BootParameters> boot;
     bool game_specified = false;
 
+    printf("Checking exec option...\n");
     if (options.is_set("exec")) {
         const std::string exec_str = static_cast<const char*>(options.get("exec"));
+        printf("Generating boot parameters for: %s\n", exec_str.c_str());
         boot = BootParameters::GenerateFromFile(exec_str);
         game_specified = true;
     }
 
-    // Добавляем определение user_directory
+    printf("Setting up user directory...\n");
     std::string user_directory;
     if (options.is_set("user")) {
         user_directory = static_cast<const char*>(options.get("user"));
@@ -252,18 +255,22 @@ int main(int argc, char* argv[])
     }
 #endif
 
+    printf("Creating platform...\n");
     s_platform = Platform::CreateHeadlessPlatform();
     if (!s_platform || !s_platform->Init()) {
         printf("Failed to initialize platform\n");
         return 1;
     }
 
+    printf("Getting window system info...\n");
     const WindowSystemInfo wsi = s_platform->GetWindowSystemInfo();
     
+    printf("Initializing UI Common...\n");
     UICommon::SetUserDirectory(user_directory);
     UICommon::Init();
     UICommon::InitControllers(wsi);
 
+    printf("Booting core...\n");
     if (!BootManager::BootCore(std::move(boot), wsi)) {
         printf("Could not boot the specified file\n");
         return 1;

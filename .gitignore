@@ -45,3 +45,6 @@ CMakeFiles/*
 Source/Core/DolphinNoGui/CMakeFiles/*
 Source/Core/DolphinNoGUI/**/.nro
 Source/Core/DolphinNoGUI/*/.nacp
+Source/Core/DolphinNoGUI/dolphin-emu.nro
+Source/Core/DolphinNoGUI/dolphin-nogui.nacp
+Binaries/*
