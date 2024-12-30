@@ -65,11 +65,11 @@ void Host_YieldToUI()
 void Host_TitleChanged()
 {
 }
-std::unique_ptr<GBAHostInterface> Host_CreateGBAHost(std::weak_ptr<HW::GBA::Core> core)
-{
-  return nullptr;
-}
-bool Host_UIBlocksControllerState()
-{
-  return false;
-}
+// std::unique_ptr<GBAHostInterface> Host_CreateGBAHost(std::weak_ptr<HW::GBA::Core> core)
+// {
+//   return nullptr;
+// }
+// bool Host_UIBlocksControllerState()
+// {
+//   return false;
+// }
