@@ -1,45 +1,81 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/Blob.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/Blob.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CISOBlob.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/CISOBlob.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CompressedBlob.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/CompressedBlob.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/DirectoryBlob.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/DirectoryBlob.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/DiscExtractor.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/DiscExtractor.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/DiscScrubber.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/DiscScrubber.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/DiscUtils.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/DiscUtils.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/Enums.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/Enums.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/FileBlob.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/FileBlob.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/FileSystemGCWii.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/FileSystemGCWii.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/Filesystem.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/Filesystem.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/GameModDescriptor.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/GameModDescriptor.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/LaggedFibonacciGenerator.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/LaggedFibonacciGenerator.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/NANDImporter.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/NANDImporter.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/NFSBlob.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/NFSBlob.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/RiivolutionParser.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/RiivolutionParser.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/RiivolutionPatcher.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/RiivolutionPatcher.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/ScrubbedBlob.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/ScrubbedBlob.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/SplitFileBlob.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/SplitFileBlob.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/TGCBlob.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/TGCBlob.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/Volume.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/Volume.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/VolumeDisc.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeDisc.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/VolumeFileBlobReader.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeFileBlobReader.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/VolumeGC.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeGC.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/VolumeVerifier.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeVerifier.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/VolumeWad.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeWad.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/VolumeWii.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeWii.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/WIABlob.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/WIABlob.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/WIACompression.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/WIACompression.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/WbfsBlob.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/WbfsBlob.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/WiiEncryptionCache.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/WiiEncryptionCache.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/WiiSaveBanner.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CMakeFiles/discio.dir/WiiSaveBanner.cpp.obj"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "DATA_DIR=\"/opt/devkitpro/portlibs/switch/share/dolphin-emu/\""
+  "LZMA_API_STATIC"
+  "SFML_STATIC"
+  "_ARCH_64=1"
+  "_DEFAULT_SOURCE"
+  "_FILE_OFFSET_BITS=64"
+  "_LARGEFILE_SOURCE"
+  "_M_ARM_64=1"
+  "__STDC_CONSTANT_MACROS"
+  "__STDC_LIMIT_MACROS"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/Blob.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/Blob.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/Blob.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CISOBlob.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/CISOBlob.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/CISOBlob.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/CompressedBlob.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/CompressedBlob.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/CompressedBlob.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/DirectoryBlob.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/DirectoryBlob.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/DirectoryBlob.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/DiscExtractor.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/DiscExtractor.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/DiscExtractor.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/DiscScrubber.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/DiscScrubber.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/DiscScrubber.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/DiscUtils.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/DiscUtils.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/DiscUtils.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/Enums.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/Enums.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/Enums.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/FileBlob.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/FileBlob.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/FileBlob.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/FileSystemGCWii.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/FileSystemGCWii.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/FileSystemGCWii.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/Filesystem.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/Filesystem.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/Filesystem.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/GameModDescriptor.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/GameModDescriptor.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/GameModDescriptor.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/LaggedFibonacciGenerator.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/LaggedFibonacciGenerator.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/LaggedFibonacciGenerator.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/NANDImporter.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/NANDImporter.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/NANDImporter.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/NFSBlob.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/NFSBlob.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/NFSBlob.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/RiivolutionParser.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/RiivolutionParser.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/RiivolutionParser.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/RiivolutionPatcher.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/RiivolutionPatcher.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/RiivolutionPatcher.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/ScrubbedBlob.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/ScrubbedBlob.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/ScrubbedBlob.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/SplitFileBlob.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/SplitFileBlob.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/SplitFileBlob.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/TGCBlob.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/TGCBlob.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/TGCBlob.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/Volume.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/Volume.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/Volume.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/VolumeDisc.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeDisc.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeDisc.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/VolumeFileBlobReader.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeFileBlobReader.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeFileBlobReader.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/VolumeGC.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeGC.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeGC.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/VolumeVerifier.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeVerifier.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeVerifier.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/VolumeWad.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeWad.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeWad.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/VolumeWii.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeWii.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/VolumeWii.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/WIABlob.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/WIABlob.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/WIABlob.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/WIACompression.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/WIACompression.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/WIACompression.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/WbfsBlob.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/WbfsBlob.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/WbfsBlob.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/WiiEncryptionCache.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/WiiEncryptionCache.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/WiiEncryptionCache.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/DiscIO/WiiSaveBanner.cpp" "Source/Core/DiscIO/CMakeFiles/discio.dir/WiiSaveBanner.cpp.obj" "gcc" "Source/Core/DiscIO/CMakeFiles/discio.dir/WiiSaveBanner.cpp.obj.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "Externals/SFML/include"
+  "Source/Core"
+  "Externals/enet/include"
+  "External/minizip"
+  "Externals/soundtouch"
+  "Externals/mbedtls/include"
+  "Externals/picojson"
+  "Externals/fmt/include"
+  "Externals/minizip/."
+  "Externals/zlib-ng/zlib-ng"
+  "Externals/cubeb/cubeb/include"
+  "exports"
+  "Externals/bzip2"
+  "Externals/liblzma/api"
+  "Externals/zstd/lib"
+  "Externals/expr/include"
+  "Externals/pugixml/."
+  "Externals/rangeset/include"
+  "Externals/glslang/glslang/Public"
+  "Source/Core/VideoCommon/SYSTEM"
+  "/opt/devkitpro/libnx/include"
   )
 
 # Targets to which this target links.

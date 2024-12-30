@@ -1,12 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/videonull.dir/NullBackend.cpp.obj"
-  "CMakeFiles/videonull.dir/NullBackend.cpp.obj.d"
   "CMakeFiles/videonull.dir/NullGfx.cpp.obj"
-  "CMakeFiles/videonull.dir/NullGfx.cpp.obj.d"
   "CMakeFiles/videonull.dir/NullTexture.cpp.obj"
-  "CMakeFiles/videonull.dir/NullTexture.cpp.obj.d"
   "CMakeFiles/videonull.dir/NullVertexManager.cpp.obj"
-  "CMakeFiles/videonull.dir/NullVertexManager.cpp.obj.d"
   "libvideonull.a"
   "libvideonull.pdb"
 )

@@ -1,29 +1,64 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/Clipper.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/Clipper.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/EfbCopy.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/EfbCopy.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/EfbInterface.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/EfbInterface.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/Rasterizer.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/Rasterizer.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWBoundingBox.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWBoundingBox.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWGfx.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWGfx.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWOGLWindow.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWOGLWindow.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWRenderer.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWRenderer.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWTexture.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWTexture.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWVertexLoader.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWVertexLoader.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWmain.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWmain.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SetupUnit.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SetupUnit.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/Tev.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/Tev.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/TextureEncoder.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/TextureEncoder.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/TextureSampler.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/TextureSampler.cpp.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/TransformUnit.cpp" "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/TransformUnit.cpp.obj"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "DATA_DIR=\"/opt/devkitpro/portlibs/switch/share/dolphin-emu/\""
+  "SFML_STATIC"
+  "_ARCH_64=1"
+  "_DEFAULT_SOURCE"
+  "_FILE_OFFSET_BITS=64"
+  "_LARGEFILE_SOURCE"
+  "_M_ARM_64=1"
+  "__STDC_CONSTANT_MACROS"
+  "__STDC_LIMIT_MACROS"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/Clipper.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/Clipper.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/Clipper.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/EfbCopy.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/EfbCopy.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/EfbCopy.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/EfbInterface.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/EfbInterface.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/EfbInterface.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/Rasterizer.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/Rasterizer.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/Rasterizer.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWBoundingBox.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWBoundingBox.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWBoundingBox.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWGfx.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWGfx.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWGfx.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWOGLWindow.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWOGLWindow.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWOGLWindow.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWRenderer.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWRenderer.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWRenderer.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWTexture.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWTexture.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWTexture.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWVertexLoader.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWVertexLoader.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWVertexLoader.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SWmain.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWmain.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SWmain.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/SetupUnit.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SetupUnit.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/SetupUnit.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/Tev.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/Tev.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/Tev.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/TextureEncoder.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/TextureEncoder.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/TextureEncoder.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/TextureSampler.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/TextureSampler.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/TextureSampler.cpp.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Source/Core/VideoBackends/Software/TransformUnit.cpp" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/TransformUnit.cpp.obj" "gcc" "Source/Core/VideoBackends/Software/CMakeFiles/videosoftware.dir/TransformUnit.cpp.obj.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "Externals/SFML/include"
+  "Source/Core"
+  "Externals/enet/include"
+  "External/minizip"
+  "Externals/soundtouch"
+  "Externals/mbedtls/include"
+  "Externals/picojson"
+  "Externals/fmt/include"
+  "Externals/minizip/."
+  "Externals/zlib-ng/zlib-ng"
+  "Externals/cubeb/cubeb/include"
+  "exports"
+  "Externals/bzip2"
+  "Externals/liblzma/api"
+  "Externals/zstd/lib"
+  "Externals/expr/include"
+  "Externals/pugixml/."
+  "Externals/glslang/glslang/Public"
+  "Source/Core/VideoCommon/SYSTEM"
+  "Externals/rangeset/include"
+  "/opt/devkitpro/libnx/include"
   )
 
 # Targets to which this target links.
