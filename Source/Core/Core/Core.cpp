@@ -97,9 +97,26 @@
 #include "jni/AndroidCommon/IDCache.h"
 #endif
 
+static bool s_wants_determinism;
+static size_t log_pos = 0; // Adjust the type as necessary
+static char log_buffer[1024]; // Adjust the size as necessary
+
+// void LogCore(const char* format, ...) {
+//     va_list args;
+//     va_start(args, format);
+//     char temp[1024];
+//     vsnprintf(temp, sizeof(temp), format, args);
+//     va_end(args);
+    
+//     log_pos += snprintf(log_buffer + log_pos, sizeof(log_buffer) - log_pos, "%s\n", temp);
+//     printf("\x1b[1;1H%s", log_buffer);
+//     svcSleepThread(100000000ULL);
+// }
+
+
 namespace Core
 {
-static bool s_wants_determinism;
+
 
 // Declarations and definitions
 static bool s_is_stopping = false;
@@ -233,6 +250,7 @@ bool WantsDeterminism()
 // BootManager.cpp
 bool Init(std::unique_ptr<BootParameters> boot, const WindowSystemInfo& wsi)
 {
+  //LogCore("Core Init: Initialization started...");
   if (s_emu_thread.joinable())
   {
     if (IsRunning())
@@ -240,11 +258,12 @@ bool Init(std::unique_ptr<BootParameters> boot, const WindowSystemInfo& wsi)
       PanicAlertFmtT("Emu Thread already running");
       return false;
     }
+    //LogCore("Core Init: JOIN started...");
 
     // The Emu Thread was stopped, synchronize with it.
     s_emu_thread.join();
   }
-
+  //LogCore("Core Init: HostDispatchJobs started...");
   // Drain any left over jobs
   HostDispatchJobs();
 
@@ -253,17 +272,18 @@ bool Init(std::unique_ptr<BootParameters> boot, const WindowSystemInfo& wsi)
                Core::System::GetInstance().IsDualCoreMode() ? "Yes" : "No");
 
   Host_UpdateMainFrame();  // Disable any menus or buttons at boot
-
+  //LogCore("Core Init: Host_UpdateMainFrame started...");
   // Manually reactivate the video backend in case a GameINI overrides the video backend setting.
   VideoBackendBase::PopulateBackendInfo();
-
+  //LogCore("Core Init: PopulateBackendInfo started...");
   // Issue any API calls which must occur on the main thread for the graphics backend.
   WindowSystemInfo prepared_wsi(wsi);
   g_video_backend->PrepareWindow(prepared_wsi);
-
+  //LogCore("Core Init: PrepareWindow started...");
   // Start the emu thread
   s_is_booting.Set();
   s_emu_thread = std::thread(EmuThread, std::move(boot), prepared_wsi);
+  //LogCore("Core Init: Emu thread started...");
   return true;
 }
 
