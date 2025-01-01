@@ -59,6 +59,7 @@ void Log(const char* format, ...) {
     
     log_pos += snprintf(log_buffer + log_pos, sizeof(log_buffer) - log_pos, "%s\n", temp);
     printf("\x1b[1;1H%s", log_buffer);
+    consoleUpdate(NULL);
     svcSleepThread(100000000ULL);
 }
 #endif

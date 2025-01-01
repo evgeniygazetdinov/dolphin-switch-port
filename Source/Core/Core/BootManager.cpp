@@ -51,68 +51,68 @@ void RestoreConfig()
 
 bool BootCore(std::unique_ptr<BootParameters> boot, const WindowSystemInfo& wsi)
 {
-#ifdef __SWITCH__
-  static char log_buffer[2048] = {0};
-  int log_pos = 0;
+// #ifdef __SWITCH__
+  // static char log_buffer[2048] = {0};
+  // int log_pos = 0;
   
-  auto Log = [&](const char* format, ...) {
-    va_list args;
-    va_start(args, format);
-    char temp[1024];
-    vsnprintf(temp, sizeof(temp), format, args);
-    va_end(args);
+  // auto Log = [&](const char* format, ...) {
+  //   va_list args;
+  //   va_start(args, format);
+  //   char temp[1024];
+  //   vsnprintf(temp, sizeof(temp), format, args);
+  //   va_end(args);
     
-    log_pos += snprintf(log_buffer + log_pos, sizeof(log_buffer) - log_pos, "%s\n", temp);
-    printf("\x1b[1;1H%s", log_buffer);
-        svcSleepThread(100000000ULL);
-  };
+  //   log_pos += snprintf(log_buffer + log_pos, sizeof(log_buffer) - log_pos, "%s\n", temp);
+  //   printf("\x1b[1;1H%s", log_buffer);
+  //       svcSleepThread(100000000ULL);
+  // };
 
-  Log("BootManager: Starting...");
-#endif
+  // Log("BootManager: Starting...");
+// #endif
 
   if (!boot)
     return false;
 
 #ifdef __SWITCH__
-  Log("BootManager: Loading config...");
+  // Log("BootManager: Loading config...");
 #endif
 
   Config::Save();
 
 #ifdef __SWITCH__
-  Log("BootManager: Preparing boot params...");
+  // Log("BootManager: Preparing boot params...");
 #endif
 
   if (Config::Get(Config::MAIN_DSP_HLE))
   {
 #ifdef __SWITCH__
-    Log("BootManager: DSP HLE enabled");
+    // Log("BootManager: DSP HLE enabled");
 #endif
   }
 
 #ifdef __SWITCH__
-  Log("BootManager: Starting core...");
+  // Log("BootManager: Starting core...");
 #endif
 
   if (!Core::Init(std::move(boot), wsi))
   {
 #ifdef __SWITCH__
-    Log("BootManager: Core init failed!");
-    Log("BootManager: State at failure = %d", static_cast<int>(Core::GetState()));
+    // Log("BootManager: Core init failed!");
+    // // Log("BootManager: State at failure = %d", static_cast<int>(Core::GetState()));
     svcSleepThread(1000000000ULL);
 #endif
     return false;
   }
 
 #ifdef __SWITCH__
-  Log("BootManager: Core initialized");
-  Log("BootManager: Initial state = f");
+  // Log("BootManager: Core initialized");
+  // Log("BootManager: Initial state = f");
   
   
   if (Core::GetState() == Core::State::Stopping)
   {
-    Log("BootManager: Core is stopping immediately!");
-    Log("BootManager: Checking last error...");
+    // Log("BootManager: Core is stopping immediately!");
+    // Log("BootManager: Checking last error...");
   }
 
 
