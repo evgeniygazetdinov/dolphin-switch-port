@@ -1,14 +1,34 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/subprojects/speex/resample.c" "/home/ev/ClangProjects/dolphin-switch/Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "DATA_DIR=\"/opt/devkitpro/portlibs/switch/share/dolphin-emu/\""
+  "EXPORT="
+  "FLOATING_POINT"
+  "OUTSIDE_SPEEX"
+  "RANDOM_PREFIX=speex"
+  "_ARCH_64=1"
+  "_DEFAULT_SOURCE"
+  "_FILE_OFFSET_BITS=64"
+  "_LARGEFILE_SOURCE"
+  "_M_ARM_64=1"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/subprojects/speex/resample.c" "Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj" "gcc" "Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj.d"
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "Source/Core"
+  "Externals/enet/include"
+  "External/minizip"
+  "Externals/soundtouch"
+  "/opt/devkitpro/libnx/include"
   )
 
 # Targets to which this target links.

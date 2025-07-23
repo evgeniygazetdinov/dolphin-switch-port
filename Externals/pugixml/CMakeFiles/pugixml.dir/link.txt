@@ -1,2 +1,2 @@
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libpugixml.a CMakeFiles/pugixml.dir/pugixml.cpp.obj
+/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libpugixml.a  CMakeFiles/pugixml.dir/pugixml.cpp.obj
 /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib libpugixml.a

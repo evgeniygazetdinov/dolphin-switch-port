@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lzo2.dir/minilzo.c.obj"
-  "CMakeFiles/lzo2.dir/minilzo.c.obj.d"
   "liblzo2.a"
   "liblzo2.pdb"
 )

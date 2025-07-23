@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cpp-optparse.dir/OptionParser.cpp.obj"
-  "CMakeFiles/cpp-optparse.dir/OptionParser.cpp.obj.d"
   "libcpp-optparse.a"
   "libcpp-optparse.pdb"
 )

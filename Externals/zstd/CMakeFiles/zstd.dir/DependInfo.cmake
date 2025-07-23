@@ -1,37 +1,57 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/debug.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/common/debug.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/entropy_common.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/common/entropy_common.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/error_private.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/common/error_private.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/fse_decompress.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/common/fse_decompress.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/pool.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/common/pool.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/threading.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/common/threading.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/xxhash.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/common/xxhash.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/zstd_common.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/common/zstd_common.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/fse_compress.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/compress/fse_compress.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/hist.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/compress/hist.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/huf_compress.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/compress/huf_compress.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_compress.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_compress_literals.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_literals.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_compress_sequences.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_sequences.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_double_fast.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_double_fast.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_fast.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_fast.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_lazy.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_lazy.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_ldm.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_ldm.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_opt.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_opt.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstdmt_compress.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstdmt_compress.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/decompress/huf_decompress.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/huf_decompress.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/decompress/zstd_ddict.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_ddict.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/decompress/zstd_decompress.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress.c.obj"
+  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/decompress/zstd_decompress_block.c" "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress_block.c.obj"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "DATA_DIR=\"/opt/devkitpro/portlibs/switch/share/dolphin-emu/\""
+  "HAVE_UNISTD_H"
+  "XXH_NAMESPACE=ZSTD_"
+  "_ARCH_64=1"
+  "_DEFAULT_SOURCE"
+  "_FILE_OFFSET_BITS=64"
+  "_LARGEFILE_SOURCE"
+  "_M_ARM_64=1"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/debug.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/debug.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/debug.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/entropy_common.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/entropy_common.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/entropy_common.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/error_private.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/error_private.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/error_private.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/fse_decompress.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/fse_decompress.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/fse_decompress.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/pool.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/pool.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/pool.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/threading.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/threading.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/threading.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/xxhash.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/xxhash.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/xxhash.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/zstd_common.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/zstd_common.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/common/zstd_common.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/fse_compress.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/fse_compress.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/fse_compress.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/hist.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/hist.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/hist.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/huf_compress.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/huf_compress.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/huf_compress.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_compress.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_compress_literals.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_literals.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_literals.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_compress_sequences.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_sequences.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_sequences.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_double_fast.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_double_fast.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_double_fast.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_fast.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_fast.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_fast.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_lazy.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_lazy.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_lazy.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_ldm.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_ldm.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_ldm.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstd_opt.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_opt.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_opt.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/compress/zstdmt_compress.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstdmt_compress.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstdmt_compress.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/decompress/huf_decompress.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/huf_decompress.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/huf_decompress.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/decompress/zstd_ddict.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_ddict.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_ddict.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/decompress/zstd_decompress.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress.c.obj.d"
-  "/home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/decompress/zstd_decompress_block.c" "Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress_block.c.obj" "gcc" "Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress_block.c.obj.d"
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "Source/Core"
+  "Externals/enet/include"
+  "Externals/zstd/lib"
+  "Externals/zstd/lib/common"
+  "Externals/zstd/lib/compress"
+  "Externals/zstd/lib/decompress"
+  "/opt/devkitpro/libnx/include"
   )
 
 # Targets to which this target links.

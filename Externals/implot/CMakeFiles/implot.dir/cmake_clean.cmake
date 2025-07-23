@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/implot.dir/implot/implot.cpp.obj"
-  "CMakeFiles/implot.dir/implot/implot.cpp.obj.d"
   "CMakeFiles/implot.dir/implot/implot_items.cpp.obj"
-  "CMakeFiles/implot.dir/implot/implot_items.cpp.obj.d"
   "libimplot.a"
   "libimplot.pdb"
 )

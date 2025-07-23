@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/FatFs.dir/ff.c.obj"
-  "CMakeFiles/FatFs.dir/ff.c.obj.d"
   "CMakeFiles/FatFs.dir/ffunicode.c.obj"
-  "CMakeFiles/FatFs.dir/ffunicode.c.obj.d"
   "libFatFs.a"
   "libFatFs.pdb"
 )
