@@ -39,8 +39,6 @@ add_library(common
   DebugInterface.h
   DynamicLibrary.cpp
   DynamicLibrary.h
-  ENet.cpp
-  ENet.h
   EnumFormatter.h
   EnumMap.h
   Event.h
@@ -126,8 +124,6 @@ add_library(common
   TraversalClient.h
   TraversalProto.h
   TypeUtils.h
-  UPnP.cpp
-  UPnP.h
   VariantUtil.h
   Version.cpp
   Version.h

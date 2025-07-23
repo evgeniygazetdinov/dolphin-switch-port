@@ -143,4 +143,47 @@ then exit.
   -l, --compression_level
                         Optional. Print the level of compression for WIA/RVZ
                         formats, then exit.
+
+## Preparing environment   
+- install devkitpro                      
+- install libnx                      
+- install SDL2    
+- install SDL2_mixer 
+- latest cmake version                     
+
+## Bash variables:
+
+```bash
+export DEVKITPRO=/opt/devkitpro
+export DEVKITA64=/opt/devkitpro/devkitA64
+export PATH=$DEVKITA64/bin:$PATH
+source ~/.bashrc
+```
+
+## Build creation
+```bash
+rm -rf build
+mkdir build
+cd build
+cmake -DCMAKE_TOOLCHAIN_FILE=/opt/devkitpro/cmake/Switch.cmake \
+      -DENABLE_SDL=OFF \
+      -DENABLE_QT=OFF \
+      -DENABLE_LTO=OFF \
+      -DENABLE_TESTS=OFF \
+      -DUSE_DISCORD_PRESENCE=OFF \
+      -DENABLE_HEADLESS=ON \
+      -DENABLE_NOGUI=ON \
+      -DENABLE_CLI_TOOL=OFF \
+      -DENABLE_AUTOUPDATE=OFF \
+      -DENABLE_ANALYTICS=OFF \
+      -DENABLE_VULKAN=OFF \
+      -DENABLE_NETPLAY=OFF \
+      -DUSE_SHARED_ENET=OFF \
+      -DCMAKE_VERBOSE_MAKEFILE=ON \
+      -DCMAKE_BUILD_TYPE=Debug \
+      ..
+```
+-after something like success:
+```bash 
+  cd build && make -j$(nproc)
 ```

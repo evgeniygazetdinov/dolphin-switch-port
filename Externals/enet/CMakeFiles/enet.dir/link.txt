@@ -1,2 +1,0 @@
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ar qc libenet.a  CMakeFiles/enet.dir/callbacks.c.obj CMakeFiles/enet.dir/compress.c.obj CMakeFiles/enet.dir/host.c.obj CMakeFiles/enet.dir/list.c.obj CMakeFiles/enet.dir/packet.c.obj CMakeFiles/enet.dir/peer.c.obj CMakeFiles/enet.dir/protocol.c.obj CMakeFiles/enet.dir/unix.c.obj CMakeFiles/enet.dir/win32.c.obj
-/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc-ranlib libenet.a
