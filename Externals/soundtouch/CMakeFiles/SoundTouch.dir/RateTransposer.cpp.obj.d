@@ -1,5 +1,5 @@
 Externals/soundtouch/CMakeFiles/SoundTouch.dir/RateTransposer.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/RateTransposer.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/RateTransposer.cpp \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/memory.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/string.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
@@ -35,11 +35,11 @@ Externals/soundtouch/CMakeFiles/SoundTouch.dir/RateTransposer.cpp.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdio.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stdarg.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/stdio.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/RateTransposer.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/AAFilter.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSampleBuffer.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSamplePipe.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateLinear.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateCubic.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateShannon.h
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/RateTransposer.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/AAFilter.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSampleBuffer.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSamplePipe.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateLinear.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateCubic.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateShannon.h

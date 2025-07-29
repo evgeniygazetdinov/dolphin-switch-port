@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 # Include any dependencies generated for this target.
 include Externals/FatFs/CMakeFiles/FatFs.dir/depend.make
@@ -72,30 +72,30 @@ include Externals/FatFs/CMakeFiles/FatFs.dir/flags.make
 Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.obj: Externals/FatFs/CMakeFiles/FatFs.dir/flags.make
 Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.obj: Externals/FatFs/ff.c
 Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.obj: Externals/FatFs/CMakeFiles/FatFs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FatFs && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.obj -MF CMakeFiles/FatFs.dir/ff.c.obj.d -o CMakeFiles/FatFs.dir/ff.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/FatFs && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.obj -MF CMakeFiles/FatFs.dir/ff.c.obj.d -o CMakeFiles/FatFs.dir/ff.c.obj -c /home/ev/code/dolphin-switch-port//Externals/FatFs/ff.c
 
 Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FatFs.dir/ff.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FatFs && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ff.c > CMakeFiles/FatFs.dir/ff.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/FatFs && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/FatFs/ff.c > CMakeFiles/FatFs.dir/ff.c.i
 
 Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FatFs.dir/ff.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FatFs && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ff.c -o CMakeFiles/FatFs.dir/ff.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/FatFs && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/FatFs/ff.c -o CMakeFiles/FatFs.dir/ff.c.s
 
 Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.obj: Externals/FatFs/CMakeFiles/FatFs.dir/flags.make
 Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.obj: Externals/FatFs/ffunicode.c
 Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.obj: Externals/FatFs/CMakeFiles/FatFs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FatFs && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.obj -MF CMakeFiles/FatFs.dir/ffunicode.c.obj.d -o CMakeFiles/FatFs.dir/ffunicode.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ffunicode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/FatFs && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.obj -MF CMakeFiles/FatFs.dir/ffunicode.c.obj.d -o CMakeFiles/FatFs.dir/ffunicode.c.obj -c /home/ev/code/dolphin-switch-port//Externals/FatFs/ffunicode.c
 
 Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FatFs.dir/ffunicode.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FatFs && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ffunicode.c > CMakeFiles/FatFs.dir/ffunicode.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/FatFs && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/FatFs/ffunicode.c > CMakeFiles/FatFs.dir/ffunicode.c.i
 
 Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FatFs.dir/ffunicode.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FatFs && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ffunicode.c -o CMakeFiles/FatFs.dir/ffunicode.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/FatFs && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/FatFs/ffunicode.c -o CMakeFiles/FatFs.dir/ffunicode.c.s
 
 # Object files for target FatFs
 FatFs_OBJECTS = \
@@ -109,19 +109,19 @@ Externals/FatFs/libFatFs.a: Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.obj
 Externals/FatFs/libFatFs.a: Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.obj
 Externals/FatFs/libFatFs.a: Externals/FatFs/CMakeFiles/FatFs.dir/build.make
 Externals/FatFs/libFatFs.a: Externals/FatFs/CMakeFiles/FatFs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libFatFs.a"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FatFs && $(CMAKE_COMMAND) -P CMakeFiles/FatFs.dir/cmake_clean_target.cmake
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FatFs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FatFs.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libFatFs.a"
+	cd /home/ev/code/dolphin-switch-port//Externals/FatFs && $(CMAKE_COMMAND) -P CMakeFiles/FatFs.dir/cmake_clean_target.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/FatFs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FatFs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Externals/FatFs/CMakeFiles/FatFs.dir/build: Externals/FatFs/libFatFs.a
 .PHONY : Externals/FatFs/CMakeFiles/FatFs.dir/build
 
 Externals/FatFs/CMakeFiles/FatFs.dir/clean:
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FatFs && $(CMAKE_COMMAND) -P CMakeFiles/FatFs.dir/cmake_clean.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/FatFs && $(CMAKE_COMMAND) -P CMakeFiles/FatFs.dir/cmake_clean.cmake
 .PHONY : Externals/FatFs/CMakeFiles/FatFs.dir/clean
 
 Externals/FatFs/CMakeFiles/FatFs.dir/depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/FatFs /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/FatFs /home/ev/ClangProjects/dolphin-switch/Externals/FatFs/CMakeFiles/FatFs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/FatFs /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/FatFs /home/ev/code/dolphin-switch-port//Externals/FatFs/CMakeFiles/FatFs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Externals/FatFs/CMakeFiles/FatFs.dir/depend
 

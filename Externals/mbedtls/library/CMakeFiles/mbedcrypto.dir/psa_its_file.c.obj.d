@@ -1,8 +1,8 @@
 Externals/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_its_file.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/psa_its_file.c \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/common.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/config.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/check_config.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/psa_its_file.c \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/common.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/config.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/check_config.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/limits.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/syslimits.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/limits.h \
@@ -17,8 +17,8 @@ Externals/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_its_file.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdint.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_intsup.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_stdint.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/platform.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/platform_time.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/platform.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/platform_time.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/time.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/config.h \
@@ -49,11 +49,11 @@ Externals/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_its_file.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/alloca.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/psa_crypto_its.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/psa/crypto_types.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/psa/crypto_platform.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/config_psa.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/psa/crypto_values.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/psa_crypto_its.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/psa/crypto_types.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/psa/crypto_platform.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/config_psa.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/psa/crypto_values.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/string.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/strings.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/string.h

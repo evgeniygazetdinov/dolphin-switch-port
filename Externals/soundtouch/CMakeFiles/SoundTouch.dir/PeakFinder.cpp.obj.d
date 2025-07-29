@@ -1,5 +1,5 @@
 Externals/soundtouch/CMakeFiles/SoundTouch.dir/PeakFinder.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/PeakFinder.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/PeakFinder.cpp \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/math.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/cmath \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/requires_hosted.h \
@@ -32,4 +32,4 @@ Externals/soundtouch/CMakeFiles/SoundTouch.dir/PeakFinder.cpp.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/version.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/assert.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/PeakFinder.h
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/PeakFinder.h

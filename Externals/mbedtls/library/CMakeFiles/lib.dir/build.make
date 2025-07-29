@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 # Utility rule file for lib.
 
@@ -79,10 +79,10 @@ Externals/mbedtls/library/CMakeFiles/lib.dir/build: lib
 .PHONY : Externals/mbedtls/library/CMakeFiles/lib.dir/build
 
 Externals/mbedtls/library/CMakeFiles/lib.dir/clean:
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && $(CMAKE_COMMAND) -P CMakeFiles/lib.dir/cmake_clean.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && $(CMAKE_COMMAND) -P CMakeFiles/lib.dir/cmake_clean.cmake
 .PHONY : Externals/mbedtls/library/CMakeFiles/lib.dir/clean
 
 Externals/mbedtls/library/CMakeFiles/lib.dir/depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/CMakeFiles/lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/CMakeFiles/lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Externals/mbedtls/library/CMakeFiles/lib.dir/depend
 

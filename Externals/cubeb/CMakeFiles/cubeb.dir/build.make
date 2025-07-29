@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 # Include any dependencies generated for this target.
 include Externals/cubeb/CMakeFiles/cubeb.dir/depend.make
@@ -72,86 +72,86 @@ include Externals/cubeb/CMakeFiles/cubeb.dir/flags.make
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj: Externals/cubeb/CMakeFiles/cubeb.dir/flags.make
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj: Externals/cubeb/cubeb/src/cubeb.c
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj: Externals/cubeb/CMakeFiles/cubeb.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj -MF CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj.d -o CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj -MF CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj.d -o CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj -c /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb.c
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb.c > CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb.c > CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.i
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb.c -o CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb.c -o CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.s
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj: Externals/cubeb/CMakeFiles/cubeb.dir/flags.make
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj: Externals/cubeb/cubeb/src/cubeb_mixer.cpp
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj: Externals/cubeb/CMakeFiles/cubeb.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj -MF CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj.d -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_mixer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj -MF CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj.d -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj -c /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_mixer.cpp
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_mixer.cpp > CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.i
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_mixer.cpp > CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.i
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_mixer.cpp -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.s
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_mixer.cpp -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.s
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.obj: Externals/cubeb/CMakeFiles/cubeb.dir/flags.make
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.obj: Externals/cubeb/cubeb/src/cubeb_resampler.cpp
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.obj: Externals/cubeb/CMakeFiles/cubeb.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.obj -MF CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.obj.d -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_resampler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.obj -MF CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.obj.d -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.obj -c /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_resampler.cpp
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_resampler.cpp > CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.i
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_resampler.cpp > CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.i
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_resampler.cpp -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.s
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_resampler.cpp -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.s
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.obj: Externals/cubeb/CMakeFiles/cubeb.dir/flags.make
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.obj: Externals/cubeb/cubeb/src/cubeb_log.cpp
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.obj: Externals/cubeb/CMakeFiles/cubeb.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.obj -MF CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.obj.d -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_log.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.obj -MF CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.obj.d -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.obj -c /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_log.cpp
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_log.cpp > CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.i
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_log.cpp > CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.i
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_log.cpp -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.s
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_log.cpp -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.s
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj: Externals/cubeb/CMakeFiles/cubeb.dir/flags.make
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj: Externals/cubeb/cubeb/src/cubeb_strings.c
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj: Externals/cubeb/CMakeFiles/cubeb.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj -MF CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj.d -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_strings.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj -MF CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj.d -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj -c /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_strings.c
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_strings.c > CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_strings.c > CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.i
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_strings.c -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_strings.c -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.s
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.obj: Externals/cubeb/CMakeFiles/cubeb.dir/flags.make
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.obj: Externals/cubeb/cubeb/src/cubeb_utils.cpp
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.obj: Externals/cubeb/CMakeFiles/cubeb.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.obj -MF CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.obj.d -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.obj -MF CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.obj.d -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.obj -c /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_utils.cpp
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_utils.cpp > CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.i
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_utils.cpp > CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.i
 
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_utils.cpp -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.s
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_utils.cpp -o CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.s
 
 # Object files for target cubeb
 cubeb_OBJECTS = \
@@ -164,7 +164,7 @@ cubeb_OBJECTS = \
 
 # External object files for target cubeb
 cubeb_EXTERNAL_OBJECTS = \
-"/home/ev/ClangProjects/dolphin-switch/Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj"
+"/home/ev/code/dolphin-switch-port//Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj"
 
 Externals/cubeb/libcubeb.a: Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj
 Externals/cubeb/libcubeb.a: Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj
@@ -175,19 +175,19 @@ Externals/cubeb/libcubeb.a: Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb
 Externals/cubeb/libcubeb.a: Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj
 Externals/cubeb/libcubeb.a: Externals/cubeb/CMakeFiles/cubeb.dir/build.make
 Externals/cubeb/libcubeb.a: Externals/cubeb/CMakeFiles/cubeb.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libcubeb.a"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && $(CMAKE_COMMAND) -P CMakeFiles/cubeb.dir/cmake_clean_target.cmake
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cubeb.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libcubeb.a"
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && $(CMAKE_COMMAND) -P CMakeFiles/cubeb.dir/cmake_clean_target.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cubeb.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Externals/cubeb/CMakeFiles/cubeb.dir/build: Externals/cubeb/libcubeb.a
 .PHONY : Externals/cubeb/CMakeFiles/cubeb.dir/build
 
 Externals/cubeb/CMakeFiles/cubeb.dir/clean:
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && $(CMAKE_COMMAND) -P CMakeFiles/cubeb.dir/cmake_clean.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && $(CMAKE_COMMAND) -P CMakeFiles/cubeb.dir/cmake_clean.cmake
 .PHONY : Externals/cubeb/CMakeFiles/cubeb.dir/clean
 
 Externals/cubeb/CMakeFiles/cubeb.dir/depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/cubeb /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/cubeb /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/CMakeFiles/cubeb.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/cubeb /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/cubeb /home/ev/code/dolphin-switch-port//Externals/cubeb/CMakeFiles/cubeb.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Externals/cubeb/CMakeFiles/cubeb.dir/depend
 

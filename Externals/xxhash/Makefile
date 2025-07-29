@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/ClangProjects/dolphin-switch/CPackSourceConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/code/dolphin-switch-port//CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles /home/ev/ClangProjects/dolphin-switch/Externals/xxhash//CMakeFiles/progress.marks
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/xxhash/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles /home/ev/code/dolphin-switch-port//Externals/xxhash//CMakeFiles/progress.marks
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/xxhash/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/xxhash/clean
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/xxhash/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/xxhash/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/xxhash/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/xxhash/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/xxhash/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Externals/xxhash/CMakeFiles/xxhash.dir/rule:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/xxhash/CMakeFiles/xxhash.dir/rule
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/xxhash/CMakeFiles/xxhash.dir/rule
 .PHONY : Externals/xxhash/CMakeFiles/xxhash.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ xxhash: Externals/xxhash/CMakeFiles/xxhash.dir/rule
 
 # fast build rule for target.
 xxhash/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/xxhash/CMakeFiles/xxhash.dir/build.make Externals/xxhash/CMakeFiles/xxhash.dir/build
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/xxhash/CMakeFiles/xxhash.dir/build.make Externals/xxhash/CMakeFiles/xxhash.dir/build
 .PHONY : xxhash/fast
 
 xxhash.obj: xxhash.c.obj
@@ -200,7 +200,7 @@ xxhash.obj: xxhash.c.obj
 
 # target to build an object file
 xxhash.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/xxhash/CMakeFiles/xxhash.dir/build.make Externals/xxhash/CMakeFiles/xxhash.dir/xxhash.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/xxhash/CMakeFiles/xxhash.dir/build.make Externals/xxhash/CMakeFiles/xxhash.dir/xxhash.c.obj
 .PHONY : xxhash.c.obj
 
 xxhash.i: xxhash.c.i
@@ -208,7 +208,7 @@ xxhash.i: xxhash.c.i
 
 # target to preprocess a source file
 xxhash.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/xxhash/CMakeFiles/xxhash.dir/build.make Externals/xxhash/CMakeFiles/xxhash.dir/xxhash.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/xxhash/CMakeFiles/xxhash.dir/build.make Externals/xxhash/CMakeFiles/xxhash.dir/xxhash.c.i
 .PHONY : xxhash.c.i
 
 xxhash.s: xxhash.c.s
@@ -216,7 +216,7 @@ xxhash.s: xxhash.c.s
 
 # target to generate assembly for a file
 xxhash.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/xxhash/CMakeFiles/xxhash.dir/build.make Externals/xxhash/CMakeFiles/xxhash.dir/xxhash.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/xxhash/CMakeFiles/xxhash.dir/build.make Externals/xxhash/CMakeFiles/xxhash.dir/xxhash.c.s
 .PHONY : xxhash.c.s
 
 # Help Target
@@ -248,6 +248,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

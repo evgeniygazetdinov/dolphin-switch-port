@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 # Include any dependencies generated for this target.
 include Externals/cubeb/CMakeFiles/speex.dir/depend.make
@@ -72,16 +72,16 @@ include Externals/cubeb/CMakeFiles/speex.dir/flags.make
 Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj: Externals/cubeb/CMakeFiles/speex.dir/flags.make
 Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj: Externals/cubeb/cubeb/subprojects/speex/resample.c
 Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj: Externals/cubeb/CMakeFiles/speex.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj -MF CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj.d -o CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/subprojects/speex/resample.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj -MF CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj.d -o CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj -c /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/subprojects/speex/resample.c
 
 Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/subprojects/speex/resample.c > CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/subprojects/speex/resample.c > CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.i
 
 Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/subprojects/speex/resample.c -o CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/subprojects/speex/resample.c -o CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.s
 
 speex: Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj
 speex: Externals/cubeb/CMakeFiles/speex.dir/build.make
@@ -92,10 +92,10 @@ Externals/cubeb/CMakeFiles/speex.dir/build: speex
 .PHONY : Externals/cubeb/CMakeFiles/speex.dir/build
 
 Externals/cubeb/CMakeFiles/speex.dir/clean:
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/cubeb && $(CMAKE_COMMAND) -P CMakeFiles/speex.dir/cmake_clean.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/cubeb && $(CMAKE_COMMAND) -P CMakeFiles/speex.dir/cmake_clean.cmake
 .PHONY : Externals/cubeb/CMakeFiles/speex.dir/clean
 
 Externals/cubeb/CMakeFiles/speex.dir/depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/cubeb /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/cubeb /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/CMakeFiles/speex.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/cubeb /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/cubeb /home/ev/code/dolphin-switch-port//Externals/cubeb/CMakeFiles/speex.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Externals/cubeb/CMakeFiles/speex.dir/depend
 

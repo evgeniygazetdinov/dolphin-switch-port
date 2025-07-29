@@ -1,9 +1,9 @@
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/ChannelMaps.cpp \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/include/FreeSurround/ChannelMaps.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/include/FreeSurround/FreeSurroundDecoder.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/include/FreeSurround/KissFFTR.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/include/FreeSurround/KissFFT.h \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/ChannelMaps.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/include/FreeSurround/ChannelMaps.h \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/include/FreeSurround/FreeSurroundDecoder.h \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/include/FreeSurround/KissFFTR.h \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/include/FreeSurround/KissFFT.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/math.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/cmath \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/requires_hosted.h \

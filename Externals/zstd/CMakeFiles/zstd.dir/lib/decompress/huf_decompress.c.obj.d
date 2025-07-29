@@ -1,5 +1,5 @@
 Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/huf_decompress.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/decompress/huf_decompress.c \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/decompress/huf_decompress.c \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/string.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/newlib.h \
@@ -22,12 +22,12 @@ Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/huf_decompress.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_locale.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/strings.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/string.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/compiler.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/bitstream.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/mem.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/debug.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/error_private.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/zstd_errors.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/fse.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/huf.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/error_private.h
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/compiler.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/bitstream.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/mem.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/debug.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/error_private.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/zstd_errors.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/fse.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/huf.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/error_private.h

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/ClangProjects/dolphin-switch/CPackSourceConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/code/dolphin-switch-port//CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles /home/ev/ClangProjects/dolphin-switch/Externals/cubeb//CMakeFiles/progress.marks
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/cubeb/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles /home/ev/code/dolphin-switch-port//Externals/cubeb//CMakeFiles/progress.marks
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/cubeb/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/cubeb/clean
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/cubeb/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/cubeb/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/cubeb/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/cubeb/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/cubeb/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Externals/cubeb/CMakeFiles/cubeb.dir/rule:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/cubeb/CMakeFiles/cubeb.dir/rule
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/cubeb/CMakeFiles/cubeb.dir/rule
 .PHONY : Externals/cubeb/CMakeFiles/cubeb.dir/rule
 
 # Convenience name for target.
@@ -192,12 +192,12 @@ cubeb: Externals/cubeb/CMakeFiles/cubeb.dir/rule
 
 # fast build rule for target.
 cubeb/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/build
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/build
 .PHONY : cubeb/fast
 
 # Convenience name for target.
 Externals/cubeb/CMakeFiles/speex.dir/rule:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/cubeb/CMakeFiles/speex.dir/rule
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/cubeb/CMakeFiles/speex.dir/rule
 .PHONY : Externals/cubeb/CMakeFiles/speex.dir/rule
 
 # Convenience name for target.
@@ -206,7 +206,7 @@ speex: Externals/cubeb/CMakeFiles/speex.dir/rule
 
 # fast build rule for target.
 speex/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/speex.dir/build.make Externals/cubeb/CMakeFiles/speex.dir/build
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/speex.dir/build.make Externals/cubeb/CMakeFiles/speex.dir/build
 .PHONY : speex/fast
 
 cubeb/src/cubeb.obj: cubeb/src/cubeb.c.obj
@@ -214,7 +214,7 @@ cubeb/src/cubeb.obj: cubeb/src/cubeb.c.obj
 
 # target to build an object file
 cubeb/src/cubeb.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj
 .PHONY : cubeb/src/cubeb.c.obj
 
 cubeb/src/cubeb.i: cubeb/src/cubeb.c.i
@@ -222,7 +222,7 @@ cubeb/src/cubeb.i: cubeb/src/cubeb.c.i
 
 # target to preprocess a source file
 cubeb/src/cubeb.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.i
 .PHONY : cubeb/src/cubeb.c.i
 
 cubeb/src/cubeb.s: cubeb/src/cubeb.c.s
@@ -230,7 +230,7 @@ cubeb/src/cubeb.s: cubeb/src/cubeb.c.s
 
 # target to generate assembly for a file
 cubeb/src/cubeb.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.s
 .PHONY : cubeb/src/cubeb.c.s
 
 cubeb/src/cubeb_log.obj: cubeb/src/cubeb_log.cpp.obj
@@ -238,7 +238,7 @@ cubeb/src/cubeb_log.obj: cubeb/src/cubeb_log.cpp.obj
 
 # target to build an object file
 cubeb/src/cubeb_log.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.obj
 .PHONY : cubeb/src/cubeb_log.cpp.obj
 
 cubeb/src/cubeb_log.i: cubeb/src/cubeb_log.cpp.i
@@ -246,7 +246,7 @@ cubeb/src/cubeb_log.i: cubeb/src/cubeb_log.cpp.i
 
 # target to preprocess a source file
 cubeb/src/cubeb_log.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.i
 .PHONY : cubeb/src/cubeb_log.cpp.i
 
 cubeb/src/cubeb_log.s: cubeb/src/cubeb_log.cpp.s
@@ -254,7 +254,7 @@ cubeb/src/cubeb_log.s: cubeb/src/cubeb_log.cpp.s
 
 # target to generate assembly for a file
 cubeb/src/cubeb_log.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_log.cpp.s
 .PHONY : cubeb/src/cubeb_log.cpp.s
 
 cubeb/src/cubeb_mixer.obj: cubeb/src/cubeb_mixer.cpp.obj
@@ -262,7 +262,7 @@ cubeb/src/cubeb_mixer.obj: cubeb/src/cubeb_mixer.cpp.obj
 
 # target to build an object file
 cubeb/src/cubeb_mixer.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.obj
 .PHONY : cubeb/src/cubeb_mixer.cpp.obj
 
 cubeb/src/cubeb_mixer.i: cubeb/src/cubeb_mixer.cpp.i
@@ -270,7 +270,7 @@ cubeb/src/cubeb_mixer.i: cubeb/src/cubeb_mixer.cpp.i
 
 # target to preprocess a source file
 cubeb/src/cubeb_mixer.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.i
 .PHONY : cubeb/src/cubeb_mixer.cpp.i
 
 cubeb/src/cubeb_mixer.s: cubeb/src/cubeb_mixer.cpp.s
@@ -278,7 +278,7 @@ cubeb/src/cubeb_mixer.s: cubeb/src/cubeb_mixer.cpp.s
 
 # target to generate assembly for a file
 cubeb/src/cubeb_mixer.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_mixer.cpp.s
 .PHONY : cubeb/src/cubeb_mixer.cpp.s
 
 cubeb/src/cubeb_resampler.obj: cubeb/src/cubeb_resampler.cpp.obj
@@ -286,7 +286,7 @@ cubeb/src/cubeb_resampler.obj: cubeb/src/cubeb_resampler.cpp.obj
 
 # target to build an object file
 cubeb/src/cubeb_resampler.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.obj
 .PHONY : cubeb/src/cubeb_resampler.cpp.obj
 
 cubeb/src/cubeb_resampler.i: cubeb/src/cubeb_resampler.cpp.i
@@ -294,7 +294,7 @@ cubeb/src/cubeb_resampler.i: cubeb/src/cubeb_resampler.cpp.i
 
 # target to preprocess a source file
 cubeb/src/cubeb_resampler.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.i
 .PHONY : cubeb/src/cubeb_resampler.cpp.i
 
 cubeb/src/cubeb_resampler.s: cubeb/src/cubeb_resampler.cpp.s
@@ -302,7 +302,7 @@ cubeb/src/cubeb_resampler.s: cubeb/src/cubeb_resampler.cpp.s
 
 # target to generate assembly for a file
 cubeb/src/cubeb_resampler.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_resampler.cpp.s
 .PHONY : cubeb/src/cubeb_resampler.cpp.s
 
 cubeb/src/cubeb_strings.obj: cubeb/src/cubeb_strings.c.obj
@@ -310,7 +310,7 @@ cubeb/src/cubeb_strings.obj: cubeb/src/cubeb_strings.c.obj
 
 # target to build an object file
 cubeb/src/cubeb_strings.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj
 .PHONY : cubeb/src/cubeb_strings.c.obj
 
 cubeb/src/cubeb_strings.i: cubeb/src/cubeb_strings.c.i
@@ -318,7 +318,7 @@ cubeb/src/cubeb_strings.i: cubeb/src/cubeb_strings.c.i
 
 # target to preprocess a source file
 cubeb/src/cubeb_strings.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.i
 .PHONY : cubeb/src/cubeb_strings.c.i
 
 cubeb/src/cubeb_strings.s: cubeb/src/cubeb_strings.c.s
@@ -326,7 +326,7 @@ cubeb/src/cubeb_strings.s: cubeb/src/cubeb_strings.c.s
 
 # target to generate assembly for a file
 cubeb/src/cubeb_strings.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.s
 .PHONY : cubeb/src/cubeb_strings.c.s
 
 cubeb/src/cubeb_utils.obj: cubeb/src/cubeb_utils.cpp.obj
@@ -334,7 +334,7 @@ cubeb/src/cubeb_utils.obj: cubeb/src/cubeb_utils.cpp.obj
 
 # target to build an object file
 cubeb/src/cubeb_utils.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.obj
 .PHONY : cubeb/src/cubeb_utils.cpp.obj
 
 cubeb/src/cubeb_utils.i: cubeb/src/cubeb_utils.cpp.i
@@ -342,7 +342,7 @@ cubeb/src/cubeb_utils.i: cubeb/src/cubeb_utils.cpp.i
 
 # target to preprocess a source file
 cubeb/src/cubeb_utils.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.i
 .PHONY : cubeb/src/cubeb_utils.cpp.i
 
 cubeb/src/cubeb_utils.s: cubeb/src/cubeb_utils.cpp.s
@@ -350,7 +350,7 @@ cubeb/src/cubeb_utils.s: cubeb/src/cubeb_utils.cpp.s
 
 # target to generate assembly for a file
 cubeb/src/cubeb_utils.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/cubeb.dir/build.make Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_utils.cpp.s
 .PHONY : cubeb/src/cubeb_utils.cpp.s
 
 cubeb/subprojects/speex/resample.obj: cubeb/subprojects/speex/resample.c.obj
@@ -358,7 +358,7 @@ cubeb/subprojects/speex/resample.obj: cubeb/subprojects/speex/resample.c.obj
 
 # target to build an object file
 cubeb/subprojects/speex/resample.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/speex.dir/build.make Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/speex.dir/build.make Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj
 .PHONY : cubeb/subprojects/speex/resample.c.obj
 
 cubeb/subprojects/speex/resample.i: cubeb/subprojects/speex/resample.c.i
@@ -366,7 +366,7 @@ cubeb/subprojects/speex/resample.i: cubeb/subprojects/speex/resample.c.i
 
 # target to preprocess a source file
 cubeb/subprojects/speex/resample.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/speex.dir/build.make Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/speex.dir/build.make Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.i
 .PHONY : cubeb/subprojects/speex/resample.c.i
 
 cubeb/subprojects/speex/resample.s: cubeb/subprojects/speex/resample.c.s
@@ -374,7 +374,7 @@ cubeb/subprojects/speex/resample.s: cubeb/subprojects/speex/resample.c.s
 
 # target to generate assembly for a file
 cubeb/subprojects/speex/resample.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/speex.dir/build.make Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/cubeb/CMakeFiles/speex.dir/build.make Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.s
 .PHONY : cubeb/subprojects/speex/resample.c.s
 
 # Help Target
@@ -425,6 +425,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

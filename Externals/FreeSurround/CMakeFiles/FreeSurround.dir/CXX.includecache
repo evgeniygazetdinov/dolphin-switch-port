@@ -6,27 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/ChannelMaps.cpp
+/home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/ChannelMaps.cpp
 FreeSurround/ChannelMaps.h
-/home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/FreeSurround/ChannelMaps.h
+/home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/FreeSurround/ChannelMaps.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/FreeSurroundDecoder.cpp
+/home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/FreeSurroundDecoder.cpp
 FreeSurround/FreeSurroundDecoder.h
-/home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/FreeSurround/FreeSurroundDecoder.h
+/home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/FreeSurround/FreeSurroundDecoder.h
 FreeSurround/ChannelMaps.h
-/home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/FreeSurround/ChannelMaps.h
+/home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/FreeSurround/ChannelMaps.h
 cmath
 -
 
-/home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/KissFFT.cpp
+/home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/KissFFT.cpp
 FreeSurround/_KissFFTGuts.h
-/home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/FreeSurround/_KissFFTGuts.h
+/home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/FreeSurround/_KissFFTGuts.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/KissFFTR.cpp
+/home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/KissFFTR.cpp
 FreeSurround/KissFFTR.h
-/home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/FreeSurround/KissFFTR.h
+/home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/FreeSurround/KissFFTR.h
 FreeSurround/_KissFFTGuts.h
-/home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/FreeSurround/_KissFFTGuts.h
+/home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/FreeSurround/_KissFFTGuts.h
 
 Externals/FreeSurround/include/FreeSurround/ChannelMaps.h
 FreeSurroundDecoder.h

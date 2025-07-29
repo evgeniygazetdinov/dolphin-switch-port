@@ -1,5 +1,5 @@
 Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIRFilter.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIRFilter.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIRFilter.cpp \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/memory.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/string.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
@@ -39,6 +39,6 @@ Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIRFilter.cpp.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/version.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/cstdlib \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIRFilter.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/cpu_detect.h
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIRFilter.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/cpu_detect.h

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ev/ClangProjects/dolphin-switch/Externals/LZO/lzoconf.h
+/home/ev/code/dolphin-switch-port//Externals/LZO/lzoconf.h
 config.h
 -
 limits.h
@@ -16,9 +16,9 @@ stddef.h
 lzo/lzodefs.h
 -
 
-/home/ev/ClangProjects/dolphin-switch/Externals/LZO/lzodefs.h
+/home/ev/code/dolphin-switch-port//Externals/LZO/lzodefs.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/LZO/minilzo.c
+/home/ev/code/dolphin-switch-port//Externals/LZO/minilzo.c
 config.h
 -
 limits.h
@@ -26,7 +26,7 @@ limits.h
 stddef.h
 -
 minilzo.h
-/home/ev/ClangProjects/dolphin-switch/Externals/LZO/minilzo.h
+/home/ev/code/dolphin-switch-port//Externals/LZO/minilzo.h
 config.h
 -
 limits.h
@@ -50,7 +50,7 @@ intrin.h
 lzo/lzo1x.h
 -
 
-/home/ev/ClangProjects/dolphin-switch/Externals/LZO/minilzo.h
+/home/ev/code/dolphin-switch-port//Externals/LZO/minilzo.h
 config.h
 -
 limits.h
@@ -58,9 +58,9 @@ limits.h
 stddef.h
 -
 lzodefs.h
-/home/ev/ClangProjects/dolphin-switch/Externals/LZO/lzodefs.h
+/home/ev/code/dolphin-switch-port//Externals/LZO/lzodefs.h
 lzoconf.h
-/home/ev/ClangProjects/dolphin-switch/Externals/LZO/lzoconf.h
+/home/ev/code/dolphin-switch-port//Externals/LZO/lzoconf.h
 
 Externals/LZO/lzo/lzo1x.h
 minilzo.h

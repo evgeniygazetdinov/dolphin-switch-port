@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/ev/ClangProjects/dolphin-switch/Externals/xxhash/xxhash.c
+/home/ev/code/dolphin-switch-port//Externals/xxhash/xxhash.c
 stdlib.h
 -
 string.h
 -
 xxhash.h
-/home/ev/ClangProjects/dolphin-switch/Externals/xxhash/xxhash.h
+/home/ev/code/dolphin-switch-port//Externals/xxhash/xxhash.h
 stdint.h
 -
 stdint.h
 -
 
-/home/ev/ClangProjects/dolphin-switch/Externals/xxhash/xxhash.h
+/home/ev/code/dolphin-switch-port//Externals/xxhash/xxhash.h
 stddef.h
 -
 xxhash.c
-/home/ev/ClangProjects/dolphin-switch/Externals/xxhash/xxhash.c
+/home/ev/code/dolphin-switch-port//Externals/xxhash/xxhash.c
 

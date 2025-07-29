@@ -1,4 +1,4 @@
-# Install script for directory: /home/ev/ClangProjects/dolphin-switch/Externals/xxhash
+# Install script for directory: /home/ev/code/dolphin-switch-port//Externals/xxhash
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

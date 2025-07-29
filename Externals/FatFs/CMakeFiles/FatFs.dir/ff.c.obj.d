@@ -1,5 +1,5 @@
 Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ff.c \
+ /home/ev/code/dolphin-switch-port//Externals/FatFs/ff.c \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/string.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/newlib.h \
@@ -22,6 +22,6 @@ Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_locale.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/strings.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/string.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ff.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ffconf.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/FatFs/diskio.h
+ /home/ev/code/dolphin-switch-port//Externals/FatFs/ff.h \
+ /home/ev/code/dolphin-switch-port//Externals/FatFs/ffconf.h \
+ /home/ev/code/dolphin-switch-port//Externals/FatFs/diskio.h

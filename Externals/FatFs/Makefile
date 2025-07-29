@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/ClangProjects/dolphin-switch/CPackSourceConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/code/dolphin-switch-port//CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles /home/ev/ClangProjects/dolphin-switch/Externals/FatFs//CMakeFiles/progress.marks
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FatFs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles /home/ev/code/dolphin-switch-port//Externals/FatFs//CMakeFiles/progress.marks
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FatFs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FatFs/clean
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FatFs/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FatFs/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FatFs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FatFs/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FatFs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Externals/FatFs/CMakeFiles/FatFs.dir/rule:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FatFs/CMakeFiles/FatFs.dir/rule
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FatFs/CMakeFiles/FatFs.dir/rule
 .PHONY : Externals/FatFs/CMakeFiles/FatFs.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ FatFs: Externals/FatFs/CMakeFiles/FatFs.dir/rule
 
 # fast build rule for target.
 FatFs/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/build
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/build
 .PHONY : FatFs/fast
 
 ff.obj: ff.c.obj
@@ -200,7 +200,7 @@ ff.obj: ff.c.obj
 
 # target to build an object file
 ff.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.obj
 .PHONY : ff.c.obj
 
 ff.i: ff.c.i
@@ -208,7 +208,7 @@ ff.i: ff.c.i
 
 # target to preprocess a source file
 ff.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.i
 .PHONY : ff.c.i
 
 ff.s: ff.c.s
@@ -216,7 +216,7 @@ ff.s: ff.c.s
 
 # target to generate assembly for a file
 ff.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/ff.c.s
 .PHONY : ff.c.s
 
 ffunicode.obj: ffunicode.c.obj
@@ -224,7 +224,7 @@ ffunicode.obj: ffunicode.c.obj
 
 # target to build an object file
 ffunicode.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.obj
 .PHONY : ffunicode.c.obj
 
 ffunicode.i: ffunicode.c.i
@@ -232,7 +232,7 @@ ffunicode.i: ffunicode.c.i
 
 # target to preprocess a source file
 ffunicode.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.i
 .PHONY : ffunicode.c.i
 
 ffunicode.s: ffunicode.c.s
@@ -240,7 +240,7 @@ ffunicode.s: ffunicode.c.s
 
 # target to generate assembly for a file
 ffunicode.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FatFs/CMakeFiles/FatFs.dir/build.make Externals/FatFs/CMakeFiles/FatFs.dir/ffunicode.c.s
 .PHONY : ffunicode.c.s
 
 # Help Target
@@ -275,6 +275,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

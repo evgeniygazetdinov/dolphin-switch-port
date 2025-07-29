@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/ev/ClangProjects/dolphin-switch/Externals/fmt/src/format.cc
+/home/ev/code/dolphin-switch-port//Externals/fmt/src/format.cc
 fmt/format-inl.h
-/home/ev/ClangProjects/dolphin-switch/Externals/fmt/src/fmt/format-inl.h
+/home/ev/code/dolphin-switch-port//Externals/fmt/src/fmt/format-inl.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/fmt/src/os.cc
+/home/ev/code/dolphin-switch-port//Externals/fmt/src/os.cc
 fmt/os.h
-/home/ev/ClangProjects/dolphin-switch/Externals/fmt/src/fmt/os.h
+/home/ev/code/dolphin-switch-port//Externals/fmt/src/fmt/os.h
 climits
 -
 sys/stat.h

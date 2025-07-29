@@ -1,8 +1,8 @@
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/FreeSurroundDecoder.cpp \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/include/FreeSurround/FreeSurroundDecoder.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/include/FreeSurround/KissFFTR.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/include/FreeSurround/KissFFT.h \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/FreeSurroundDecoder.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/include/FreeSurround/FreeSurroundDecoder.h \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/include/FreeSurround/KissFFTR.h \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/include/FreeSurround/KissFFT.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/math.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/cmath \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/requires_hosted.h \
@@ -159,8 +159,8 @@ Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cp
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/stl_vector.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/stl_bvector.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/vector.tcc \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/include/FreeSurround/ChannelMaps.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/include/FreeSurround/FreeSurroundDecoder.h \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/include/FreeSurround/ChannelMaps.h \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/include/FreeSurround/FreeSurroundDecoder.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/map \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/stl_tree.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/ext/aligned_buffer.h \

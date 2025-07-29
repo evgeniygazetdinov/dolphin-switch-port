@@ -1,5 +1,5 @@
 Externals/soundtouch/CMakeFiles/SoundTouch.dir/AAFilter.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/AAFilter.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/AAFilter.cpp \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/memory.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/string.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
@@ -39,8 +39,8 @@ Externals/soundtouch/CMakeFiles/SoundTouch.dir/AAFilter.cpp.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/version.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/cstdlib \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/AAFilter.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSampleBuffer.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSamplePipe.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIRFilter.h
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/AAFilter.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSampleBuffer.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSamplePipe.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIRFilter.h

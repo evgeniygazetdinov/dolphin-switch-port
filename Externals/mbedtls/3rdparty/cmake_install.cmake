@@ -1,4 +1,4 @@
-# Install script for directory: /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/3rdparty
+# Install script for directory: /home/ev/code/dolphin-switch-port//Externals/mbedtls/3rdparty
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

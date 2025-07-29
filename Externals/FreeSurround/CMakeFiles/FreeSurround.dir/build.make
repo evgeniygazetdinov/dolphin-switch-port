@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 # Include any dependencies generated for this target.
 include Externals/FreeSurround/CMakeFiles/FreeSurround.dir/depend.make
@@ -72,58 +72,58 @@ include Externals/FreeSurround/CMakeFiles/FreeSurround.dir/flags.make
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj: Externals/FreeSurround/CMakeFiles/FreeSurround.dir/flags.make
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj: Externals/FreeSurround/source/ChannelMaps.cpp
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj: Externals/FreeSurround/CMakeFiles/FreeSurround.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj -MF CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj.d -o CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/ChannelMaps.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj -MF CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj.d -o CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj -c /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/ChannelMaps.cpp
 
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/ChannelMaps.cpp > CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.i
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/ChannelMaps.cpp > CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.i
 
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/ChannelMaps.cpp -o CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.s
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/ChannelMaps.cpp -o CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.s
 
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj: Externals/FreeSurround/CMakeFiles/FreeSurround.dir/flags.make
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj: Externals/FreeSurround/source/KissFFT.cpp
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj: Externals/FreeSurround/CMakeFiles/FreeSurround.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj -MF CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj.d -o CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/KissFFT.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj -MF CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj.d -o CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj -c /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/KissFFT.cpp
 
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/KissFFT.cpp > CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.i
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/KissFFT.cpp > CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.i
 
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/KissFFT.cpp -o CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.s
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/KissFFT.cpp -o CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.s
 
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj: Externals/FreeSurround/CMakeFiles/FreeSurround.dir/flags.make
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj: Externals/FreeSurround/source/KissFFTR.cpp
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj: Externals/FreeSurround/CMakeFiles/FreeSurround.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj -MF CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj.d -o CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/KissFFTR.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj -MF CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj.d -o CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj -c /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/KissFFTR.cpp
 
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/KissFFTR.cpp > CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.i
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/KissFFTR.cpp > CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.i
 
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/KissFFTR.cpp -o CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.s
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/KissFFTR.cpp -o CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.s
 
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj: Externals/FreeSurround/CMakeFiles/FreeSurround.dir/flags.make
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj: Externals/FreeSurround/source/FreeSurroundDecoder.cpp
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj: Externals/FreeSurround/CMakeFiles/FreeSurround.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj -MF CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj.d -o CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/FreeSurroundDecoder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj -MF CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj.d -o CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj -c /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/FreeSurroundDecoder.cpp
 
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/FreeSurroundDecoder.cpp > CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.i
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/FreeSurroundDecoder.cpp > CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.i
 
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/FreeSurroundDecoder.cpp -o CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.s
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/FreeSurroundDecoder.cpp -o CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.s
 
 # Object files for target FreeSurround
 FreeSurround_OBJECTS = \
@@ -141,19 +141,19 @@ Externals/FreeSurround/libFreeSurround.a: Externals/FreeSurround/CMakeFiles/Free
 Externals/FreeSurround/libFreeSurround.a: Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj
 Externals/FreeSurround/libFreeSurround.a: Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make
 Externals/FreeSurround/libFreeSurround.a: Externals/FreeSurround/CMakeFiles/FreeSurround.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libFreeSurround.a"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && $(CMAKE_COMMAND) -P CMakeFiles/FreeSurround.dir/cmake_clean_target.cmake
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FreeSurround.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libFreeSurround.a"
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && $(CMAKE_COMMAND) -P CMakeFiles/FreeSurround.dir/cmake_clean_target.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FreeSurround.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build: Externals/FreeSurround/libFreeSurround.a
 .PHONY : Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build
 
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/clean:
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround && $(CMAKE_COMMAND) -P CMakeFiles/FreeSurround.dir/cmake_clean.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/FreeSurround && $(CMAKE_COMMAND) -P CMakeFiles/FreeSurround.dir/cmake_clean.cmake
 .PHONY : Externals/FreeSurround/CMakeFiles/FreeSurround.dir/clean
 
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/CMakeFiles/FreeSurround.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/FreeSurround /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/FreeSurround /home/ev/code/dolphin-switch-port//Externals/FreeSurround/CMakeFiles/FreeSurround.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Externals/FreeSurround/CMakeFiles/FreeSurround.dir/depend
 

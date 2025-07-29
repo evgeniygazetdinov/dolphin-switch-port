@@ -1,8 +1,8 @@
 Externals/curl/lib/CMakeFiles/curl.dir/rawstr.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/lib/rawstr.c \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/lib/curl_setup.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/lib/curl_config.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/include/curl/curlbuild.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/lib/rawstr.c \
+ /home/ev/code/dolphin-switch-port//Externals/curl/lib/curl_setup.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/lib/curl_config.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/include/curl/curlbuild.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/types.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/newlib.h \
@@ -33,14 +33,14 @@ Externals/curl/lib/CMakeFiles/curl.dir/rawstr.c.obj: \
  /opt/devkitpro/libnx/include/sys/socket.h \
  /opt/devkitpro/libnx/include/sys/_iovec.h \
  /opt/devkitpro/libnx/include/sys/_sockaddr_storage.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/include/curl/curlrules.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/include/curl/curlrules.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdio.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stdarg.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/reent.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/stdio.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/assert.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/lib/curl_setup_once.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/lib/curl_setup_once.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/alloca.h \
@@ -61,16 +61,16 @@ Externals/curl/lib/CMakeFiles/curl.dir/rawstr.c.obj: \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stdbool.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/unistd.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/unistd.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/lib/rawstr.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/include/curl/curl.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/include/curl/curlver.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/include/curl/curlbuild.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/include/curl/curlrules.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/lib/rawstr.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/include/curl/curl.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/include/curl/curlver.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/include/curl/curlbuild.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/include/curl/curlrules.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/limits.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/syslimits.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/limits.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/syslimits.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/include/curl/easy.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/include/curl/multi.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/include/curl/curl.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/include/curl/typecheck-gcc.h
+ /home/ev/code/dolphin-switch-port//Externals/curl/include/curl/easy.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/include/curl/multi.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/include/curl/curl.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/include/curl/typecheck-gcc.h

@@ -1,7 +1,7 @@
 Externals/glslang/CMakeFiles/glslang.dir/SPIRV/doc.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/doc.cpp \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/doc.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/spirv.hpp \
+ /home/ev/code/dolphin-switch-port//Externals/glslang/SPIRV/doc.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/glslang/SPIRV/doc.h \
+ /home/ev/code/dolphin-switch-port//Externals/glslang/SPIRV/spirv.hpp \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/vector \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/requires_hosted.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/aarch64-none-elf/pic/bits/c++config.h \
@@ -84,7 +84,7 @@ Externals/glslang/CMakeFiles/glslang.dir/SPIRV/doc.cpp.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/std_abs.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/GLSL.ext.KHR.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/GLSL.ext.EXT.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/GLSL.ext.AMD.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/SPIRV/GLSL.ext.NV.h
+ /home/ev/code/dolphin-switch-port//Externals/glslang/SPIRV/GLSL.ext.KHR.h \
+ /home/ev/code/dolphin-switch-port//Externals/glslang/SPIRV/GLSL.ext.EXT.h \
+ /home/ev/code/dolphin-switch-port//Externals/glslang/SPIRV/GLSL.ext.AMD.h \
+ /home/ev/code/dolphin-switch-port//Externals/glslang/SPIRV/GLSL.ext.NV.h

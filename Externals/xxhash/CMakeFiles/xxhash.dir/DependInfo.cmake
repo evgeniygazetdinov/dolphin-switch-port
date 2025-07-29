@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ev/ClangProjects/dolphin-switch/Externals/xxhash/xxhash.c" "Externals/xxhash/CMakeFiles/xxhash.dir/xxhash.c.obj" "gcc" "Externals/xxhash/CMakeFiles/xxhash.dir/xxhash.c.obj.d"
+  "/home/ev/code/dolphin-switch-port//Externals/xxhash/xxhash.c" "Externals/xxhash/CMakeFiles/xxhash.dir/xxhash.c.obj" "gcc" "Externals/xxhash/CMakeFiles/xxhash.dir/xxhash.c.obj.d"
   )
 
 # Targets to which this target links.

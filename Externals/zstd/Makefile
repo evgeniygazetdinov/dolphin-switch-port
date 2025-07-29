@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/ClangProjects/dolphin-switch/CPackSourceConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/code/dolphin-switch-port//CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles /home/ev/ClangProjects/dolphin-switch/Externals/zstd//CMakeFiles/progress.marks
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/zstd/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles /home/ev/code/dolphin-switch-port//Externals/zstd//CMakeFiles/progress.marks
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/zstd/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/zstd/clean
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/zstd/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/zstd/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/zstd/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/zstd/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/zstd/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Externals/zstd/CMakeFiles/zstd.dir/rule:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/zstd/CMakeFiles/zstd.dir/rule
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/zstd/CMakeFiles/zstd.dir/rule
 .PHONY : Externals/zstd/CMakeFiles/zstd.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ zstd: Externals/zstd/CMakeFiles/zstd.dir/rule
 
 # fast build rule for target.
 zstd/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/build
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/build
 .PHONY : zstd/fast
 
 lib/common/debug.obj: lib/common/debug.c.obj
@@ -200,7 +200,7 @@ lib/common/debug.obj: lib/common/debug.c.obj
 
 # target to build an object file
 lib/common/debug.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/debug.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/debug.c.obj
 .PHONY : lib/common/debug.c.obj
 
 lib/common/debug.i: lib/common/debug.c.i
@@ -208,7 +208,7 @@ lib/common/debug.i: lib/common/debug.c.i
 
 # target to preprocess a source file
 lib/common/debug.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/debug.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/debug.c.i
 .PHONY : lib/common/debug.c.i
 
 lib/common/debug.s: lib/common/debug.c.s
@@ -216,7 +216,7 @@ lib/common/debug.s: lib/common/debug.c.s
 
 # target to generate assembly for a file
 lib/common/debug.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/debug.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/debug.c.s
 .PHONY : lib/common/debug.c.s
 
 lib/common/entropy_common.obj: lib/common/entropy_common.c.obj
@@ -224,7 +224,7 @@ lib/common/entropy_common.obj: lib/common/entropy_common.c.obj
 
 # target to build an object file
 lib/common/entropy_common.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/entropy_common.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/entropy_common.c.obj
 .PHONY : lib/common/entropy_common.c.obj
 
 lib/common/entropy_common.i: lib/common/entropy_common.c.i
@@ -232,7 +232,7 @@ lib/common/entropy_common.i: lib/common/entropy_common.c.i
 
 # target to preprocess a source file
 lib/common/entropy_common.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/entropy_common.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/entropy_common.c.i
 .PHONY : lib/common/entropy_common.c.i
 
 lib/common/entropy_common.s: lib/common/entropy_common.c.s
@@ -240,7 +240,7 @@ lib/common/entropy_common.s: lib/common/entropy_common.c.s
 
 # target to generate assembly for a file
 lib/common/entropy_common.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/entropy_common.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/entropy_common.c.s
 .PHONY : lib/common/entropy_common.c.s
 
 lib/common/error_private.obj: lib/common/error_private.c.obj
@@ -248,7 +248,7 @@ lib/common/error_private.obj: lib/common/error_private.c.obj
 
 # target to build an object file
 lib/common/error_private.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/error_private.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/error_private.c.obj
 .PHONY : lib/common/error_private.c.obj
 
 lib/common/error_private.i: lib/common/error_private.c.i
@@ -256,7 +256,7 @@ lib/common/error_private.i: lib/common/error_private.c.i
 
 # target to preprocess a source file
 lib/common/error_private.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/error_private.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/error_private.c.i
 .PHONY : lib/common/error_private.c.i
 
 lib/common/error_private.s: lib/common/error_private.c.s
@@ -264,7 +264,7 @@ lib/common/error_private.s: lib/common/error_private.c.s
 
 # target to generate assembly for a file
 lib/common/error_private.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/error_private.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/error_private.c.s
 .PHONY : lib/common/error_private.c.s
 
 lib/common/fse_decompress.obj: lib/common/fse_decompress.c.obj
@@ -272,7 +272,7 @@ lib/common/fse_decompress.obj: lib/common/fse_decompress.c.obj
 
 # target to build an object file
 lib/common/fse_decompress.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/fse_decompress.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/fse_decompress.c.obj
 .PHONY : lib/common/fse_decompress.c.obj
 
 lib/common/fse_decompress.i: lib/common/fse_decompress.c.i
@@ -280,7 +280,7 @@ lib/common/fse_decompress.i: lib/common/fse_decompress.c.i
 
 # target to preprocess a source file
 lib/common/fse_decompress.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/fse_decompress.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/fse_decompress.c.i
 .PHONY : lib/common/fse_decompress.c.i
 
 lib/common/fse_decompress.s: lib/common/fse_decompress.c.s
@@ -288,7 +288,7 @@ lib/common/fse_decompress.s: lib/common/fse_decompress.c.s
 
 # target to generate assembly for a file
 lib/common/fse_decompress.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/fse_decompress.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/fse_decompress.c.s
 .PHONY : lib/common/fse_decompress.c.s
 
 lib/common/pool.obj: lib/common/pool.c.obj
@@ -296,7 +296,7 @@ lib/common/pool.obj: lib/common/pool.c.obj
 
 # target to build an object file
 lib/common/pool.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/pool.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/pool.c.obj
 .PHONY : lib/common/pool.c.obj
 
 lib/common/pool.i: lib/common/pool.c.i
@@ -304,7 +304,7 @@ lib/common/pool.i: lib/common/pool.c.i
 
 # target to preprocess a source file
 lib/common/pool.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/pool.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/pool.c.i
 .PHONY : lib/common/pool.c.i
 
 lib/common/pool.s: lib/common/pool.c.s
@@ -312,7 +312,7 @@ lib/common/pool.s: lib/common/pool.c.s
 
 # target to generate assembly for a file
 lib/common/pool.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/pool.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/pool.c.s
 .PHONY : lib/common/pool.c.s
 
 lib/common/threading.obj: lib/common/threading.c.obj
@@ -320,7 +320,7 @@ lib/common/threading.obj: lib/common/threading.c.obj
 
 # target to build an object file
 lib/common/threading.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/threading.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/threading.c.obj
 .PHONY : lib/common/threading.c.obj
 
 lib/common/threading.i: lib/common/threading.c.i
@@ -328,7 +328,7 @@ lib/common/threading.i: lib/common/threading.c.i
 
 # target to preprocess a source file
 lib/common/threading.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/threading.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/threading.c.i
 .PHONY : lib/common/threading.c.i
 
 lib/common/threading.s: lib/common/threading.c.s
@@ -336,7 +336,7 @@ lib/common/threading.s: lib/common/threading.c.s
 
 # target to generate assembly for a file
 lib/common/threading.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/threading.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/threading.c.s
 .PHONY : lib/common/threading.c.s
 
 lib/common/xxhash.obj: lib/common/xxhash.c.obj
@@ -344,7 +344,7 @@ lib/common/xxhash.obj: lib/common/xxhash.c.obj
 
 # target to build an object file
 lib/common/xxhash.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/xxhash.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/xxhash.c.obj
 .PHONY : lib/common/xxhash.c.obj
 
 lib/common/xxhash.i: lib/common/xxhash.c.i
@@ -352,7 +352,7 @@ lib/common/xxhash.i: lib/common/xxhash.c.i
 
 # target to preprocess a source file
 lib/common/xxhash.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/xxhash.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/xxhash.c.i
 .PHONY : lib/common/xxhash.c.i
 
 lib/common/xxhash.s: lib/common/xxhash.c.s
@@ -360,7 +360,7 @@ lib/common/xxhash.s: lib/common/xxhash.c.s
 
 # target to generate assembly for a file
 lib/common/xxhash.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/xxhash.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/xxhash.c.s
 .PHONY : lib/common/xxhash.c.s
 
 lib/common/zstd_common.obj: lib/common/zstd_common.c.obj
@@ -368,7 +368,7 @@ lib/common/zstd_common.obj: lib/common/zstd_common.c.obj
 
 # target to build an object file
 lib/common/zstd_common.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/zstd_common.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/zstd_common.c.obj
 .PHONY : lib/common/zstd_common.c.obj
 
 lib/common/zstd_common.i: lib/common/zstd_common.c.i
@@ -376,7 +376,7 @@ lib/common/zstd_common.i: lib/common/zstd_common.c.i
 
 # target to preprocess a source file
 lib/common/zstd_common.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/zstd_common.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/zstd_common.c.i
 .PHONY : lib/common/zstd_common.c.i
 
 lib/common/zstd_common.s: lib/common/zstd_common.c.s
@@ -384,7 +384,7 @@ lib/common/zstd_common.s: lib/common/zstd_common.c.s
 
 # target to generate assembly for a file
 lib/common/zstd_common.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/zstd_common.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/common/zstd_common.c.s
 .PHONY : lib/common/zstd_common.c.s
 
 lib/compress/fse_compress.obj: lib/compress/fse_compress.c.obj
@@ -392,7 +392,7 @@ lib/compress/fse_compress.obj: lib/compress/fse_compress.c.obj
 
 # target to build an object file
 lib/compress/fse_compress.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/fse_compress.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/fse_compress.c.obj
 .PHONY : lib/compress/fse_compress.c.obj
 
 lib/compress/fse_compress.i: lib/compress/fse_compress.c.i
@@ -400,7 +400,7 @@ lib/compress/fse_compress.i: lib/compress/fse_compress.c.i
 
 # target to preprocess a source file
 lib/compress/fse_compress.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/fse_compress.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/fse_compress.c.i
 .PHONY : lib/compress/fse_compress.c.i
 
 lib/compress/fse_compress.s: lib/compress/fse_compress.c.s
@@ -408,7 +408,7 @@ lib/compress/fse_compress.s: lib/compress/fse_compress.c.s
 
 # target to generate assembly for a file
 lib/compress/fse_compress.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/fse_compress.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/fse_compress.c.s
 .PHONY : lib/compress/fse_compress.c.s
 
 lib/compress/hist.obj: lib/compress/hist.c.obj
@@ -416,7 +416,7 @@ lib/compress/hist.obj: lib/compress/hist.c.obj
 
 # target to build an object file
 lib/compress/hist.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/hist.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/hist.c.obj
 .PHONY : lib/compress/hist.c.obj
 
 lib/compress/hist.i: lib/compress/hist.c.i
@@ -424,7 +424,7 @@ lib/compress/hist.i: lib/compress/hist.c.i
 
 # target to preprocess a source file
 lib/compress/hist.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/hist.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/hist.c.i
 .PHONY : lib/compress/hist.c.i
 
 lib/compress/hist.s: lib/compress/hist.c.s
@@ -432,7 +432,7 @@ lib/compress/hist.s: lib/compress/hist.c.s
 
 # target to generate assembly for a file
 lib/compress/hist.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/hist.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/hist.c.s
 .PHONY : lib/compress/hist.c.s
 
 lib/compress/huf_compress.obj: lib/compress/huf_compress.c.obj
@@ -440,7 +440,7 @@ lib/compress/huf_compress.obj: lib/compress/huf_compress.c.obj
 
 # target to build an object file
 lib/compress/huf_compress.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/huf_compress.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/huf_compress.c.obj
 .PHONY : lib/compress/huf_compress.c.obj
 
 lib/compress/huf_compress.i: lib/compress/huf_compress.c.i
@@ -448,7 +448,7 @@ lib/compress/huf_compress.i: lib/compress/huf_compress.c.i
 
 # target to preprocess a source file
 lib/compress/huf_compress.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/huf_compress.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/huf_compress.c.i
 .PHONY : lib/compress/huf_compress.c.i
 
 lib/compress/huf_compress.s: lib/compress/huf_compress.c.s
@@ -456,7 +456,7 @@ lib/compress/huf_compress.s: lib/compress/huf_compress.c.s
 
 # target to generate assembly for a file
 lib/compress/huf_compress.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/huf_compress.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/huf_compress.c.s
 .PHONY : lib/compress/huf_compress.c.s
 
 lib/compress/zstd_compress.obj: lib/compress/zstd_compress.c.obj
@@ -464,7 +464,7 @@ lib/compress/zstd_compress.obj: lib/compress/zstd_compress.c.obj
 
 # target to build an object file
 lib/compress/zstd_compress.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress.c.obj
 .PHONY : lib/compress/zstd_compress.c.obj
 
 lib/compress/zstd_compress.i: lib/compress/zstd_compress.c.i
@@ -472,7 +472,7 @@ lib/compress/zstd_compress.i: lib/compress/zstd_compress.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_compress.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress.c.i
 .PHONY : lib/compress/zstd_compress.c.i
 
 lib/compress/zstd_compress.s: lib/compress/zstd_compress.c.s
@@ -480,7 +480,7 @@ lib/compress/zstd_compress.s: lib/compress/zstd_compress.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_compress.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress.c.s
 .PHONY : lib/compress/zstd_compress.c.s
 
 lib/compress/zstd_compress_literals.obj: lib/compress/zstd_compress_literals.c.obj
@@ -488,7 +488,7 @@ lib/compress/zstd_compress_literals.obj: lib/compress/zstd_compress_literals.c.o
 
 # target to build an object file
 lib/compress/zstd_compress_literals.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_literals.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_literals.c.obj
 .PHONY : lib/compress/zstd_compress_literals.c.obj
 
 lib/compress/zstd_compress_literals.i: lib/compress/zstd_compress_literals.c.i
@@ -496,7 +496,7 @@ lib/compress/zstd_compress_literals.i: lib/compress/zstd_compress_literals.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_compress_literals.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_literals.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_literals.c.i
 .PHONY : lib/compress/zstd_compress_literals.c.i
 
 lib/compress/zstd_compress_literals.s: lib/compress/zstd_compress_literals.c.s
@@ -504,7 +504,7 @@ lib/compress/zstd_compress_literals.s: lib/compress/zstd_compress_literals.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_compress_literals.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_literals.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_literals.c.s
 .PHONY : lib/compress/zstd_compress_literals.c.s
 
 lib/compress/zstd_compress_sequences.obj: lib/compress/zstd_compress_sequences.c.obj
@@ -512,7 +512,7 @@ lib/compress/zstd_compress_sequences.obj: lib/compress/zstd_compress_sequences.c
 
 # target to build an object file
 lib/compress/zstd_compress_sequences.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_sequences.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_sequences.c.obj
 .PHONY : lib/compress/zstd_compress_sequences.c.obj
 
 lib/compress/zstd_compress_sequences.i: lib/compress/zstd_compress_sequences.c.i
@@ -520,7 +520,7 @@ lib/compress/zstd_compress_sequences.i: lib/compress/zstd_compress_sequences.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_compress_sequences.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_sequences.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_sequences.c.i
 .PHONY : lib/compress/zstd_compress_sequences.c.i
 
 lib/compress/zstd_compress_sequences.s: lib/compress/zstd_compress_sequences.c.s
@@ -528,7 +528,7 @@ lib/compress/zstd_compress_sequences.s: lib/compress/zstd_compress_sequences.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_compress_sequences.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_sequences.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_compress_sequences.c.s
 .PHONY : lib/compress/zstd_compress_sequences.c.s
 
 lib/compress/zstd_double_fast.obj: lib/compress/zstd_double_fast.c.obj
@@ -536,7 +536,7 @@ lib/compress/zstd_double_fast.obj: lib/compress/zstd_double_fast.c.obj
 
 # target to build an object file
 lib/compress/zstd_double_fast.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_double_fast.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_double_fast.c.obj
 .PHONY : lib/compress/zstd_double_fast.c.obj
 
 lib/compress/zstd_double_fast.i: lib/compress/zstd_double_fast.c.i
@@ -544,7 +544,7 @@ lib/compress/zstd_double_fast.i: lib/compress/zstd_double_fast.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_double_fast.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_double_fast.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_double_fast.c.i
 .PHONY : lib/compress/zstd_double_fast.c.i
 
 lib/compress/zstd_double_fast.s: lib/compress/zstd_double_fast.c.s
@@ -552,7 +552,7 @@ lib/compress/zstd_double_fast.s: lib/compress/zstd_double_fast.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_double_fast.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_double_fast.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_double_fast.c.s
 .PHONY : lib/compress/zstd_double_fast.c.s
 
 lib/compress/zstd_fast.obj: lib/compress/zstd_fast.c.obj
@@ -560,7 +560,7 @@ lib/compress/zstd_fast.obj: lib/compress/zstd_fast.c.obj
 
 # target to build an object file
 lib/compress/zstd_fast.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_fast.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_fast.c.obj
 .PHONY : lib/compress/zstd_fast.c.obj
 
 lib/compress/zstd_fast.i: lib/compress/zstd_fast.c.i
@@ -568,7 +568,7 @@ lib/compress/zstd_fast.i: lib/compress/zstd_fast.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_fast.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_fast.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_fast.c.i
 .PHONY : lib/compress/zstd_fast.c.i
 
 lib/compress/zstd_fast.s: lib/compress/zstd_fast.c.s
@@ -576,7 +576,7 @@ lib/compress/zstd_fast.s: lib/compress/zstd_fast.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_fast.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_fast.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_fast.c.s
 .PHONY : lib/compress/zstd_fast.c.s
 
 lib/compress/zstd_lazy.obj: lib/compress/zstd_lazy.c.obj
@@ -584,7 +584,7 @@ lib/compress/zstd_lazy.obj: lib/compress/zstd_lazy.c.obj
 
 # target to build an object file
 lib/compress/zstd_lazy.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_lazy.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_lazy.c.obj
 .PHONY : lib/compress/zstd_lazy.c.obj
 
 lib/compress/zstd_lazy.i: lib/compress/zstd_lazy.c.i
@@ -592,7 +592,7 @@ lib/compress/zstd_lazy.i: lib/compress/zstd_lazy.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_lazy.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_lazy.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_lazy.c.i
 .PHONY : lib/compress/zstd_lazy.c.i
 
 lib/compress/zstd_lazy.s: lib/compress/zstd_lazy.c.s
@@ -600,7 +600,7 @@ lib/compress/zstd_lazy.s: lib/compress/zstd_lazy.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_lazy.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_lazy.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_lazy.c.s
 .PHONY : lib/compress/zstd_lazy.c.s
 
 lib/compress/zstd_ldm.obj: lib/compress/zstd_ldm.c.obj
@@ -608,7 +608,7 @@ lib/compress/zstd_ldm.obj: lib/compress/zstd_ldm.c.obj
 
 # target to build an object file
 lib/compress/zstd_ldm.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_ldm.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_ldm.c.obj
 .PHONY : lib/compress/zstd_ldm.c.obj
 
 lib/compress/zstd_ldm.i: lib/compress/zstd_ldm.c.i
@@ -616,7 +616,7 @@ lib/compress/zstd_ldm.i: lib/compress/zstd_ldm.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_ldm.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_ldm.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_ldm.c.i
 .PHONY : lib/compress/zstd_ldm.c.i
 
 lib/compress/zstd_ldm.s: lib/compress/zstd_ldm.c.s
@@ -624,7 +624,7 @@ lib/compress/zstd_ldm.s: lib/compress/zstd_ldm.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_ldm.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_ldm.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_ldm.c.s
 .PHONY : lib/compress/zstd_ldm.c.s
 
 lib/compress/zstd_opt.obj: lib/compress/zstd_opt.c.obj
@@ -632,7 +632,7 @@ lib/compress/zstd_opt.obj: lib/compress/zstd_opt.c.obj
 
 # target to build an object file
 lib/compress/zstd_opt.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_opt.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_opt.c.obj
 .PHONY : lib/compress/zstd_opt.c.obj
 
 lib/compress/zstd_opt.i: lib/compress/zstd_opt.c.i
@@ -640,7 +640,7 @@ lib/compress/zstd_opt.i: lib/compress/zstd_opt.c.i
 
 # target to preprocess a source file
 lib/compress/zstd_opt.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_opt.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_opt.c.i
 .PHONY : lib/compress/zstd_opt.c.i
 
 lib/compress/zstd_opt.s: lib/compress/zstd_opt.c.s
@@ -648,7 +648,7 @@ lib/compress/zstd_opt.s: lib/compress/zstd_opt.c.s
 
 # target to generate assembly for a file
 lib/compress/zstd_opt.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_opt.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstd_opt.c.s
 .PHONY : lib/compress/zstd_opt.c.s
 
 lib/compress/zstdmt_compress.obj: lib/compress/zstdmt_compress.c.obj
@@ -656,7 +656,7 @@ lib/compress/zstdmt_compress.obj: lib/compress/zstdmt_compress.c.obj
 
 # target to build an object file
 lib/compress/zstdmt_compress.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstdmt_compress.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstdmt_compress.c.obj
 .PHONY : lib/compress/zstdmt_compress.c.obj
 
 lib/compress/zstdmt_compress.i: lib/compress/zstdmt_compress.c.i
@@ -664,7 +664,7 @@ lib/compress/zstdmt_compress.i: lib/compress/zstdmt_compress.c.i
 
 # target to preprocess a source file
 lib/compress/zstdmt_compress.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstdmt_compress.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstdmt_compress.c.i
 .PHONY : lib/compress/zstdmt_compress.c.i
 
 lib/compress/zstdmt_compress.s: lib/compress/zstdmt_compress.c.s
@@ -672,7 +672,7 @@ lib/compress/zstdmt_compress.s: lib/compress/zstdmt_compress.c.s
 
 # target to generate assembly for a file
 lib/compress/zstdmt_compress.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstdmt_compress.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/compress/zstdmt_compress.c.s
 .PHONY : lib/compress/zstdmt_compress.c.s
 
 lib/decompress/huf_decompress.obj: lib/decompress/huf_decompress.c.obj
@@ -680,7 +680,7 @@ lib/decompress/huf_decompress.obj: lib/decompress/huf_decompress.c.obj
 
 # target to build an object file
 lib/decompress/huf_decompress.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/huf_decompress.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/huf_decompress.c.obj
 .PHONY : lib/decompress/huf_decompress.c.obj
 
 lib/decompress/huf_decompress.i: lib/decompress/huf_decompress.c.i
@@ -688,7 +688,7 @@ lib/decompress/huf_decompress.i: lib/decompress/huf_decompress.c.i
 
 # target to preprocess a source file
 lib/decompress/huf_decompress.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/huf_decompress.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/huf_decompress.c.i
 .PHONY : lib/decompress/huf_decompress.c.i
 
 lib/decompress/huf_decompress.s: lib/decompress/huf_decompress.c.s
@@ -696,7 +696,7 @@ lib/decompress/huf_decompress.s: lib/decompress/huf_decompress.c.s
 
 # target to generate assembly for a file
 lib/decompress/huf_decompress.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/huf_decompress.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/huf_decompress.c.s
 .PHONY : lib/decompress/huf_decompress.c.s
 
 lib/decompress/zstd_ddict.obj: lib/decompress/zstd_ddict.c.obj
@@ -704,7 +704,7 @@ lib/decompress/zstd_ddict.obj: lib/decompress/zstd_ddict.c.obj
 
 # target to build an object file
 lib/decompress/zstd_ddict.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_ddict.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_ddict.c.obj
 .PHONY : lib/decompress/zstd_ddict.c.obj
 
 lib/decompress/zstd_ddict.i: lib/decompress/zstd_ddict.c.i
@@ -712,7 +712,7 @@ lib/decompress/zstd_ddict.i: lib/decompress/zstd_ddict.c.i
 
 # target to preprocess a source file
 lib/decompress/zstd_ddict.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_ddict.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_ddict.c.i
 .PHONY : lib/decompress/zstd_ddict.c.i
 
 lib/decompress/zstd_ddict.s: lib/decompress/zstd_ddict.c.s
@@ -720,7 +720,7 @@ lib/decompress/zstd_ddict.s: lib/decompress/zstd_ddict.c.s
 
 # target to generate assembly for a file
 lib/decompress/zstd_ddict.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_ddict.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_ddict.c.s
 .PHONY : lib/decompress/zstd_ddict.c.s
 
 lib/decompress/zstd_decompress.obj: lib/decompress/zstd_decompress.c.obj
@@ -728,7 +728,7 @@ lib/decompress/zstd_decompress.obj: lib/decompress/zstd_decompress.c.obj
 
 # target to build an object file
 lib/decompress/zstd_decompress.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress.c.obj
 .PHONY : lib/decompress/zstd_decompress.c.obj
 
 lib/decompress/zstd_decompress.i: lib/decompress/zstd_decompress.c.i
@@ -736,7 +736,7 @@ lib/decompress/zstd_decompress.i: lib/decompress/zstd_decompress.c.i
 
 # target to preprocess a source file
 lib/decompress/zstd_decompress.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress.c.i
 .PHONY : lib/decompress/zstd_decompress.c.i
 
 lib/decompress/zstd_decompress.s: lib/decompress/zstd_decompress.c.s
@@ -744,7 +744,7 @@ lib/decompress/zstd_decompress.s: lib/decompress/zstd_decompress.c.s
 
 # target to generate assembly for a file
 lib/decompress/zstd_decompress.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress.c.s
 .PHONY : lib/decompress/zstd_decompress.c.s
 
 lib/decompress/zstd_decompress_block.obj: lib/decompress/zstd_decompress_block.c.obj
@@ -752,7 +752,7 @@ lib/decompress/zstd_decompress_block.obj: lib/decompress/zstd_decompress_block.c
 
 # target to build an object file
 lib/decompress/zstd_decompress_block.c.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress_block.c.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress_block.c.obj
 .PHONY : lib/decompress/zstd_decompress_block.c.obj
 
 lib/decompress/zstd_decompress_block.i: lib/decompress/zstd_decompress_block.c.i
@@ -760,7 +760,7 @@ lib/decompress/zstd_decompress_block.i: lib/decompress/zstd_decompress_block.c.i
 
 # target to preprocess a source file
 lib/decompress/zstd_decompress_block.c.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress_block.c.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress_block.c.i
 .PHONY : lib/decompress/zstd_decompress_block.c.i
 
 lib/decompress/zstd_decompress_block.s: lib/decompress/zstd_decompress_block.c.s
@@ -768,7 +768,7 @@ lib/decompress/zstd_decompress_block.s: lib/decompress/zstd_decompress_block.c.s
 
 # target to generate assembly for a file
 lib/decompress/zstd_decompress_block.c.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress_block.c.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/zstd/CMakeFiles/zstd.dir/build.make Externals/zstd/CMakeFiles/zstd.dir/lib/decompress/zstd_decompress_block.c.s
 .PHONY : lib/decompress/zstd_decompress_block.c.s
 
 # Help Target
@@ -869,6 +869,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

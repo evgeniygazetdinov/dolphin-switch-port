@@ -1,4 +1,4 @@
-# Install script for directory: /home/ev/ClangProjects/dolphin-switch
+# Install script for directory: /home/ev/code/dolphin-switch-port/
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -46,7 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/opt/devkitpro/portlibs/switch/share/dolphin-emu/sys" TYPE DIRECTORY FILES "/home/ev/ClangProjects/dolphin-switch/Data/Sys/")
+  file(INSTALL DESTINATION "/opt/devkitpro/portlibs/switch/share/dolphin-emu/sys" TYPE DIRECTORY FILES "/home/ev/code/dolphin-switch-port//Data/Sys/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -58,34 +58,34 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/opt/devkitpro/portlibs/switch/share/dolphin-emu" TYPE FILE FILES "/home/ev/ClangProjects/dolphin-switch/Data/license.txt")
+  file(INSTALL DESTINATION "/opt/devkitpro/portlibs/switch/share/dolphin-emu" TYPE FILE FILES "/home/ev/code/dolphin-switch-port//Data/license.txt")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/cpp-optparse/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/imgui/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/implot/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/glslang/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/pugixml/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/enet/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/xxhash/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/bzip2/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/liblzma/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/zstd/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/zlib-ng/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/minizip/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/LZO/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/libspng/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/SFML/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/libiconv-1.14/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/expr/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/rangeset/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/FatFs/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/rcheevos/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Source/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/cpp-optparse/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/imgui/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/implot/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/glslang/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/pugixml/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/enet/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/xxhash/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/bzip2/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/liblzma/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/zstd/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/zlib-ng/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/minizip/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/LZO/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/libspng/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/FreeSurround/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/soundtouch/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/SFML/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/libiconv-1.14/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/expr/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/rangeset/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/FatFs/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Externals/rcheevos/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port/Source/cmake_install.cmake")
 
 endif()
 
@@ -97,5 +97,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/ev/ClangProjects/dolphin-switch/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ev/code/dolphin-switch-port/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

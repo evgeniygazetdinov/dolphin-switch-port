@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/AAFilter.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/AAFilter.cpp
 memory.h
 -
 assert.h
@@ -16,19 +16,19 @@ math.h
 stdlib.h
 -
 AAFilter.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/AAFilter.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/AAFilter.h
 FIRFilter.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIRFilter.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIRFilter.h
 stdio.h
 -
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/AAFilter.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/AAFilter.h
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 FIFOSampleBuffer.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSampleBuffer.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSampleBuffer.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/BPMDetect.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/BPMDetect.cpp
 math.h
 -
 assert.h
@@ -40,21 +40,21 @@ stdio.h
 cfloat
 -
 FIFOSampleBuffer.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSampleBuffer.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSampleBuffer.h
 PeakFinder.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/PeakFinder.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/PeakFinder.h
 BPMDetect.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/BPMDetect.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/BPMDetect.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/BPMDetect.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/BPMDetect.h
 vector
 -
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 FIFOSampleBuffer.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSampleBuffer.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSampleBuffer.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSampleBuffer.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSampleBuffer.cpp
 stdlib.h
 -
 memory.h
@@ -64,21 +64,21 @@ string.h
 assert.h
 -
 FIFOSampleBuffer.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSampleBuffer.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSampleBuffer.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSampleBuffer.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSampleBuffer.h
 FIFOSamplePipe.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSamplePipe.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSamplePipe.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSamplePipe.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSamplePipe.h
 assert.h
 -
 stdlib.h
 -
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIRFilter.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIRFilter.cpp
 memory.h
 -
 assert.h
@@ -88,71 +88,71 @@ math.h
 stdlib.h
 -
 FIRFilter.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIRFilter.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIRFilter.h
 cpu_detect.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/cpu_detect.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/cpu_detect.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIRFilter.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIRFilter.h
 stddef.h
 -
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateCubic.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateCubic.cpp
 stddef.h
 -
 math.h
 -
 InterpolateCubic.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateCubic.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateCubic.h
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateCubic.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateCubic.h
 RateTransposer.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/RateTransposer.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/RateTransposer.h
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateLinear.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateLinear.cpp
 assert.h
 -
 stdlib.h
 -
 InterpolateLinear.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateLinear.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateLinear.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateLinear.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateLinear.h
 RateTransposer.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/RateTransposer.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/RateTransposer.h
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateShannon.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateShannon.cpp
 math.h
 -
 InterpolateShannon.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateShannon.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateShannon.h
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateShannon.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateShannon.h
 RateTransposer.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/RateTransposer.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/RateTransposer.h
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/PeakFinder.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/PeakFinder.cpp
 math.h
 -
 assert.h
 -
 PeakFinder.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/PeakFinder.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/PeakFinder.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/PeakFinder.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/PeakFinder.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/RateTransposer.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/RateTransposer.cpp
 memory.h
 -
 assert.h
@@ -162,29 +162,29 @@ stdlib.h
 stdio.h
 -
 RateTransposer.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/RateTransposer.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/RateTransposer.h
 InterpolateLinear.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateLinear.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateLinear.h
 InterpolateCubic.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateCubic.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateCubic.h
 InterpolateShannon.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/InterpolateShannon.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/InterpolateShannon.h
 AAFilter.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/AAFilter.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/AAFilter.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/RateTransposer.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/RateTransposer.h
 stddef.h
 -
 AAFilter.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/AAFilter.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/AAFilter.h
 FIFOSamplePipe.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSamplePipe.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSamplePipe.h
 FIFOSampleBuffer.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSampleBuffer.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSampleBuffer.h
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 assert.h
 -
 stdexcept
@@ -192,7 +192,7 @@ stdexcept
 string
 -
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/SoundTouch.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/SoundTouch.cpp
 assert.h
 -
 stdlib.h
@@ -204,21 +204,21 @@ math.h
 stdio.h
 -
 SoundTouch.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/SoundTouch.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/SoundTouch.h
 TDStretch.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/TDStretch.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/TDStretch.h
 RateTransposer.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/RateTransposer.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/RateTransposer.h
 cpu_detect.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/cpu_detect.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/cpu_detect.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/SoundTouch.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/SoundTouch.h
 FIFOSamplePipe.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSamplePipe.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSamplePipe.h
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/TDStretch.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/TDStretch.cpp
 string.h
 -
 limits.h
@@ -230,41 +230,41 @@ math.h
 float.h
 -
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 cpu_detect.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/cpu_detect.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/cpu_detect.h
 TDStretch.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/TDStretch.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/TDStretch.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/TDStretch.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/TDStretch.h
 stddef.h
 -
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 RateTransposer.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/RateTransposer.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/RateTransposer.h
 FIFOSamplePipe.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSamplePipe.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSamplePipe.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/cpu_detect.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/cpu_detect.h
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/cpu_detect_x86.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/cpu_detect_x86.cpp
 cpu_detect.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/cpu_detect.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/cpu_detect.h
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 cpuid.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/cpuid.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/cpuid.h
 intrin.h
 -
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/mmx_optimized.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/mmx_optimized.cpp
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 TDStretch.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/TDStretch.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/TDStretch.h
 mmintrin.h
 -
 limits.h
@@ -272,19 +272,19 @@ limits.h
 math.h
 -
 FIRFilter.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIRFilter.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIRFilter.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/sse_optimized.cpp
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/sse_optimized.cpp
 cpu_detect.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/cpu_detect.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/cpu_detect.h
 STTypes.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h
 TDStretch.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/TDStretch.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/TDStretch.h
 xmmintrin.h
 -
 math.h
 -
 FIRFilter.h
-/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIRFilter.h
+/home/ev/code/dolphin-switch-port//Externals/soundtouch/FIRFilter.h
 

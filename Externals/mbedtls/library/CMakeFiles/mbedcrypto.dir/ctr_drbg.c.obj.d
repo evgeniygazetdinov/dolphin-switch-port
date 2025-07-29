@@ -1,8 +1,8 @@
 Externals/mbedtls/library/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ctr_drbg.c \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/common.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/config.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/check_config.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ctr_drbg.c \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/common.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/config.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/check_config.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/limits.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/syslimits.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/limits.h \
@@ -17,10 +17,10 @@ Externals/mbedtls/library/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdint.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_intsup.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_stdint.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/ctr_drbg.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/aes.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/platform_util.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/platform_time.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/ctr_drbg.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/aes.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/platform_util.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/platform_time.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/time.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/config.h \
@@ -45,14 +45,14 @@ Externals/mbedtls/library/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_locale.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/signal.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/signal.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/error.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/error.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/string.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/strings.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/string.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdio.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stdarg.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/stdio.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/platform.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/platform.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/alloca.h

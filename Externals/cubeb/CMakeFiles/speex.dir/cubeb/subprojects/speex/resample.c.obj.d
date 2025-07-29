@@ -1,5 +1,5 @@
 Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/subprojects/speex/resample.c \
+ /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/subprojects/speex/resample.c \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/ieeefp.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
@@ -21,9 +21,9 @@ Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_stdint.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/alloca.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/subprojects/speex/speex_resampler.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/subprojects/speex/arch.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/subprojects/speex/stack_alloc.h \
+ /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/subprojects/speex/speex_resampler.h \
+ /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/subprojects/speex/arch.h \
+ /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/subprojects/speex/stack_alloc.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/math.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/limits.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/syslimits.h \

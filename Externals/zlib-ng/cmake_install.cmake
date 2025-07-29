@@ -1,4 +1,4 @@
-# Install script for directory: /home/ev/ClangProjects/dolphin-switch/Externals/zlib-ng
+# Install script for directory: /home/ev/code/dolphin-switch-port//Externals/zlib-ng
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/zlib-ng/zlib-ng/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port//Externals/zlib-ng/zlib-ng/cmake_install.cmake")
 
 endif()
 

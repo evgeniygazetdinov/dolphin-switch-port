@@ -1,4 +1,4 @@
-# Install script for directory: /home/ev/ClangProjects/dolphin-switch/Externals/zstd
+# Install script for directory: /home/ev/code/dolphin-switch-port//Externals/zstd
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

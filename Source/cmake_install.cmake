@@ -1,4 +1,4 @@
-# Install script for directory: /home/ev/ClangProjects/dolphin-switch/Source
+# Install script for directory: /home/ev/code/dolphin-switch-port//Source
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ev/ClangProjects/dolphin-switch/Source/Core/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Source/UnitTests/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port//Source/Core/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port//Source/UnitTests/cmake_install.cmake")
 
 endif()
 

@@ -1,8 +1,8 @@
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb_strings.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_strings.c \
- /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_strings.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/include/cubeb/cubeb.h \
- /home/ev/ClangProjects/dolphin-switch/exports/cubeb_export.h \
+ /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_strings.c \
+ /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_strings.h \
+ /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/include/cubeb/cubeb.h \
+ /home/ev/code/dolphin-switch-port//exports/cubeb_export.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stdint.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdint.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/_default_types.h \

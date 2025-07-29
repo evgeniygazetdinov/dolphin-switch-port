@@ -1,5 +1,5 @@
 Externals/soundtouch/CMakeFiles/SoundTouch.dir/TDStretch.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/TDStretch.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/TDStretch.cpp \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/string.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/newlib.h \
@@ -41,12 +41,12 @@ Externals/soundtouch/CMakeFiles/SoundTouch.dir/TDStretch.cpp.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/version.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/float.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/cpu_detect.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/TDStretch.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/RateTransposer.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/AAFilter.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSampleBuffer.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSamplePipe.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/cpu_detect.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/TDStretch.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/RateTransposer.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/AAFilter.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSampleBuffer.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSamplePipe.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/cstdlib

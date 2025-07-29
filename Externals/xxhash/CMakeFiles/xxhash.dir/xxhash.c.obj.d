@@ -1,5 +1,5 @@
 Externals/xxhash/CMakeFiles/xxhash.dir/xxhash.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/xxhash/xxhash.c \
+ /home/ev/code/dolphin-switch-port//Externals/xxhash/xxhash.c \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/ieeefp.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
@@ -25,4 +25,4 @@ Externals/xxhash/CMakeFiles/xxhash.dir/xxhash.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_locale.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/strings.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/string.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/xxhash/xxhash.h
+ /home/ev/code/dolphin-switch-port//Externals/xxhash/xxhash.h

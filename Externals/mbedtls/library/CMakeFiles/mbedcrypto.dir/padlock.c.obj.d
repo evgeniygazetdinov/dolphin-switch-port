@@ -1,8 +1,8 @@
 Externals/mbedtls/library/CMakeFiles/mbedcrypto.dir/padlock.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/padlock.c \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/common.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/config.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/check_config.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/padlock.c \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/common.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/config.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/check_config.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/limits.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/syslimits.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/limits.h \
@@ -17,10 +17,10 @@ Externals/mbedtls/library/CMakeFiles/mbedcrypto.dir/padlock.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdint.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_intsup.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_stdint.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/padlock.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/aes.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/platform_util.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/platform_time.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/padlock.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/aes.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/platform_util.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/platform_time.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/time.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/config.h \

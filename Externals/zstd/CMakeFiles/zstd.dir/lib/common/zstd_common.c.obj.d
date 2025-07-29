@@ -1,5 +1,5 @@
 Externals/zstd/CMakeFiles/zstd.dir/lib/common/zstd_common.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/zstd_common.c \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/zstd_common.c \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/ieeefp.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
@@ -25,18 +25,18 @@ Externals/zstd/CMakeFiles/zstd.dir/lib/common/zstd_common.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_locale.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/strings.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/string.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/error_private.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/zstd_errors.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/zstd_internal.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/compiler.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/mem.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/debug.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/zstd.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/error_private.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/zstd_errors.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/zstd_internal.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/compiler.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/mem.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/debug.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/zstd.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/limits.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/syslimits.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/limits.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/syslimits.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/fse.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/bitstream.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/huf.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/xxhash.h
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/fse.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/bitstream.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/huf.h \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/xxhash.h

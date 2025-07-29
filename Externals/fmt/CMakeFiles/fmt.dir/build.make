@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 # Include any dependencies generated for this target.
 include Externals/fmt/CMakeFiles/fmt.dir/depend.make
@@ -72,30 +72,30 @@ include Externals/fmt/CMakeFiles/fmt.dir/flags.make
 Externals/fmt/CMakeFiles/fmt.dir/src/format.cc.obj: Externals/fmt/CMakeFiles/fmt.dir/flags.make
 Externals/fmt/CMakeFiles/fmt.dir/src/format.cc.obj: Externals/fmt/src/format.cc
 Externals/fmt/CMakeFiles/fmt.dir/src/format.cc.obj: Externals/fmt/CMakeFiles/fmt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Externals/fmt/CMakeFiles/fmt.dir/src/format.cc.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/fmt && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/fmt/CMakeFiles/fmt.dir/src/format.cc.obj -MF CMakeFiles/fmt.dir/src/format.cc.obj.d -o CMakeFiles/fmt.dir/src/format.cc.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/fmt/src/format.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Externals/fmt/CMakeFiles/fmt.dir/src/format.cc.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/fmt && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/fmt/CMakeFiles/fmt.dir/src/format.cc.obj -MF CMakeFiles/fmt.dir/src/format.cc.obj.d -o CMakeFiles/fmt.dir/src/format.cc.obj -c /home/ev/code/dolphin-switch-port//Externals/fmt/src/format.cc
 
 Externals/fmt/CMakeFiles/fmt.dir/src/format.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fmt.dir/src/format.cc.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/fmt && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/fmt/src/format.cc > CMakeFiles/fmt.dir/src/format.cc.i
+	cd /home/ev/code/dolphin-switch-port//Externals/fmt && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/fmt/src/format.cc > CMakeFiles/fmt.dir/src/format.cc.i
 
 Externals/fmt/CMakeFiles/fmt.dir/src/format.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fmt.dir/src/format.cc.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/fmt && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/fmt/src/format.cc -o CMakeFiles/fmt.dir/src/format.cc.s
+	cd /home/ev/code/dolphin-switch-port//Externals/fmt && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/fmt/src/format.cc -o CMakeFiles/fmt.dir/src/format.cc.s
 
 Externals/fmt/CMakeFiles/fmt.dir/src/os.cc.obj: Externals/fmt/CMakeFiles/fmt.dir/flags.make
 Externals/fmt/CMakeFiles/fmt.dir/src/os.cc.obj: Externals/fmt/src/os.cc
 Externals/fmt/CMakeFiles/fmt.dir/src/os.cc.obj: Externals/fmt/CMakeFiles/fmt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Externals/fmt/CMakeFiles/fmt.dir/src/os.cc.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/fmt && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/fmt/CMakeFiles/fmt.dir/src/os.cc.obj -MF CMakeFiles/fmt.dir/src/os.cc.obj.d -o CMakeFiles/fmt.dir/src/os.cc.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/fmt/src/os.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Externals/fmt/CMakeFiles/fmt.dir/src/os.cc.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/fmt && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Externals/fmt/CMakeFiles/fmt.dir/src/os.cc.obj -MF CMakeFiles/fmt.dir/src/os.cc.obj.d -o CMakeFiles/fmt.dir/src/os.cc.obj -c /home/ev/code/dolphin-switch-port//Externals/fmt/src/os.cc
 
 Externals/fmt/CMakeFiles/fmt.dir/src/os.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/fmt.dir/src/os.cc.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/fmt && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/fmt/src/os.cc > CMakeFiles/fmt.dir/src/os.cc.i
+	cd /home/ev/code/dolphin-switch-port//Externals/fmt && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/fmt/src/os.cc > CMakeFiles/fmt.dir/src/os.cc.i
 
 Externals/fmt/CMakeFiles/fmt.dir/src/os.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/fmt.dir/src/os.cc.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/fmt && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/fmt/src/os.cc -o CMakeFiles/fmt.dir/src/os.cc.s
+	cd /home/ev/code/dolphin-switch-port//Externals/fmt && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/fmt/src/os.cc -o CMakeFiles/fmt.dir/src/os.cc.s
 
 # Object files for target fmt
 fmt_OBJECTS = \
@@ -109,19 +109,19 @@ Externals/fmt/libfmt.a: Externals/fmt/CMakeFiles/fmt.dir/src/format.cc.obj
 Externals/fmt/libfmt.a: Externals/fmt/CMakeFiles/fmt.dir/src/os.cc.obj
 Externals/fmt/libfmt.a: Externals/fmt/CMakeFiles/fmt.dir/build.make
 Externals/fmt/libfmt.a: Externals/fmt/CMakeFiles/fmt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libfmt.a"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/fmt && $(CMAKE_COMMAND) -P CMakeFiles/fmt.dir/cmake_clean_target.cmake
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/fmt && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fmt.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libfmt.a"
+	cd /home/ev/code/dolphin-switch-port//Externals/fmt && $(CMAKE_COMMAND) -P CMakeFiles/fmt.dir/cmake_clean_target.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/fmt && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fmt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Externals/fmt/CMakeFiles/fmt.dir/build: Externals/fmt/libfmt.a
 .PHONY : Externals/fmt/CMakeFiles/fmt.dir/build
 
 Externals/fmt/CMakeFiles/fmt.dir/clean:
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/fmt && $(CMAKE_COMMAND) -P CMakeFiles/fmt.dir/cmake_clean.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/fmt && $(CMAKE_COMMAND) -P CMakeFiles/fmt.dir/cmake_clean.cmake
 .PHONY : Externals/fmt/CMakeFiles/fmt.dir/clean
 
 Externals/fmt/CMakeFiles/fmt.dir/depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/fmt /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/fmt /home/ev/ClangProjects/dolphin-switch/Externals/fmt/CMakeFiles/fmt.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/fmt /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/fmt /home/ev/code/dolphin-switch-port//Externals/fmt/CMakeFiles/fmt.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Externals/fmt/CMakeFiles/fmt.dir/depend
 

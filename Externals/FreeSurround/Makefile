@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/ClangProjects/dolphin-switch/CPackSourceConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/code/dolphin-switch-port//CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround//CMakeFiles/progress.marks
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FreeSurround/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles /home/ev/code/dolphin-switch-port//Externals/FreeSurround//CMakeFiles/progress.marks
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FreeSurround/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FreeSurround/clean
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FreeSurround/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FreeSurround/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FreeSurround/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FreeSurround/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FreeSurround/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/rule:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/rule
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/rule
 .PHONY : Externals/FreeSurround/CMakeFiles/FreeSurround.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ FreeSurround: Externals/FreeSurround/CMakeFiles/FreeSurround.dir/rule
 
 # fast build rule for target.
 FreeSurround/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build
 .PHONY : FreeSurround/fast
 
 source/ChannelMaps.obj: source/ChannelMaps.cpp.obj
@@ -200,7 +200,7 @@ source/ChannelMaps.obj: source/ChannelMaps.cpp.obj
 
 # target to build an object file
 source/ChannelMaps.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.obj
 .PHONY : source/ChannelMaps.cpp.obj
 
 source/ChannelMaps.i: source/ChannelMaps.cpp.i
@@ -208,7 +208,7 @@ source/ChannelMaps.i: source/ChannelMaps.cpp.i
 
 # target to preprocess a source file
 source/ChannelMaps.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.i
 .PHONY : source/ChannelMaps.cpp.i
 
 source/ChannelMaps.s: source/ChannelMaps.cpp.s
@@ -216,7 +216,7 @@ source/ChannelMaps.s: source/ChannelMaps.cpp.s
 
 # target to generate assembly for a file
 source/ChannelMaps.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/ChannelMaps.cpp.s
 .PHONY : source/ChannelMaps.cpp.s
 
 source/FreeSurroundDecoder.obj: source/FreeSurroundDecoder.cpp.obj
@@ -224,7 +224,7 @@ source/FreeSurroundDecoder.obj: source/FreeSurroundDecoder.cpp.obj
 
 # target to build an object file
 source/FreeSurroundDecoder.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.obj
 .PHONY : source/FreeSurroundDecoder.cpp.obj
 
 source/FreeSurroundDecoder.i: source/FreeSurroundDecoder.cpp.i
@@ -232,7 +232,7 @@ source/FreeSurroundDecoder.i: source/FreeSurroundDecoder.cpp.i
 
 # target to preprocess a source file
 source/FreeSurroundDecoder.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.i
 .PHONY : source/FreeSurroundDecoder.cpp.i
 
 source/FreeSurroundDecoder.s: source/FreeSurroundDecoder.cpp.s
@@ -240,7 +240,7 @@ source/FreeSurroundDecoder.s: source/FreeSurroundDecoder.cpp.s
 
 # target to generate assembly for a file
 source/FreeSurroundDecoder.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/FreeSurroundDecoder.cpp.s
 .PHONY : source/FreeSurroundDecoder.cpp.s
 
 source/KissFFT.obj: source/KissFFT.cpp.obj
@@ -248,7 +248,7 @@ source/KissFFT.obj: source/KissFFT.cpp.obj
 
 # target to build an object file
 source/KissFFT.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.obj
 .PHONY : source/KissFFT.cpp.obj
 
 source/KissFFT.i: source/KissFFT.cpp.i
@@ -256,7 +256,7 @@ source/KissFFT.i: source/KissFFT.cpp.i
 
 # target to preprocess a source file
 source/KissFFT.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.i
 .PHONY : source/KissFFT.cpp.i
 
 source/KissFFT.s: source/KissFFT.cpp.s
@@ -264,7 +264,7 @@ source/KissFFT.s: source/KissFFT.cpp.s
 
 # target to generate assembly for a file
 source/KissFFT.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFT.cpp.s
 .PHONY : source/KissFFT.cpp.s
 
 source/KissFFTR.obj: source/KissFFTR.cpp.obj
@@ -272,7 +272,7 @@ source/KissFFTR.obj: source/KissFFTR.cpp.obj
 
 # target to build an object file
 source/KissFFTR.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj
 .PHONY : source/KissFFTR.cpp.obj
 
 source/KissFFTR.i: source/KissFFTR.cpp.i
@@ -280,7 +280,7 @@ source/KissFFTR.i: source/KissFFTR.cpp.i
 
 # target to preprocess a source file
 source/KissFFTR.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.i
 .PHONY : source/KissFFTR.cpp.i
 
 source/KissFFTR.s: source/KissFFTR.cpp.s
@@ -288,7 +288,7 @@ source/KissFFTR.s: source/KissFFTR.cpp.s
 
 # target to generate assembly for a file
 source/KissFFTR.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/FreeSurround/CMakeFiles/FreeSurround.dir/build.make Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.s
 .PHONY : source/KissFFTR.cpp.s
 
 # Help Target
@@ -329,6 +329,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

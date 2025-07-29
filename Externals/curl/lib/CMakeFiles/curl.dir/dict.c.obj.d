@@ -1,8 +1,8 @@
 Externals/curl/lib/CMakeFiles/curl.dir/dict.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/lib/dict.c \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/lib/curl_setup.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/lib/curl_config.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/include/curl/curlbuild.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/lib/dict.c \
+ /home/ev/code/dolphin-switch-port//Externals/curl/lib/curl_setup.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/lib/curl_config.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/include/curl/curlbuild.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/types.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/newlib.h \
@@ -33,14 +33,14 @@ Externals/curl/lib/CMakeFiles/curl.dir/dict.c.obj: \
  /opt/devkitpro/libnx/include/sys/socket.h \
  /opt/devkitpro/libnx/include/sys/_iovec.h \
  /opt/devkitpro/libnx/include/sys/_sockaddr_storage.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/include/curl/curlrules.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/include/curl/curlrules.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdio.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stdarg.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/reent.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/stdio.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/assert.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/curl/lib/curl_setup_once.h \
+ /home/ev/code/dolphin-switch-port//Externals/curl/lib/curl_setup_once.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/alloca.h \

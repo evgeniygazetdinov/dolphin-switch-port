@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ev/ClangProjects/dolphin-switch/Externals/LZO/minilzo.c" "Externals/LZO/CMakeFiles/lzo2.dir/minilzo.c.obj" "gcc" "Externals/LZO/CMakeFiles/lzo2.dir/minilzo.c.obj.d"
+  "/home/ev/code/dolphin-switch-port//Externals/LZO/minilzo.c" "Externals/LZO/CMakeFiles/lzo2.dir/minilzo.c.obj" "gcc" "Externals/LZO/CMakeFiles/lzo2.dir/minilzo.c.obj.d"
   )
 
 # Targets to which this target links.

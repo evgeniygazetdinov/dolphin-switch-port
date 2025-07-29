@@ -1,5 +1,5 @@
 Externals/glslang/CMakeFiles/glslang.dir/StandAlone/ResourceLimits.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/StandAlone/ResourceLimits.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/glslang/StandAlone/ResourceLimits.cpp \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/cstdlib \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/aarch64-none-elf/pic/bits/c++config.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/aarch64-none-elf/pic/bits/os_defines.h \
@@ -145,5 +145,5 @@ Externals/glslang/CMakeFiles/glslang.dir/StandAlone/ResourceLimits.cpp.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/ostream.tcc \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/istream.tcc \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/sstream.tcc \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/StandAlone/ResourceLimits.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/StandAlone/../glslang/Include/ResourceLimits.h
+ /home/ev/code/dolphin-switch-port//Externals/glslang/StandAlone/ResourceLimits.h \
+ /home/ev/code/dolphin-switch-port//Externals/glslang/StandAlone/../glslang/Include/ResourceLimits.h

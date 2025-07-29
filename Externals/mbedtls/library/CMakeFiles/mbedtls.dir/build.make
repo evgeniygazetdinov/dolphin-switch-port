@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 # Include any dependencies generated for this target.
 include Externals/mbedtls/library/CMakeFiles/mbedtls.dir/depend.make
@@ -72,156 +72,156 @@ include Externals/mbedtls/library/CMakeFiles/mbedtls.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj: Externals/mbedtls/library/debug.c
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj -MF CMakeFiles/mbedtls.dir/debug.c.obj.d -o CMakeFiles/mbedtls.dir/debug.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/debug.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj -MF CMakeFiles/mbedtls.dir/debug.c.obj.d -o CMakeFiles/mbedtls.dir/debug.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/debug.c
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedtls.dir/debug.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/debug.c > CMakeFiles/mbedtls.dir/debug.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/debug.c > CMakeFiles/mbedtls.dir/debug.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedtls.dir/debug.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/debug.c -o CMakeFiles/mbedtls.dir/debug.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/debug.c -o CMakeFiles/mbedtls.dir/debug.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/net_sockets.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/net_sockets.c.obj: Externals/mbedtls/library/net_sockets.c
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/net_sockets.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/net_sockets.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/net_sockets.c.obj -MF CMakeFiles/mbedtls.dir/net_sockets.c.obj.d -o CMakeFiles/mbedtls.dir/net_sockets.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/net_sockets.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/net_sockets.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/net_sockets.c.obj -MF CMakeFiles/mbedtls.dir/net_sockets.c.obj.d -o CMakeFiles/mbedtls.dir/net_sockets.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/net_sockets.c
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/net_sockets.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedtls.dir/net_sockets.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/net_sockets.c > CMakeFiles/mbedtls.dir/net_sockets.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/net_sockets.c > CMakeFiles/mbedtls.dir/net_sockets.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/net_sockets.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedtls.dir/net_sockets.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/net_sockets.c -o CMakeFiles/mbedtls.dir/net_sockets.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/net_sockets.c -o CMakeFiles/mbedtls.dir/net_sockets.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj: Externals/mbedtls/library/ssl_cache.c
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj -MF CMakeFiles/mbedtls.dir/ssl_cache.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_cache.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_cache.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj -MF CMakeFiles/mbedtls.dir/ssl_cache.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_cache.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_cache.c
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedtls.dir/ssl_cache.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_cache.c > CMakeFiles/mbedtls.dir/ssl_cache.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_cache.c > CMakeFiles/mbedtls.dir/ssl_cache.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedtls.dir/ssl_cache.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_cache.c -o CMakeFiles/mbedtls.dir/ssl_cache.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_cache.c -o CMakeFiles/mbedtls.dir/ssl_cache.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj: Externals/mbedtls/library/ssl_ciphersuites.c
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj -MF CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_ciphersuites.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj -MF CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_ciphersuites.c
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_ciphersuites.c > CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_ciphersuites.c > CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_ciphersuites.c -o CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_ciphersuites.c -o CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cli.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cli.c.obj: Externals/mbedtls/library/ssl_cli.c
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cli.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cli.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cli.c.obj -MF CMakeFiles/mbedtls.dir/ssl_cli.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_cli.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_cli.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cli.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cli.c.obj -MF CMakeFiles/mbedtls.dir/ssl_cli.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_cli.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_cli.c
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cli.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedtls.dir/ssl_cli.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_cli.c > CMakeFiles/mbedtls.dir/ssl_cli.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_cli.c > CMakeFiles/mbedtls.dir/ssl_cli.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cli.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedtls.dir/ssl_cli.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_cli.c -o CMakeFiles/mbedtls.dir/ssl_cli.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_cli.c -o CMakeFiles/mbedtls.dir/ssl_cli.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj: Externals/mbedtls/library/ssl_cookie.c
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj -MF CMakeFiles/mbedtls.dir/ssl_cookie.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_cookie.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_cookie.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj -MF CMakeFiles/mbedtls.dir/ssl_cookie.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_cookie.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_cookie.c
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedtls.dir/ssl_cookie.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_cookie.c > CMakeFiles/mbedtls.dir/ssl_cookie.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_cookie.c > CMakeFiles/mbedtls.dir/ssl_cookie.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedtls.dir/ssl_cookie.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_cookie.c -o CMakeFiles/mbedtls.dir/ssl_cookie.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_cookie.c -o CMakeFiles/mbedtls.dir/ssl_cookie.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj: Externals/mbedtls/library/ssl_msg.c
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj -MF CMakeFiles/mbedtls.dir/ssl_msg.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_msg.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_msg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj -MF CMakeFiles/mbedtls.dir/ssl_msg.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_msg.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_msg.c
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedtls.dir/ssl_msg.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_msg.c > CMakeFiles/mbedtls.dir/ssl_msg.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_msg.c > CMakeFiles/mbedtls.dir/ssl_msg.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedtls.dir/ssl_msg.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_msg.c -o CMakeFiles/mbedtls.dir/ssl_msg.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_msg.c -o CMakeFiles/mbedtls.dir/ssl_msg.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_srv.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_srv.c.obj: Externals/mbedtls/library/ssl_srv.c
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_srv.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_srv.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_srv.c.obj -MF CMakeFiles/mbedtls.dir/ssl_srv.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_srv.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_srv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_srv.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_srv.c.obj -MF CMakeFiles/mbedtls.dir/ssl_srv.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_srv.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_srv.c
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_srv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedtls.dir/ssl_srv.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_srv.c > CMakeFiles/mbedtls.dir/ssl_srv.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_srv.c > CMakeFiles/mbedtls.dir/ssl_srv.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_srv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedtls.dir/ssl_srv.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_srv.c -o CMakeFiles/mbedtls.dir/ssl_srv.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_srv.c -o CMakeFiles/mbedtls.dir/ssl_srv.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj: Externals/mbedtls/library/ssl_ticket.c
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj -MF CMakeFiles/mbedtls.dir/ssl_ticket.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_ticket.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_ticket.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj -MF CMakeFiles/mbedtls.dir/ssl_ticket.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_ticket.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_ticket.c
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedtls.dir/ssl_ticket.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_ticket.c > CMakeFiles/mbedtls.dir/ssl_ticket.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_ticket.c > CMakeFiles/mbedtls.dir/ssl_ticket.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedtls.dir/ssl_ticket.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_ticket.c -o CMakeFiles/mbedtls.dir/ssl_ticket.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_ticket.c -o CMakeFiles/mbedtls.dir/ssl_ticket.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj: Externals/mbedtls/library/ssl_tls.c
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj -MF CMakeFiles/mbedtls.dir/ssl_tls.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_tls.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_tls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj -MF CMakeFiles/mbedtls.dir/ssl_tls.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_tls.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_tls.c
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedtls.dir/ssl_tls.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_tls.c > CMakeFiles/mbedtls.dir/ssl_tls.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_tls.c > CMakeFiles/mbedtls.dir/ssl_tls.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedtls.dir/ssl_tls.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_tls.c -o CMakeFiles/mbedtls.dir/ssl_tls.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_tls.c -o CMakeFiles/mbedtls.dir/ssl_tls.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj: Externals/mbedtls/library/ssl_tls13_keys.c
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj -MF CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_tls13_keys.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj -MF CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj.d -o CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_tls13_keys.c
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_tls13_keys.c > CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_tls13_keys.c > CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/ssl_tls13_keys.c -o CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/ssl_tls13_keys.c -o CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.s
 
 # Object files for target mbedtls
 mbedtls_OBJECTS = \
@@ -253,19 +253,19 @@ Externals/mbedtls/library/libmbedtls.a: Externals/mbedtls/library/CMakeFiles/mbe
 Externals/mbedtls/library/libmbedtls.a: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj
 Externals/mbedtls/library/libmbedtls.a: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/build.make
 Externals/mbedtls/library/libmbedtls.a: Externals/mbedtls/library/CMakeFiles/mbedtls.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C static library libmbedtls.a"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && $(CMAKE_COMMAND) -P CMakeFiles/mbedtls.dir/cmake_clean_target.cmake
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mbedtls.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C static library libmbedtls.a"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && $(CMAKE_COMMAND) -P CMakeFiles/mbedtls.dir/cmake_clean_target.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mbedtls.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/build: Externals/mbedtls/library/libmbedtls.a
 .PHONY : Externals/mbedtls/library/CMakeFiles/mbedtls.dir/build
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/clean:
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && $(CMAKE_COMMAND) -P CMakeFiles/mbedtls.dir/cmake_clean.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && $(CMAKE_COMMAND) -P CMakeFiles/mbedtls.dir/cmake_clean.cmake
 .PHONY : Externals/mbedtls/library/CMakeFiles/mbedtls.dir/clean
 
 Externals/mbedtls/library/CMakeFiles/mbedtls.dir/depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/CMakeFiles/mbedtls.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/CMakeFiles/mbedtls.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Externals/mbedtls/library/CMakeFiles/mbedtls.dir/depend
 

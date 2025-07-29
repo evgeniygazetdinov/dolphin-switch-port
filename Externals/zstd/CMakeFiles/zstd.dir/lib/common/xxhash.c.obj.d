@@ -1,5 +1,5 @@
 Externals/zstd/CMakeFiles/zstd.dir/lib/common/xxhash.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/xxhash.c \
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/xxhash.c \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/ieeefp.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
@@ -25,4 +25,4 @@ Externals/zstd/CMakeFiles/zstd.dir/lib/common/xxhash.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_locale.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/strings.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/string.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/zstd/lib/common/xxhash.h
+ /home/ev/code/dolphin-switch-port//Externals/zstd/lib/common/xxhash.h

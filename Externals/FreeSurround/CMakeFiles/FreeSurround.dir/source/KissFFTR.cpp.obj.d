@@ -1,7 +1,7 @@
 Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/source/KissFFTR.cpp \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/include/FreeSurround/KissFFTR.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/include/FreeSurround/KissFFT.h \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/source/KissFFTR.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/include/FreeSurround/KissFFTR.h \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/include/FreeSurround/KissFFT.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/math.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/cmath \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/requires_hosted.h \
@@ -42,7 +42,7 @@ Externals/FreeSurround/CMakeFiles/FreeSurround.dir/source/KissFFTR.cpp.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_locale.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/strings.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/string.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/FreeSurround/include/FreeSurround/_KissFFTGuts.h \
+ /home/ev/code/dolphin-switch-port//Externals/FreeSurround/include/FreeSurround/_KissFFTGuts.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/limits.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/syslimits.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/limits.h \

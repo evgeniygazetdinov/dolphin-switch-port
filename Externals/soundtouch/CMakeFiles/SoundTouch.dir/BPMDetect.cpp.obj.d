@@ -1,5 +1,5 @@
 Externals/soundtouch/CMakeFiles/SoundTouch.dir/BPMDetect.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/BPMDetect.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/BPMDetect.cpp \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/math.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/cmath \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/requires_hosted.h \
@@ -41,13 +41,13 @@ Externals/soundtouch/CMakeFiles/SoundTouch.dir/BPMDetect.cpp.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/stdio.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/cfloat \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/float.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSampleBuffer.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSamplePipe.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSampleBuffer.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSamplePipe.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/cstdlib \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/PeakFinder.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/BPMDetect.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/PeakFinder.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/BPMDetect.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/vector \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/stl_algobase.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/bits/functexcept.h \

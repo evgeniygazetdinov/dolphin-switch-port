@@ -1,4 +1,4 @@
-# Install script for directory: /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls
+# Install script for directory: /home/ev/code/dolphin-switch-port//Externals/mbedtls
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,9 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/3rdparty/cmake_install.cmake")
-  include("/home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port//Externals/mbedtls/include/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port//Externals/mbedtls/3rdparty/cmake_install.cmake")
+  include("/home/ev/code/dolphin-switch-port//Externals/mbedtls/library/cmake_install.cmake")
 
 endif()
 

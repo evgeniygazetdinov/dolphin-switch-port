@@ -1,6 +1,6 @@
 Externals/soundtouch/CMakeFiles/SoundTouch.dir/mmx_optimized.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/mmx_optimized.cpp \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/mmx_optimized.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/assert.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/newlib.h \

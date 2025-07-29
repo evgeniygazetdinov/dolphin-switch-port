@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/ClangProjects/dolphin-switch/CPackSourceConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/code/dolphin-switch-port//CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch//CMakeFiles/progress.marks
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/soundtouch/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles /home/ev/code/dolphin-switch-port//Externals/soundtouch//CMakeFiles/progress.marks
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/soundtouch/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/soundtouch/clean
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/soundtouch/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/soundtouch/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/soundtouch/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/soundtouch/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/soundtouch/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Externals/soundtouch/CMakeFiles/SoundTouch.dir/rule:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/soundtouch/CMakeFiles/SoundTouch.dir/rule
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/soundtouch/CMakeFiles/SoundTouch.dir/rule
 .PHONY : Externals/soundtouch/CMakeFiles/SoundTouch.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ SoundTouch: Externals/soundtouch/CMakeFiles/SoundTouch.dir/rule
 
 # fast build rule for target.
 SoundTouch/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/build
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/build
 .PHONY : SoundTouch/fast
 
 AAFilter.obj: AAFilter.cpp.obj
@@ -200,7 +200,7 @@ AAFilter.obj: AAFilter.cpp.obj
 
 # target to build an object file
 AAFilter.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/AAFilter.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/AAFilter.cpp.obj
 .PHONY : AAFilter.cpp.obj
 
 AAFilter.i: AAFilter.cpp.i
@@ -208,7 +208,7 @@ AAFilter.i: AAFilter.cpp.i
 
 # target to preprocess a source file
 AAFilter.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/AAFilter.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/AAFilter.cpp.i
 .PHONY : AAFilter.cpp.i
 
 AAFilter.s: AAFilter.cpp.s
@@ -216,7 +216,7 @@ AAFilter.s: AAFilter.cpp.s
 
 # target to generate assembly for a file
 AAFilter.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/AAFilter.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/AAFilter.cpp.s
 .PHONY : AAFilter.cpp.s
 
 BPMDetect.obj: BPMDetect.cpp.obj
@@ -224,7 +224,7 @@ BPMDetect.obj: BPMDetect.cpp.obj
 
 # target to build an object file
 BPMDetect.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/BPMDetect.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/BPMDetect.cpp.obj
 .PHONY : BPMDetect.cpp.obj
 
 BPMDetect.i: BPMDetect.cpp.i
@@ -232,7 +232,7 @@ BPMDetect.i: BPMDetect.cpp.i
 
 # target to preprocess a source file
 BPMDetect.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/BPMDetect.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/BPMDetect.cpp.i
 .PHONY : BPMDetect.cpp.i
 
 BPMDetect.s: BPMDetect.cpp.s
@@ -240,7 +240,7 @@ BPMDetect.s: BPMDetect.cpp.s
 
 # target to generate assembly for a file
 BPMDetect.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/BPMDetect.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/BPMDetect.cpp.s
 .PHONY : BPMDetect.cpp.s
 
 FIFOSampleBuffer.obj: FIFOSampleBuffer.cpp.obj
@@ -248,7 +248,7 @@ FIFOSampleBuffer.obj: FIFOSampleBuffer.cpp.obj
 
 # target to build an object file
 FIFOSampleBuffer.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIFOSampleBuffer.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIFOSampleBuffer.cpp.obj
 .PHONY : FIFOSampleBuffer.cpp.obj
 
 FIFOSampleBuffer.i: FIFOSampleBuffer.cpp.i
@@ -256,7 +256,7 @@ FIFOSampleBuffer.i: FIFOSampleBuffer.cpp.i
 
 # target to preprocess a source file
 FIFOSampleBuffer.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIFOSampleBuffer.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIFOSampleBuffer.cpp.i
 .PHONY : FIFOSampleBuffer.cpp.i
 
 FIFOSampleBuffer.s: FIFOSampleBuffer.cpp.s
@@ -264,7 +264,7 @@ FIFOSampleBuffer.s: FIFOSampleBuffer.cpp.s
 
 # target to generate assembly for a file
 FIFOSampleBuffer.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIFOSampleBuffer.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIFOSampleBuffer.cpp.s
 .PHONY : FIFOSampleBuffer.cpp.s
 
 FIRFilter.obj: FIRFilter.cpp.obj
@@ -272,7 +272,7 @@ FIRFilter.obj: FIRFilter.cpp.obj
 
 # target to build an object file
 FIRFilter.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIRFilter.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIRFilter.cpp.obj
 .PHONY : FIRFilter.cpp.obj
 
 FIRFilter.i: FIRFilter.cpp.i
@@ -280,7 +280,7 @@ FIRFilter.i: FIRFilter.cpp.i
 
 # target to preprocess a source file
 FIRFilter.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIRFilter.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIRFilter.cpp.i
 .PHONY : FIRFilter.cpp.i
 
 FIRFilter.s: FIRFilter.cpp.s
@@ -288,7 +288,7 @@ FIRFilter.s: FIRFilter.cpp.s
 
 # target to generate assembly for a file
 FIRFilter.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIRFilter.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIRFilter.cpp.s
 .PHONY : FIRFilter.cpp.s
 
 InterpolateCubic.obj: InterpolateCubic.cpp.obj
@@ -296,7 +296,7 @@ InterpolateCubic.obj: InterpolateCubic.cpp.obj
 
 # target to build an object file
 InterpolateCubic.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateCubic.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateCubic.cpp.obj
 .PHONY : InterpolateCubic.cpp.obj
 
 InterpolateCubic.i: InterpolateCubic.cpp.i
@@ -304,7 +304,7 @@ InterpolateCubic.i: InterpolateCubic.cpp.i
 
 # target to preprocess a source file
 InterpolateCubic.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateCubic.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateCubic.cpp.i
 .PHONY : InterpolateCubic.cpp.i
 
 InterpolateCubic.s: InterpolateCubic.cpp.s
@@ -312,7 +312,7 @@ InterpolateCubic.s: InterpolateCubic.cpp.s
 
 # target to generate assembly for a file
 InterpolateCubic.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateCubic.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateCubic.cpp.s
 .PHONY : InterpolateCubic.cpp.s
 
 InterpolateLinear.obj: InterpolateLinear.cpp.obj
@@ -320,7 +320,7 @@ InterpolateLinear.obj: InterpolateLinear.cpp.obj
 
 # target to build an object file
 InterpolateLinear.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateLinear.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateLinear.cpp.obj
 .PHONY : InterpolateLinear.cpp.obj
 
 InterpolateLinear.i: InterpolateLinear.cpp.i
@@ -328,7 +328,7 @@ InterpolateLinear.i: InterpolateLinear.cpp.i
 
 # target to preprocess a source file
 InterpolateLinear.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateLinear.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateLinear.cpp.i
 .PHONY : InterpolateLinear.cpp.i
 
 InterpolateLinear.s: InterpolateLinear.cpp.s
@@ -336,7 +336,7 @@ InterpolateLinear.s: InterpolateLinear.cpp.s
 
 # target to generate assembly for a file
 InterpolateLinear.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateLinear.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateLinear.cpp.s
 .PHONY : InterpolateLinear.cpp.s
 
 InterpolateShannon.obj: InterpolateShannon.cpp.obj
@@ -344,7 +344,7 @@ InterpolateShannon.obj: InterpolateShannon.cpp.obj
 
 # target to build an object file
 InterpolateShannon.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateShannon.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateShannon.cpp.obj
 .PHONY : InterpolateShannon.cpp.obj
 
 InterpolateShannon.i: InterpolateShannon.cpp.i
@@ -352,7 +352,7 @@ InterpolateShannon.i: InterpolateShannon.cpp.i
 
 # target to preprocess a source file
 InterpolateShannon.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateShannon.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateShannon.cpp.i
 .PHONY : InterpolateShannon.cpp.i
 
 InterpolateShannon.s: InterpolateShannon.cpp.s
@@ -360,7 +360,7 @@ InterpolateShannon.s: InterpolateShannon.cpp.s
 
 # target to generate assembly for a file
 InterpolateShannon.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateShannon.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/InterpolateShannon.cpp.s
 .PHONY : InterpolateShannon.cpp.s
 
 PeakFinder.obj: PeakFinder.cpp.obj
@@ -368,7 +368,7 @@ PeakFinder.obj: PeakFinder.cpp.obj
 
 # target to build an object file
 PeakFinder.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/PeakFinder.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/PeakFinder.cpp.obj
 .PHONY : PeakFinder.cpp.obj
 
 PeakFinder.i: PeakFinder.cpp.i
@@ -376,7 +376,7 @@ PeakFinder.i: PeakFinder.cpp.i
 
 # target to preprocess a source file
 PeakFinder.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/PeakFinder.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/PeakFinder.cpp.i
 .PHONY : PeakFinder.cpp.i
 
 PeakFinder.s: PeakFinder.cpp.s
@@ -384,7 +384,7 @@ PeakFinder.s: PeakFinder.cpp.s
 
 # target to generate assembly for a file
 PeakFinder.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/PeakFinder.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/PeakFinder.cpp.s
 .PHONY : PeakFinder.cpp.s
 
 RateTransposer.obj: RateTransposer.cpp.obj
@@ -392,7 +392,7 @@ RateTransposer.obj: RateTransposer.cpp.obj
 
 # target to build an object file
 RateTransposer.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/RateTransposer.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/RateTransposer.cpp.obj
 .PHONY : RateTransposer.cpp.obj
 
 RateTransposer.i: RateTransposer.cpp.i
@@ -400,7 +400,7 @@ RateTransposer.i: RateTransposer.cpp.i
 
 # target to preprocess a source file
 RateTransposer.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/RateTransposer.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/RateTransposer.cpp.i
 .PHONY : RateTransposer.cpp.i
 
 RateTransposer.s: RateTransposer.cpp.s
@@ -408,7 +408,7 @@ RateTransposer.s: RateTransposer.cpp.s
 
 # target to generate assembly for a file
 RateTransposer.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/RateTransposer.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/RateTransposer.cpp.s
 .PHONY : RateTransposer.cpp.s
 
 SoundTouch.obj: SoundTouch.cpp.obj
@@ -416,7 +416,7 @@ SoundTouch.obj: SoundTouch.cpp.obj
 
 # target to build an object file
 SoundTouch.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/SoundTouch.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/SoundTouch.cpp.obj
 .PHONY : SoundTouch.cpp.obj
 
 SoundTouch.i: SoundTouch.cpp.i
@@ -424,7 +424,7 @@ SoundTouch.i: SoundTouch.cpp.i
 
 # target to preprocess a source file
 SoundTouch.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/SoundTouch.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/SoundTouch.cpp.i
 .PHONY : SoundTouch.cpp.i
 
 SoundTouch.s: SoundTouch.cpp.s
@@ -432,7 +432,7 @@ SoundTouch.s: SoundTouch.cpp.s
 
 # target to generate assembly for a file
 SoundTouch.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/SoundTouch.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/SoundTouch.cpp.s
 .PHONY : SoundTouch.cpp.s
 
 TDStretch.obj: TDStretch.cpp.obj
@@ -440,7 +440,7 @@ TDStretch.obj: TDStretch.cpp.obj
 
 # target to build an object file
 TDStretch.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/TDStretch.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/TDStretch.cpp.obj
 .PHONY : TDStretch.cpp.obj
 
 TDStretch.i: TDStretch.cpp.i
@@ -448,7 +448,7 @@ TDStretch.i: TDStretch.cpp.i
 
 # target to preprocess a source file
 TDStretch.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/TDStretch.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/TDStretch.cpp.i
 .PHONY : TDStretch.cpp.i
 
 TDStretch.s: TDStretch.cpp.s
@@ -456,7 +456,7 @@ TDStretch.s: TDStretch.cpp.s
 
 # target to generate assembly for a file
 TDStretch.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/TDStretch.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/TDStretch.cpp.s
 .PHONY : TDStretch.cpp.s
 
 cpu_detect_x86.obj: cpu_detect_x86.cpp.obj
@@ -464,7 +464,7 @@ cpu_detect_x86.obj: cpu_detect_x86.cpp.obj
 
 # target to build an object file
 cpu_detect_x86.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/cpu_detect_x86.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/cpu_detect_x86.cpp.obj
 .PHONY : cpu_detect_x86.cpp.obj
 
 cpu_detect_x86.i: cpu_detect_x86.cpp.i
@@ -472,7 +472,7 @@ cpu_detect_x86.i: cpu_detect_x86.cpp.i
 
 # target to preprocess a source file
 cpu_detect_x86.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/cpu_detect_x86.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/cpu_detect_x86.cpp.i
 .PHONY : cpu_detect_x86.cpp.i
 
 cpu_detect_x86.s: cpu_detect_x86.cpp.s
@@ -480,7 +480,7 @@ cpu_detect_x86.s: cpu_detect_x86.cpp.s
 
 # target to generate assembly for a file
 cpu_detect_x86.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/cpu_detect_x86.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/cpu_detect_x86.cpp.s
 .PHONY : cpu_detect_x86.cpp.s
 
 mmx_optimized.obj: mmx_optimized.cpp.obj
@@ -488,7 +488,7 @@ mmx_optimized.obj: mmx_optimized.cpp.obj
 
 # target to build an object file
 mmx_optimized.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/mmx_optimized.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/mmx_optimized.cpp.obj
 .PHONY : mmx_optimized.cpp.obj
 
 mmx_optimized.i: mmx_optimized.cpp.i
@@ -496,7 +496,7 @@ mmx_optimized.i: mmx_optimized.cpp.i
 
 # target to preprocess a source file
 mmx_optimized.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/mmx_optimized.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/mmx_optimized.cpp.i
 .PHONY : mmx_optimized.cpp.i
 
 mmx_optimized.s: mmx_optimized.cpp.s
@@ -504,7 +504,7 @@ mmx_optimized.s: mmx_optimized.cpp.s
 
 # target to generate assembly for a file
 mmx_optimized.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/mmx_optimized.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/mmx_optimized.cpp.s
 .PHONY : mmx_optimized.cpp.s
 
 sse_optimized.obj: sse_optimized.cpp.obj
@@ -512,7 +512,7 @@ sse_optimized.obj: sse_optimized.cpp.obj
 
 # target to build an object file
 sse_optimized.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/sse_optimized.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/sse_optimized.cpp.obj
 .PHONY : sse_optimized.cpp.obj
 
 sse_optimized.i: sse_optimized.cpp.i
@@ -520,7 +520,7 @@ sse_optimized.i: sse_optimized.cpp.i
 
 # target to preprocess a source file
 sse_optimized.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/sse_optimized.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/sse_optimized.cpp.i
 .PHONY : sse_optimized.cpp.i
 
 sse_optimized.s: sse_optimized.cpp.s
@@ -528,7 +528,7 @@ sse_optimized.s: sse_optimized.cpp.s
 
 # target to generate assembly for a file
 sse_optimized.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/sse_optimized.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/soundtouch/CMakeFiles/SoundTouch.dir/build.make Externals/soundtouch/CMakeFiles/SoundTouch.dir/sse_optimized.cpp.s
 .PHONY : sse_optimized.cpp.s
 
 # Help Target
@@ -599,6 +599,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

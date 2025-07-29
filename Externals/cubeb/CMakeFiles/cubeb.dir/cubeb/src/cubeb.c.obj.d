@@ -1,7 +1,7 @@
 Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb.c \
- /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/include/cubeb/cubeb.h \
- /home/ev/ClangProjects/dolphin-switch/exports/cubeb_export.h \
+ /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb.c \
+ /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/include/cubeb/cubeb.h \
+ /home/ev/code/dolphin-switch-port//exports/cubeb_export.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stdint.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdint.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/_default_types.h \
@@ -23,12 +23,12 @@ Externals/cubeb/CMakeFiles/cubeb.dir/cubeb/src/cubeb.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/lock.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/alloca.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb-internal.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_assert.h \
+ /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb-internal.h \
+ /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_assert.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdio.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/stdarg.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/stdio.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/src/cubeb_log.h \
+ /home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/src/cubeb_log.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/string.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_locale.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/strings.h \

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/ev/ClangProjects/dolphin-switch && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/ClangProjects/dolphin-switch/CPackSourceConfig.cmake
+	cd /home/ev/code/dolphin-switch-port/ && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ev/code/dolphin-switch-port//CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles /home/ev/ClangProjects/dolphin-switch/Externals/glslang//CMakeFiles/progress.marks
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/glslang/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/ClangProjects/dolphin-switch/CMakeFiles 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles /home/ev/code/dolphin-switch-port//Externals/glslang//CMakeFiles/progress.marks
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/glslang/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ev/code/dolphin-switch-port//CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/glslang/clean
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/glslang/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/glslang/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/glslang/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/glslang/preinstall
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/glslang/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Externals/glslang/CMakeFiles/glslang.dir/rule:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/glslang/CMakeFiles/glslang.dir/rule
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Externals/glslang/CMakeFiles/glslang.dir/rule
 .PHONY : Externals/glslang/CMakeFiles/glslang.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ glslang: Externals/glslang/CMakeFiles/glslang.dir/rule
 
 # fast build rule for target.
 glslang/fast:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/build
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/build
 .PHONY : glslang/fast
 
 OGLCompilersDLL/InitializeDll.obj: OGLCompilersDLL/InitializeDll.cpp.obj
@@ -200,7 +200,7 @@ OGLCompilersDLL/InitializeDll.obj: OGLCompilersDLL/InitializeDll.cpp.obj
 
 # target to build an object file
 OGLCompilersDLL/InitializeDll.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/OGLCompilersDLL/InitializeDll.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/OGLCompilersDLL/InitializeDll.cpp.obj
 .PHONY : OGLCompilersDLL/InitializeDll.cpp.obj
 
 OGLCompilersDLL/InitializeDll.i: OGLCompilersDLL/InitializeDll.cpp.i
@@ -208,7 +208,7 @@ OGLCompilersDLL/InitializeDll.i: OGLCompilersDLL/InitializeDll.cpp.i
 
 # target to preprocess a source file
 OGLCompilersDLL/InitializeDll.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/OGLCompilersDLL/InitializeDll.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/OGLCompilersDLL/InitializeDll.cpp.i
 .PHONY : OGLCompilersDLL/InitializeDll.cpp.i
 
 OGLCompilersDLL/InitializeDll.s: OGLCompilersDLL/InitializeDll.cpp.s
@@ -216,7 +216,7 @@ OGLCompilersDLL/InitializeDll.s: OGLCompilersDLL/InitializeDll.cpp.s
 
 # target to generate assembly for a file
 OGLCompilersDLL/InitializeDll.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/OGLCompilersDLL/InitializeDll.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/OGLCompilersDLL/InitializeDll.cpp.s
 .PHONY : OGLCompilersDLL/InitializeDll.cpp.s
 
 SPIRV/GlslangToSpv.obj: SPIRV/GlslangToSpv.cpp.obj
@@ -224,7 +224,7 @@ SPIRV/GlslangToSpv.obj: SPIRV/GlslangToSpv.cpp.obj
 
 # target to build an object file
 SPIRV/GlslangToSpv.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/GlslangToSpv.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/GlslangToSpv.cpp.obj
 .PHONY : SPIRV/GlslangToSpv.cpp.obj
 
 SPIRV/GlslangToSpv.i: SPIRV/GlslangToSpv.cpp.i
@@ -232,7 +232,7 @@ SPIRV/GlslangToSpv.i: SPIRV/GlslangToSpv.cpp.i
 
 # target to preprocess a source file
 SPIRV/GlslangToSpv.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/GlslangToSpv.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/GlslangToSpv.cpp.i
 .PHONY : SPIRV/GlslangToSpv.cpp.i
 
 SPIRV/GlslangToSpv.s: SPIRV/GlslangToSpv.cpp.s
@@ -240,7 +240,7 @@ SPIRV/GlslangToSpv.s: SPIRV/GlslangToSpv.cpp.s
 
 # target to generate assembly for a file
 SPIRV/GlslangToSpv.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/GlslangToSpv.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/GlslangToSpv.cpp.s
 .PHONY : SPIRV/GlslangToSpv.cpp.s
 
 SPIRV/InReadableOrder.obj: SPIRV/InReadableOrder.cpp.obj
@@ -248,7 +248,7 @@ SPIRV/InReadableOrder.obj: SPIRV/InReadableOrder.cpp.obj
 
 # target to build an object file
 SPIRV/InReadableOrder.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/InReadableOrder.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/InReadableOrder.cpp.obj
 .PHONY : SPIRV/InReadableOrder.cpp.obj
 
 SPIRV/InReadableOrder.i: SPIRV/InReadableOrder.cpp.i
@@ -256,7 +256,7 @@ SPIRV/InReadableOrder.i: SPIRV/InReadableOrder.cpp.i
 
 # target to preprocess a source file
 SPIRV/InReadableOrder.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/InReadableOrder.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/InReadableOrder.cpp.i
 .PHONY : SPIRV/InReadableOrder.cpp.i
 
 SPIRV/InReadableOrder.s: SPIRV/InReadableOrder.cpp.s
@@ -264,7 +264,7 @@ SPIRV/InReadableOrder.s: SPIRV/InReadableOrder.cpp.s
 
 # target to generate assembly for a file
 SPIRV/InReadableOrder.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/InReadableOrder.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/InReadableOrder.cpp.s
 .PHONY : SPIRV/InReadableOrder.cpp.s
 
 SPIRV/Logger.obj: SPIRV/Logger.cpp.obj
@@ -272,7 +272,7 @@ SPIRV/Logger.obj: SPIRV/Logger.cpp.obj
 
 # target to build an object file
 SPIRV/Logger.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/Logger.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/Logger.cpp.obj
 .PHONY : SPIRV/Logger.cpp.obj
 
 SPIRV/Logger.i: SPIRV/Logger.cpp.i
@@ -280,7 +280,7 @@ SPIRV/Logger.i: SPIRV/Logger.cpp.i
 
 # target to preprocess a source file
 SPIRV/Logger.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/Logger.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/Logger.cpp.i
 .PHONY : SPIRV/Logger.cpp.i
 
 SPIRV/Logger.s: SPIRV/Logger.cpp.s
@@ -288,7 +288,7 @@ SPIRV/Logger.s: SPIRV/Logger.cpp.s
 
 # target to generate assembly for a file
 SPIRV/Logger.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/Logger.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/Logger.cpp.s
 .PHONY : SPIRV/Logger.cpp.s
 
 SPIRV/SPVRemapper.obj: SPIRV/SPVRemapper.cpp.obj
@@ -296,7 +296,7 @@ SPIRV/SPVRemapper.obj: SPIRV/SPVRemapper.cpp.obj
 
 # target to build an object file
 SPIRV/SPVRemapper.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SPVRemapper.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SPVRemapper.cpp.obj
 .PHONY : SPIRV/SPVRemapper.cpp.obj
 
 SPIRV/SPVRemapper.i: SPIRV/SPVRemapper.cpp.i
@@ -304,7 +304,7 @@ SPIRV/SPVRemapper.i: SPIRV/SPVRemapper.cpp.i
 
 # target to preprocess a source file
 SPIRV/SPVRemapper.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SPVRemapper.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SPVRemapper.cpp.i
 .PHONY : SPIRV/SPVRemapper.cpp.i
 
 SPIRV/SPVRemapper.s: SPIRV/SPVRemapper.cpp.s
@@ -312,7 +312,7 @@ SPIRV/SPVRemapper.s: SPIRV/SPVRemapper.cpp.s
 
 # target to generate assembly for a file
 SPIRV/SPVRemapper.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SPVRemapper.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SPVRemapper.cpp.s
 .PHONY : SPIRV/SPVRemapper.cpp.s
 
 SPIRV/SpvBuilder.obj: SPIRV/SpvBuilder.cpp.obj
@@ -320,7 +320,7 @@ SPIRV/SpvBuilder.obj: SPIRV/SpvBuilder.cpp.obj
 
 # target to build an object file
 SPIRV/SpvBuilder.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvBuilder.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvBuilder.cpp.obj
 .PHONY : SPIRV/SpvBuilder.cpp.obj
 
 SPIRV/SpvBuilder.i: SPIRV/SpvBuilder.cpp.i
@@ -328,7 +328,7 @@ SPIRV/SpvBuilder.i: SPIRV/SpvBuilder.cpp.i
 
 # target to preprocess a source file
 SPIRV/SpvBuilder.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvBuilder.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvBuilder.cpp.i
 .PHONY : SPIRV/SpvBuilder.cpp.i
 
 SPIRV/SpvBuilder.s: SPIRV/SpvBuilder.cpp.s
@@ -336,7 +336,7 @@ SPIRV/SpvBuilder.s: SPIRV/SpvBuilder.cpp.s
 
 # target to generate assembly for a file
 SPIRV/SpvBuilder.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvBuilder.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvBuilder.cpp.s
 .PHONY : SPIRV/SpvBuilder.cpp.s
 
 SPIRV/SpvPostProcess.obj: SPIRV/SpvPostProcess.cpp.obj
@@ -344,7 +344,7 @@ SPIRV/SpvPostProcess.obj: SPIRV/SpvPostProcess.cpp.obj
 
 # target to build an object file
 SPIRV/SpvPostProcess.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvPostProcess.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvPostProcess.cpp.obj
 .PHONY : SPIRV/SpvPostProcess.cpp.obj
 
 SPIRV/SpvPostProcess.i: SPIRV/SpvPostProcess.cpp.i
@@ -352,7 +352,7 @@ SPIRV/SpvPostProcess.i: SPIRV/SpvPostProcess.cpp.i
 
 # target to preprocess a source file
 SPIRV/SpvPostProcess.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvPostProcess.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvPostProcess.cpp.i
 .PHONY : SPIRV/SpvPostProcess.cpp.i
 
 SPIRV/SpvPostProcess.s: SPIRV/SpvPostProcess.cpp.s
@@ -360,7 +360,7 @@ SPIRV/SpvPostProcess.s: SPIRV/SpvPostProcess.cpp.s
 
 # target to generate assembly for a file
 SPIRV/SpvPostProcess.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvPostProcess.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvPostProcess.cpp.s
 .PHONY : SPIRV/SpvPostProcess.cpp.s
 
 SPIRV/SpvTools.obj: SPIRV/SpvTools.cpp.obj
@@ -368,7 +368,7 @@ SPIRV/SpvTools.obj: SPIRV/SpvTools.cpp.obj
 
 # target to build an object file
 SPIRV/SpvTools.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvTools.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvTools.cpp.obj
 .PHONY : SPIRV/SpvTools.cpp.obj
 
 SPIRV/SpvTools.i: SPIRV/SpvTools.cpp.i
@@ -376,7 +376,7 @@ SPIRV/SpvTools.i: SPIRV/SpvTools.cpp.i
 
 # target to preprocess a source file
 SPIRV/SpvTools.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvTools.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvTools.cpp.i
 .PHONY : SPIRV/SpvTools.cpp.i
 
 SPIRV/SpvTools.s: SPIRV/SpvTools.cpp.s
@@ -384,7 +384,7 @@ SPIRV/SpvTools.s: SPIRV/SpvTools.cpp.s
 
 # target to generate assembly for a file
 SPIRV/SpvTools.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvTools.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/SpvTools.cpp.s
 .PHONY : SPIRV/SpvTools.cpp.s
 
 SPIRV/disassemble.obj: SPIRV/disassemble.cpp.obj
@@ -392,7 +392,7 @@ SPIRV/disassemble.obj: SPIRV/disassemble.cpp.obj
 
 # target to build an object file
 SPIRV/disassemble.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/disassemble.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/disassemble.cpp.obj
 .PHONY : SPIRV/disassemble.cpp.obj
 
 SPIRV/disassemble.i: SPIRV/disassemble.cpp.i
@@ -400,7 +400,7 @@ SPIRV/disassemble.i: SPIRV/disassemble.cpp.i
 
 # target to preprocess a source file
 SPIRV/disassemble.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/disassemble.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/disassemble.cpp.i
 .PHONY : SPIRV/disassemble.cpp.i
 
 SPIRV/disassemble.s: SPIRV/disassemble.cpp.s
@@ -408,7 +408,7 @@ SPIRV/disassemble.s: SPIRV/disassemble.cpp.s
 
 # target to generate assembly for a file
 SPIRV/disassemble.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/disassemble.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/disassemble.cpp.s
 .PHONY : SPIRV/disassemble.cpp.s
 
 SPIRV/doc.obj: SPIRV/doc.cpp.obj
@@ -416,7 +416,7 @@ SPIRV/doc.obj: SPIRV/doc.cpp.obj
 
 # target to build an object file
 SPIRV/doc.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/doc.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/doc.cpp.obj
 .PHONY : SPIRV/doc.cpp.obj
 
 SPIRV/doc.i: SPIRV/doc.cpp.i
@@ -424,7 +424,7 @@ SPIRV/doc.i: SPIRV/doc.cpp.i
 
 # target to preprocess a source file
 SPIRV/doc.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/doc.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/doc.cpp.i
 .PHONY : SPIRV/doc.cpp.i
 
 SPIRV/doc.s: SPIRV/doc.cpp.s
@@ -432,7 +432,7 @@ SPIRV/doc.s: SPIRV/doc.cpp.s
 
 # target to generate assembly for a file
 SPIRV/doc.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/doc.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/SPIRV/doc.cpp.s
 .PHONY : SPIRV/doc.cpp.s
 
 StandAlone/ResourceLimits.obj: StandAlone/ResourceLimits.cpp.obj
@@ -440,7 +440,7 @@ StandAlone/ResourceLimits.obj: StandAlone/ResourceLimits.cpp.obj
 
 # target to build an object file
 StandAlone/ResourceLimits.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/StandAlone/ResourceLimits.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/StandAlone/ResourceLimits.cpp.obj
 .PHONY : StandAlone/ResourceLimits.cpp.obj
 
 StandAlone/ResourceLimits.i: StandAlone/ResourceLimits.cpp.i
@@ -448,7 +448,7 @@ StandAlone/ResourceLimits.i: StandAlone/ResourceLimits.cpp.i
 
 # target to preprocess a source file
 StandAlone/ResourceLimits.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/StandAlone/ResourceLimits.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/StandAlone/ResourceLimits.cpp.i
 .PHONY : StandAlone/ResourceLimits.cpp.i
 
 StandAlone/ResourceLimits.s: StandAlone/ResourceLimits.cpp.s
@@ -456,7 +456,7 @@ StandAlone/ResourceLimits.s: StandAlone/ResourceLimits.cpp.s
 
 # target to generate assembly for a file
 StandAlone/ResourceLimits.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/StandAlone/ResourceLimits.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/StandAlone/ResourceLimits.cpp.s
 .PHONY : StandAlone/ResourceLimits.cpp.s
 
 glslang/GenericCodeGen/CodeGen.obj: glslang/GenericCodeGen/CodeGen.cpp.obj
@@ -464,7 +464,7 @@ glslang/GenericCodeGen/CodeGen.obj: glslang/GenericCodeGen/CodeGen.cpp.obj
 
 # target to build an object file
 glslang/GenericCodeGen/CodeGen.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/CodeGen.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/CodeGen.cpp.obj
 .PHONY : glslang/GenericCodeGen/CodeGen.cpp.obj
 
 glslang/GenericCodeGen/CodeGen.i: glslang/GenericCodeGen/CodeGen.cpp.i
@@ -472,7 +472,7 @@ glslang/GenericCodeGen/CodeGen.i: glslang/GenericCodeGen/CodeGen.cpp.i
 
 # target to preprocess a source file
 glslang/GenericCodeGen/CodeGen.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/CodeGen.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/CodeGen.cpp.i
 .PHONY : glslang/GenericCodeGen/CodeGen.cpp.i
 
 glslang/GenericCodeGen/CodeGen.s: glslang/GenericCodeGen/CodeGen.cpp.s
@@ -480,7 +480,7 @@ glslang/GenericCodeGen/CodeGen.s: glslang/GenericCodeGen/CodeGen.cpp.s
 
 # target to generate assembly for a file
 glslang/GenericCodeGen/CodeGen.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/CodeGen.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/CodeGen.cpp.s
 .PHONY : glslang/GenericCodeGen/CodeGen.cpp.s
 
 glslang/GenericCodeGen/Link.obj: glslang/GenericCodeGen/Link.cpp.obj
@@ -488,7 +488,7 @@ glslang/GenericCodeGen/Link.obj: glslang/GenericCodeGen/Link.cpp.obj
 
 # target to build an object file
 glslang/GenericCodeGen/Link.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/Link.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/Link.cpp.obj
 .PHONY : glslang/GenericCodeGen/Link.cpp.obj
 
 glslang/GenericCodeGen/Link.i: glslang/GenericCodeGen/Link.cpp.i
@@ -496,7 +496,7 @@ glslang/GenericCodeGen/Link.i: glslang/GenericCodeGen/Link.cpp.i
 
 # target to preprocess a source file
 glslang/GenericCodeGen/Link.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/Link.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/Link.cpp.i
 .PHONY : glslang/GenericCodeGen/Link.cpp.i
 
 glslang/GenericCodeGen/Link.s: glslang/GenericCodeGen/Link.cpp.s
@@ -504,7 +504,7 @@ glslang/GenericCodeGen/Link.s: glslang/GenericCodeGen/Link.cpp.s
 
 # target to generate assembly for a file
 glslang/GenericCodeGen/Link.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/Link.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/GenericCodeGen/Link.cpp.s
 .PHONY : glslang/GenericCodeGen/Link.cpp.s
 
 glslang/MachineIndependent/Constant.obj: glslang/MachineIndependent/Constant.cpp.obj
@@ -512,7 +512,7 @@ glslang/MachineIndependent/Constant.obj: glslang/MachineIndependent/Constant.cpp
 
 # target to build an object file
 glslang/MachineIndependent/Constant.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Constant.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Constant.cpp.obj
 .PHONY : glslang/MachineIndependent/Constant.cpp.obj
 
 glslang/MachineIndependent/Constant.i: glslang/MachineIndependent/Constant.cpp.i
@@ -520,7 +520,7 @@ glslang/MachineIndependent/Constant.i: glslang/MachineIndependent/Constant.cpp.i
 
 # target to preprocess a source file
 glslang/MachineIndependent/Constant.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Constant.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Constant.cpp.i
 .PHONY : glslang/MachineIndependent/Constant.cpp.i
 
 glslang/MachineIndependent/Constant.s: glslang/MachineIndependent/Constant.cpp.s
@@ -528,7 +528,7 @@ glslang/MachineIndependent/Constant.s: glslang/MachineIndependent/Constant.cpp.s
 
 # target to generate assembly for a file
 glslang/MachineIndependent/Constant.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Constant.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Constant.cpp.s
 .PHONY : glslang/MachineIndependent/Constant.cpp.s
 
 glslang/MachineIndependent/InfoSink.obj: glslang/MachineIndependent/InfoSink.cpp.obj
@@ -536,7 +536,7 @@ glslang/MachineIndependent/InfoSink.obj: glslang/MachineIndependent/InfoSink.cpp
 
 # target to build an object file
 glslang/MachineIndependent/InfoSink.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/InfoSink.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/InfoSink.cpp.obj
 .PHONY : glslang/MachineIndependent/InfoSink.cpp.obj
 
 glslang/MachineIndependent/InfoSink.i: glslang/MachineIndependent/InfoSink.cpp.i
@@ -544,7 +544,7 @@ glslang/MachineIndependent/InfoSink.i: glslang/MachineIndependent/InfoSink.cpp.i
 
 # target to preprocess a source file
 glslang/MachineIndependent/InfoSink.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/InfoSink.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/InfoSink.cpp.i
 .PHONY : glslang/MachineIndependent/InfoSink.cpp.i
 
 glslang/MachineIndependent/InfoSink.s: glslang/MachineIndependent/InfoSink.cpp.s
@@ -552,7 +552,7 @@ glslang/MachineIndependent/InfoSink.s: glslang/MachineIndependent/InfoSink.cpp.s
 
 # target to generate assembly for a file
 glslang/MachineIndependent/InfoSink.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/InfoSink.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/InfoSink.cpp.s
 .PHONY : glslang/MachineIndependent/InfoSink.cpp.s
 
 glslang/MachineIndependent/Initialize.obj: glslang/MachineIndependent/Initialize.cpp.obj
@@ -560,7 +560,7 @@ glslang/MachineIndependent/Initialize.obj: glslang/MachineIndependent/Initialize
 
 # target to build an object file
 glslang/MachineIndependent/Initialize.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Initialize.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Initialize.cpp.obj
 .PHONY : glslang/MachineIndependent/Initialize.cpp.obj
 
 glslang/MachineIndependent/Initialize.i: glslang/MachineIndependent/Initialize.cpp.i
@@ -568,7 +568,7 @@ glslang/MachineIndependent/Initialize.i: glslang/MachineIndependent/Initialize.c
 
 # target to preprocess a source file
 glslang/MachineIndependent/Initialize.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Initialize.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Initialize.cpp.i
 .PHONY : glslang/MachineIndependent/Initialize.cpp.i
 
 glslang/MachineIndependent/Initialize.s: glslang/MachineIndependent/Initialize.cpp.s
@@ -576,7 +576,7 @@ glslang/MachineIndependent/Initialize.s: glslang/MachineIndependent/Initialize.c
 
 # target to generate assembly for a file
 glslang/MachineIndependent/Initialize.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Initialize.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Initialize.cpp.s
 .PHONY : glslang/MachineIndependent/Initialize.cpp.s
 
 glslang/MachineIndependent/IntermTraverse.obj: glslang/MachineIndependent/IntermTraverse.cpp.obj
@@ -584,7 +584,7 @@ glslang/MachineIndependent/IntermTraverse.obj: glslang/MachineIndependent/Interm
 
 # target to build an object file
 glslang/MachineIndependent/IntermTraverse.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/IntermTraverse.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/IntermTraverse.cpp.obj
 .PHONY : glslang/MachineIndependent/IntermTraverse.cpp.obj
 
 glslang/MachineIndependent/IntermTraverse.i: glslang/MachineIndependent/IntermTraverse.cpp.i
@@ -592,7 +592,7 @@ glslang/MachineIndependent/IntermTraverse.i: glslang/MachineIndependent/IntermTr
 
 # target to preprocess a source file
 glslang/MachineIndependent/IntermTraverse.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/IntermTraverse.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/IntermTraverse.cpp.i
 .PHONY : glslang/MachineIndependent/IntermTraverse.cpp.i
 
 glslang/MachineIndependent/IntermTraverse.s: glslang/MachineIndependent/IntermTraverse.cpp.s
@@ -600,7 +600,7 @@ glslang/MachineIndependent/IntermTraverse.s: glslang/MachineIndependent/IntermTr
 
 # target to generate assembly for a file
 glslang/MachineIndependent/IntermTraverse.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/IntermTraverse.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/IntermTraverse.cpp.s
 .PHONY : glslang/MachineIndependent/IntermTraverse.cpp.s
 
 glslang/MachineIndependent/Intermediate.obj: glslang/MachineIndependent/Intermediate.cpp.obj
@@ -608,7 +608,7 @@ glslang/MachineIndependent/Intermediate.obj: glslang/MachineIndependent/Intermed
 
 # target to build an object file
 glslang/MachineIndependent/Intermediate.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Intermediate.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Intermediate.cpp.obj
 .PHONY : glslang/MachineIndependent/Intermediate.cpp.obj
 
 glslang/MachineIndependent/Intermediate.i: glslang/MachineIndependent/Intermediate.cpp.i
@@ -616,7 +616,7 @@ glslang/MachineIndependent/Intermediate.i: glslang/MachineIndependent/Intermedia
 
 # target to preprocess a source file
 glslang/MachineIndependent/Intermediate.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Intermediate.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Intermediate.cpp.i
 .PHONY : glslang/MachineIndependent/Intermediate.cpp.i
 
 glslang/MachineIndependent/Intermediate.s: glslang/MachineIndependent/Intermediate.cpp.s
@@ -624,7 +624,7 @@ glslang/MachineIndependent/Intermediate.s: glslang/MachineIndependent/Intermedia
 
 # target to generate assembly for a file
 glslang/MachineIndependent/Intermediate.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Intermediate.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Intermediate.cpp.s
 .PHONY : glslang/MachineIndependent/Intermediate.cpp.s
 
 glslang/MachineIndependent/ParseContextBase.obj: glslang/MachineIndependent/ParseContextBase.cpp.obj
@@ -632,7 +632,7 @@ glslang/MachineIndependent/ParseContextBase.obj: glslang/MachineIndependent/Pars
 
 # target to build an object file
 glslang/MachineIndependent/ParseContextBase.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseContextBase.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseContextBase.cpp.obj
 .PHONY : glslang/MachineIndependent/ParseContextBase.cpp.obj
 
 glslang/MachineIndependent/ParseContextBase.i: glslang/MachineIndependent/ParseContextBase.cpp.i
@@ -640,7 +640,7 @@ glslang/MachineIndependent/ParseContextBase.i: glslang/MachineIndependent/ParseC
 
 # target to preprocess a source file
 glslang/MachineIndependent/ParseContextBase.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseContextBase.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseContextBase.cpp.i
 .PHONY : glslang/MachineIndependent/ParseContextBase.cpp.i
 
 glslang/MachineIndependent/ParseContextBase.s: glslang/MachineIndependent/ParseContextBase.cpp.s
@@ -648,7 +648,7 @@ glslang/MachineIndependent/ParseContextBase.s: glslang/MachineIndependent/ParseC
 
 # target to generate assembly for a file
 glslang/MachineIndependent/ParseContextBase.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseContextBase.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseContextBase.cpp.s
 .PHONY : glslang/MachineIndependent/ParseContextBase.cpp.s
 
 glslang/MachineIndependent/ParseHelper.obj: glslang/MachineIndependent/ParseHelper.cpp.obj
@@ -656,7 +656,7 @@ glslang/MachineIndependent/ParseHelper.obj: glslang/MachineIndependent/ParseHelp
 
 # target to build an object file
 glslang/MachineIndependent/ParseHelper.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseHelper.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseHelper.cpp.obj
 .PHONY : glslang/MachineIndependent/ParseHelper.cpp.obj
 
 glslang/MachineIndependent/ParseHelper.i: glslang/MachineIndependent/ParseHelper.cpp.i
@@ -664,7 +664,7 @@ glslang/MachineIndependent/ParseHelper.i: glslang/MachineIndependent/ParseHelper
 
 # target to preprocess a source file
 glslang/MachineIndependent/ParseHelper.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseHelper.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseHelper.cpp.i
 .PHONY : glslang/MachineIndependent/ParseHelper.cpp.i
 
 glslang/MachineIndependent/ParseHelper.s: glslang/MachineIndependent/ParseHelper.cpp.s
@@ -672,7 +672,7 @@ glslang/MachineIndependent/ParseHelper.s: glslang/MachineIndependent/ParseHelper
 
 # target to generate assembly for a file
 glslang/MachineIndependent/ParseHelper.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseHelper.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ParseHelper.cpp.s
 .PHONY : glslang/MachineIndependent/ParseHelper.cpp.s
 
 glslang/MachineIndependent/PoolAlloc.obj: glslang/MachineIndependent/PoolAlloc.cpp.obj
@@ -680,7 +680,7 @@ glslang/MachineIndependent/PoolAlloc.obj: glslang/MachineIndependent/PoolAlloc.c
 
 # target to build an object file
 glslang/MachineIndependent/PoolAlloc.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/PoolAlloc.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/PoolAlloc.cpp.obj
 .PHONY : glslang/MachineIndependent/PoolAlloc.cpp.obj
 
 glslang/MachineIndependent/PoolAlloc.i: glslang/MachineIndependent/PoolAlloc.cpp.i
@@ -688,7 +688,7 @@ glslang/MachineIndependent/PoolAlloc.i: glslang/MachineIndependent/PoolAlloc.cpp
 
 # target to preprocess a source file
 glslang/MachineIndependent/PoolAlloc.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/PoolAlloc.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/PoolAlloc.cpp.i
 .PHONY : glslang/MachineIndependent/PoolAlloc.cpp.i
 
 glslang/MachineIndependent/PoolAlloc.s: glslang/MachineIndependent/PoolAlloc.cpp.s
@@ -696,7 +696,7 @@ glslang/MachineIndependent/PoolAlloc.s: glslang/MachineIndependent/PoolAlloc.cpp
 
 # target to generate assembly for a file
 glslang/MachineIndependent/PoolAlloc.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/PoolAlloc.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/PoolAlloc.cpp.s
 .PHONY : glslang/MachineIndependent/PoolAlloc.cpp.s
 
 glslang/MachineIndependent/RemoveTree.obj: glslang/MachineIndependent/RemoveTree.cpp.obj
@@ -704,7 +704,7 @@ glslang/MachineIndependent/RemoveTree.obj: glslang/MachineIndependent/RemoveTree
 
 # target to build an object file
 glslang/MachineIndependent/RemoveTree.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/RemoveTree.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/RemoveTree.cpp.obj
 .PHONY : glslang/MachineIndependent/RemoveTree.cpp.obj
 
 glslang/MachineIndependent/RemoveTree.i: glslang/MachineIndependent/RemoveTree.cpp.i
@@ -712,7 +712,7 @@ glslang/MachineIndependent/RemoveTree.i: glslang/MachineIndependent/RemoveTree.c
 
 # target to preprocess a source file
 glslang/MachineIndependent/RemoveTree.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/RemoveTree.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/RemoveTree.cpp.i
 .PHONY : glslang/MachineIndependent/RemoveTree.cpp.i
 
 glslang/MachineIndependent/RemoveTree.s: glslang/MachineIndependent/RemoveTree.cpp.s
@@ -720,7 +720,7 @@ glslang/MachineIndependent/RemoveTree.s: glslang/MachineIndependent/RemoveTree.c
 
 # target to generate assembly for a file
 glslang/MachineIndependent/RemoveTree.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/RemoveTree.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/RemoveTree.cpp.s
 .PHONY : glslang/MachineIndependent/RemoveTree.cpp.s
 
 glslang/MachineIndependent/Scan.obj: glslang/MachineIndependent/Scan.cpp.obj
@@ -728,7 +728,7 @@ glslang/MachineIndependent/Scan.obj: glslang/MachineIndependent/Scan.cpp.obj
 
 # target to build an object file
 glslang/MachineIndependent/Scan.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Scan.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Scan.cpp.obj
 .PHONY : glslang/MachineIndependent/Scan.cpp.obj
 
 glslang/MachineIndependent/Scan.i: glslang/MachineIndependent/Scan.cpp.i
@@ -736,7 +736,7 @@ glslang/MachineIndependent/Scan.i: glslang/MachineIndependent/Scan.cpp.i
 
 # target to preprocess a source file
 glslang/MachineIndependent/Scan.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Scan.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Scan.cpp.i
 .PHONY : glslang/MachineIndependent/Scan.cpp.i
 
 glslang/MachineIndependent/Scan.s: glslang/MachineIndependent/Scan.cpp.s
@@ -744,7 +744,7 @@ glslang/MachineIndependent/Scan.s: glslang/MachineIndependent/Scan.cpp.s
 
 # target to generate assembly for a file
 glslang/MachineIndependent/Scan.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Scan.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Scan.cpp.s
 .PHONY : glslang/MachineIndependent/Scan.cpp.s
 
 glslang/MachineIndependent/ShaderLang.obj: glslang/MachineIndependent/ShaderLang.cpp.obj
@@ -752,7 +752,7 @@ glslang/MachineIndependent/ShaderLang.obj: glslang/MachineIndependent/ShaderLang
 
 # target to build an object file
 glslang/MachineIndependent/ShaderLang.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ShaderLang.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ShaderLang.cpp.obj
 .PHONY : glslang/MachineIndependent/ShaderLang.cpp.obj
 
 glslang/MachineIndependent/ShaderLang.i: glslang/MachineIndependent/ShaderLang.cpp.i
@@ -760,7 +760,7 @@ glslang/MachineIndependent/ShaderLang.i: glslang/MachineIndependent/ShaderLang.c
 
 # target to preprocess a source file
 glslang/MachineIndependent/ShaderLang.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ShaderLang.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ShaderLang.cpp.i
 .PHONY : glslang/MachineIndependent/ShaderLang.cpp.i
 
 glslang/MachineIndependent/ShaderLang.s: glslang/MachineIndependent/ShaderLang.cpp.s
@@ -768,7 +768,7 @@ glslang/MachineIndependent/ShaderLang.s: glslang/MachineIndependent/ShaderLang.c
 
 # target to generate assembly for a file
 glslang/MachineIndependent/ShaderLang.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ShaderLang.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/ShaderLang.cpp.s
 .PHONY : glslang/MachineIndependent/ShaderLang.cpp.s
 
 glslang/MachineIndependent/SpirvIntrinsics.obj: glslang/MachineIndependent/SpirvIntrinsics.cpp.obj
@@ -776,7 +776,7 @@ glslang/MachineIndependent/SpirvIntrinsics.obj: glslang/MachineIndependent/Spirv
 
 # target to build an object file
 glslang/MachineIndependent/SpirvIntrinsics.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SpirvIntrinsics.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SpirvIntrinsics.cpp.obj
 .PHONY : glslang/MachineIndependent/SpirvIntrinsics.cpp.obj
 
 glslang/MachineIndependent/SpirvIntrinsics.i: glslang/MachineIndependent/SpirvIntrinsics.cpp.i
@@ -784,7 +784,7 @@ glslang/MachineIndependent/SpirvIntrinsics.i: glslang/MachineIndependent/SpirvIn
 
 # target to preprocess a source file
 glslang/MachineIndependent/SpirvIntrinsics.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SpirvIntrinsics.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SpirvIntrinsics.cpp.i
 .PHONY : glslang/MachineIndependent/SpirvIntrinsics.cpp.i
 
 glslang/MachineIndependent/SpirvIntrinsics.s: glslang/MachineIndependent/SpirvIntrinsics.cpp.s
@@ -792,7 +792,7 @@ glslang/MachineIndependent/SpirvIntrinsics.s: glslang/MachineIndependent/SpirvIn
 
 # target to generate assembly for a file
 glslang/MachineIndependent/SpirvIntrinsics.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SpirvIntrinsics.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SpirvIntrinsics.cpp.s
 .PHONY : glslang/MachineIndependent/SpirvIntrinsics.cpp.s
 
 glslang/MachineIndependent/SymbolTable.obj: glslang/MachineIndependent/SymbolTable.cpp.obj
@@ -800,7 +800,7 @@ glslang/MachineIndependent/SymbolTable.obj: glslang/MachineIndependent/SymbolTab
 
 # target to build an object file
 glslang/MachineIndependent/SymbolTable.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SymbolTable.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SymbolTable.cpp.obj
 .PHONY : glslang/MachineIndependent/SymbolTable.cpp.obj
 
 glslang/MachineIndependent/SymbolTable.i: glslang/MachineIndependent/SymbolTable.cpp.i
@@ -808,7 +808,7 @@ glslang/MachineIndependent/SymbolTable.i: glslang/MachineIndependent/SymbolTable
 
 # target to preprocess a source file
 glslang/MachineIndependent/SymbolTable.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SymbolTable.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SymbolTable.cpp.i
 .PHONY : glslang/MachineIndependent/SymbolTable.cpp.i
 
 glslang/MachineIndependent/SymbolTable.s: glslang/MachineIndependent/SymbolTable.cpp.s
@@ -816,7 +816,7 @@ glslang/MachineIndependent/SymbolTable.s: glslang/MachineIndependent/SymbolTable
 
 # target to generate assembly for a file
 glslang/MachineIndependent/SymbolTable.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SymbolTable.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/SymbolTable.cpp.s
 .PHONY : glslang/MachineIndependent/SymbolTable.cpp.s
 
 glslang/MachineIndependent/Versions.obj: glslang/MachineIndependent/Versions.cpp.obj
@@ -824,7 +824,7 @@ glslang/MachineIndependent/Versions.obj: glslang/MachineIndependent/Versions.cpp
 
 # target to build an object file
 glslang/MachineIndependent/Versions.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Versions.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Versions.cpp.obj
 .PHONY : glslang/MachineIndependent/Versions.cpp.obj
 
 glslang/MachineIndependent/Versions.i: glslang/MachineIndependent/Versions.cpp.i
@@ -832,7 +832,7 @@ glslang/MachineIndependent/Versions.i: glslang/MachineIndependent/Versions.cpp.i
 
 # target to preprocess a source file
 glslang/MachineIndependent/Versions.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Versions.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Versions.cpp.i
 .PHONY : glslang/MachineIndependent/Versions.cpp.i
 
 glslang/MachineIndependent/Versions.s: glslang/MachineIndependent/Versions.cpp.s
@@ -840,7 +840,7 @@ glslang/MachineIndependent/Versions.s: glslang/MachineIndependent/Versions.cpp.s
 
 # target to generate assembly for a file
 glslang/MachineIndependent/Versions.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Versions.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/Versions.cpp.s
 .PHONY : glslang/MachineIndependent/Versions.cpp.s
 
 glslang/MachineIndependent/attribute.obj: glslang/MachineIndependent/attribute.cpp.obj
@@ -848,7 +848,7 @@ glslang/MachineIndependent/attribute.obj: glslang/MachineIndependent/attribute.c
 
 # target to build an object file
 glslang/MachineIndependent/attribute.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/attribute.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/attribute.cpp.obj
 .PHONY : glslang/MachineIndependent/attribute.cpp.obj
 
 glslang/MachineIndependent/attribute.i: glslang/MachineIndependent/attribute.cpp.i
@@ -856,7 +856,7 @@ glslang/MachineIndependent/attribute.i: glslang/MachineIndependent/attribute.cpp
 
 # target to preprocess a source file
 glslang/MachineIndependent/attribute.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/attribute.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/attribute.cpp.i
 .PHONY : glslang/MachineIndependent/attribute.cpp.i
 
 glslang/MachineIndependent/attribute.s: glslang/MachineIndependent/attribute.cpp.s
@@ -864,7 +864,7 @@ glslang/MachineIndependent/attribute.s: glslang/MachineIndependent/attribute.cpp
 
 # target to generate assembly for a file
 glslang/MachineIndependent/attribute.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/attribute.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/attribute.cpp.s
 .PHONY : glslang/MachineIndependent/attribute.cpp.s
 
 glslang/MachineIndependent/glslang_tab.obj: glslang/MachineIndependent/glslang_tab.cpp.obj
@@ -872,7 +872,7 @@ glslang/MachineIndependent/glslang_tab.obj: glslang/MachineIndependent/glslang_t
 
 # target to build an object file
 glslang/MachineIndependent/glslang_tab.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/glslang_tab.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/glslang_tab.cpp.obj
 .PHONY : glslang/MachineIndependent/glslang_tab.cpp.obj
 
 glslang/MachineIndependent/glslang_tab.i: glslang/MachineIndependent/glslang_tab.cpp.i
@@ -880,7 +880,7 @@ glslang/MachineIndependent/glslang_tab.i: glslang/MachineIndependent/glslang_tab
 
 # target to preprocess a source file
 glslang/MachineIndependent/glslang_tab.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/glslang_tab.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/glslang_tab.cpp.i
 .PHONY : glslang/MachineIndependent/glslang_tab.cpp.i
 
 glslang/MachineIndependent/glslang_tab.s: glslang/MachineIndependent/glslang_tab.cpp.s
@@ -888,7 +888,7 @@ glslang/MachineIndependent/glslang_tab.s: glslang/MachineIndependent/glslang_tab
 
 # target to generate assembly for a file
 glslang/MachineIndependent/glslang_tab.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/glslang_tab.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/glslang_tab.cpp.s
 .PHONY : glslang/MachineIndependent/glslang_tab.cpp.s
 
 glslang/MachineIndependent/intermOut.obj: glslang/MachineIndependent/intermOut.cpp.obj
@@ -896,7 +896,7 @@ glslang/MachineIndependent/intermOut.obj: glslang/MachineIndependent/intermOut.c
 
 # target to build an object file
 glslang/MachineIndependent/intermOut.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/intermOut.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/intermOut.cpp.obj
 .PHONY : glslang/MachineIndependent/intermOut.cpp.obj
 
 glslang/MachineIndependent/intermOut.i: glslang/MachineIndependent/intermOut.cpp.i
@@ -904,7 +904,7 @@ glslang/MachineIndependent/intermOut.i: glslang/MachineIndependent/intermOut.cpp
 
 # target to preprocess a source file
 glslang/MachineIndependent/intermOut.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/intermOut.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/intermOut.cpp.i
 .PHONY : glslang/MachineIndependent/intermOut.cpp.i
 
 glslang/MachineIndependent/intermOut.s: glslang/MachineIndependent/intermOut.cpp.s
@@ -912,7 +912,7 @@ glslang/MachineIndependent/intermOut.s: glslang/MachineIndependent/intermOut.cpp
 
 # target to generate assembly for a file
 glslang/MachineIndependent/intermOut.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/intermOut.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/intermOut.cpp.s
 .PHONY : glslang/MachineIndependent/intermOut.cpp.s
 
 glslang/MachineIndependent/iomapper.obj: glslang/MachineIndependent/iomapper.cpp.obj
@@ -920,7 +920,7 @@ glslang/MachineIndependent/iomapper.obj: glslang/MachineIndependent/iomapper.cpp
 
 # target to build an object file
 glslang/MachineIndependent/iomapper.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/iomapper.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/iomapper.cpp.obj
 .PHONY : glslang/MachineIndependent/iomapper.cpp.obj
 
 glslang/MachineIndependent/iomapper.i: glslang/MachineIndependent/iomapper.cpp.i
@@ -928,7 +928,7 @@ glslang/MachineIndependent/iomapper.i: glslang/MachineIndependent/iomapper.cpp.i
 
 # target to preprocess a source file
 glslang/MachineIndependent/iomapper.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/iomapper.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/iomapper.cpp.i
 .PHONY : glslang/MachineIndependent/iomapper.cpp.i
 
 glslang/MachineIndependent/iomapper.s: glslang/MachineIndependent/iomapper.cpp.s
@@ -936,7 +936,7 @@ glslang/MachineIndependent/iomapper.s: glslang/MachineIndependent/iomapper.cpp.s
 
 # target to generate assembly for a file
 glslang/MachineIndependent/iomapper.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/iomapper.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/iomapper.cpp.s
 .PHONY : glslang/MachineIndependent/iomapper.cpp.s
 
 glslang/MachineIndependent/limits.obj: glslang/MachineIndependent/limits.cpp.obj
@@ -944,7 +944,7 @@ glslang/MachineIndependent/limits.obj: glslang/MachineIndependent/limits.cpp.obj
 
 # target to build an object file
 glslang/MachineIndependent/limits.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/limits.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/limits.cpp.obj
 .PHONY : glslang/MachineIndependent/limits.cpp.obj
 
 glslang/MachineIndependent/limits.i: glslang/MachineIndependent/limits.cpp.i
@@ -952,7 +952,7 @@ glslang/MachineIndependent/limits.i: glslang/MachineIndependent/limits.cpp.i
 
 # target to preprocess a source file
 glslang/MachineIndependent/limits.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/limits.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/limits.cpp.i
 .PHONY : glslang/MachineIndependent/limits.cpp.i
 
 glslang/MachineIndependent/limits.s: glslang/MachineIndependent/limits.cpp.s
@@ -960,7 +960,7 @@ glslang/MachineIndependent/limits.s: glslang/MachineIndependent/limits.cpp.s
 
 # target to generate assembly for a file
 glslang/MachineIndependent/limits.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/limits.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/limits.cpp.s
 .PHONY : glslang/MachineIndependent/limits.cpp.s
 
 glslang/MachineIndependent/linkValidate.obj: glslang/MachineIndependent/linkValidate.cpp.obj
@@ -968,7 +968,7 @@ glslang/MachineIndependent/linkValidate.obj: glslang/MachineIndependent/linkVali
 
 # target to build an object file
 glslang/MachineIndependent/linkValidate.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/linkValidate.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/linkValidate.cpp.obj
 .PHONY : glslang/MachineIndependent/linkValidate.cpp.obj
 
 glslang/MachineIndependent/linkValidate.i: glslang/MachineIndependent/linkValidate.cpp.i
@@ -976,7 +976,7 @@ glslang/MachineIndependent/linkValidate.i: glslang/MachineIndependent/linkValida
 
 # target to preprocess a source file
 glslang/MachineIndependent/linkValidate.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/linkValidate.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/linkValidate.cpp.i
 .PHONY : glslang/MachineIndependent/linkValidate.cpp.i
 
 glslang/MachineIndependent/linkValidate.s: glslang/MachineIndependent/linkValidate.cpp.s
@@ -984,7 +984,7 @@ glslang/MachineIndependent/linkValidate.s: glslang/MachineIndependent/linkValida
 
 # target to generate assembly for a file
 glslang/MachineIndependent/linkValidate.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/linkValidate.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/linkValidate.cpp.s
 .PHONY : glslang/MachineIndependent/linkValidate.cpp.s
 
 glslang/MachineIndependent/parseConst.obj: glslang/MachineIndependent/parseConst.cpp.obj
@@ -992,7 +992,7 @@ glslang/MachineIndependent/parseConst.obj: glslang/MachineIndependent/parseConst
 
 # target to build an object file
 glslang/MachineIndependent/parseConst.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/parseConst.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/parseConst.cpp.obj
 .PHONY : glslang/MachineIndependent/parseConst.cpp.obj
 
 glslang/MachineIndependent/parseConst.i: glslang/MachineIndependent/parseConst.cpp.i
@@ -1000,7 +1000,7 @@ glslang/MachineIndependent/parseConst.i: glslang/MachineIndependent/parseConst.c
 
 # target to preprocess a source file
 glslang/MachineIndependent/parseConst.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/parseConst.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/parseConst.cpp.i
 .PHONY : glslang/MachineIndependent/parseConst.cpp.i
 
 glslang/MachineIndependent/parseConst.s: glslang/MachineIndependent/parseConst.cpp.s
@@ -1008,7 +1008,7 @@ glslang/MachineIndependent/parseConst.s: glslang/MachineIndependent/parseConst.c
 
 # target to generate assembly for a file
 glslang/MachineIndependent/parseConst.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/parseConst.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/parseConst.cpp.s
 .PHONY : glslang/MachineIndependent/parseConst.cpp.s
 
 glslang/MachineIndependent/preprocessor/Pp.obj: glslang/MachineIndependent/preprocessor/Pp.cpp.obj
@@ -1016,7 +1016,7 @@ glslang/MachineIndependent/preprocessor/Pp.obj: glslang/MachineIndependent/prepr
 
 # target to build an object file
 glslang/MachineIndependent/preprocessor/Pp.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/Pp.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/Pp.cpp.obj
 .PHONY : glslang/MachineIndependent/preprocessor/Pp.cpp.obj
 
 glslang/MachineIndependent/preprocessor/Pp.i: glslang/MachineIndependent/preprocessor/Pp.cpp.i
@@ -1024,7 +1024,7 @@ glslang/MachineIndependent/preprocessor/Pp.i: glslang/MachineIndependent/preproc
 
 # target to preprocess a source file
 glslang/MachineIndependent/preprocessor/Pp.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/Pp.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/Pp.cpp.i
 .PHONY : glslang/MachineIndependent/preprocessor/Pp.cpp.i
 
 glslang/MachineIndependent/preprocessor/Pp.s: glslang/MachineIndependent/preprocessor/Pp.cpp.s
@@ -1032,7 +1032,7 @@ glslang/MachineIndependent/preprocessor/Pp.s: glslang/MachineIndependent/preproc
 
 # target to generate assembly for a file
 glslang/MachineIndependent/preprocessor/Pp.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/Pp.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/Pp.cpp.s
 .PHONY : glslang/MachineIndependent/preprocessor/Pp.cpp.s
 
 glslang/MachineIndependent/preprocessor/PpAtom.obj: glslang/MachineIndependent/preprocessor/PpAtom.cpp.obj
@@ -1040,7 +1040,7 @@ glslang/MachineIndependent/preprocessor/PpAtom.obj: glslang/MachineIndependent/p
 
 # target to build an object file
 glslang/MachineIndependent/preprocessor/PpAtom.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpAtom.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpAtom.cpp.obj
 .PHONY : glslang/MachineIndependent/preprocessor/PpAtom.cpp.obj
 
 glslang/MachineIndependent/preprocessor/PpAtom.i: glslang/MachineIndependent/preprocessor/PpAtom.cpp.i
@@ -1048,7 +1048,7 @@ glslang/MachineIndependent/preprocessor/PpAtom.i: glslang/MachineIndependent/pre
 
 # target to preprocess a source file
 glslang/MachineIndependent/preprocessor/PpAtom.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpAtom.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpAtom.cpp.i
 .PHONY : glslang/MachineIndependent/preprocessor/PpAtom.cpp.i
 
 glslang/MachineIndependent/preprocessor/PpAtom.s: glslang/MachineIndependent/preprocessor/PpAtom.cpp.s
@@ -1056,7 +1056,7 @@ glslang/MachineIndependent/preprocessor/PpAtom.s: glslang/MachineIndependent/pre
 
 # target to generate assembly for a file
 glslang/MachineIndependent/preprocessor/PpAtom.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpAtom.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpAtom.cpp.s
 .PHONY : glslang/MachineIndependent/preprocessor/PpAtom.cpp.s
 
 glslang/MachineIndependent/preprocessor/PpContext.obj: glslang/MachineIndependent/preprocessor/PpContext.cpp.obj
@@ -1064,7 +1064,7 @@ glslang/MachineIndependent/preprocessor/PpContext.obj: glslang/MachineIndependen
 
 # target to build an object file
 glslang/MachineIndependent/preprocessor/PpContext.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpContext.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpContext.cpp.obj
 .PHONY : glslang/MachineIndependent/preprocessor/PpContext.cpp.obj
 
 glslang/MachineIndependent/preprocessor/PpContext.i: glslang/MachineIndependent/preprocessor/PpContext.cpp.i
@@ -1072,7 +1072,7 @@ glslang/MachineIndependent/preprocessor/PpContext.i: glslang/MachineIndependent/
 
 # target to preprocess a source file
 glslang/MachineIndependent/preprocessor/PpContext.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpContext.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpContext.cpp.i
 .PHONY : glslang/MachineIndependent/preprocessor/PpContext.cpp.i
 
 glslang/MachineIndependent/preprocessor/PpContext.s: glslang/MachineIndependent/preprocessor/PpContext.cpp.s
@@ -1080,7 +1080,7 @@ glslang/MachineIndependent/preprocessor/PpContext.s: glslang/MachineIndependent/
 
 # target to generate assembly for a file
 glslang/MachineIndependent/preprocessor/PpContext.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpContext.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpContext.cpp.s
 .PHONY : glslang/MachineIndependent/preprocessor/PpContext.cpp.s
 
 glslang/MachineIndependent/preprocessor/PpScanner.obj: glslang/MachineIndependent/preprocessor/PpScanner.cpp.obj
@@ -1088,7 +1088,7 @@ glslang/MachineIndependent/preprocessor/PpScanner.obj: glslang/MachineIndependen
 
 # target to build an object file
 glslang/MachineIndependent/preprocessor/PpScanner.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpScanner.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpScanner.cpp.obj
 .PHONY : glslang/MachineIndependent/preprocessor/PpScanner.cpp.obj
 
 glslang/MachineIndependent/preprocessor/PpScanner.i: glslang/MachineIndependent/preprocessor/PpScanner.cpp.i
@@ -1096,7 +1096,7 @@ glslang/MachineIndependent/preprocessor/PpScanner.i: glslang/MachineIndependent/
 
 # target to preprocess a source file
 glslang/MachineIndependent/preprocessor/PpScanner.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpScanner.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpScanner.cpp.i
 .PHONY : glslang/MachineIndependent/preprocessor/PpScanner.cpp.i
 
 glslang/MachineIndependent/preprocessor/PpScanner.s: glslang/MachineIndependent/preprocessor/PpScanner.cpp.s
@@ -1104,7 +1104,7 @@ glslang/MachineIndependent/preprocessor/PpScanner.s: glslang/MachineIndependent/
 
 # target to generate assembly for a file
 glslang/MachineIndependent/preprocessor/PpScanner.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpScanner.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpScanner.cpp.s
 .PHONY : glslang/MachineIndependent/preprocessor/PpScanner.cpp.s
 
 glslang/MachineIndependent/preprocessor/PpTokens.obj: glslang/MachineIndependent/preprocessor/PpTokens.cpp.obj
@@ -1112,7 +1112,7 @@ glslang/MachineIndependent/preprocessor/PpTokens.obj: glslang/MachineIndependent
 
 # target to build an object file
 glslang/MachineIndependent/preprocessor/PpTokens.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpTokens.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpTokens.cpp.obj
 .PHONY : glslang/MachineIndependent/preprocessor/PpTokens.cpp.obj
 
 glslang/MachineIndependent/preprocessor/PpTokens.i: glslang/MachineIndependent/preprocessor/PpTokens.cpp.i
@@ -1120,7 +1120,7 @@ glslang/MachineIndependent/preprocessor/PpTokens.i: glslang/MachineIndependent/p
 
 # target to preprocess a source file
 glslang/MachineIndependent/preprocessor/PpTokens.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpTokens.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpTokens.cpp.i
 .PHONY : glslang/MachineIndependent/preprocessor/PpTokens.cpp.i
 
 glslang/MachineIndependent/preprocessor/PpTokens.s: glslang/MachineIndependent/preprocessor/PpTokens.cpp.s
@@ -1128,7 +1128,7 @@ glslang/MachineIndependent/preprocessor/PpTokens.s: glslang/MachineIndependent/p
 
 # target to generate assembly for a file
 glslang/MachineIndependent/preprocessor/PpTokens.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpTokens.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/preprocessor/PpTokens.cpp.s
 .PHONY : glslang/MachineIndependent/preprocessor/PpTokens.cpp.s
 
 glslang/MachineIndependent/propagateNoContraction.obj: glslang/MachineIndependent/propagateNoContraction.cpp.obj
@@ -1136,7 +1136,7 @@ glslang/MachineIndependent/propagateNoContraction.obj: glslang/MachineIndependen
 
 # target to build an object file
 glslang/MachineIndependent/propagateNoContraction.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/propagateNoContraction.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/propagateNoContraction.cpp.obj
 .PHONY : glslang/MachineIndependent/propagateNoContraction.cpp.obj
 
 glslang/MachineIndependent/propagateNoContraction.i: glslang/MachineIndependent/propagateNoContraction.cpp.i
@@ -1144,7 +1144,7 @@ glslang/MachineIndependent/propagateNoContraction.i: glslang/MachineIndependent/
 
 # target to preprocess a source file
 glslang/MachineIndependent/propagateNoContraction.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/propagateNoContraction.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/propagateNoContraction.cpp.i
 .PHONY : glslang/MachineIndependent/propagateNoContraction.cpp.i
 
 glslang/MachineIndependent/propagateNoContraction.s: glslang/MachineIndependent/propagateNoContraction.cpp.s
@@ -1152,7 +1152,7 @@ glslang/MachineIndependent/propagateNoContraction.s: glslang/MachineIndependent/
 
 # target to generate assembly for a file
 glslang/MachineIndependent/propagateNoContraction.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/propagateNoContraction.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/propagateNoContraction.cpp.s
 .PHONY : glslang/MachineIndependent/propagateNoContraction.cpp.s
 
 glslang/MachineIndependent/reflection.obj: glslang/MachineIndependent/reflection.cpp.obj
@@ -1160,7 +1160,7 @@ glslang/MachineIndependent/reflection.obj: glslang/MachineIndependent/reflection
 
 # target to build an object file
 glslang/MachineIndependent/reflection.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/reflection.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/reflection.cpp.obj
 .PHONY : glslang/MachineIndependent/reflection.cpp.obj
 
 glslang/MachineIndependent/reflection.i: glslang/MachineIndependent/reflection.cpp.i
@@ -1168,7 +1168,7 @@ glslang/MachineIndependent/reflection.i: glslang/MachineIndependent/reflection.c
 
 # target to preprocess a source file
 glslang/MachineIndependent/reflection.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/reflection.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/reflection.cpp.i
 .PHONY : glslang/MachineIndependent/reflection.cpp.i
 
 glslang/MachineIndependent/reflection.s: glslang/MachineIndependent/reflection.cpp.s
@@ -1176,7 +1176,7 @@ glslang/MachineIndependent/reflection.s: glslang/MachineIndependent/reflection.c
 
 # target to generate assembly for a file
 glslang/MachineIndependent/reflection.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/reflection.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/MachineIndependent/reflection.cpp.s
 .PHONY : glslang/MachineIndependent/reflection.cpp.s
 
 glslang/OSDependent/Unix/ossource.obj: glslang/OSDependent/Unix/ossource.cpp.obj
@@ -1184,7 +1184,7 @@ glslang/OSDependent/Unix/ossource.obj: glslang/OSDependent/Unix/ossource.cpp.obj
 
 # target to build an object file
 glslang/OSDependent/Unix/ossource.cpp.obj:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/OSDependent/Unix/ossource.cpp.obj
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/OSDependent/Unix/ossource.cpp.obj
 .PHONY : glslang/OSDependent/Unix/ossource.cpp.obj
 
 glslang/OSDependent/Unix/ossource.i: glslang/OSDependent/Unix/ossource.cpp.i
@@ -1192,7 +1192,7 @@ glslang/OSDependent/Unix/ossource.i: glslang/OSDependent/Unix/ossource.cpp.i
 
 # target to preprocess a source file
 glslang/OSDependent/Unix/ossource.cpp.i:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/OSDependent/Unix/ossource.cpp.i
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/OSDependent/Unix/ossource.cpp.i
 .PHONY : glslang/OSDependent/Unix/ossource.cpp.i
 
 glslang/OSDependent/Unix/ossource.s: glslang/OSDependent/Unix/ossource.cpp.s
@@ -1200,7 +1200,7 @@ glslang/OSDependent/Unix/ossource.s: glslang/OSDependent/Unix/ossource.cpp.s
 
 # target to generate assembly for a file
 glslang/OSDependent/Unix/ossource.cpp.s:
-	cd /home/ev/ClangProjects/dolphin-switch && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/OSDependent/Unix/ossource.cpp.s
+	cd /home/ev/code/dolphin-switch-port/ && $(MAKE) $(MAKESILENT) -f Externals/glslang/CMakeFiles/glslang.dir/build.make Externals/glslang/CMakeFiles/glslang.dir/glslang/OSDependent/Unix/ossource.cpp.s
 .PHONY : glslang/OSDependent/Unix/ossource.cpp.s
 
 # Help Target
@@ -1355,6 +1355,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

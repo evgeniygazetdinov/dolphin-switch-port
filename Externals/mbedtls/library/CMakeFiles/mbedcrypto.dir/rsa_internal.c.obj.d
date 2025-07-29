@@ -1,8 +1,8 @@
 Externals/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa_internal.c.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/rsa_internal.c \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/common.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/config.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/check_config.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/rsa_internal.c \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/common.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/config.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/check_config.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/limits.h \
  /opt/devkitpro/devkitA64/lib/gcc/aarch64-none-elf/14.2.0/include/syslimits.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/limits.h \
@@ -17,8 +17,8 @@ Externals/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa_internal.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdint.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_intsup.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_stdint.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/rsa.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/bignum.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/rsa.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/bignum.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/stdio.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/_ansi.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/config.h \
@@ -30,9 +30,9 @@ Externals/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa_internal.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/_types.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/lock.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/stdio.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/md.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/platform_util.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/platform_time.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/md.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/platform_util.h \
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/platform_time.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/time.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/machine/time.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/types.h \
@@ -49,4 +49,4 @@ Externals/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa_internal.c.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/_locale.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/signal.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/signal.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include/mbedtls/rsa_internal.h
+ /home/ev/code/dolphin-switch-port//Externals/mbedtls/include/mbedtls/rsa_internal.h

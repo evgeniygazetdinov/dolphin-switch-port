@@ -1,5 +1,5 @@
 Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIFOSampleBuffer.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSampleBuffer.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSampleBuffer.cpp \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/stdlib.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/cstdlib \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/c++/14.2.0/aarch64-none-elf/pic/bits/c++config.h \
@@ -32,6 +32,6 @@ Externals/soundtouch/CMakeFiles/SoundTouch.dir/FIFOSampleBuffer.cpp.obj: \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/strings.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/string.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/assert.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSampleBuffer.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/FIFOSamplePipe.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/soundtouch/STTypes.h
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSampleBuffer.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/FIFOSamplePipe.h \
+ /home/ev/code/dolphin-switch-port//Externals/soundtouch/STTypes.h

@@ -4,7 +4,7 @@
 # compile C with /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc
 C_DEFINES = -DAUTOUPDATE=1 -DDATA_DIR=\"/opt/devkitpro/portlibs/switch/share/dolphin-emu/\" -DSFML_STATIC -DUSE_ANALYTICS=1 -D_ARCH_64=1 -D_DEFAULT_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_M_ARM_64=1
 
-C_INCLUDES = -I/home/ev/ClangProjects/dolphin-switch/Externals/SFML/include -I/home/ev/ClangProjects/dolphin-switch/Source/Core -I/home/ev/ClangProjects/dolphin-switch/Externals/enet/include -I/home/ev/ClangProjects/dolphin-switch/External/minizip -I/home/ev/ClangProjects/dolphin-switch/Externals/soundtouch -I/home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/include -I/home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library -isystem /opt/devkitpro/libnx/include
+C_INCLUDES = -I/home/ev/code/dolphin-switch-port//Externals/SFML/include -I/home/ev/code/dolphin-switch-port//Source/Core -I/home/ev/code/dolphin-switch-port//Externals/enet/include -I/home/ev/code/dolphin-switch-port//External/minizip -I/home/ev/code/dolphin-switch-port//Externals/soundtouch -I/home/ev/code/dolphin-switch-port//Externals/mbedtls/include -I/home/ev/code/dolphin-switch-port//Externals/mbedtls/library -isystem /opt/devkitpro/libnx/include
 
 C_FLAGS = -march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -ftls-model=local-exec -ffunction-sections -fdata-sections -D__SWITCH__ -Wall -Wextra -Wwrite-strings -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow -Wformat-signedness -Wformat-overflow=2 -Wformat-truncation -Wmissing-declarations -Wmissing-prototypes -O2 -fPIC -march=armv8-a+crc -fno-strict-aliasing -fno-exceptions -fvisibility=hidden -fomit-frame-pointer
 

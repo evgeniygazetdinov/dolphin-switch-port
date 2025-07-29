@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/ev/ClangProjects/dolphin-switch/Externals/FatFs/diskio.h
+/home/ev/code/dolphin-switch-port//Externals/FatFs/diskio.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ff.c
+/home/ev/code/dolphin-switch-port//Externals/FatFs/ff.c
 string.h
 -
 ff.h
-/home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ff.h
+/home/ev/code/dolphin-switch-port//Externals/FatFs/ff.h
 diskio.h
-/home/ev/ClangProjects/dolphin-switch/Externals/FatFs/diskio.h
+/home/ev/code/dolphin-switch-port//Externals/FatFs/diskio.h
 stdarg.h
 -
 math.h
 -
 
-/home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ff.h
+/home/ev/code/dolphin-switch-port//Externals/FatFs/ff.h
 ffconf.h
-/home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ffconf.h
+/home/ev/code/dolphin-switch-port//Externals/FatFs/ffconf.h
 windows.h
 -
 float.h
@@ -30,9 +30,9 @@ float.h
 stdint.h
 -
 
-/home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ffconf.h
+/home/ev/code/dolphin-switch-port//Externals/FatFs/ffconf.h
 
-/home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ffunicode.c
+/home/ev/code/dolphin-switch-port//Externals/FatFs/ffunicode.c
 ff.h
-/home/ev/ClangProjects/dolphin-switch/Externals/FatFs/ff.h
+/home/ev/code/dolphin-switch-port//Externals/FatFs/ff.h
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_SOURCE_DIR = /home/ev/code/dolphin-switch-port/
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ev/ClangProjects/dolphin-switch
+CMAKE_BINARY_DIR = /home/ev/code/dolphin-switch-port/
 
 # Include any dependencies generated for this target.
 include Externals/mbedtls/library/CMakeFiles/mbedx509.dir/depend.make
@@ -72,128 +72,128 @@ include Externals/mbedtls/library/CMakeFiles/mbedx509.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/certs.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/certs.c.obj: Externals/mbedtls/library/certs.c
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/certs.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/certs.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/certs.c.obj -MF CMakeFiles/mbedx509.dir/certs.c.obj.d -o CMakeFiles/mbedx509.dir/certs.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/certs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/certs.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/certs.c.obj -MF CMakeFiles/mbedx509.dir/certs.c.obj.d -o CMakeFiles/mbedx509.dir/certs.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/certs.c
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/certs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedx509.dir/certs.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/certs.c > CMakeFiles/mbedx509.dir/certs.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/certs.c > CMakeFiles/mbedx509.dir/certs.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/certs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedx509.dir/certs.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/certs.c -o CMakeFiles/mbedx509.dir/certs.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/certs.c -o CMakeFiles/mbedx509.dir/certs.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs11.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs11.c.obj: Externals/mbedtls/library/pkcs11.c
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs11.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs11.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs11.c.obj -MF CMakeFiles/mbedx509.dir/pkcs11.c.obj.d -o CMakeFiles/mbedx509.dir/pkcs11.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/pkcs11.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs11.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs11.c.obj -MF CMakeFiles/mbedx509.dir/pkcs11.c.obj.d -o CMakeFiles/mbedx509.dir/pkcs11.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/pkcs11.c
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs11.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedx509.dir/pkcs11.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/pkcs11.c > CMakeFiles/mbedx509.dir/pkcs11.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/pkcs11.c > CMakeFiles/mbedx509.dir/pkcs11.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs11.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedx509.dir/pkcs11.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/pkcs11.c -o CMakeFiles/mbedx509.dir/pkcs11.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/pkcs11.c -o CMakeFiles/mbedx509.dir/pkcs11.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj: Externals/mbedtls/library/x509.c
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj -MF CMakeFiles/mbedx509.dir/x509.c.obj.d -o CMakeFiles/mbedx509.dir/x509.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj -MF CMakeFiles/mbedx509.dir/x509.c.obj.d -o CMakeFiles/mbedx509.dir/x509.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509.c
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedx509.dir/x509.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509.c > CMakeFiles/mbedx509.dir/x509.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509.c > CMakeFiles/mbedx509.dir/x509.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedx509.dir/x509.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509.c -o CMakeFiles/mbedx509.dir/x509.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509.c -o CMakeFiles/mbedx509.dir/x509.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj: Externals/mbedtls/library/x509_create.c
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj -MF CMakeFiles/mbedx509.dir/x509_create.c.obj.d -o CMakeFiles/mbedx509.dir/x509_create.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509_create.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj -MF CMakeFiles/mbedx509.dir/x509_create.c.obj.d -o CMakeFiles/mbedx509.dir/x509_create.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509_create.c
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedx509.dir/x509_create.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509_create.c > CMakeFiles/mbedx509.dir/x509_create.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509_create.c > CMakeFiles/mbedx509.dir/x509_create.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedx509.dir/x509_create.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509_create.c -o CMakeFiles/mbedx509.dir/x509_create.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509_create.c -o CMakeFiles/mbedx509.dir/x509_create.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj: Externals/mbedtls/library/x509_crl.c
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj -MF CMakeFiles/mbedx509.dir/x509_crl.c.obj.d -o CMakeFiles/mbedx509.dir/x509_crl.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509_crl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj -MF CMakeFiles/mbedx509.dir/x509_crl.c.obj.d -o CMakeFiles/mbedx509.dir/x509_crl.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509_crl.c
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedx509.dir/x509_crl.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509_crl.c > CMakeFiles/mbedx509.dir/x509_crl.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509_crl.c > CMakeFiles/mbedx509.dir/x509_crl.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedx509.dir/x509_crl.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509_crl.c -o CMakeFiles/mbedx509.dir/x509_crl.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509_crl.c -o CMakeFiles/mbedx509.dir/x509_crl.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj: Externals/mbedtls/library/x509_crt.c
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj -MF CMakeFiles/mbedx509.dir/x509_crt.c.obj.d -o CMakeFiles/mbedx509.dir/x509_crt.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509_crt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj -MF CMakeFiles/mbedx509.dir/x509_crt.c.obj.d -o CMakeFiles/mbedx509.dir/x509_crt.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509_crt.c
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedx509.dir/x509_crt.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509_crt.c > CMakeFiles/mbedx509.dir/x509_crt.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509_crt.c > CMakeFiles/mbedx509.dir/x509_crt.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedx509.dir/x509_crt.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509_crt.c -o CMakeFiles/mbedx509.dir/x509_crt.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509_crt.c -o CMakeFiles/mbedx509.dir/x509_crt.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj: Externals/mbedtls/library/x509_csr.c
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj -MF CMakeFiles/mbedx509.dir/x509_csr.c.obj.d -o CMakeFiles/mbedx509.dir/x509_csr.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509_csr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj -MF CMakeFiles/mbedx509.dir/x509_csr.c.obj.d -o CMakeFiles/mbedx509.dir/x509_csr.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509_csr.c
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedx509.dir/x509_csr.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509_csr.c > CMakeFiles/mbedx509.dir/x509_csr.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509_csr.c > CMakeFiles/mbedx509.dir/x509_csr.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedx509.dir/x509_csr.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509_csr.c -o CMakeFiles/mbedx509.dir/x509_csr.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509_csr.c -o CMakeFiles/mbedx509.dir/x509_csr.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj: Externals/mbedtls/library/x509write_crt.c
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj -MF CMakeFiles/mbedx509.dir/x509write_crt.c.obj.d -o CMakeFiles/mbedx509.dir/x509write_crt.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509write_crt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj -MF CMakeFiles/mbedx509.dir/x509write_crt.c.obj.d -o CMakeFiles/mbedx509.dir/x509write_crt.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509write_crt.c
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedx509.dir/x509write_crt.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509write_crt.c > CMakeFiles/mbedx509.dir/x509write_crt.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509write_crt.c > CMakeFiles/mbedx509.dir/x509write_crt.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedx509.dir/x509write_crt.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509write_crt.c -o CMakeFiles/mbedx509.dir/x509write_crt.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509write_crt.c -o CMakeFiles/mbedx509.dir/x509write_crt.c.s
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/flags.make
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj: Externals/mbedtls/library/x509write_csr.c
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj -MF CMakeFiles/mbedx509.dir/x509write_csr.c.obj.d -o CMakeFiles/mbedx509.dir/x509write_csr.c.obj -c /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509write_csr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj -MF CMakeFiles/mbedx509.dir/x509write_csr.c.obj.d -o CMakeFiles/mbedx509.dir/x509write_csr.c.obj -c /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509write_csr.c
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedx509.dir/x509write_csr.c.i"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509write_csr.c > CMakeFiles/mbedx509.dir/x509write_csr.c.i
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509write_csr.c > CMakeFiles/mbedx509.dir/x509write_csr.c.i
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedx509.dir/x509write_csr.c.s"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/x509write_csr.c -o CMakeFiles/mbedx509.dir/x509write_csr.c.s
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && /opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/x509write_csr.c -o CMakeFiles/mbedx509.dir/x509write_csr.c.s
 
 # Object files for target mbedx509
 mbedx509_OBJECTS = \
@@ -221,19 +221,19 @@ Externals/mbedtls/library/libmbedx509.a: Externals/mbedtls/library/CMakeFiles/mb
 Externals/mbedtls/library/libmbedx509.a: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj
 Externals/mbedtls/library/libmbedx509.a: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/build.make
 Externals/mbedtls/library/libmbedx509.a: Externals/mbedtls/library/CMakeFiles/mbedx509.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/ClangProjects/dolphin-switch/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C static library libmbedx509.a"
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && $(CMAKE_COMMAND) -P CMakeFiles/mbedx509.dir/cmake_clean_target.cmake
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mbedx509.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ev/code/dolphin-switch-port//CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C static library libmbedx509.a"
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && $(CMAKE_COMMAND) -P CMakeFiles/mbedx509.dir/cmake_clean_target.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mbedx509.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/build: Externals/mbedtls/library/libmbedx509.a
 .PHONY : Externals/mbedtls/library/CMakeFiles/mbedx509.dir/build
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/clean:
-	cd /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library && $(CMAKE_COMMAND) -P CMakeFiles/mbedx509.dir/cmake_clean.cmake
+	cd /home/ev/code/dolphin-switch-port//Externals/mbedtls/library && $(CMAKE_COMMAND) -P CMakeFiles/mbedx509.dir/cmake_clean.cmake
 .PHONY : Externals/mbedtls/library/CMakeFiles/mbedx509.dir/clean
 
 Externals/mbedtls/library/CMakeFiles/mbedx509.dir/depend:
-	cd /home/ev/ClangProjects/dolphin-switch && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library /home/ev/ClangProjects/dolphin-switch /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library /home/ev/ClangProjects/dolphin-switch/Externals/mbedtls/library/CMakeFiles/mbedx509.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ev/code/dolphin-switch-port/ && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library /home/ev/code/dolphin-switch-port/ /home/ev/code/dolphin-switch-port//Externals/mbedtls/library /home/ev/code/dolphin-switch-port//Externals/mbedtls/library/CMakeFiles/mbedx509.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Externals/mbedtls/library/CMakeFiles/mbedx509.dir/depend
 

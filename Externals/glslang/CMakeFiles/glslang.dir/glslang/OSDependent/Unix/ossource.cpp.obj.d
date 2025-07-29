@@ -1,8 +1,8 @@
 Externals/glslang/CMakeFiles/glslang.dir/glslang/OSDependent/Unix/ossource.cpp.obj: \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/OSDependent/Unix/ossource.cpp \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/OSDependent/Unix/../osinclude.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/OSDependent/Unix/../../../OGLCompilersDLL/InitializeDll.h \
- /home/ev/ClangProjects/dolphin-switch/Externals/glslang/glslang/OSDependent/Unix/../../../OGLCompilersDLL/../glslang/OSDependent/osinclude.h \
+ /home/ev/code/dolphin-switch-port//Externals/glslang/glslang/OSDependent/Unix/ossource.cpp \
+ /home/ev/code/dolphin-switch-port//Externals/glslang/glslang/OSDependent/Unix/../osinclude.h \
+ /home/ev/code/dolphin-switch-port//Externals/glslang/glslang/OSDependent/Unix/../../../OGLCompilersDLL/InitializeDll.h \
+ /home/ev/code/dolphin-switch-port//Externals/glslang/glslang/OSDependent/Unix/../../../OGLCompilersDLL/../glslang/OSDependent/osinclude.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/pthread.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/unistd.h \
  /opt/devkitpro/devkitA64/aarch64-none-elf/include/sys/unistd.h \

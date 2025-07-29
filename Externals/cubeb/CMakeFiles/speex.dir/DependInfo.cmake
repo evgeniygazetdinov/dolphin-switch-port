@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ev/ClangProjects/dolphin-switch/Externals/cubeb/cubeb/subprojects/speex/resample.c" "Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj" "gcc" "Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj.d"
+  "/home/ev/code/dolphin-switch-port//Externals/cubeb/cubeb/subprojects/speex/resample.c" "Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj" "gcc" "Externals/cubeb/CMakeFiles/speex.dir/cubeb/subprojects/speex/resample.c.obj.d"
   )
 
 # Targets to which this target links.
