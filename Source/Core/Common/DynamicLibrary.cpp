@@ -12,8 +12,7 @@
 #if defined(_WIN32)
 #include <Windows.h>
 #elif defined(__SWITCH__)
-// TODO
-#else
+
 #include <dlfcn.h>
 #endif
 
