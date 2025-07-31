@@ -42,8 +42,10 @@ add_library(common
   EnumFormatter.h
   EnumMap.h
   Event.h
+  #[===[
   FatFsUtil.cpp
   FatFsUtil.h
+  ]===]
   FileSearch.cpp
   FileSearch.h
   FileUtil.cpp
@@ -61,8 +63,10 @@ add_library(common
   HookableEvent.h
   HttpRequest.cpp
   HttpRequest.h
+    #[===[
   Image.cpp
   Image.h
+    ]===]
   IniFile.cpp
   IniFile.h
   Inline.h
@@ -145,15 +149,7 @@ PUBLIC
   fmt::fmt
   ${MBEDTLS_LIBRARIES}
   minizip-ng
-
-PRIVATE
-  $<$<NOT:$<BOOL:${NINTENDO_SWITCH}>>:${CURL_LIBRARIES}>
-  FatFs
-  Iconv::Iconv
-  ${spng_target}
-  ${VTUNE_LIBRARIES}
 )
-
 if (APPLE)
   target_link_libraries(common
   PRIVATE

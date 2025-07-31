@@ -15,6 +15,7 @@
 
 // Does not compile if diskio.h is included first.
 // clang-format off
+
 #include "ff.h"
 #include "diskio.h"
 // clang-format on

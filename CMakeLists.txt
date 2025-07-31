@@ -882,17 +882,7 @@ else()
 endif()
 
 
-if(NOT ANDROID)
-  find_package(Iconv)
-endif()
 
-if(TARGET Iconv::Iconv)
-  message(STATUS "Using shared iconv")
-else()
-  check_vendoring_approved(iconv)
-  message(STATUS "Using static iconv from Externals")
-  add_subdirectory(Externals/libiconv-1.14)
-endif()
 
 if(NOT ANDROID AND NOT NINTENDO_SWITCH)
   find_package(HIDAPI)
