@@ -20,13 +20,16 @@
 #else
 #include <pthread.h>
 #include <stdio.h>
+#if defined(__linux__) || defined(__APPLE__) || defined(__unix__)
 #include <sys/mman.h>
+#endif
 #include <sys/types.h>
 #if defined __APPLE__ || defined __FreeBSD__ || defined __OpenBSD__ || defined __NetBSD__
 #include <sys/sysctl.h>
 #elif defined __HAIKU__
 #include <OS.h>
 #else
+#if defined(__linux__)
 #include <sys/sysinfo.h>
 #endif
 #endif
