@@ -186,10 +186,6 @@ static std::unique_ptr<Platform> GetPlatform(const optparse::Values& options)
     return Platform::CreateX11Platform();
 #endif
 
-#ifdef __linux__
-    if (platform_name == "fbdev" || platform_name.empty())
-    return Platform::CreateFBDevPlatform();
-#endif
 
 #ifdef _WIN32
     if (platform_name == "win32" || platform_name.empty())
@@ -266,9 +262,11 @@ int main(int argc, char* argv[])
         user_directory = static_cast<const char*>(options.get("user"));
     }
 #ifdef __SWITCH__
-    else {
-        user_directory = "sdmc:/switch/dolphin-emu/";
-    }
+
+  auto* const log_manager = Common::Log::LogManager::GetInstance();
+  log_manager->SetLogLevel(Common::Log::LogLevel::LDEBUG);
+  // Включаем логирование в консоль для debug режима
+  log_manager->EnableListener(Common::Log::LogListener::CONSOLE_LISTENER, true);
 #endif
 
     Log("Creating platform...\n");
