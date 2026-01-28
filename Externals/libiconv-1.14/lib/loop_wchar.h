@@ -37,11 +37,15 @@
 # include <wchar.h>
 # define BUF_SIZE 64  /* assume MB_LEN_MAX <= 64 */
   /* Some systems, like BeOS, have multibyte encodings but lack mbstate_t.  */
+  /* Only declare mbrtowc if it's not already properly declared in wchar.h */
+# ifndef __SWITCH__
   extern size_t mbrtowc ();
-# ifdef mbstate_t
-#  define mbrtowc(pwc, s, n, ps) (mbrtowc)(pwc, s, n, 0)
-#  define mbsinit(ps) 1
+#  ifdef mbstate_t
+#   define mbrtowc(pwc, s, n, ps) (mbrtowc)(pwc, s, n, 0)
+#   define mbsinit(ps) 1
+#  endif
 # endif
+  /* For Switch and other modern systems, mbrtowc is properly declared in wchar.h */
 # ifndef mbsinit
 #  if !HAVE_MBSINIT
 #   define mbsinit(ps) 1

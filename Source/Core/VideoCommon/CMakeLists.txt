@@ -228,6 +228,11 @@ if(FFmpeg_FOUND)
       ${COREVIDEO_LIBRARY}
       ${AUDIOTOOLBOX_LIBRARY}
     )
+  elseif(NINTENDO_SWITCH)
+    # dav1d is required by libavcodec on Switch
+    target_link_libraries(videocommon PRIVATE
+      dav1d
+    )
   endif()
 endif()
 
