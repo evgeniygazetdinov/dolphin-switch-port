@@ -286,6 +286,8 @@ int main(int argc, char* argv[])
 #ifdef __SWITCH__
   auto* const log_manager = Common::Log::LogManager::GetInstance();
   log_manager->SetLogLevel(Common::Log::LogLevel::LDEBUG);
+  // Включаем логирование в консоль для debug режима
+  log_manager->EnableListener(Common::Log::LogListener::CONSOLE_LISTENER, true);
 #endif
 
   Common::ScopeGuard ui_common_guard([] {
